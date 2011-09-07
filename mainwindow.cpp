@@ -87,6 +87,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // load settings
     MainWindow::loadSettings();
 
+    // build the GConfConnection
+    gconfClient = gconf_client_get_default();
+//    gconfClient->add_dir();
+
     // initilise the RNG
     qsrand(QDateTime::currentMSecsSinceEpoch());
 
@@ -706,11 +710,8 @@ void MainWindow::desktopNotify(QString image)
  * @return bool
  */
 void MainWindow::changeBackground(QString picture) {
-    // Make a GConf Connection
-    GConfClient* client = gconf_client_get_default();
-
     // Change the Background
-    if (gconf_client_set_string(client, "/desktop/gnome/background/picture_filename", picture.toLatin1(), NULL)) {
+    if (gconf_client_set_string(gconfClient, "/desktop/gnome/background/picture_filename", picture.toLatin1(), NULL)) {
         // Show notifications, play sounds, and update history, according to preferences.
         if(this->desktopNotification)  QtConcurrent::run(this, &MainWindow::desktopNotify, picture);
         if(this->soundNotification)    QtConcurrent::run(this, &MainWindow::soundNotify);

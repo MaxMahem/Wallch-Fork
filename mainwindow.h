@@ -65,6 +65,8 @@ private:
     Preferences *preferences;       /**< TODO */
     properties  *Properties;        /**< TODO */
 
+    GConfClient* gconfClient;       /**< TODO */
+
     QUrl                  url;      /**< TODO */
     QNetworkAccessManager qnam;     /**< TODO */
     QNetworkReply         *reply;   /**< TODO */
