@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classstatistics" kind="class" prot="public">
+    <compoundname>statistics</compoundname>
+    <includes refid="statistics_8h" local="no">statistics.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstatistics_1a132d339d01784764b74a7b2a12b39981" prot="private" static="no" mutable="no">
+        <type>Ui::statistics *</type>
+        <definition>Ui::statistics* statistics::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/statistics.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstatistics_1a07cd2b77d6bb65ad880f6e38e91c7359" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* statistics::update_values</definition>
+        <argsstring></argsstring>
+        <name>update_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="37" bodyfile="/home/maxmahem/wallch-2.0/statistics.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstatistics_1a2dc9a77ff9eb30c4f1e7f80d110807fe" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>statistics::statistics</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>statistics</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatistics_1a8cf720227802726be118712dc6616f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>statistics::~statistics</definition>
+        <argsstring>()</argsstring>
+        <name>~statistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classstatistics_1a30369590c935dcfe004c1af34bc43f9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void statistics::on_reset_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_reset_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="40"/>
+      </memberdef>
+      <memberdef kind="slot" id="classstatistics_1aa05c5587c3cc452a1cb27b69dd229004" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void statistics::on_ok_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_ok_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="41"/>
+      </memberdef>
+      <memberdef kind="slot" id="classstatistics_1acd549a3c6fb05160f90a4a5a0a593637" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void statistics::values_update</definition>
+        <argsstring>()</argsstring>
+        <name>values_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/statistics.h" line="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/maxmahem/wallch-2.0/statistics.h" line="28" bodyfile="/home/maxmahem/wallch-2.0/statistics.h" bodystart="28" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classstatistics_1aa05c5587c3cc452a1cb27b69dd229004" prot="private" virt="non-virtual"><scope>statistics</scope><name>on_ok_clicked</name></member>
+      <member refid="classstatistics_1a30369590c935dcfe004c1af34bc43f9d" prot="private" virt="non-virtual"><scope>statistics</scope><name>on_reset_clicked</name></member>
+      <member refid="classstatistics_1a2dc9a77ff9eb30c4f1e7f80d110807fe" prot="public" virt="non-virtual"><scope>statistics</scope><name>statistics</name></member>
+      <member refid="classstatistics_1a132d339d01784764b74a7b2a12b39981" prot="private" virt="non-virtual"><scope>statistics</scope><name>ui</name></member>
+      <member refid="classstatistics_1a07cd2b77d6bb65ad880f6e38e91c7359" prot="private" virt="non-virtual"><scope>statistics</scope><name>update_values</name></member>
+      <member refid="classstatistics_1acd549a3c6fb05160f90a4a5a0a593637" prot="private" virt="non-virtual"><scope>statistics</scope><name>values_update</name></member>
+      <member refid="classstatistics_1a8cf720227802726be118712dc6616f94" prot="public" virt="non-virtual"><scope>statistics</scope><name>~statistics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

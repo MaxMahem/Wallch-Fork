@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classPreferences" kind="class" prot="public">
+    <compoundname>Preferences</compoundname>
+    <includes refid="preferences_8h" local="no">preferences.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classPreferences_1a95be5e16f0907d341543bc9b7f396e4e" prot="public" static="no">
+        <name>startupEnum</name>
+        <enumvalue id="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea85bfd301c96cc6adcb97b466e8591edf" prot="public">
+          <name>run</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea109228307fbc6fc25e01e9916a3b9e27" prot="public">
+          <name>once</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea3ee6d987489659a606564b7a6ba497ad" prot="public">
+          <name>liveEarth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="42" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776" prot="public" static="no">
+        <name>backgroundSettingEnum</name>
+        <enumvalue id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a9911d049dd17e7b9c51c00f56b7da895" prot="public">
+          <name>wallpaper</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a0582bc5a23537f96422e76c1377d680c" prot="public">
+          <name>zoom</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776aa56270bfded51ede160a3ae2dc88257c" prot="public">
+          <name>centered</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a13ae16c1d103e5b48815c004cb7b33f5" prot="public">
+          <name>scaled</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a7be613de102c010404ba3f20ca3a4056" prot="public">
+          <name>streched</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a517033578f1e263d85fe9945eb6c2079" prot="public">
+          <name>spanned</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="43" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPreferences_1ad1e1eb6aa662fc386473268b35c891fb" prot="private" static="no" mutable="no">
+        <type><ref refid="classUi_1_1Preferences" kindref="compound">Ui::Preferences</ref> *</type>
+        <definition>Ui::Preferences* Preferences::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="46" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1aec4faa48fcdfd1ce16d5850bab75cb15" prot="private" static="no" mutable="no">
+        <type>QSettings</type>
+        <definition>QSettings Preferences::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="48" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1ab1bfeb4d049bd8f84f8819331afe9b36" prot="private" static="no" mutable="no">
+        <type>sf::Music</type>
+        <definition>sf::Music Preferences::sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="49" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1aa31a42c3e90142597b0e21658a5779d5" prot="private" static="no" mutable="no">
+        <type>GConfClient *</type>
+        <definition>GConfClient* Preferences::gconfClient</definition>
+        <argsstring></argsstring>
+        <name>gconfClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="50" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1aba377fbf9a8118099fb94bf767dc15bb" prot="private" static="no" mutable="no">
+        <type>QHash&lt; QString, int &gt;</type>
+        <definition>QHash&lt;QString, int&gt; Preferences::backgroundSettingNames</definition>
+        <argsstring></argsstring>
+        <name>backgroundSettingNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="52" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1a1da556392f0bd0fc775c01d596ccff64" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Preferences::settingsPlaySound</definition>
+        <argsstring></argsstring>
+        <name>settingsPlaySound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="54" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1ae4973ff7c89eae976131903a1c9be36a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Preferences::settingsCustomSound</definition>
+        <argsstring></argsstring>
+        <name>settingsCustomSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="55" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1a809d46a274acee9c4d8f836bf528dfe3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Preferences::settingsMinimizeToTray</definition>
+        <argsstring></argsstring>
+        <name>settingsMinimizeToTray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="56" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1ab35a8553b4589b774fec31acc04d10f2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Preferences::settingsDesktopNotification</definition>
+        <argsstring></argsstring>
+        <name>settingsDesktopNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="57" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1a216ea78ba87f148be433abe1175bf038" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Preferences::settingsStartup</definition>
+        <argsstring></argsstring>
+        <name>settingsStartup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="58" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1a9289f97acd00f580f6c70183122e6a59" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Preferences::soundFileName</definition>
+        <argsstring></argsstring>
+        <name>soundFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="59" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1a8b68e9e210592643ae359daa01b23f52" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Preferences::settingsBackgroundSetting</definition>
+        <argsstring></argsstring>
+        <name>settingsBackgroundSetting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="60" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPreferences_1a54a2b919ff63be836615593c8cb9bdca" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Preferences::settingsHistory</definition>
+        <argsstring></argsstring>
+        <name>settingsHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="61" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPreferences_1a3fc460c1a11115945b78b2d35d7ade00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Preferences::Preferences</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Preferences</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="39" bodyend="79"/>
+        <references refid="classUi__Preferences_1a129964e10a8201a42326692ea118d4d5" compoundref="ui__preferences_8h" startline="49">Ui_Preferences::backgroundSettingsCombo</references>
+        <references refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" compoundref="ui__preferences_8h" startline="58">Ui_Preferences::browseSoundButton</references>
+        <references refid="classUi__Preferences_1a14e5348186c9bd343b89528b172f51a1" compoundref="ui__preferences_8h" startline="57">Ui_Preferences::customSoundRadio</references>
+        <references refid="preferences_8h_1a8c4f0fd821e3f6f9a963c00064d8d9fa" compoundref="preferences_8h" startline="29">DEFAULTSOUNDFILE</references>
+        <references refid="classUi__Preferences_1aae955def2c42e4e1c34edf4c65004fe1" compoundref="ui__preferences_8h" startline="50">Ui_Preferences::desktopNotificationCheckBox</references>
+        <references refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea3ee6d987489659a606564b7a6ba497ad" compoundref="preferences_8h" startline="42">liveEarth</references>
+        <references refid="classUi__Preferences_1aa58b4ebc358d2f12989ca10837fa90ea" compoundref="ui__preferences_8h" startline="46">Ui_Preferences::minimizeToTrayCheckBox</references>
+        <references refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea109228307fbc6fc25e01e9916a3b9e27" compoundref="preferences_8h" startline="42">once</references>
+        <references refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea85bfd301c96cc6adcb97b466e8591edf" compoundref="preferences_8h" startline="42">run</references>
+        <references refid="classUi__Preferences_1a2c535ca36a3133132a7c858a4972df85" compoundref="ui__preferences_8h" startline="78" endline="358">Ui_Preferences::setupUi</references>
+        <references refid="classUi__Preferences_1a643214d4acc744082f2ab12e9920c42b" compoundref="ui__preferences_8h" startline="53">Ui_Preferences::soundNotificationGroupBox</references>
+        <references refid="classUi__Preferences_1a394530273401e5624c80f0b0665a8242" compoundref="ui__preferences_8h" startline="44">Ui_Preferences::startupChangeOnceRadio</references>
+        <references refid="classUi__Preferences_1ad4180835bda75254d45f8f6a8bde10a6" compoundref="ui__preferences_8h" startline="45">Ui_Preferences::startupLiveEarthRadio</references>
+        <references refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" compoundref="ui__preferences_8h" startline="76">Ui_Preferences::startupOptionsGroup</references>
+        <references refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" compoundref="ui__preferences_8h" startline="41">Ui_Preferences::startupOptionsGroupBox</references>
+        <references refid="classUi__Preferences_1a1eb4559ebb63551ec3ebd03e1209a0c1" compoundref="ui__preferences_8h" startline="43">Ui_Preferences::startupRunRadio</references>
+        <references refid="classUi__Preferences_1a47f2c2d39f53cc25b5e40b919481cee0" compoundref="ui__preferences_8h" startline="59">Ui_Preferences::testSoundButton</references>
+      </memberdef>
+      <memberdef kind="function" id="classPreferences_1a20020f4fceeefb048a5eeddec6c28376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Preferences::~Preferences</definition>
+        <argsstring>()</argsstring>
+        <name>~Preferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="40" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classPreferences_1af581934c73bdbcd595ef7a32a81d19d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Preferences::on_resetPreferencesButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_resetPreferencesButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="64" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="204" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPreferences_1a1faf6f20ac96b751a2252a0ca1ebbf7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Preferences::on_browseSoundButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_browseSoundButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="65" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="162" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPreferences_1ae79fc3e7e24c57cfedd6180fe802eaa3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Preferences::on_saveButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_saveButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="66" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="85" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPreferences_1a47285e79732e1280553247d2ae863973" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Preferences::on_closeButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_closeButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="67" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPreferences_1a0845ec1fdf99b9578aa98f7da0dd7cc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Preferences::on_testSoundButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_testSoundButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="68" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="188" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPreferences_1ad735c06145535fc78571c4d9ce8433b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Preferences::on_customSoundRadio_toggled</definition>
+        <argsstring>(bool)</argsstring>
+        <name>on_customSoundRadio_toggled</name>
+        <param>
+          <type>bool</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/preferences.h" line="69" bodyfile="/home/maxmahem/wallch-2.0/preferences.cpp" bodystart="219" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="108">
+        <label>Preferences</label>
+        <link refid="classPreferences"/>
+        <childnode refid="109" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+      <node id="110">
+        <label>Ui_Preferences</label>
+        <link refid="classUi__Preferences"/>
+      </node>
+      <node id="109">
+        <label>Ui::Preferences</label>
+        <link refid="classUi_1_1Preferences"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/preferences.h" line="33" bodyfile="/home/maxmahem/wallch-2.0/preferences.h" bodystart="33" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776" prot="public" virt="non-virtual"><scope>Preferences</scope><name>backgroundSettingEnum</name></member>
+      <member refid="classPreferences_1aba377fbf9a8118099fb94bf767dc15bb" prot="private" virt="non-virtual"><scope>Preferences</scope><name>backgroundSettingNames</name></member>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776aa56270bfded51ede160a3ae2dc88257c" prot="public" virt="non-virtual"><scope>Preferences</scope><name>centered</name></member>
+      <member refid="classPreferences_1aa31a42c3e90142597b0e21658a5779d5" prot="private" virt="non-virtual"><scope>Preferences</scope><name>gconfClient</name></member>
+      <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea3ee6d987489659a606564b7a6ba497ad" prot="public" virt="non-virtual"><scope>Preferences</scope><name>liveEarth</name></member>
+      <member refid="classPreferences_1a1faf6f20ac96b751a2252a0ca1ebbf7f" prot="private" virt="non-virtual"><scope>Preferences</scope><name>on_browseSoundButton_clicked</name></member>
+      <member refid="classPreferences_1a47285e79732e1280553247d2ae863973" prot="private" virt="non-virtual"><scope>Preferences</scope><name>on_closeButton_clicked</name></member>
+      <member refid="classPreferences_1ad735c06145535fc78571c4d9ce8433b5" prot="private" virt="non-virtual"><scope>Preferences</scope><name>on_customSoundRadio_toggled</name></member>
+      <member refid="classPreferences_1af581934c73bdbcd595ef7a32a81d19d4" prot="private" virt="non-virtual"><scope>Preferences</scope><name>on_resetPreferencesButton_clicked</name></member>
+      <member refid="classPreferences_1ae79fc3e7e24c57cfedd6180fe802eaa3" prot="private" virt="non-virtual"><scope>Preferences</scope><name>on_saveButton_clicked</name></member>
+      <member refid="classPreferences_1a0845ec1fdf99b9578aa98f7da0dd7cc3" prot="private" virt="non-virtual"><scope>Preferences</scope><name>on_testSoundButton_clicked</name></member>
+      <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea109228307fbc6fc25e01e9916a3b9e27" prot="public" virt="non-virtual"><scope>Preferences</scope><name>once</name></member>
+      <member refid="classPreferences_1a3fc460c1a11115945b78b2d35d7ade00" prot="public" virt="non-virtual"><scope>Preferences</scope><name>Preferences</name></member>
+      <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea85bfd301c96cc6adcb97b466e8591edf" prot="public" virt="non-virtual"><scope>Preferences</scope><name>run</name></member>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a13ae16c1d103e5b48815c004cb7b33f5" prot="public" virt="non-virtual"><scope>Preferences</scope><name>scaled</name></member>
+      <member refid="classPreferences_1aec4faa48fcdfd1ce16d5850bab75cb15" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settings</name></member>
+      <member refid="classPreferences_1a8b68e9e210592643ae359daa01b23f52" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsBackgroundSetting</name></member>
+      <member refid="classPreferences_1ae4973ff7c89eae976131903a1c9be36a" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsCustomSound</name></member>
+      <member refid="classPreferences_1ab35a8553b4589b774fec31acc04d10f2" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsDesktopNotification</name></member>
+      <member refid="classPreferences_1a54a2b919ff63be836615593c8cb9bdca" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsHistory</name></member>
+      <member refid="classPreferences_1a809d46a274acee9c4d8f836bf528dfe3" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsMinimizeToTray</name></member>
+      <member refid="classPreferences_1a1da556392f0bd0fc775c01d596ccff64" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsPlaySound</name></member>
+      <member refid="classPreferences_1a216ea78ba87f148be433abe1175bf038" prot="private" virt="non-virtual"><scope>Preferences</scope><name>settingsStartup</name></member>
+      <member refid="classPreferences_1ab1bfeb4d049bd8f84f8819331afe9b36" prot="private" virt="non-virtual"><scope>Preferences</scope><name>sound</name></member>
+      <member refid="classPreferences_1a9289f97acd00f580f6c70183122e6a59" prot="private" virt="non-virtual"><scope>Preferences</scope><name>soundFileName</name></member>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a517033578f1e263d85fe9945eb6c2079" prot="public" virt="non-virtual"><scope>Preferences</scope><name>spanned</name></member>
+      <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4e" prot="public" virt="non-virtual"><scope>Preferences</scope><name>startupEnum</name></member>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a7be613de102c010404ba3f20ca3a4056" prot="public" virt="non-virtual"><scope>Preferences</scope><name>streched</name></member>
+      <member refid="classPreferences_1ad1e1eb6aa662fc386473268b35c891fb" prot="private" virt="non-virtual"><scope>Preferences</scope><name>ui</name></member>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a9911d049dd17e7b9c51c00f56b7da895" prot="public" virt="non-virtual"><scope>Preferences</scope><name>wallpaper</name></member>
+      <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a0582bc5a23537f96422e76c1377d680c" prot="public" virt="non-virtual"><scope>Preferences</scope><name>zoom</name></member>
+      <member refid="classPreferences_1a20020f4fceeefb048a5eeddec6c28376" prot="public" virt="non-virtual"><scope>Preferences</scope><name>~Preferences</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,330 @@
+\hypertarget{mainwindow_8cpp}{
+\section{/home/maxmahem/wallch-\/2.0/mainwindow.cpp File Reference}
+\label{mainwindow_8cpp}\index{/home/maxmahem/wallch-\/2.0/mainwindow.cpp@{/home/maxmahem/wallch-\/2.0/mainwindow.cpp}}
+}
+{\ttfamily \#include \char`\"{}mainwindow.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ui\_\-mainwindow.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}preferences.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}about.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}properties.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}extras.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}QOpenCVWidget.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}glob.h\char`\"{}}\par
+{\ttfamily \#include $<$sys/stat.h$>$}\par
+{\ttfamily \#include $<$opencv/cv.h$>$}\par
+{\ttfamily \#include $<$opencv/highgui.h$>$}\par
+{\ttfamily \#include $<$libnotify/notify.h$>$}\par
+{\ttfamily \#include $<$fstream$>$}\par
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include $<$QMessageBox$>$}\par
+{\ttfamily \#include $<$QClipboard$>$}\par
+{\ttfamily \#include $<$QtDBus/QtDBus$>$}\par
+{\ttfamily \#include $<$QtDBus/QDBusMessage$>$}\par
+{\ttfamily \#include $<$QUrl$>$}\par
+{\ttfamily \#include $<$QTransform$>$}\par
+{\ttfamily \#include $<$QDrag$>$}\par
+{\ttfamily \#include $<$QProgressDialog$>$}\par
+{\ttfamily \#include $<$QFileDialog$>$}\par
+{\ttfamily \#include $<$QTextStream$>$}\par
+{\ttfamily \#include $<$QAction$>$}\par
+{\ttfamily \#include $<$QSettings$>$}\par
+{\ttfamily \#include $<$QRect$>$}\par
+{\ttfamily \#include $<$QDesktopWidget$>$}\par
+{\ttfamily \#include $<$QSystemTrayIcon$>$}\par
+{\ttfamily \#include $<$QCloseEvent$>$}\par
+{\ttfamily \#include $<$QMenu$>$}\par
+{\ttfamily \#include $<$QShortcut$>$}\par
+{\ttfamily \#include $<$QListWidgetItem$>$}\par
+{\ttfamily \#include $<$QListWidget$>$}\par
+{\ttfamily \#include $<$QWidget$>$}\par
+{\ttfamily \#include $<$QtConcurrentRun$>$}\par
+{\ttfamily \#include $<$QtNetwork/QNetworkAccessManager$>$}\par
+{\ttfamily \#include $<$QtNetwork/QNetworkReply$>$}\par
+{\ttfamily \#include $<$QtNetwork/QNetworkRequest$>$}\par
+{\ttfamily \#include $<$QDesktopServices$>$}\par
+{\ttfamily \#include $<$SFML/Audio.hpp$>$}\par
+{\ttfamily \#include $<$gconf/gconf-\/client.h$>$}\par
+Include dependency graph for mainwindow.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{mainwindow_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mainwindow_8cpp_ab5522b54e1fe7195735f5a405f026039}{QT\_\-NO\_\-KEYWORDS}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mainwindow_8cpp_afe228fb35e2737cb1becbbe9b4308614}{\_\-live\_\-earth\_\-running\_\-} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_a532748c39d92699468edec43c58d8b06}{\_\-on\_\-boot\_\-once\_\-running\_\-}
+\item 
+int \hyperlink{mainwindow_8cpp_aa87fa99b597a16b7c625e511ebbb5581}{\_\-on\_\-boot\_\-constant\_\-running\_\-}
+\item 
+int \hyperlink{mainwindow_8cpp_a652f3ec6c0e23f72e16fa43bf0b407f1}{seconds\_\-left} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_acd8df10a3a7630b3ff5ea0c2b597922e}{random\_\-first} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_a7106e2abc437ad981830d14176d15f09}{number} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_affd617bf010aaf31a24e8b51f6afeea4}{tmp\_\-number} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_a8715771c19d8223abb2abe25f5f06be0}{seconds\_\-minutes\_\-hours} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_ad169bac577628d452c8ddddffcd2c22c}{tmp\_\-seconds\_\-minutes\_\-hours} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_a96203077ee28957ab99fcabaf70abc0f}{pref} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_aeb84694c28fdf361868a5234d9d74db7}{add} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_a57575a2e64cb4b9f815d1cb540689402}{show\_\-notification}
+\item 
+int \hyperlink{mainwindow_8cpp_a2f73f86b6ed098ec989ba1767b5e8c2b}{minimize\_\-to\_\-tray} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_af9a76d8fef8b0c2cb8c58535f33801c1}{properties\_\-times} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_af16ca7cafa7596c54976c19ee1223e4c}{close\_\-minimize\_\-app} = 0
+\item 
+int \hyperlink{mainwindow_8cpp_abe45c1cc4b6d92ec1d811272ee2de8a0}{propertieswindow} = 0
+\item 
+bool \hyperlink{mainwindow_8cpp_a98dda529b7c9c1d6bb6edf3644a1954f}{extras\_\-shown} = false
+\item 
+bool \hyperlink{mainwindow_8cpp_a766fcc640f3cd66e7b53c55ec392c842}{start\_\-just\_\-clicked} = false
+\item 
+bool \hyperlink{mainwindow_8cpp_acd4585dbf35a77f014296b8d5f9a30d1}{pass\_\-them\_\-as\_\-albums} = true
+\item 
+bool \hyperlink{mainwindow_8cpp_a2be4ab79f1259f10af556108bc88f5cb}{notification\_\-first\_\-time} = true
+\item 
+NotifyNotification $\ast$ \hyperlink{mainwindow_8cpp_a2effe0844099f876464abae594ff1fb2}{notification}
+\item 
+gboolean \hyperlink{mainwindow_8cpp_a6e33a04ebc80fee4946b364681fecffd}{success}
+\item 
+GError $\ast$ \hyperlink{mainwindow_8cpp_abc39a4bba3587c275762137dee2c3fc1}{error} = NULL
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{mainwindow_8cpp_ab5522b54e1fe7195735f5a405f026039}{
+\index{mainwindow.cpp@{mainwindow.cpp}!QT\_\-NO\_\-KEYWORDS@{QT\_\-NO\_\-KEYWORDS}}
+\index{QT\_\-NO\_\-KEYWORDS@{QT\_\-NO\_\-KEYWORDS}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{QT\_\-NO\_\-KEYWORDS}]{\setlength{\rightskip}{0pt plus 5cm}\#define QT\_\-NO\_\-KEYWORDS}}
+\label{mainwindow_8cpp_ab5522b54e1fe7195735f5a405f026039}
+
+
+Definition at line 20 of file mainwindow.cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{mainwindow_8cpp_afe228fb35e2737cb1becbbe9b4308614}{
+\index{mainwindow.cpp@{mainwindow.cpp}!\_\-live\_\-earth\_\-running\_\-@{\_\-live\_\-earth\_\-running\_\-}}
+\index{\_\-live\_\-earth\_\-running\_\-@{\_\-live\_\-earth\_\-running\_\-}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{\_\-live\_\-earth\_\-running\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \_\-live\_\-earth\_\-running\_\-} = 0}}
+\label{mainwindow_8cpp_afe228fb35e2737cb1becbbe9b4308614}
+
+
+Definition at line 71 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_aa87fa99b597a16b7c625e511ebbb5581}{
+\index{mainwindow.cpp@{mainwindow.cpp}!\_\-on\_\-boot\_\-constant\_\-running\_\-@{\_\-on\_\-boot\_\-constant\_\-running\_\-}}
+\index{\_\-on\_\-boot\_\-constant\_\-running\_\-@{\_\-on\_\-boot\_\-constant\_\-running\_\-}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{\_\-on\_\-boot\_\-constant\_\-running\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \_\-on\_\-boot\_\-constant\_\-running\_\-}}}
+\label{mainwindow_8cpp_aa87fa99b597a16b7c625e511ebbb5581}
+
+
+Definition at line 73 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a532748c39d92699468edec43c58d8b06}{
+\index{mainwindow.cpp@{mainwindow.cpp}!\_\-on\_\-boot\_\-once\_\-running\_\-@{\_\-on\_\-boot\_\-once\_\-running\_\-}}
+\index{\_\-on\_\-boot\_\-once\_\-running\_\-@{\_\-on\_\-boot\_\-once\_\-running\_\-}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{\_\-on\_\-boot\_\-once\_\-running\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \_\-on\_\-boot\_\-once\_\-running\_\-}}}
+\label{mainwindow_8cpp_a532748c39d92699468edec43c58d8b06}
+
+
+Definition at line 72 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_aeb84694c28fdf361868a5234d9d74db7}{
+\index{mainwindow.cpp@{mainwindow.cpp}!add@{add}}
+\index{add@{add}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf add} = 0}}
+\label{mainwindow_8cpp_aeb84694c28fdf361868a5234d9d74db7}
+
+
+Definition at line 81 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_af16ca7cafa7596c54976c19ee1223e4c}{
+\index{mainwindow.cpp@{mainwindow.cpp}!close\_\-minimize\_\-app@{close\_\-minimize\_\-app}}
+\index{close\_\-minimize\_\-app@{close\_\-minimize\_\-app}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{close\_\-minimize\_\-app}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf close\_\-minimize\_\-app} = 0}}
+\label{mainwindow_8cpp_af16ca7cafa7596c54976c19ee1223e4c}
+
+
+Definition at line 85 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_abc39a4bba3587c275762137dee2c3fc1}{
+\index{mainwindow.cpp@{mainwindow.cpp}!error@{error}}
+\index{error@{error}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}GError$\ast$ {\bf error} = NULL}}
+\label{mainwindow_8cpp_abc39a4bba3587c275762137dee2c3fc1}
+
+
+Definition at line 95 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a98dda529b7c9c1d6bb6edf3644a1954f}{
+\index{mainwindow.cpp@{mainwindow.cpp}!extras\_\-shown@{extras\_\-shown}}
+\index{extras\_\-shown@{extras\_\-shown}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{extras\_\-shown}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf extras\_\-shown} = false}}
+\label{mainwindow_8cpp_a98dda529b7c9c1d6bb6edf3644a1954f}
+
+
+Definition at line 88 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a2f73f86b6ed098ec989ba1767b5e8c2b}{
+\index{mainwindow.cpp@{mainwindow.cpp}!minimize\_\-to\_\-tray@{minimize\_\-to\_\-tray}}
+\index{minimize\_\-to\_\-tray@{minimize\_\-to\_\-tray}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{minimize\_\-to\_\-tray}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf minimize\_\-to\_\-tray} = 0}}
+\label{mainwindow_8cpp_a2f73f86b6ed098ec989ba1767b5e8c2b}
+
+
+Definition at line 83 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a2effe0844099f876464abae594ff1fb2}{
+\index{mainwindow.cpp@{mainwindow.cpp}!notification@{notification}}
+\index{notification@{notification}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{notification}]{\setlength{\rightskip}{0pt plus 5cm}NotifyNotification$\ast$ {\bf notification}}}
+\label{mainwindow_8cpp_a2effe0844099f876464abae594ff1fb2}
+
+
+Definition at line 93 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a2be4ab79f1259f10af556108bc88f5cb}{
+\index{mainwindow.cpp@{mainwindow.cpp}!notification\_\-first\_\-time@{notification\_\-first\_\-time}}
+\index{notification\_\-first\_\-time@{notification\_\-first\_\-time}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{notification\_\-first\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf notification\_\-first\_\-time} = true}}
+\label{mainwindow_8cpp_a2be4ab79f1259f10af556108bc88f5cb}
+
+
+Definition at line 91 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a7106e2abc437ad981830d14176d15f09}{
+\index{mainwindow.cpp@{mainwindow.cpp}!number@{number}}
+\index{number@{number}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf number} = 0}}
+\label{mainwindow_8cpp_a7106e2abc437ad981830d14176d15f09}
+
+
+Definition at line 76 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_acd4585dbf35a77f014296b8d5f9a30d1}{
+\index{mainwindow.cpp@{mainwindow.cpp}!pass\_\-them\_\-as\_\-albums@{pass\_\-them\_\-as\_\-albums}}
+\index{pass\_\-them\_\-as\_\-albums@{pass\_\-them\_\-as\_\-albums}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{pass\_\-them\_\-as\_\-albums}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf pass\_\-them\_\-as\_\-albums} = true}}
+\label{mainwindow_8cpp_acd4585dbf35a77f014296b8d5f9a30d1}
+
+
+Definition at line 90 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a96203077ee28957ab99fcabaf70abc0f}{
+\index{mainwindow.cpp@{mainwindow.cpp}!pref@{pref}}
+\index{pref@{pref}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{pref}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf pref} = 0}}
+\label{mainwindow_8cpp_a96203077ee28957ab99fcabaf70abc0f}
+
+
+Definition at line 80 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_af9a76d8fef8b0c2cb8c58535f33801c1}{
+\index{mainwindow.cpp@{mainwindow.cpp}!properties\_\-times@{properties\_\-times}}
+\index{properties\_\-times@{properties\_\-times}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{properties\_\-times}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf properties\_\-times} = 0}}
+\label{mainwindow_8cpp_af9a76d8fef8b0c2cb8c58535f33801c1}
+
+
+Definition at line 84 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_abe45c1cc4b6d92ec1d811272ee2de8a0}{
+\index{mainwindow.cpp@{mainwindow.cpp}!propertieswindow@{propertieswindow}}
+\index{propertieswindow@{propertieswindow}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{propertieswindow}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf propertieswindow} = 0}}
+\label{mainwindow_8cpp_abe45c1cc4b6d92ec1d811272ee2de8a0}
+
+
+Definition at line 86 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_acd8df10a3a7630b3ff5ea0c2b597922e}{
+\index{mainwindow.cpp@{mainwindow.cpp}!random\_\-first@{random\_\-first}}
+\index{random\_\-first@{random\_\-first}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{random\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf random\_\-first} = 0}}
+\label{mainwindow_8cpp_acd8df10a3a7630b3ff5ea0c2b597922e}
+
+
+Definition at line 75 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a652f3ec6c0e23f72e16fa43bf0b407f1}{
+\index{mainwindow.cpp@{mainwindow.cpp}!seconds\_\-left@{seconds\_\-left}}
+\index{seconds\_\-left@{seconds\_\-left}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{seconds\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf seconds\_\-left} = 0}}
+\label{mainwindow_8cpp_a652f3ec6c0e23f72e16fa43bf0b407f1}
+
+
+Definition at line 74 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a8715771c19d8223abb2abe25f5f06be0}{
+\index{mainwindow.cpp@{mainwindow.cpp}!seconds\_\-minutes\_\-hours@{seconds\_\-minutes\_\-hours}}
+\index{seconds\_\-minutes\_\-hours@{seconds\_\-minutes\_\-hours}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{seconds\_\-minutes\_\-hours}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf seconds\_\-minutes\_\-hours} = 0}}
+\label{mainwindow_8cpp_a8715771c19d8223abb2abe25f5f06be0}
+
+
+Definition at line 77 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a57575a2e64cb4b9f815d1cb540689402}{
+\index{mainwindow.cpp@{mainwindow.cpp}!show\_\-notification@{show\_\-notification}}
+\index{show\_\-notification@{show\_\-notification}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{show\_\-notification}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf show\_\-notification}}}
+\label{mainwindow_8cpp_a57575a2e64cb4b9f815d1cb540689402}
+
+
+Definition at line 82 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a766fcc640f3cd66e7b53c55ec392c842}{
+\index{mainwindow.cpp@{mainwindow.cpp}!start\_\-just\_\-clicked@{start\_\-just\_\-clicked}}
+\index{start\_\-just\_\-clicked@{start\_\-just\_\-clicked}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{start\_\-just\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf start\_\-just\_\-clicked} = false}}
+\label{mainwindow_8cpp_a766fcc640f3cd66e7b53c55ec392c842}
+
+
+Definition at line 89 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_a6e33a04ebc80fee4946b364681fecffd}{
+\index{mainwindow.cpp@{mainwindow.cpp}!success@{success}}
+\index{success@{success}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{success}]{\setlength{\rightskip}{0pt plus 5cm}gboolean {\bf success}}}
+\label{mainwindow_8cpp_a6e33a04ebc80fee4946b364681fecffd}
+
+
+Definition at line 94 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_affd617bf010aaf31a24e8b51f6afeea4}{
+\index{mainwindow.cpp@{mainwindow.cpp}!tmp\_\-number@{tmp\_\-number}}
+\index{tmp\_\-number@{tmp\_\-number}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{tmp\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tmp\_\-number} = 0}}
+\label{mainwindow_8cpp_affd617bf010aaf31a24e8b51f6afeea4}
+
+
+Definition at line 76 of file mainwindow.cpp.
+
+\hypertarget{mainwindow_8cpp_ad169bac577628d452c8ddddffcd2c22c}{
+\index{mainwindow.cpp@{mainwindow.cpp}!tmp\_\-seconds\_\-minutes\_\-hours@{tmp\_\-seconds\_\-minutes\_\-hours}}
+\index{tmp\_\-seconds\_\-minutes\_\-hours@{tmp\_\-seconds\_\-minutes\_\-hours}!mainwindow.cpp@{mainwindow.cpp}}
+\subsubsection[{tmp\_\-seconds\_\-minutes\_\-hours}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tmp\_\-seconds\_\-minutes\_\-hours} = 0}}
+\label{mainwindow_8cpp_ad169bac577628d452c8ddddffcd2c22c}
+
+
+Definition at line 78 of file mainwindow.cpp.
+

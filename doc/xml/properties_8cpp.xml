@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="properties_8cpp" kind="file">
+    <compoundname>properties.cpp</compoundname>
+    <includes refid="properties_8h" local="yes">properties.h</includes>
+    <includes refid="ui__properties_8h" local="yes">ui_properties.h</includes>
+    <includes local="yes">glob.h</includes>
+    <includes local="no">QDir</includes>
+    <includes local="no">QImage</includes>
+    <includes local="no">QFileInfo</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="889">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="885">
+        <label>glob.h</label>
+      </node>
+      <node id="869">
+        <label>/home/maxmahem/wallch-2.0/properties.cpp</label>
+        <link refid="properties.cpp"/>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>QtGui/QLineEdit</label>
+      </node>
+      <node id="877">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="884">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="887">
+        <label>QImage</label>
+      </node>
+      <node id="890">
+        <label>fstream</label>
+      </node>
+      <node id="879">
+        <label>QtGui/QDialog</label>
+      </node>
+      <node id="875">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="871">
+        <label>QDialog</label>
+      </node>
+      <node id="872">
+        <label>QGroupBox</label>
+      </node>
+      <node id="882">
+        <label>QtGui/QLabel</label>
+      </node>
+      <node id="870">
+        <label>properties.h</label>
+        <link refid="properties_8h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+      </node>
+      <node id="876">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="880">
+        <label>QtGui/QFormLayout</label>
+      </node>
+      <node id="892">
+        <label>iostream</label>
+      </node>
+      <node id="873">
+        <label>QGridLayout</label>
+      </node>
+      <node id="878">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="886">
+        <label>QDir</label>
+      </node>
+      <node id="874">
+        <label>ui_properties.h</label>
+        <link refid="ui__properties_8h"/>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>stdio.h</label>
+      </node>
+      <node id="888">
+        <label>QFileInfo</label>
+      </node>
+      <node id="881">
+        <label>QtGui/QHeaderView</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="34" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" compoundref="properties_8cpp" startline="36" endline="74">properties::properties</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="properties_8cpp_1ab6f3c269fc46c9c1c0f81b3431240138" prot="public" static="no" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="78" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="properties_8cpp_1ae31ac69c75bb42f47c8d6a7cde4937c6" prot="public" static="no" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>__pad1__</definition>
+        <argsstring></argsstring>
+        <name>__pad1__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="81" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="properties_8cpp_1acb405321a5c6ae16fef21290649f2666" prot="public" static="no" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>__pad2__</definition>
+        <argsstring></argsstring>
+        <name>__pad2__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="88" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="properties_8cpp_1a38702cb680157e9541f1610928c148ed" prot="public" static="no" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>optionsGroupBoxLayout</definition>
+        <argsstring></argsstring>
+        <name>optionsGroupBoxLayout</name>
+        <initializer> new QGridLayout</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="90" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="properties_8cpp_1aa6f626203c740423c9dfcbbe727f90b4" prot="public" static="no" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>__pad3__</definition>
+        <argsstring></argsstring>
+        <name>__pad3__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="107" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="properties_8cpp_1aa126f02bcfcec342fb72926c73b4aeb3" prot="public" static="no" readable="no" writable="no" gettable="no" settable="no">
+        <type></type>
+        <definition>__pad4__</definition>
+        <argsstring></argsstring>
+        <name>__pad4__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="113" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="properties_8cpp_1a6be42b5ee467246e7d2ca5b97631f75f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>scaledSize</type>
+        <definition>scaledSize scale</definition>
+        <argsstring>(ui-&gt;label-&gt;size(), Qt::KeepAspectRatio)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>ui-&gt;label-&gt;</type>
+          <declname>size</declname>
+          <array>()</array>
+        </param>
+        <param>
+          <type>Qt::KeepAspectRatio</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a4d79da0f531d0b5df336420a4e85b960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(!ui-&gt;label-&gt;pixmap()||scaledSize!=ui-&gt;label-&gt;pixmap()-&gt;size()) updateScreenshotLabel()</argsstring>
+        <name>if</name>
+        <param>
+          <type>!ui-&gt;label-&gt;pixmap()||scaledSize!</type>
+          <defval>ui-&gt;label-&gt;pixmap()-&gt;size()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a270da5afc33d641efa96999c540f8d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;label_2, 0, 0)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>label_2</declname>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1ab67e5cf5715d7578bcf3a3bf2189207b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;image_name, 0, 1)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>image_name</declname>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1aed66291eba7283ab8f1327c84f6a7696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;label_4, 1, 0)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>label_4</declname>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a970d4c49866e7910434a42462130ee0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;image_size, 1, 1)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>image_size</declname>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1ac525b7e6bd9a5d2dbb8f77cf939443ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;label_7, 2, 0)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>label_7</declname>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1ad76e78d828486306dbb55589ce556d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;image_width, 2, 1)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a4d8fc6077d1d2da6a0a660309e0da85e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;label_6, 3, 0)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>label_6</declname>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1aecc5c221f6a91d8f35d7c75af17724f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;image_height, 3, 1)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a341cd6d8710f0ddfcc5aad75ae25024e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;label_3, 4, 0)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>label_3</declname>
+        </param>
+        <param>
+          <type>4</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a6254fb5ec70ee671f372c8b9df240cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;image_type, 4, 1)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>image_type</declname>
+        </param>
+        <param>
+          <type>4</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1ae8eeb8d53d5fc63f2bbfb1d6e46b4fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;label_5, 5, 0)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>label_5</declname>
+        </param>
+        <param>
+          <type>5</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1ac77f5324e6007d12956bc3307fa8e71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBoxLayout</type>
+        <definition>optionsGroupBoxLayout addWidget</definition>
+        <argsstring>(ui-&gt;image_location, 5, 1)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>image_location</declname>
+        </param>
+        <param>
+          <type>5</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1af96de5b49f5f6a97407fddab9cacb2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>optionsGroupBox</type>
+        <definition>optionsGroupBox setLayout</definition>
+        <argsstring>(optionsGroupBoxLayout)</argsstring>
+        <name>setLayout</name>
+        <param>
+          <type>optionsGroupBoxLayout</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="103"/>
+        <referencedby refid="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" compoundref="properties_8cpp" startline="36" endline="74">properties::properties</referencedby>
+        <referencedby refid="classQOpenCVWidget_1abf749cf9489d7d186a5bed5dccc04f29" compoundref="QOpenCVWidget_8cpp" startline="25" endline="39">QOpenCVWidget::QOpenCVWidget</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1aa811dc4742824b55fc5500989670ddd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>buttonsLayout</type>
+        <definition>buttonsLayout addStretch</definition>
+        <argsstring>()</argsstring>
+        <name>addStretch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="properties_8cpp_1a6a84531333712c281e4c848677f0348a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>buttonsLayout</type>
+        <definition>buttonsLayout addWidget</definition>
+        <argsstring>(ui-&gt;pushButton)</argsstring>
+        <name>addWidget</name>
+        <param>
+          <type>ui-&gt;</type>
+          <declname>pushButton</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.cpp" line="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*Wallch<sp/>-<sp/>WallpaperChanger</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">A<sp/>tool<sp/>for<sp/>changing<sp/>Desktop<sp/>Wallpapers<sp/>automatically</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">with<sp/>lots<sp/>of<sp/>features</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Copyright<sp/>©<sp/>2011<sp/>by<sp/>Alex<sp/>Solanos<sp/>and<sp/>Leon<sp/>Vytanos</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="properties_8h" kindref="compound">properties.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ui__properties_8h" kindref="compound">ui_properties.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;glob.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDir&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileInfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" refkind="member"><highlight class="normal">QString<sp/><ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" refkind="member"><highlight class="normal"><ref refid="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" kindref="member">properties::properties</ref>(QString&amp;<sp/>img,<sp/>QWidget<sp/>*parent)<sp/>:<sp/>QDialog(parent),<sp/>ui(new<sp/>Ui::<ref refid="classproperties" kindref="compound">properties</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1a03ce4f30d999c6f436cfcba2c71153f5" kindref="member">setupUi</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>createOptionsGroupBox();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>createButtonsLayout();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>mainLayout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>mainLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>mainLayout-&gt;addWidget(optionsGroupBox);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>mainLayout-&gt;addLayout(buttonsLayout);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="properties_8cpp_1af96de5b49f5f6a97407fddab9cacb2ed" kindref="member">setLayout</ref>(mainLayout);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>=img;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/>qimg(<ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1a433aba0e45c4e4f765a24849b9b23811" kindref="member">image_height</ref>-&gt;setText(<ref refid="mainwindow_8cpp_1a7106e2abc437ad981830d14176d15f09" kindref="member">QString::number</ref>(qimg.height())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>px&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1a6cb30319918b6af8d51132c79d6dcc23" kindref="member">image_width</ref>-&gt;setText(<ref refid="mainwindow_8cpp_1a7106e2abc437ad981830d14176d15f09" kindref="member">QString::number</ref>(qimg.width())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>px&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>QFileInfo<sp/>qfile(<ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size=float(qfile.size())/1048576;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rounded_size=((int)(size*100+0.5)/100.0);<sp/></highlight><highlight class="comment">//we<sp/>won&apos;t<sp/>have<sp/>negative<sp/>numbers<sp/>so<sp/>I<sp/>can<sp/>use<sp/>this<sp/>B)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1a16f33c1f91ad25eb781546c86afcf155" kindref="member">image_size</ref>-&gt;setText(<ref refid="mainwindow_8cpp_1a7106e2abc437ad981830d14176d15f09" kindref="member">QString::number</ref>(rounded_size)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MB&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1ab9a95da6a6b87b6ceeae64de87feb322" kindref="member">image_name</ref>-&gt;setText(qfile.baseName());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1aecc35167b0fe37745a8d40bcf25c86d8" kindref="member">image_location</ref>-&gt;setText(qfile.absoluteDir().path());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>image_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>qcommand1=</highlight><highlight class="stringliteral">&quot;file<sp/>-b<sp/>\&quot;&quot;</highlight><highlight class="normal">+<ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>+</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*pipe<sp/>=<sp/>popen(qcommand1.toLocal8Bit().data(),<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!feof(pipe))<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fgets(buffer,<sp/>128,<sp/>pipe)<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image_type<sp/>+=<sp/>buffer;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>pclose(pipe);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>qimage_type<sp/>=<sp/>QString::fromStdString(image_type).replace(QString(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">),QString(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1adcc106f28130b1fd13a84ef061ac36b6" kindref="member">image_type</ref>-&gt;setText(qimage_type);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1adcc106f28130b1fd13a84ef061ac36b6" kindref="member">image_type</ref>-&gt;setCursorPosition(0);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1aecc35167b0fe37745a8d40bcf25c86d8" kindref="member">image_location</ref>-&gt;setCursorPosition(0);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>originalPixmap<sp/>=<sp/>QPixmap();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>originalPixmap<sp/>=<sp/>QPixmap().fromImage(qimg);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>updateScreenshotLabel();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classproperties_1af8e12abaf059c045cf3f8205b0f5f383" refkind="member"><highlight class="normal"><ref refid="classproperties_1af8e12abaf059c045cf3f8205b0f5f383" kindref="member">properties::~properties</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="properties_8cpp_1ab6f3c269fc46c9c1c0f81b3431240138" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>properties::on_pushButton_clicked()<sp/>{<sp/>close();<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproperties_1ad0211b85fbce4b735d5d8ee5a6680de3" kindref="member">properties::resizeEvent</ref>(QResizeEvent<sp/>*)<sp/>{</highlight></codeline>
+<codeline lineno="81" refid="properties_8cpp_1ae31ac69c75bb42f47c8d6a7cde4937c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSize<sp/>scaledSize<sp/>=<sp/>originalPixmap.size();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>scaledSize.scale(ui-&gt;<ref refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kindref="member">label</ref>-&gt;size(),<sp/>Qt::KeepAspectRatio);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ui-&gt;<ref refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kindref="member">label</ref>-&gt;pixmap()<sp/>||<sp/>scaledSize<sp/>!=<sp/>ui-&gt;<ref refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kindref="member">label</ref>-&gt;pixmap()-&gt;size())</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>updateScreenshotLabel();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>properties::createOptionsGroupBox()<sp/>{</highlight></codeline>
+<codeline lineno="88" refid="properties_8cpp_1acb405321a5c6ae16fef21290649f2666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBox<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGroupBox();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="properties_8cpp_1a38702cb680157e9541f1610928c148ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a1376b8960298c79c539abb1cc5446743" kindref="member">label_2</ref>,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1ab9a95da6a6b87b6ceeae64de87feb322" kindref="member">image_name</ref>,<sp/>0,<sp/>1);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a3cc1c78396a6ff54c641120805eefe57" kindref="member">label_4</ref>,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a16f33c1f91ad25eb781546c86afcf155" kindref="member">image_size</ref>,<sp/>1,<sp/>1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1acc7d3274c77af03c936c343605939957" kindref="member">label_7</ref>,<sp/>2,<sp/>0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a6cb30319918b6af8d51132c79d6dcc23" kindref="member">image_width</ref>,<sp/>2,<sp/>1);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a71f9da68c3afbed85206add43969427d" kindref="member">label_6</ref>,<sp/>3,<sp/>0);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a433aba0e45c4e4f765a24849b9b23811" kindref="member">image_height</ref>,<sp/>3,<sp/>1);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a1bff93f4244d3116dc1257d7d7dc7a0e" kindref="member">label_3</ref>,<sp/>4,<sp/>0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1adcc106f28130b1fd13a84ef061ac36b6" kindref="member">image_type</ref>,<sp/>4,<sp/>1);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1a6702ccc6363460b0b6df3068f72785d5" kindref="member">label_5</ref>,<sp/>5,<sp/>0);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBoxLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1aecc35167b0fe37745a8d40bcf25c86d8" kindref="member">image_location</ref>,<sp/>5,<sp/>1);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>optionsGroupBox-&gt;setLayout(optionsGroupBoxLayout);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>properties::createButtonsLayout()<sp/>{</highlight></codeline>
+<codeline lineno="107" refid="properties_8cpp_1aa6f626203c740423c9dfcbbe727f90b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>buttonsLayout<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>buttonsLayout-&gt;addStretch();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>buttonsLayout-&gt;addWidget(ui-&gt;<ref refid="classUi__properties_1aaecc391d7033c644061cb6f1bf380bd2" kindref="member">pushButton</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>properties::updateScreenshotLabel()<sp/>{</highlight></codeline>
+<codeline lineno="113" refid="properties_8cpp_1aa126f02bcfcec342fb72926c73b4aeb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kindref="member">label</ref>-&gt;setPixmap(originalPixmap.scaled(ui-&gt;<ref refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kindref="member">label</ref>-&gt;size(),<sp/>Qt::KeepAspectRatio,<sp/>Qt::SmoothTransformation));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/properties.cpp"/>
+  </compounddef>
+</doxygen>

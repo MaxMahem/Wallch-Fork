@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Pictures/bmp_image.png</file>
+        <file>Pictures/gif_image.png</file>
+        <file>Pictures/jpeg_image.png</file>
+        <file>Pictures/png_image.png</file>
+        <file>Pictures/screen.png</file>
+        <file>Pictures/earth.png</file>
+        <file>Pictures/wallch.png</file>
+        <file>Pictures/world_sunlight_map_rectangular_small.jpg</file>
+        <file>Pictures/world_sunlight_map_hemisphere_small.jpg</file>
+        <file>Pictures/speakerL.png</file>
+        <file>Pictures/speakerR.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>data/to_usr_share/wallch/files/notification.ogg</file>
+    </qresource>
+</RCC>

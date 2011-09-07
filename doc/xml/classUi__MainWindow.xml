@@ -1,0 +1,883 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi__MainWindow" kind="class" prot="public">
+    <compoundname>Ui_MainWindow</compoundname>
+    <derivedcompoundref refid="classUi_1_1MainWindow" prot="public" virt="non-virtual">Ui::MainWindow</derivedcompoundref>
+    <includes refid="ui__mainwindow_8h" local="no">ui_mainwindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_Preferences</definition>
+        <argsstring></argsstring>
+        <name>action_Preferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="35" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_About</definition>
+        <argsstring></argsstring>
+        <name>action_About</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionQuit_Ctrl_Q</definition>
+        <argsstring></argsstring>
+        <name>actionQuit_Ctrl_Q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="37" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_Start</definition>
+        <argsstring></argsstring>
+        <name>action_Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="38" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionS_top</definition>
+        <argsstring></argsstring>
+        <name>actionS_top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a0c7d1b72703df51a22fba67c15a31e8b" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_Pause</definition>
+        <argsstring></argsstring>
+        <name>action_Pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="40" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_Next_Image</definition>
+        <argsstring></argsstring>
+        <name>action_Next_Image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="41" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionRemove_list</definition>
+        <argsstring></argsstring>
+        <name>actionRemove_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="42" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_Load</definition>
+        <argsstring></argsstring>
+        <name>action_Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="43" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" compoundref="mainwindow_8cpp" startline="485" endline="509">MainWindow::load</referencedby>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionAdd_single_images</definition>
+        <argsstring></argsstring>
+        <name>actionAdd_single_images</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="44" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionAdd_Folder</definition>
+        <argsstring></argsstring>
+        <name>actionAdd_Folder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="45" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionAdd_a_Wallch_album</definition>
+        <argsstring></argsstring>
+        <name>actionAdd_a_Wallch_album</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="46" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a888a3a2a55d1179693017dc98e281b76" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionHistory</definition>
+        <argsstring></argsstring>
+        <name>actionHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="47" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::action_Previous_Image_Shift_Ctrl_B</definition>
+        <argsstring></argsstring>
+        <name>action_Previous_Image_Shift_Ctrl_B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="48" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::actionExtras</definition>
+        <argsstring></argsstring>
+        <name>actionExtras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="49" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" prot="public" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* Ui_MainWindow::save_as</definition>
+        <argsstring></argsstring>
+        <name>save_as</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="50" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a30075506c2116c3ed4ff25e07ae75f81" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_MainWindow::centralWidget</definition>
+        <argsstring></argsstring>
+        <name>centralWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="51" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" prot="public" static="no" mutable="no">
+        <type>QListWidget *</type>
+        <definition>QListWidget* Ui_MainWindow::listWidget</definition>
+        <argsstring></argsstring>
+        <name>listWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="52" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a0d88444127f5f56a4db14d850938dfb6" compoundref="mainwindow_8cpp" startline="516" endline="519">MainWindow::copyImage</referencedby>
+        <referencedby refid="classMainWindow_1a5dfecbc3190aaa5b1d4ff5fe84f8c12b" compoundref="mainwindow_8cpp" startline="511" endline="514">MainWindow::copyPath</referencedby>
+        <referencedby refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" compoundref="mainwindow_8cpp" startline="485" endline="509">MainWindow::load</referencedby>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classMainWindow_1a3b43993780b5d104db3472ce7e9180e6" compoundref="mainwindow_8cpp" startline="937" endline="939">MainWindow::Openfolder</referencedby>
+        <referencedby refid="classMainWindow_1a202e9111e76a514c151fffa424b01b73" compoundref="mainwindow_8cpp" startline="465" endline="474">MainWindow::pruneList</referencedby>
+        <referencedby refid="classMainWindow_1aea6d2dc29c9cb6f4848a540ba3e5007e" compoundref="mainwindow_8cpp" startline="476" endline="483">MainWindow::removeDisk</referencedby>
+        <referencedby refid="classMainWindow_1ae50efe3540a13d96ec86c677ad56880c" compoundref="mainwindow_8cpp" startline="986" endline="1008">MainWindow::save_album</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+        <referencedby refid="classMainWindow_1a4da9a80d3c5a312dde4fa246436d100f" compoundref="mainwindow_8cpp" startline="941" endline="946">MainWindow::showProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ad6bab8fb8903b8f41afea1218ee52695" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_5</definition>
+        <argsstring></argsstring>
+        <name>label_5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="53" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a663f728e6244926a795c6e6892673b1d" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_6</definition>
+        <argsstring></argsstring>
+        <name>label_6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="54" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a13936e6f18b1c90402b3c7a3c92b6cdb" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_7</definition>
+        <argsstring></argsstring>
+        <name>label_7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="55" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1af183bfbfb9f38bbdd60caf92b15e23dc" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_8</definition>
+        <argsstring></argsstring>
+        <name>label_8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="56" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ad9c89133780f28e6efa2ec17ceb9cff5" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="57" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_9</definition>
+        <argsstring></argsstring>
+        <name>label_9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="58" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" compoundref="mainwindow_8cpp" startline="485" endline="509">MainWindow::load</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::addfolder</definition>
+        <argsstring></argsstring>
+        <name>addfolder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="59" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::addButton</definition>
+        <argsstring></argsstring>
+        <name>addButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="60" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::removeallButton</definition>
+        <argsstring></argsstring>
+        <name>removeallButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="61" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::removeButton</definition>
+        <argsstring></argsstring>
+        <name>removeButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="62" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ad200a2549a1067eff25bb476691c6555" prot="public" static="no" mutable="no">
+        <type>QProgressBar *</type>
+        <definition>QProgressBar* Ui_MainWindow::time_for_next</definition>
+        <argsstring></argsstring>
+        <name>time_for_next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="63" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ab96ab0f0578098521fa69a75aa5cdde8" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_MainWindow::layoutWidget</definition>
+        <argsstring></argsstring>
+        <name>layoutWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="64" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a525ed3c5fe0784ac502ee222fba4e205" prot="public" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout* Ui_MainWindow::gridLayout</definition>
+        <argsstring></argsstring>
+        <name>gridLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="65" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a2e2516d755e4dd53fc905dabddf2738a" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_2</definition>
+        <argsstring></argsstring>
+        <name>label_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="66" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1aed2eea321894fe7a8f3e23b78fc42793" prot="public" static="no" mutable="no">
+        <type>QSlider *</type>
+        <definition>QSlider* Ui_MainWindow::timerSlider</definition>
+        <argsstring></argsstring>
+        <name>timerSlider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="67" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a9dc4dba26b83e0c94aa566e1c564420b" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_MainWindow::label_10</definition>
+        <argsstring></argsstring>
+        <name>label_10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="68" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::previousButton</definition>
+        <argsstring></argsstring>
+        <name>previousButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="69" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::nextButton</definition>
+        <argsstring></argsstring>
+        <name>nextButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="70" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a571e513ee5005742161fd4de81c86ca2" compoundref="mainwindow_8cpp" startline="324" endline="350">MainWindow::clickSysTrayIcon</referencedby>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::startButton</definition>
+        <argsstring></argsstring>
+        <name>startButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="71" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::stopButton</definition>
+        <argsstring></argsstring>
+        <name>stopButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="72" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a2be1c24ec9adfca18e1dcc951931457f" prot="public" static="no" mutable="no">
+        <type>QMenuBar *</type>
+        <definition>QMenuBar* Ui_MainWindow::menuBar</definition>
+        <argsstring></argsstring>
+        <name>menuBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="73" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a6d6a92a6bccde97ab13fce9014eb25d4" prot="public" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* Ui_MainWindow::menu_File</definition>
+        <argsstring></argsstring>
+        <name>menu_File</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="74" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" prot="public" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* Ui_MainWindow::menuAdd_Files</definition>
+        <argsstring></argsstring>
+        <name>menuAdd_Files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="75" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a11f322f3af9857e5138c8024d84d0279" prot="public" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* Ui_MainWindow::menu_Edit</definition>
+        <argsstring></argsstring>
+        <name>menu_Edit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="76" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1ab95dbfbb0550206aeac76db36f491548" prot="public" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* Ui_MainWindow::menuHelp</definition>
+        <argsstring></argsstring>
+        <name>menuHelp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="77" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__MainWindow_1a50fa481337604bcc8bf68de18ab16ecd" prot="public" static="no" mutable="no">
+        <type>QStatusBar *</type>
+        <definition>QStatusBar* Ui_MainWindow::statusBar</definition>
+        <argsstring></argsstring>
+        <name>statusBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="78" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_MainWindow::setupUi</definition>
+        <argsstring>(QMainWindow *MainWindow)</argsstring>
+        <name>setupUi</name>
+        <param>
+          <type>QMainWindow *</type>
+          <declname>MainWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="81" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="80" bodyend="328"/>
+        <references refid="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" compoundref="ui__mainwindow_8h" startline="36">action_About</references>
+        <references refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" compoundref="ui__mainwindow_8h" startline="43">action_Load</references>
+        <references refid="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" compoundref="ui__mainwindow_8h" startline="41">action_Next_Image</references>
+        <references refid="classUi__MainWindow_1a0c7d1b72703df51a22fba67c15a31e8b" compoundref="ui__mainwindow_8h" startline="40">action_Pause</references>
+        <references refid="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" compoundref="ui__mainwindow_8h" startline="35">action_Preferences</references>
+        <references refid="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" compoundref="ui__mainwindow_8h" startline="48">action_Previous_Image_Shift_Ctrl_B</references>
+        <references refid="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" compoundref="ui__mainwindow_8h" startline="38">action_Start</references>
+        <references refid="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" compoundref="ui__mainwindow_8h" startline="46">actionAdd_a_Wallch_album</references>
+        <references refid="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" compoundref="ui__mainwindow_8h" startline="45">actionAdd_Folder</references>
+        <references refid="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" compoundref="ui__mainwindow_8h" startline="44">actionAdd_single_images</references>
+        <references refid="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" compoundref="ui__mainwindow_8h" startline="49">actionExtras</references>
+        <references refid="classUi__MainWindow_1a888a3a2a55d1179693017dc98e281b76" compoundref="ui__mainwindow_8h" startline="47">actionHistory</references>
+        <references refid="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" compoundref="ui__mainwindow_8h" startline="37">actionQuit_Ctrl_Q</references>
+        <references refid="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" compoundref="ui__mainwindow_8h" startline="42">actionRemove_list</references>
+        <references refid="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" compoundref="ui__mainwindow_8h" startline="39">actionS_top</references>
+        <references refid="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" compoundref="ui__mainwindow_8h" startline="60">addButton</references>
+        <references refid="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" compoundref="ui__mainwindow_8h" startline="59">addfolder</references>
+        <references refid="classUi__MainWindow_1a30075506c2116c3ed4ff25e07ae75f81" compoundref="ui__mainwindow_8h" startline="51">centralWidget</references>
+        <references refid="classUi__MainWindow_1a525ed3c5fe0784ac502ee222fba4e205" compoundref="ui__mainwindow_8h" startline="65">gridLayout</references>
+        <references refid="classUi__MainWindow_1ad9c89133780f28e6efa2ec17ceb9cff5" compoundref="ui__mainwindow_8h" startline="57">label</references>
+        <references refid="classUi__MainWindow_1a9dc4dba26b83e0c94aa566e1c564420b" compoundref="ui__mainwindow_8h" startline="68">label_10</references>
+        <references refid="classUi__MainWindow_1a2e2516d755e4dd53fc905dabddf2738a" compoundref="ui__mainwindow_8h" startline="66">label_2</references>
+        <references refid="classUi__MainWindow_1ad6bab8fb8903b8f41afea1218ee52695" compoundref="ui__mainwindow_8h" startline="53">label_5</references>
+        <references refid="classUi__MainWindow_1a663f728e6244926a795c6e6892673b1d" compoundref="ui__mainwindow_8h" startline="54">label_6</references>
+        <references refid="classUi__MainWindow_1a13936e6f18b1c90402b3c7a3c92b6cdb" compoundref="ui__mainwindow_8h" startline="55">label_7</references>
+        <references refid="classUi__MainWindow_1af183bfbfb9f38bbdd60caf92b15e23dc" compoundref="ui__mainwindow_8h" startline="56">label_8</references>
+        <references refid="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" compoundref="ui__mainwindow_8h" startline="58">label_9</references>
+        <references refid="classUi__MainWindow_1ab96ab0f0578098521fa69a75aa5cdde8" compoundref="ui__mainwindow_8h" startline="64">layoutWidget</references>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">listWidget</references>
+        <references refid="classUi__MainWindow_1a11f322f3af9857e5138c8024d84d0279" compoundref="ui__mainwindow_8h" startline="76">menu_Edit</references>
+        <references refid="classUi__MainWindow_1a6d6a92a6bccde97ab13fce9014eb25d4" compoundref="ui__mainwindow_8h" startline="74">menu_File</references>
+        <references refid="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" compoundref="ui__mainwindow_8h" startline="75">menuAdd_Files</references>
+        <references refid="classUi__MainWindow_1a2be1c24ec9adfca18e1dcc951931457f" compoundref="ui__mainwindow_8h" startline="73">menuBar</references>
+        <references refid="classUi__MainWindow_1ab95dbfbb0550206aeac76db36f491548" compoundref="ui__mainwindow_8h" startline="77">menuHelp</references>
+        <references refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" compoundref="ui__mainwindow_8h" startline="70">nextButton</references>
+        <references refid="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" compoundref="ui__mainwindow_8h" startline="69">previousButton</references>
+        <references refid="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" compoundref="ui__mainwindow_8h" startline="61">removeallButton</references>
+        <references refid="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" compoundref="ui__mainwindow_8h" startline="62">removeButton</references>
+        <references refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">retranslateUi</references>
+        <references refid="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" compoundref="ui__mainwindow_8h" startline="50">save_as</references>
+        <references refid="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" compoundref="ui__mainwindow_8h" startline="71">startButton</references>
+        <references refid="classUi__MainWindow_1a50fa481337604bcc8bf68de18ab16ecd" compoundref="ui__mainwindow_8h" startline="78">statusBar</references>
+        <references refid="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" compoundref="ui__mainwindow_8h" startline="72">stopButton</references>
+        <references refid="classUi__MainWindow_1ad200a2549a1067eff25bb476691c6555" compoundref="ui__mainwindow_8h" startline="63">time_for_next</references>
+        <references refid="classUi__MainWindow_1aed2eea321894fe7a8f3e23b78fc42793" compoundref="ui__mainwindow_8h" startline="67">timerSlider</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow::MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_MainWindow::retranslateUi</definition>
+        <argsstring>(QMainWindow *MainWindow)</argsstring>
+        <name>retranslateUi</name>
+        <param>
+          <type>QMainWindow *</type>
+          <declname>MainWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="331" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="330" bodyend="412"/>
+        <references refid="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" compoundref="ui__mainwindow_8h" startline="36">action_About</references>
+        <references refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" compoundref="ui__mainwindow_8h" startline="43">action_Load</references>
+        <references refid="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" compoundref="ui__mainwindow_8h" startline="41">action_Next_Image</references>
+        <references refid="classUi__MainWindow_1a0c7d1b72703df51a22fba67c15a31e8b" compoundref="ui__mainwindow_8h" startline="40">action_Pause</references>
+        <references refid="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" compoundref="ui__mainwindow_8h" startline="35">action_Preferences</references>
+        <references refid="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" compoundref="ui__mainwindow_8h" startline="48">action_Previous_Image_Shift_Ctrl_B</references>
+        <references refid="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" compoundref="ui__mainwindow_8h" startline="38">action_Start</references>
+        <references refid="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" compoundref="ui__mainwindow_8h" startline="46">actionAdd_a_Wallch_album</references>
+        <references refid="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" compoundref="ui__mainwindow_8h" startline="45">actionAdd_Folder</references>
+        <references refid="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" compoundref="ui__mainwindow_8h" startline="44">actionAdd_single_images</references>
+        <references refid="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" compoundref="ui__mainwindow_8h" startline="49">actionExtras</references>
+        <references refid="classUi__MainWindow_1a888a3a2a55d1179693017dc98e281b76" compoundref="ui__mainwindow_8h" startline="47">actionHistory</references>
+        <references refid="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" compoundref="ui__mainwindow_8h" startline="37">actionQuit_Ctrl_Q</references>
+        <references refid="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" compoundref="ui__mainwindow_8h" startline="42">actionRemove_list</references>
+        <references refid="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" compoundref="ui__mainwindow_8h" startline="39">actionS_top</references>
+        <references refid="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" compoundref="ui__mainwindow_8h" startline="60">addButton</references>
+        <references refid="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" compoundref="ui__mainwindow_8h" startline="59">addfolder</references>
+        <references refid="classUi__MainWindow_1ad9c89133780f28e6efa2ec17ceb9cff5" compoundref="ui__mainwindow_8h" startline="57">label</references>
+        <references refid="classUi__MainWindow_1a2e2516d755e4dd53fc905dabddf2738a" compoundref="ui__mainwindow_8h" startline="66">label_2</references>
+        <references refid="classUi__MainWindow_1ad6bab8fb8903b8f41afea1218ee52695" compoundref="ui__mainwindow_8h" startline="53">label_5</references>
+        <references refid="classUi__MainWindow_1a663f728e6244926a795c6e6892673b1d" compoundref="ui__mainwindow_8h" startline="54">label_6</references>
+        <references refid="classUi__MainWindow_1a13936e6f18b1c90402b3c7a3c92b6cdb" compoundref="ui__mainwindow_8h" startline="55">label_7</references>
+        <references refid="classUi__MainWindow_1af183bfbfb9f38bbdd60caf92b15e23dc" compoundref="ui__mainwindow_8h" startline="56">label_8</references>
+        <references refid="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" compoundref="ui__mainwindow_8h" startline="58">label_9</references>
+        <references refid="classUi__MainWindow_1a11f322f3af9857e5138c8024d84d0279" compoundref="ui__mainwindow_8h" startline="76">menu_Edit</references>
+        <references refid="classUi__MainWindow_1a6d6a92a6bccde97ab13fce9014eb25d4" compoundref="ui__mainwindow_8h" startline="74">menu_File</references>
+        <references refid="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" compoundref="ui__mainwindow_8h" startline="75">menuAdd_Files</references>
+        <references refid="classUi__MainWindow_1ab95dbfbb0550206aeac76db36f491548" compoundref="ui__mainwindow_8h" startline="77">menuHelp</references>
+        <references refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" compoundref="ui__mainwindow_8h" startline="70">nextButton</references>
+        <references refid="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" compoundref="ui__mainwindow_8h" startline="69">previousButton</references>
+        <references refid="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" compoundref="ui__mainwindow_8h" startline="61">removeallButton</references>
+        <references refid="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" compoundref="ui__mainwindow_8h" startline="62">removeButton</references>
+        <references refid="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" compoundref="ui__mainwindow_8h" startline="50">save_as</references>
+        <references refid="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" compoundref="ui__mainwindow_8h" startline="71">startButton</references>
+        <references refid="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" compoundref="ui__mainwindow_8h" startline="72">stopButton</references>
+        <references refid="classUi__MainWindow_1ad200a2549a1067eff25bb476691c6555" compoundref="ui__mainwindow_8h" startline="63">time_for_next</references>
+        <referencedby refid="classMainWindow_1af4ca5d0d3d18ddcb7d54b6596bbf4797" compoundref="mainwindow_8cpp" startline="289" endline="322">MainWindow::changeEvent</referencedby>
+        <referencedby refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="134">
+        <label>Ui::MainWindow</label>
+        <link refid="classUi_1_1MainWindow"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>Ui_MainWindow</label>
+        <link refid="classUi__MainWindow"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="33" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="32" bodyend="414"/>
+    <listofallmembers>
+      <member refid="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_About</name></member>
+      <member refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_Load</name></member>
+      <member refid="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_Next_Image</name></member>
+      <member refid="classUi__MainWindow_1a0c7d1b72703df51a22fba67c15a31e8b" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_Pause</name></member>
+      <member refid="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_Preferences</name></member>
+      <member refid="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_Previous_Image_Shift_Ctrl_B</name></member>
+      <member refid="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_Start</name></member>
+      <member refid="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionAdd_a_Wallch_album</name></member>
+      <member refid="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionAdd_Folder</name></member>
+      <member refid="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionAdd_single_images</name></member>
+      <member refid="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionExtras</name></member>
+      <member refid="classUi__MainWindow_1a888a3a2a55d1179693017dc98e281b76" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionHistory</name></member>
+      <member refid="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionQuit_Ctrl_Q</name></member>
+      <member refid="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionRemove_list</name></member>
+      <member refid="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>actionS_top</name></member>
+      <member refid="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>addButton</name></member>
+      <member refid="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>addfolder</name></member>
+      <member refid="classUi__MainWindow_1a30075506c2116c3ed4ff25e07ae75f81" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>centralWidget</name></member>
+      <member refid="classUi__MainWindow_1a525ed3c5fe0784ac502ee222fba4e205" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>gridLayout</name></member>
+      <member refid="classUi__MainWindow_1ad9c89133780f28e6efa2ec17ceb9cff5" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label</name></member>
+      <member refid="classUi__MainWindow_1a9dc4dba26b83e0c94aa566e1c564420b" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_10</name></member>
+      <member refid="classUi__MainWindow_1a2e2516d755e4dd53fc905dabddf2738a" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_2</name></member>
+      <member refid="classUi__MainWindow_1ad6bab8fb8903b8f41afea1218ee52695" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_5</name></member>
+      <member refid="classUi__MainWindow_1a663f728e6244926a795c6e6892673b1d" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_6</name></member>
+      <member refid="classUi__MainWindow_1a13936e6f18b1c90402b3c7a3c92b6cdb" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_7</name></member>
+      <member refid="classUi__MainWindow_1af183bfbfb9f38bbdd60caf92b15e23dc" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_8</name></member>
+      <member refid="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>label_9</name></member>
+      <member refid="classUi__MainWindow_1ab96ab0f0578098521fa69a75aa5cdde8" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>layoutWidget</name></member>
+      <member refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>listWidget</name></member>
+      <member refid="classUi__MainWindow_1a11f322f3af9857e5138c8024d84d0279" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menu_Edit</name></member>
+      <member refid="classUi__MainWindow_1a6d6a92a6bccde97ab13fce9014eb25d4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menu_File</name></member>
+      <member refid="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menuAdd_Files</name></member>
+      <member refid="classUi__MainWindow_1a2be1c24ec9adfca18e1dcc951931457f" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menuBar</name></member>
+      <member refid="classUi__MainWindow_1ab95dbfbb0550206aeac76db36f491548" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menuHelp</name></member>
+      <member refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>nextButton</name></member>
+      <member refid="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>previousButton</name></member>
+      <member refid="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>removeallButton</name></member>
+      <member refid="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>removeButton</name></member>
+      <member refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>retranslateUi</name></member>
+      <member refid="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>save_as</name></member>
+      <member refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>setupUi</name></member>
+      <member refid="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>startButton</name></member>
+      <member refid="classUi__MainWindow_1a50fa481337604bcc8bf68de18ab16ecd" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>statusBar</name></member>
+      <member refid="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>stopButton</name></member>
+      <member refid="classUi__MainWindow_1ad200a2549a1067eff25bb476691c6555" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>time_for_next</name></member>
+      <member refid="classUi__MainWindow_1aed2eea321894fe7a8f3e23b78fc42793" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>timerSlider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi__about" kind="class" prot="public">
+    <compoundname>Ui_about</compoundname>
+    <derivedcompoundref refid="classUi_1_1about" prot="public" virt="non-virtual">Ui::about</derivedcompoundref>
+    <includes refid="ui__about_8h" local="no">ui_about.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUi__about_1a7c764d7b424b82cda32db2aa1067fba4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_about::closeButton</definition>
+        <argsstring></argsstring>
+        <name>closeButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="32" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1abeef62c6750cebb3c0f0912ae74409a5" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_about::pushButton_2</definition>
+        <argsstring></argsstring>
+        <name>pushButton_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="33" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a9dedeaa7b70ac20bcd4912ddcdf0ec64" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_about::pushButton_3</definition>
+        <argsstring></argsstring>
+        <name>pushButton_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="34" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a8880d015410b512f4e5768d161b24fb9" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_about::pushButton</definition>
+        <argsstring></argsstring>
+        <name>pushButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="35" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1ae47ab43139893b6e08dba3cb781dcd4f" prot="public" static="no" mutable="no">
+        <type>QStackedWidget *</type>
+        <definition>QStackedWidget* Ui_about::stackedWidget</definition>
+        <argsstring></argsstring>
+        <name>stackedWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1acdbd820c02029d71cfc119a9832fef24" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_about::page</definition>
+        <argsstring></argsstring>
+        <name>page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="37" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a30c2d2ae8206508b81d75f45349bd8fc" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_about::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="38" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_about::label_4</definition>
+        <argsstring></argsstring>
+        <name>label_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" compoundref="about_8cpp" startline="24" endline="42">about::about</referencedby>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1aaea79e09f696d357043c9bb49f8ca467" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_about::label_3</definition>
+        <argsstring></argsstring>
+        <name>label_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="40" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a8387738d5bdde604124f3f117f367e74" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_about::label_2</definition>
+        <argsstring></argsstring>
+        <name>label_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="41" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_about::label_5</definition>
+        <argsstring></argsstring>
+        <name>label_5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="42" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" compoundref="about_8cpp" startline="24" endline="42">about::about</referencedby>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1aa459ebfad1e0a2648d20c60d4c6fc115" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_about::label_6</definition>
+        <argsstring></argsstring>
+        <name>label_6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="43" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1ae8fa17161b240480e903aea6b9ada290" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_about::page_2</definition>
+        <argsstring></argsstring>
+        <name>page_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="44" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a3d168e9475d87a9889fa7cb50a9de5a8" prot="public" static="no" mutable="no">
+        <type>QTabWidget *</type>
+        <definition>QTabWidget* Ui_about::tabWidget</definition>
+        <argsstring></argsstring>
+        <name>tabWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="45" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a1849ee3563ac7a6e33685e5a8e3ef77a" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_about::tab</definition>
+        <argsstring></argsstring>
+        <name>tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="46" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a9af2caf77c8d2dd709c0e7a893d8ae60" prot="public" static="no" mutable="no">
+        <type>QTextBrowser *</type>
+        <definition>QTextBrowser* Ui_about::textBrowser</definition>
+        <argsstring></argsstring>
+        <name>textBrowser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="47" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" compoundref="about_8cpp" startline="24" endline="42">about::about</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1adb6da8ff2f93532372eef3704898e677" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_about::tab_2</definition>
+        <argsstring></argsstring>
+        <name>tab_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="48" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a5105430ce15bd81a1a93d192f3ff0428" prot="public" static="no" mutable="no">
+        <type>QTextBrowser *</type>
+        <definition>QTextBrowser* Ui_about::textBrowser_2</definition>
+        <argsstring></argsstring>
+        <name>textBrowser_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="49" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" compoundref="about_8cpp" startline="24" endline="42">about::about</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1ab53caedb09cc7a40a6ebd02032006b81" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_about::page_3</definition>
+        <argsstring></argsstring>
+        <name>page_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="50" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__about_1a0469ccb1dc32f0b8e757e59148ae3467" prot="public" static="no" mutable="no">
+        <type>QPlainTextEdit *</type>
+        <definition>QPlainTextEdit* Ui_about::plain</definition>
+        <argsstring></argsstring>
+        <name>plain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="51" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUi__about_1ade605029c03d96bbda6ca78d9e982804" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_about::setupUi</definition>
+        <argsstring>(QDialog *about)</argsstring>
+        <name>setupUi</name>
+        <param>
+          <type>QDialog *</type>
+          <declname>about</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="54" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="53" bodyend="173"/>
+        <references refid="classUi__about_1a7c764d7b424b82cda32db2aa1067fba4" compoundref="ui__about_8h" startline="32">closeButton</references>
+        <references refid="classUi__about_1a30c2d2ae8206508b81d75f45349bd8fc" compoundref="ui__about_8h" startline="38">label</references>
+        <references refid="classUi__about_1a8387738d5bdde604124f3f117f367e74" compoundref="ui__about_8h" startline="41">label_2</references>
+        <references refid="classUi__about_1aaea79e09f696d357043c9bb49f8ca467" compoundref="ui__about_8h" startline="40">label_3</references>
+        <references refid="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" compoundref="ui__about_8h" startline="39">label_4</references>
+        <references refid="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" compoundref="ui__about_8h" startline="42">label_5</references>
+        <references refid="classUi__about_1aa459ebfad1e0a2648d20c60d4c6fc115" compoundref="ui__about_8h" startline="43">label_6</references>
+        <references refid="classUi__about_1acdbd820c02029d71cfc119a9832fef24" compoundref="ui__about_8h" startline="37">page</references>
+        <references refid="classUi__about_1ae8fa17161b240480e903aea6b9ada290" compoundref="ui__about_8h" startline="44">page_2</references>
+        <references refid="classUi__about_1ab53caedb09cc7a40a6ebd02032006b81" compoundref="ui__about_8h" startline="50">page_3</references>
+        <references refid="classUi__about_1a0469ccb1dc32f0b8e757e59148ae3467" compoundref="ui__about_8h" startline="51">plain</references>
+        <references refid="classUi__about_1a8880d015410b512f4e5768d161b24fb9" compoundref="ui__about_8h" startline="35">pushButton</references>
+        <references refid="classUi__about_1abeef62c6750cebb3c0f0912ae74409a5" compoundref="ui__about_8h" startline="33">pushButton_2</references>
+        <references refid="classUi__about_1a9dedeaa7b70ac20bcd4912ddcdf0ec64" compoundref="ui__about_8h" startline="34">pushButton_3</references>
+        <references refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">retranslateUi</references>
+        <references refid="classUi__about_1ae47ab43139893b6e08dba3cb781dcd4f" compoundref="ui__about_8h" startline="36">stackedWidget</references>
+        <references refid="classUi__about_1a1849ee3563ac7a6e33685e5a8e3ef77a" compoundref="ui__about_8h" startline="46">tab</references>
+        <references refid="classUi__about_1adb6da8ff2f93532372eef3704898e677" compoundref="ui__about_8h" startline="48">tab_2</references>
+        <references refid="classUi__about_1a3d168e9475d87a9889fa7cb50a9de5a8" compoundref="ui__about_8h" startline="45">tabWidget</references>
+        <references refid="classUi__about_1a9af2caf77c8d2dd709c0e7a893d8ae60" compoundref="ui__about_8h" startline="47">textBrowser</references>
+        <references refid="classUi__about_1a5105430ce15bd81a1a93d192f3ff0428" compoundref="ui__about_8h" startline="49">textBrowser_2</references>
+        <referencedby refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" compoundref="about_8cpp" startline="24" endline="42">about::about</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_about::retranslateUi</definition>
+        <argsstring>(QDialog *about)</argsstring>
+        <name>retranslateUi</name>
+        <param>
+          <type>QDialog *</type>
+          <declname>about</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="176" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="175" bodyend="190"/>
+        <references refid="classUi__about_1a7c764d7b424b82cda32db2aa1067fba4" compoundref="ui__about_8h" startline="32">closeButton</references>
+        <references refid="classUi__about_1a30c2d2ae8206508b81d75f45349bd8fc" compoundref="ui__about_8h" startline="38">label</references>
+        <references refid="classUi__about_1aaea79e09f696d357043c9bb49f8ca467" compoundref="ui__about_8h" startline="40">label_3</references>
+        <references refid="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" compoundref="ui__about_8h" startline="39">label_4</references>
+        <references refid="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" compoundref="ui__about_8h" startline="42">label_5</references>
+        <references refid="classUi__about_1aa459ebfad1e0a2648d20c60d4c6fc115" compoundref="ui__about_8h" startline="43">label_6</references>
+        <references refid="classUi__about_1a8880d015410b512f4e5768d161b24fb9" compoundref="ui__about_8h" startline="35">pushButton</references>
+        <references refid="classUi__about_1abeef62c6750cebb3c0f0912ae74409a5" compoundref="ui__about_8h" startline="33">pushButton_2</references>
+        <references refid="classUi__about_1a9dedeaa7b70ac20bcd4912ddcdf0ec64" compoundref="ui__about_8h" startline="34">pushButton_3</references>
+        <references refid="classUi__about_1a1849ee3563ac7a6e33685e5a8e3ef77a" compoundref="ui__about_8h" startline="46">tab</references>
+        <references refid="classUi__about_1adb6da8ff2f93532372eef3704898e677" compoundref="ui__about_8h" startline="48">tab_2</references>
+        <references refid="classUi__about_1a3d168e9475d87a9889fa7cb50a9de5a8" compoundref="ui__about_8h" startline="45">tabWidget</references>
+        <referencedby refid="classabout_1a8c1b88bafc3aa839bfb45fc1d5c99e60" compoundref="about_8cpp" startline="46" endline="55">about::changeEvent</referencedby>
+        <referencedby refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>Ui_about</label>
+        <link refid="classUi__about"/>
+      </node>
+      <node id="128">
+        <label>Ui::about</label>
+        <link refid="classUi_1_1about"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="30" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="29" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classUi__about_1a7c764d7b424b82cda32db2aa1067fba4" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>closeButton</name></member>
+      <member refid="classUi__about_1a30c2d2ae8206508b81d75f45349bd8fc" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>label</name></member>
+      <member refid="classUi__about_1a8387738d5bdde604124f3f117f367e74" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>label_2</name></member>
+      <member refid="classUi__about_1aaea79e09f696d357043c9bb49f8ca467" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>label_3</name></member>
+      <member refid="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>label_4</name></member>
+      <member refid="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>label_5</name></member>
+      <member refid="classUi__about_1aa459ebfad1e0a2648d20c60d4c6fc115" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>label_6</name></member>
+      <member refid="classUi__about_1acdbd820c02029d71cfc119a9832fef24" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>page</name></member>
+      <member refid="classUi__about_1ae8fa17161b240480e903aea6b9ada290" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>page_2</name></member>
+      <member refid="classUi__about_1ab53caedb09cc7a40a6ebd02032006b81" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>page_3</name></member>
+      <member refid="classUi__about_1a0469ccb1dc32f0b8e757e59148ae3467" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>plain</name></member>
+      <member refid="classUi__about_1a8880d015410b512f4e5768d161b24fb9" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>pushButton</name></member>
+      <member refid="classUi__about_1abeef62c6750cebb3c0f0912ae74409a5" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>pushButton_2</name></member>
+      <member refid="classUi__about_1a9dedeaa7b70ac20bcd4912ddcdf0ec64" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>pushButton_3</name></member>
+      <member refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>retranslateUi</name></member>
+      <member refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>setupUi</name></member>
+      <member refid="classUi__about_1ae47ab43139893b6e08dba3cb781dcd4f" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>stackedWidget</name></member>
+      <member refid="classUi__about_1a1849ee3563ac7a6e33685e5a8e3ef77a" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>tab</name></member>
+      <member refid="classUi__about_1adb6da8ff2f93532372eef3704898e677" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>tab_2</name></member>
+      <member refid="classUi__about_1a3d168e9475d87a9889fa7cb50a9de5a8" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>tabWidget</name></member>
+      <member refid="classUi__about_1a9af2caf77c8d2dd709c0e7a893d8ae60" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>textBrowser</name></member>
+      <member refid="classUi__about_1a5105430ce15bd81a1a93d192f3ff0428" prot="public" virt="non-virtual"><scope>Ui_about</scope><name>textBrowser_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

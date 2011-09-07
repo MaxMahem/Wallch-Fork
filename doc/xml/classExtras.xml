@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classExtras" kind="class" prot="public">
+    <compoundname>Extras</compoundname>
+    <includes refid="extras_8h" local="no">extras.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classExtras_1ad7cf7b47941022cfd882461d85243847" prot="private" static="no" mutable="no">
+        <type><ref refid="classUi_1_1Extras" kindref="compound">Ui::Extras</ref> *</type>
+        <definition>Ui::Extras* Extras::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="54" bodyfile="/home/maxmahem/wallch-2.0/extras.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classExtras_1ac0a6027f472204fc979ae9a6f1351c3c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Extras::Extras</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Extras</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="35" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="33" bodyend="64"/>
+        <references refid="mainwindow_8cpp_1afe228fb35e2737cb1becbbe9b4308614" compoundref="mainwindow_8cpp" startline="71">_live_earth_running_</references>
+        <references refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" compoundref="ui__extras_8h" startline="49">Ui_Extras::image_from_disk_lock</references>
+        <references refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" compoundref="ui__extras_8h" startline="53">Ui_Extras::lineEdit_2</references>
+        <references refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" compoundref="ui__extras_8h" startline="38">Ui_Extras::liveEarthActivatePushButton</references>
+        <references refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" compoundref="ui__extras_8h" startline="39">Ui_Extras::liveEarthDeactivatePushButton</references>
+        <references refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" compoundref="ui__extras_8h" startline="42">Ui_Extras::liveEarthRadioHemisphere</references>
+        <references refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" compoundref="ui__extras_8h" startline="43">Ui_Extras::liveEarthRadioRectangular</references>
+        <references refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" compoundref="ui__extras_8h" startline="50">Ui_Extras::pushButton_10</references>
+        <references refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" compoundref="ui__extras_8h" startline="48">Ui_Extras::pushButton_11</references>
+        <references refid="classUi__Extras_1ae9081fb123d2b64bcb3fdf7301707af0" compoundref="ui__extras_8h" startline="58" endline="194">Ui_Extras::setupUi</references>
+        <references refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" compoundref="ui__extras_8h" startline="33">Ui_Extras::toolBox</references>
+        <references refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" compoundref="ui__extras_8h" startline="47">Ui_Extras::use_current_radioButton</references>
+      </memberdef>
+      <memberdef kind="function" id="classExtras_1ac12989edf6c9083852250d271b8b460d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Extras::~Extras</definition>
+        <argsstring>()</argsstring>
+        <name>~Extras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classExtras_1a217e87ab07a7b055bc436985181724d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_pushButton_11_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_11_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="83" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1a36e7c07ee052d3e3f596f25e86244dd8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_pushButton_10_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_10_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="40" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="121" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1a8d700145f28b8a520b483dc05c06d730" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_use_current_radioButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_use_current_radioButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="41" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1a1b91de2f645453b9e6dbfb0df0d9a020" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_image_from_disk_lock_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_image_from_disk_lock_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="42" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1a452f0d1959fcbcfc5d09008f20123f50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_pushButton_12_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_12_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="43" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="145" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1adab9da85fd467601913185a5f606585e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_closeButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_closeButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="44" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1aa989816befd614edbae50cd7663711bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::set_current</definition>
+        <argsstring>()</argsstring>
+        <name>set_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="45" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="155" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1ab39fa52e5ba2c15aecdcc9b751e60718" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_liveEarthActivatePushButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_liveEarthActivatePushButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="46" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="172" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="slot" id="classExtras_1a0a392a586384a5ff26855fe15ea13348" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::on_liveEarthDeactivatePushButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_liveEarthDeactivatePushButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="47" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="182" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classExtras_1a0f662eb3d01932eb602b021add0951a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::start_live_earth</definition>
+        <argsstring>()</argsstring>
+        <name>start_live_earth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="50" bodyfile="/home/maxmahem/wallch-2.0/moc_extras.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="signal" id="classExtras_1a7b9c6ee6b1f93b43eae14f399554d68d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::stop_live_earth</definition>
+        <argsstring>()</argsstring>
+        <name>stop_live_earth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="51" bodyfile="/home/maxmahem/wallch-2.0/moc_extras.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classExtras_1ac542c5ce285f261a6ea07de446632a9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Extras::closeEvent</definition>
+        <argsstring>(QCloseEvent *)</argsstring>
+        <name>closeEvent</name>
+        <param>
+          <type>QCloseEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/extras.h" line="55" bodyfile="/home/maxmahem/wallch-2.0/extras.cpp" bodystart="68" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="80">
+        <label>Extras</label>
+        <link refid="classExtras"/>
+        <childnode refid="81" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Ui::Extras</label>
+        <link refid="classUi_1_1Extras"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Ui_Extras</label>
+        <link refid="classUi__Extras"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/extras.h" line="31" bodyfile="/home/maxmahem/wallch-2.0/extras.h" bodystart="30" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classExtras_1ac542c5ce285f261a6ea07de446632a9f" prot="private" virt="non-virtual"><scope>Extras</scope><name>closeEvent</name></member>
+      <member refid="classExtras_1ac0a6027f472204fc979ae9a6f1351c3c" prot="public" virt="non-virtual"><scope>Extras</scope><name>Extras</name></member>
+      <member refid="classExtras_1adab9da85fd467601913185a5f606585e" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_closeButton_clicked</name></member>
+      <member refid="classExtras_1a1b91de2f645453b9e6dbfb0df0d9a020" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_image_from_disk_lock_clicked</name></member>
+      <member refid="classExtras_1ab39fa52e5ba2c15aecdcc9b751e60718" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_liveEarthActivatePushButton_clicked</name></member>
+      <member refid="classExtras_1a0a392a586384a5ff26855fe15ea13348" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_liveEarthDeactivatePushButton_clicked</name></member>
+      <member refid="classExtras_1a36e7c07ee052d3e3f596f25e86244dd8" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_pushButton_10_clicked</name></member>
+      <member refid="classExtras_1a217e87ab07a7b055bc436985181724d0" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_pushButton_11_clicked</name></member>
+      <member refid="classExtras_1a452f0d1959fcbcfc5d09008f20123f50" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_pushButton_12_clicked</name></member>
+      <member refid="classExtras_1a8d700145f28b8a520b483dc05c06d730" prot="private" virt="non-virtual"><scope>Extras</scope><name>on_use_current_radioButton_clicked</name></member>
+      <member refid="classExtras_1aa989816befd614edbae50cd7663711bf" prot="private" virt="non-virtual"><scope>Extras</scope><name>set_current</name></member>
+      <member refid="classExtras_1a0f662eb3d01932eb602b021add0951a0" prot="public" virt="non-virtual"><scope>Extras</scope><name>start_live_earth</name></member>
+      <member refid="classExtras_1a7b9c6ee6b1f93b43eae14f399554d68d" prot="public" virt="non-virtual"><scope>Extras</scope><name>stop_live_earth</name></member>
+      <member refid="classExtras_1ad7cf7b47941022cfd882461d85243847" prot="private" virt="non-virtual"><scope>Extras</scope><name>ui</name></member>
+      <member refid="classExtras_1ac12989edf6c9083852250d271b8b460d" prot="public" virt="non-virtual"><scope>Extras</scope><name>~Extras</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

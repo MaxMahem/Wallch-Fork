@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi_1_1Preferences" kind="class" prot="public">
+    <compoundname>Ui::Preferences</compoundname>
+    <basecompoundref refid="classUi__Preferences" prot="public" virt="non-virtual">Ui_Preferences</basecompoundref>
+    <includes refid="ui__preferences_8h" local="no">ui_preferences.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="112">
+        <label>Ui_Preferences</label>
+        <link refid="classUi__Preferences"/>
+      </node>
+      <node id="111">
+        <label>Ui::Preferences</label>
+        <link refid="classUi_1_1Preferences"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="114">
+        <label>Ui_Preferences</label>
+        <link refid="classUi__Preferences"/>
+      </node>
+      <node id="113">
+        <label>Ui::Preferences</label>
+        <link refid="classUi_1_1Preferences"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_preferences.h" line="411" bodyfile="/home/maxmahem/wallch-2.0/ui_preferences.h" bodystart="411" bodyend="411"/>
+    <listofallmembers>
+      <member refid="classUi__Preferences_1a129964e10a8201a42326692ea118d4d5" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>backgroundSettingsCombo</name></member>
+      <member refid="classUi__Preferences_1ab99fc5d0082778ba6c0f80e6fbf14149" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>backgroundSettingsLabel</name></member>
+      <member refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>browseSoundButton</name></member>
+      <member refid="classUi__Preferences_1adb394ae68ffd7dc787ff6395cab9b385" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>checkBox</name></member>
+      <member refid="classUi__Preferences_1a63355e36bb93c452d4a383bb77260a7f" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>closeButton</name></member>
+      <member refid="classUi__Preferences_1a5c00b5bc1658f27ec4b4e54a8cd7d934" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>comboFormLayout</name></member>
+      <member refid="classUi__Preferences_1a3a480e79aca097cfe6d379adb40e520f" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>controlHorizontalLayout</name></member>
+      <member refid="classUi__Preferences_1a0cb2fcb5f3ae47ee18b9e90be0d88656" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>customSoundOptionsGroup</name></member>
+      <member refid="classUi__Preferences_1a14e5348186c9bd343b89528b172f51a1" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>customSoundRadio</name></member>
+      <member refid="classUi__Preferences_1aae955def2c42e4e1c34edf4c65004fe1" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>desktopNotificationCheckBox</name></member>
+      <member refid="classUi__Preferences_1a7cc960abfea6a199c966a734c6cd7472" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>formLayout</name></member>
+      <member refid="classUi__Preferences_1a3cd5fd04e97e865d68cb74df58dd4a02" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>groupBox</name></member>
+      <member refid="classUi__Preferences_1af7c637ac0c6eb90257bbdac6024e3975" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>horizontalLayout</name></member>
+      <member refid="classUi__Preferences_1a09701ca4cfd864456cd57537ff8f1dff" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>horizontalSpacer</name></member>
+      <member refid="classUi__Preferences_1a3df3e087ec1aad1431fdf2f3094ab18f" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>liveEarthHemisphereLabel</name></member>
+      <member refid="classUi__Preferences_1a36bc1ebcafd8d193a799520bf4f3e3e1" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>liveEarthRadioHemisphere</name></member>
+      <member refid="classUi__Preferences_1ace264d1e3cdc0323fc42af478d237474" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>liveEarthRadioRectangular</name></member>
+      <member refid="classUi__Preferences_1aecbe1aff951c2db302cafc5fa1a360d3" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>liveEarthRectangularLabel</name></member>
+      <member refid="classUi__Preferences_1aa58b4ebc358d2f12989ca10837fa90ea" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>minimizeToTrayCheckBox</name></member>
+      <member refid="classUi__Preferences_1aa567cb947008e6d473f92fe94070d29b" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>resetPreferencesButton</name></member>
+      <member refid="classUi__Preferences_1ab767b13e8a1f7e884935d112f2e17ab2" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>retranslateUi</name></member>
+      <member refid="classUi__Preferences_1ae4ec3c79a28a3832734f67045576804e" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>saveButton</name></member>
+      <member refid="classUi__Preferences_1a2c535ca36a3133132a7c858a4972df85" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>setupUi</name></member>
+      <member refid="classUi__Preferences_1a643214d4acc744082f2ab12e9920c42b" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>soundNotificationGroupBox</name></member>
+      <member refid="classUi__Preferences_1a1178f394ee8cfda62146d337d7f24b43" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>speakerLLabel</name></member>
+      <member refid="classUi__Preferences_1aef659dd6026acb1ed7afaabdcdcf55b0" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>speakerRLabel</name></member>
+      <member refid="classUi__Preferences_1abe820ad572ad1d1bc9464e9fc1e91a81" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>standardSoundRadio</name></member>
+      <member refid="classUi__Preferences_1a394530273401e5624c80f0b0665a8242" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>startupChangeOnceRadio</name></member>
+      <member refid="classUi__Preferences_1ad4180835bda75254d45f8f6a8bde10a6" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>startupLiveEarthRadio</name></member>
+      <member refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>startupOptionsGroup</name></member>
+      <member refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>startupOptionsGroupBox</name></member>
+      <member refid="classUi__Preferences_1a1eb4559ebb63551ec3ebd03e1209a0c1" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>startupRunRadio</name></member>
+      <member refid="classUi__Preferences_1a1fe1c0c2e19204ecd2d8a61d5ae24d0c" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>tab</name></member>
+      <member refid="classUi__Preferences_1ae765fc291be2c2880f6981dbf106a573" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>tab_2</name></member>
+      <member refid="classUi__Preferences_1a4f58302cca06f93e8714c6bd88b48aa6" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>tabWidget</name></member>
+      <member refid="classUi__Preferences_1a47f2c2d39f53cc25b5e40b919481cee0" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>testSoundButton</name></member>
+      <member refid="classUi__Preferences_1a722426c9c3f286e8490cb46d018dde0f" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>verticalLayout</name></member>
+      <member refid="classUi__Preferences_1ada291fec660d38eddb347e9da5253d35" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>verticalLayout_2</name></member>
+      <member refid="classUi__Preferences_1a8d2ebaea31177b90094be7df939bd59b" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>verticalLayout_3</name></member>
+      <member refid="classUi__Preferences_1aad94bab0c1ff59e70d9504a6a1059b57" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>verticalLayout_4</name></member>
+      <member refid="classUi__Preferences_1ae3127ba315cedc5477a5de16a64ac2a3" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>verticalLayout_5</name></member>
+      <member refid="classUi__Preferences_1aa975484d171a6009bd13454e1daa5d1b" prot="public" virt="non-virtual"><scope>Ui::Preferences</scope><name>verticalLayout_6</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

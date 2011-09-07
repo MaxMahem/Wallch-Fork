@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classQOpenCVWidget" kind="class" prot="public">
+    <compoundname>QOpenCVWidget</compoundname>
+    <includes refid="QOpenCVWidget_8h" local="no">QOpenCVWidget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classQOpenCVWidget_1a55fa6146d5bb3fe2b818caae44452c2c" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* QOpenCVWidget::imagelabel</definition>
+        <argsstring></argsstring>
+        <name>imagelabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="32" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQOpenCVWidget_1a1c6ee0101c1d4e1970f39185c0746aa0" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* QOpenCVWidget::layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="33" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQOpenCVWidget_1af580a0ef7faa57e1aa6e9f3add2c2688" prot="private" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage QOpenCVWidget::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="35" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQOpenCVWidget_1abf749cf9489d7d186a5bed5dccc04f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QOpenCVWidget::QOpenCVWidget</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>QOpenCVWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="38" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.cpp" bodystart="25" bodyend="39"/>
+        <references refid="properties_8cpp_1af96de5b49f5f6a97407fddab9cacb2ed">setLayout</references>
+      </memberdef>
+      <memberdef kind="function" id="classQOpenCVWidget_1adcbcbcc65cf86b35a901a553d9e5ee17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QOpenCVWidget::~QOpenCVWidget</definition>
+        <argsstring>(void)</argsstring>
+        <name>~QOpenCVWidget</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classQOpenCVWidget_1aa102dac111bb7dda8e9740257c9b629d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QOpenCVWidget::putImage</definition>
+        <argsstring>(IplImage *)</argsstring>
+        <name>putImage</name>
+        <param>
+          <type>IplImage *</type>
+          <defname>cvimage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="40" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.cpp" bodystart="45" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" line="30" bodyfile="/home/maxmahem/wallch-2.0/QOpenCVWidget.h" bodystart="30" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classQOpenCVWidget_1af580a0ef7faa57e1aa6e9f3add2c2688" prot="private" virt="non-virtual"><scope>QOpenCVWidget</scope><name>image</name></member>
+      <member refid="classQOpenCVWidget_1a55fa6146d5bb3fe2b818caae44452c2c" prot="private" virt="non-virtual"><scope>QOpenCVWidget</scope><name>imagelabel</name></member>
+      <member refid="classQOpenCVWidget_1a1c6ee0101c1d4e1970f39185c0746aa0" prot="private" virt="non-virtual"><scope>QOpenCVWidget</scope><name>layout</name></member>
+      <member refid="classQOpenCVWidget_1aa102dac111bb7dda8e9740257c9b629d" prot="public" virt="non-virtual"><scope>QOpenCVWidget</scope><name>putImage</name></member>
+      <member refid="classQOpenCVWidget_1abf749cf9489d7d186a5bed5dccc04f29" prot="public" virt="non-virtual"><scope>QOpenCVWidget</scope><name>QOpenCVWidget</name></member>
+      <member refid="classQOpenCVWidget_1adcbcbcc65cf86b35a901a553d9e5ee17" prot="public" virt="non-virtual"><scope>QOpenCVWidget</scope><name>~QOpenCVWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

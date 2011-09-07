@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="extras_8cpp" kind="file">
+    <compoundname>extras.cpp</compoundname>
+    <includes refid="extras_8h" local="yes">extras.h</includes>
+    <includes refid="ui__extras_8h" local="yes">ui_extras.h</includes>
+    <includes local="yes">glob.h</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QFileDialog</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="566">
+        <label>glob.h</label>
+      </node>
+      <node id="547">
+        <label>/home/maxmahem/wallch-2.0/extras.cpp</label>
+        <link refid="extras.cpp"/>
+        <childnode refid="548" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="571" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>QtGui/QToolBox</label>
+      </node>
+      <node id="564">
+        <label>QtGui/QVBoxLayout</label>
+      </node>
+      <node id="567">
+        <label>QSettings</label>
+      </node>
+      <node id="569">
+        <label>QMessageBox</label>
+      </node>
+      <node id="560">
+        <label>QtGui/QLineEdit</label>
+      </node>
+      <node id="562">
+        <label>QtGui/QRadioButton</label>
+      </node>
+      <node id="554">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="561">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="571">
+        <label>fstream</label>
+      </node>
+      <node id="556">
+        <label>QtGui/QDialog</label>
+      </node>
+      <node id="552">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="568">
+        <label>QFileDialog</label>
+      </node>
+      <node id="565">
+        <label>QtGui/QWidget</label>
+      </node>
+      <node id="549">
+        <label>QDialog</label>
+      </node>
+      <node id="550">
+        <label>QTimer</label>
+      </node>
+      <node id="559">
+        <label>QtGui/QLabel</label>
+      </node>
+      <node id="553">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="557">
+        <label>QtGui/QFormLayout</label>
+      </node>
+      <node id="570">
+        <label>iostream</label>
+      </node>
+      <node id="555">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="551">
+        <label>ui_extras.h</label>
+        <link refid="ui__extras_8h"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+      </node>
+      <node id="548">
+        <label>extras.h</label>
+        <link refid="extras_8h"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>QtGui/QHeaderView</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*Wallch<sp/>-<sp/>WallpaperChanger</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">A<sp/>tool<sp/>for<sp/>changing<sp/>Desktop<sp/>Wallpapers<sp/>automatically</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">with<sp/>lots<sp/>of<sp/>features</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Copyright<sp/>©<sp/>2011<sp/>by<sp/>Alex<sp/>Solanos<sp/>and<sp/>Leon<sp/>Vytanos</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="extras_8h" kindref="compound">extras.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ui__extras_8h" kindref="compound">ui_extras.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;glob.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classExtras_1ac0a6027f472204fc979ae9a6f1351c3c" refkind="member"><highlight class="normal"><ref refid="classExtras_1ac0a6027f472204fc979ae9a6f1351c3c" kindref="member">Extras::Extras</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QDialog(parent),<sp/>ui(new<sp/>Ui::<ref refid="classExtras" kindref="compound">Extras</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ae9081fb123d2b64bcb3fdf7301707af0" kindref="member">setupUi</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/>settings(<sp/></highlight><highlight class="stringliteral">&quot;Wallch&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;setChecked(settings.value(</highlight><highlight class="stringliteral">&quot;use_current_lock&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setChecked(settings.value(</highlight><highlight class="stringliteral">&quot;use_image_from_disk_lock&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(settings.value(</highlight><highlight class="stringliteral">&quot;liveEarthFileName&quot;</highlight><highlight class="normal">).toString()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;world_sunlight_map_hemisphere.jpg&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui-&gt;<ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;isChecked())<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_current();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setItemIcon(0,<sp/>QIcon::fromTheme(</highlight><highlight class="stringliteral">&quot;emblem-web&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setItemIcon(1,<sp/>QIcon::fromTheme(</highlight><highlight class="stringliteral">&quot;system-lock-screen&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="mainwindow_8cpp_1afe228fb35e2737cb1becbbe9b4308614" kindref="member">_live_earth_running_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classExtras_1ac12989edf6c9083852250d271b8b460d" refkind="member"><highlight class="normal"><ref refid="classExtras_1ac12989edf6c9083852250d271b8b460d" kindref="member">Extras::~Extras</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;<sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::closeEvent(<sp/>QCloseEvent<sp/>*<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//writing<sp/>current<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/>settings(<sp/></highlight><highlight class="stringliteral">&quot;Wallch&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;use_current_lock&quot;</highlight><highlight class="normal">,<sp/>ui-&gt;<ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;use_image_from_disk_lock&quot;</highlight><highlight class="normal">,<sp/>ui-&gt;<ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui-&gt;<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;isChecked())</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;liveEarthFileName&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;world_sunlight_map_hemisphere.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;liveEarthFileName&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;world_sunlight_map_rectangular.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.sync();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_pushButton_11_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui-&gt;<ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;isChecked())</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE*<sp/>pipe<sp/>=<sp/>popen(</highlight><highlight class="stringliteral">&quot;gconftool-2<sp/>--get<sp/>/desktop/gnome/background/picture_filename&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!feof(pipe))<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fgets(buffer,<sp/>128,<sp/>pipe)<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>buffer;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pclose(pipe);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>current_wallpaper<sp/>=<sp/>QString::fromStdString(result);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_wallpaper.replace(QString(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">),QString(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!QFile(current_wallpaper).exists()<sp/>||<sp/>QImage(current_wallpaper).isNull()){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox<sp/>msgBox;msgBox.setWindowTitle(</highlight><highlight class="stringliteral">&quot;Error!&quot;</highlight><highlight class="normal">);msgBox.setText(tr(</highlight><highlight class="stringliteral">&quot;This<sp/>file<sp/>maybe<sp/>doesn&apos;t<sp/>exist<sp/>or<sp/>it&apos;s<sp/>not<sp/>an<sp/>image.<sp/>Please<sp/>perform<sp/>a<sp/>check<sp/>for<sp/>the<sp/>file<sp/>and<sp/>try<sp/>again.&quot;</highlight><highlight class="normal">));msgBox.setIconPixmap(QIcon::fromTheme(</highlight><highlight class="stringliteral">&quot;dialog-information&quot;</highlight><highlight class="normal">).pixmap(QSize(80,80)));msgBox.setWindowIcon(QIcon(</highlight><highlight class="stringliteral">&quot;:/icons/Pictures/wallch.png&quot;</highlight><highlight class="normal">));msgBox.exec();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(system(</highlight><highlight class="stringliteral">&quot;gksudo<sp/>--description<sp/>&apos;Change<sp/>Lock<sp/>Screen<sp/>Wallpaper&apos;<sp/>\&quot;gconftool-2<sp/>--direct<sp/>--config-source<sp/>xml:readwrite:/etc/gconf/gconf.xml.defaults<sp/>--set<sp/>/desktop/gnome/background/picture_filename<sp/>--type<sp/>string<sp/>$(gconftool-2<sp/>--get<sp/>/desktop/gnome/background/picture_filename)\&quot;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>trying<sp/>to<sp/>use<sp/>command<sp/>&apos;gconftool-2&apos;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!QFile(ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;text().toAscii()).exists()<sp/>||<sp/>QImage(ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;text()).isNull()){</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox<sp/>msgBox;msgBox.setWindowTitle(</highlight><highlight class="stringliteral">&quot;Error!&quot;</highlight><highlight class="normal">);msgBox.setText(tr(</highlight><highlight class="stringliteral">&quot;This<sp/>file<sp/>maybe<sp/>doesn&apos;t<sp/>exist<sp/>or<sp/>it&apos;s<sp/>not<sp/>an<sp/>image.<sp/>Please<sp/>perform<sp/>a<sp/>check<sp/>for<sp/>the<sp/>file<sp/>and<sp/>try<sp/>again.&quot;</highlight><highlight class="normal">));msgBox.setIconPixmap(QIcon::fromTheme(</highlight><highlight class="stringliteral">&quot;dialog-information&quot;</highlight><highlight class="normal">).pixmap(QSize(80,80)));msgBox.setWindowIcon(QIcon(</highlight><highlight class="stringliteral">&quot;:/icons/Pictures/wallch.png&quot;</highlight><highlight class="normal">));msgBox.exec();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>qcommand;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qcommand=</highlight><highlight class="stringliteral">&quot;gksudo<sp/>--description<sp/>&apos;Change<sp/>Lock<sp/>Screen<sp/>Wallpaper&apos;<sp/>\&quot;gconftool-2<sp/>--direct<sp/>--config-source<sp/>xml:readwrite:/etc/gconf/gconf.xml.defaults<sp/>--set<sp/>/desktop/gnome/background/picture_filename<sp/>--type<sp/>string<sp/>&apos;&quot;</highlight><highlight class="normal">+ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;text()+</highlight><highlight class="stringliteral">&quot;&apos;\&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>qcommand.toLocal8Bit().data();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(system(qcommand.toLocal8Bit().data()))</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>trying<sp/>to<sp/>use<sp/>command<sp/>&apos;gconftool-2&apos;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>will<sp/>restart<sp/>it<sp/>so<sp/>as<sp/>to<sp/>work</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(system(</highlight><highlight class="stringliteral">&quot;killall<sp/>-v<sp/>gconfd-2<sp/>gnome-screensaver<sp/>2&gt;<sp/>/dev/null&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Killing<sp/>command<sp/>&apos;gconftool-2&apos;<sp/>and<sp/>&apos;gnome-screensaver&apos;<sp/>returned<sp/>code<sp/>different<sp/>from<sp/>0\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_pushButton_10_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>Qpath;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Qpath<sp/>=<sp/>QFileDialog::getOpenFileName(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>tr(</highlight><highlight class="stringliteral">&quot;Choose<sp/>Image&quot;</highlight><highlight class="normal">),<sp/>QDir::homePath(),<sp/></highlight><highlight class="stringliteral">&quot;*png<sp/>*gif<sp/>*bmp<sp/>*jpg<sp/>*jpeg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Qpath.count()<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setText(Qpath);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>filename<sp/>=<sp/>ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;text();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>(filename);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setPixmap(QPixmap::fromImage(<ref refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kindref="member">image</ref>));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_use_current_radioButton_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>set_current();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_image_from_disk_lock_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/>ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;text()!=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{ui-&gt;<ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/>ui-&gt;<ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setPixmap(ui-&gt;<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;text());}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{ui-&gt;<ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>ui-&gt;<ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;clear();}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_pushButton_12_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(system(</highlight><highlight class="stringliteral">&quot;gksudo<sp/>--description<sp/>&apos;Change<sp/>Lock<sp/>Screen<sp/>Wallpaper&apos;<sp/>\&quot;gconftool-2<sp/>--direct<sp/>--config-source<sp/>xml:readwrite:/etc/gconf/gconf.xml.defaults<sp/>--unset<sp/>/desktop/gnome/background/picture_filename\&quot;&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>trying<sp/>to<sp/>use<sp/>command<sp/>&apos;gconftool-2&apos;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(system(</highlight><highlight class="stringliteral">&quot;killall<sp/>-v<sp/>gconfd-2<sp/>gnome-screensaver<sp/>2&gt;<sp/>/dev/null&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>while<sp/>trying<sp/>to<sp/>use<sp/>command<sp/>&apos;gconftool-2&apos;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_closeButton_clicked()<sp/>{<sp/>close();<sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::set_current()<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE*<sp/>pipe=<sp/>popen(</highlight><highlight class="stringliteral">&quot;gconftool-2<sp/>--get<sp/>/desktop/gnome/background/picture_filename&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!feof(pipe))<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fgets(buffer,<sp/>128,<sp/>pipe)<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>buffer;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>pclose(pipe);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>current_wallpaper<sp/>=<sp/>QString::fromStdString(result);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>current_wallpaper.replace(QString(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">),QString(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!QFile(current_wallpaper).exists()<sp/>||<sp/>QImage(current_wallpaper).isNull())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setPixmap(QPixmap::fromImage(QImage(current_wallpaper)));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_liveEarthActivatePushButton_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_EMIT<sp/><ref refid="classExtras_1a0f662eb3d01932eb602b021add0951a0" kindref="member">start_live_earth</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deactivate<sp/>buttons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Extras::on_liveEarthDeactivatePushButton_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mainwindow_8cpp_1afe228fb35e2737cb1becbbe9b4308614" kindref="member">_live_earth_running_</ref>=0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_EMIT<sp/><ref refid="classExtras_1a7b9c6ee6b1f93b43eae14f399554d68d" kindref="member">stop_live_earth</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>activate<sp/>buttons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/extras.cpp"/>
+  </compounddef>
+</doxygen>

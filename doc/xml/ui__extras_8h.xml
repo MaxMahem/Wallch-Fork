@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="ui__extras_8h" kind="file">
+    <compoundname>ui_extras.h</compoundname>
+    <includes local="no">QtCore/QVariant</includes>
+    <includes local="no">QtGui/QAction</includes>
+    <includes local="no">QtGui/QApplication</includes>
+    <includes local="no">QtGui/QButtonGroup</includes>
+    <includes local="no">QtGui/QDialog</includes>
+    <includes local="no">QtGui/QFormLayout</includes>
+    <includes local="no">QtGui/QHeaderView</includes>
+    <includes local="no">QtGui/QLabel</includes>
+    <includes local="no">QtGui/QLineEdit</includes>
+    <includes local="no">QtGui/QPushButton</includes>
+    <includes local="no">QtGui/QRadioButton</includes>
+    <includes local="no">QtGui/QToolBox</includes>
+    <includes local="no">QtGui/QVBoxLayout</includes>
+    <includes local="no">QtGui/QWidget</includes>
+    <includedby refid="extras_8cpp" local="yes">/home/maxmahem/wallch-2.0/extras.cpp</includedby>
+    <incdepgraph>
+      <node id="961">
+        <label>QtGui/QToolBox</label>
+      </node>
+      <node id="962">
+        <label>QtGui/QVBoxLayout</label>
+      </node>
+      <node id="958">
+        <label>QtGui/QLineEdit</label>
+      </node>
+      <node id="960">
+        <label>QtGui/QRadioButton</label>
+      </node>
+      <node id="952">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="959">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="954">
+        <label>QtGui/QDialog</label>
+      </node>
+      <node id="950">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="963">
+        <label>QtGui/QWidget</label>
+      </node>
+      <node id="957">
+        <label>QtGui/QLabel</label>
+      </node>
+      <node id="951">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="955">
+        <label>QtGui/QFormLayout</label>
+      </node>
+      <node id="953">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="949">
+        <label>/home/maxmahem/wallch-2.0/ui_extras.h</label>
+        <link refid="ui_extras.h"/>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+      </node>
+      <node id="956">
+        <label>QtGui/QHeaderView</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="965">
+        <label>/home/maxmahem/wallch-2.0/extras.cpp</label>
+        <link refid="extras_8cpp"/>
+      </node>
+      <node id="964">
+        <label>/home/maxmahem/wallch-2.0/ui_extras.h</label>
+        <link refid="ui_extras.h"/>
+        <childnode refid="965" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classUi__Extras" prot="public">Ui_Extras</innerclass>
+    <innerclass refid="classUi_1_1Extras" prot="public">Ui::Extras</innerclass>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>generated<sp/>from<sp/>reading<sp/>UI<sp/>file<sp/>&apos;extras.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Wed<sp/>Aug<sp/>31<sp/>02:21:09<sp/>2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>Qt<sp/>User<sp/>Interface<sp/>Compiler<sp/>version<sp/>4.7.2</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost<sp/>when<sp/>recompiling<sp/>UI<sp/>file!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UI_EXTRAS_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UI_EXTRAS_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QAction&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QButtonGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QFormLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QHeaderView&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QLineEdit&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QRadioButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QToolBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QVBoxLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classUi__Extras" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUi__Extras" kindref="compound">Ui_Extras</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QToolBox<sp/>*<ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kindref="member">label_12</ref>;</highlight></codeline>
+<codeline lineno="36" refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVBoxLayout<sp/>*<ref refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kindref="member">verticalLayout_7</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QFormLayout<sp/>*<ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QRadioButton<sp/>*<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QRadioButton<sp/>*<ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kindref="member">liveEarthRectangularLabel</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kindref="member">liveEarthHemisphereLabel</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QRadioButton<sp/>*<ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QRadioButton<sp/>*<ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kindref="member">pushButton_12</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit<sp/>*<ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" kindref="member">closeButton</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QButtonGroup<sp/>*<ref refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" kindref="member">liveEarthTypeGroup</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classUi__Extras_1ae9081fb123d2b64bcb3fdf7301707af0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUi__Extras_1ae9081fb123d2b64bcb3fdf7301707af0" kindref="member">setupUi</ref>(QDialog<sp/>*<ref refid="classExtras" kindref="compound">Extras</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Extras-&gt;objectName().isEmpty())</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extras-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extras-&gt;resize(529,<sp/>552);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extras-&gt;setMinimumSize(QSize(529,<sp/>552));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extras-&gt;setMaximumSize(QSize(529,<sp/>552));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolBox(Extras);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;toolBox&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setGeometry(QRect(10,<sp/>10,<sp/>511,<sp/>481));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;page&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>-&gt;setGeometry(QRect(0,<sp/>0,<sp/>511,<sp/>419));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kindref="member">label_12</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kindref="member">label_12</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;label_12&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kindref="member">label_12</ref>-&gt;setGeometry(QRect(0,<sp/>0,<sp/>511,<sp/>61));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kindref="member">label_12</ref>-&gt;setAlignment(Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;layoutWidget1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref>-&gt;setGeometry(QRect(90,<sp/>70,<sp/>331,<sp/>62));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kindref="member">verticalLayout_7</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout(<ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kindref="member">verticalLayout_7</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;verticalLayout_7&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kindref="member">verticalLayout_7</ref>-&gt;setContentsMargins(0,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthActivatePushButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFont<sp/>font;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>font.setBold(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>font.setWeight(75);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setFont(font);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kindref="member">verticalLayout_7</ref>-&gt;addWidget(<ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kindref="member">layoutWidget1</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthDeactivatePushButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>-&gt;setFont(font);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kindref="member">verticalLayout_7</ref>-&gt;addWidget(<ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;formLayoutWidget&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>-&gt;setGeometry(QRect(89,<sp/>156,<sp/>331,<sp/>221));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFormLayout(<ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;formLayout&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setContentsMargins(0,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QRadioButton(<ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" kindref="member">liveEarthTypeGroup</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QButtonGroup(Extras);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" kindref="member">liveEarthTypeGroup</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthTypeGroup&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" kindref="member">liveEarthTypeGroup</ref>-&gt;addButton(<ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthRadioHemisphere&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setWidget(0,<sp/>QFormLayout::LabelRole,<sp/><ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QRadioButton(<ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" kindref="member">liveEarthTypeGroup</ref>-&gt;addButton(<ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthRadioRectangular&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setWidget(1,<sp/>QFormLayout::LabelRole,<sp/><ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kindref="member">liveEarthRectangularLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kindref="member">liveEarthRectangularLabel</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthRectangularLabel&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kindref="member">liveEarthRectangularLabel</ref>-&gt;setPixmap(QPixmap(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;:/icons/Pictures/world_sunlight_map_rectangular_small.jpg&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setWidget(1,<sp/>QFormLayout::FieldRole,<sp/><ref refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kindref="member">liveEarthRectangularLabel</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kindref="member">liveEarthHemisphereLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kindref="member">formLayoutWidget</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kindref="member">liveEarthHemisphereLabel</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;liveEarthHemisphereLabel&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kindref="member">liveEarthHemisphereLabel</ref>-&gt;setPixmap(QPixmap(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;:/icons/Pictures/world_sunlight_map_hemisphere_small.jpg&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kindref="member">formLayout</ref>-&gt;setWidget(0,<sp/>QFormLayout::FieldRole,<sp/><ref refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kindref="member">liveEarthHemisphereLabel</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;addItem(<ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>,<sp/>QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;Live<sp/>Earth<sp/>Wallpaper&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;page_2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>-&gt;setGeometry(QRect(0,<sp/>0,<sp/>511,<sp/>419));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QRadioButton(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;use_current_radioButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;setGeometry(QRect(0,<sp/>10,<sp/>511,<sp/>22));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;setFocusPolicy(Qt::NoFocus);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;pushButton_11&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setGeometry(QRect(70,<sp/>360,<sp/>161,<sp/>51));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QRadioButton(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;image_from_disk_lock&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setGeometry(QRect(0,<sp/>40,<sp/>511,<sp/>22));</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setFocusPolicy(Qt::NoFocus);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setCheckable(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;pushButton_10&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setGeometry(QRect(30,<sp/>70,<sp/>121,<sp/>27));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;preview_lock&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setGeometry(QRect(148,<sp/>129,<sp/>230,<sp/>143));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSizePolicy<sp/>sizePolicy(QSizePolicy::Ignored,<sp/>QSizePolicy::Ignored);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizePolicy.setHorizontalStretch(0);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizePolicy.setVerticalStretch(0);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizePolicy.setHeightForWidth(<ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;sizePolicy().hasHeightForWidth());</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setSizePolicy(sizePolicy);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setScaledContents(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kindref="member">pushButton_12</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kindref="member">pushButton_12</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;pushButton_12&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kindref="member">pushButton_12</ref>-&gt;setGeometry(QRect(276,<sp/>360,<sp/>151,<sp/>51));</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLineEdit(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;lineEdit_2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setGeometry(QRect(160,<sp/>70,<sp/>301,<sp/>27));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;setReadOnly(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;label&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>-&gt;setGeometry(QRect(140,<sp/>120,<sp/>245,<sp/>201));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>-&gt;setPixmap(QPixmap(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;:/icons/Pictures/screen.png&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>-&gt;setScaledContents(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;addItem(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>,<sp/>QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;Lock<sp/>Screen<sp/>Background&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kindref="member">pushButton_12</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kindref="member">lineEdit_2</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;raise();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" kindref="member">closeButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(Extras);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" kindref="member">closeButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;closeButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" kindref="member">closeButton</ref>-&gt;setGeometry(QRect(400,<sp/>510,<sp/>109,<sp/>27));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a91aeaa0a945f969c71283a2860f42495" kindref="member">retranslateUi</ref>(Extras);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setCurrentIndex(0);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMetaObject::connectSlotsByName(Extras);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>setupUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="classUi__Extras_1a91aeaa0a945f969c71283a2860f42495" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUi__Extras_1a91aeaa0a945f969c71283a2860f42495" kindref="member">retranslateUi</ref>(QDialog<sp/>*<ref refid="classExtras" kindref="compound">Extras</ref>)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Extras-&gt;setWindowTitle(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kindref="member">label_12</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Live<sp/>earth<sp/>wallpaper<sp/>automatically<sp/>configures<sp/>your<sp/>desktop<sp/>wallpaper\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;to<sp/>be<sp/>a<sp/>live<sp/>earth<sp/>background<sp/>that<sp/>updates<sp/>every<sp/>\302\275<sp/>hour.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Internet<sp/>connection<sp/>required.&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QT_NO_TOOLTIP</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setToolTip(QString());</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>QT_NO_TOOLTIP</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kindref="member">liveEarthActivatePushButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Activate<sp/>Live<sp/>Earth<sp/>Wallpaper&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kindref="member">liveEarthDeactivatePushButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Deactivate<sp/>Live<sp/>Earth<sp/>Wallpaper&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kindref="member">liveEarthRadioHemisphere</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&amp;Hemisphere&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kindref="member">liveEarthRadioRectangular</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&amp;Rectangular&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kindref="member">liveEarthRectangularLabel</ref>-&gt;setText(QString());</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kindref="member">liveEarthHemisphereLabel</ref>-&gt;setText(QString());</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setItemText(<ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;indexOf(<ref refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kindref="member">page</ref>),<sp/>QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Live<sp/>Earth<sp/>Wallpaper&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kindref="member">use_current_radioButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Use<sp/>current<sp/>desktop<sp/>wallpaper&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kindref="member">pushButton_11</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CHANGE&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kindref="member">image_from_disk_lock</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Select<sp/>Image<sp/>From<sp/>Disk&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kindref="member">pushButton_10</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Browse&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kindref="member">preview_lock</ref>-&gt;setText(QString());</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kindref="member">pushButton_12</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;REVERT&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kindref="member">label</ref>-&gt;setText(QString());</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;setItemText(<ref refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kindref="member">toolBox</ref>-&gt;indexOf(<ref refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kindref="member">page_2</ref>),<sp/>QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Lock<sp/>Screen<sp/>Background&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" kindref="member">closeButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;Extras&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&amp;Close&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>retranslateUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="226" refid="classUi_1_1Extras" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUi_1_1Extras" kindref="compound">Extras</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUi__Extras" kindref="compound">Ui_Extras</ref><sp/>{};</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Ui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>UI_EXTRAS_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/ui_extras.h"/>
+  </compounddef>
+</doxygen>

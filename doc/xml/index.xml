@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.3">
+  <compound refid="classabout" kind="class"><name>about</name>
+    <member refid="classabout_1a921a73e13c18de06b1449693631b3e68" kind="variable"><name>ui</name></member>
+    <member refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" kind="function"><name>about</name></member>
+    <member refid="classabout_1a0d7ebadcc35f58044fe6cbc7d8d4f636" kind="function"><name>~about</name></member>
+    <member refid="classabout_1a8c1b88bafc3aa839bfb45fc1d5c99e60" kind="function"><name>changeEvent</name></member>
+    <member refid="classabout_1a73f47770fb71fa8a38c61deb4d683981" kind="slot"><name>on_pushButton_3_clicked</name></member>
+    <member refid="classabout_1aeb2178570e0429e90e7f19a5db426240" kind="slot"><name>on_pushButton_2_clicked</name></member>
+    <member refid="classabout_1ac49744ca76cb25b052cf45d4c8b57cc1" kind="slot"><name>on_closeButton_clicked</name></member>
+    <member refid="classabout_1ab06ec260ce6b4205aba10da23c55562b" kind="slot"><name>on_pushButton_clicked</name></member>
+  </compound>
+  <compound refid="classUi_1_1about" kind="class"><name>Ui::about</name>
+  </compound>
+  <compound refid="classExtras" kind="class"><name>Extras</name>
+    <member refid="classExtras_1ad7cf7b47941022cfd882461d85243847" kind="variable"><name>ui</name></member>
+    <member refid="classExtras_1ac0a6027f472204fc979ae9a6f1351c3c" kind="function"><name>Extras</name></member>
+    <member refid="classExtras_1ac12989edf6c9083852250d271b8b460d" kind="function"><name>~Extras</name></member>
+    <member refid="classExtras_1a217e87ab07a7b055bc436985181724d0" kind="slot"><name>on_pushButton_11_clicked</name></member>
+    <member refid="classExtras_1a36e7c07ee052d3e3f596f25e86244dd8" kind="slot"><name>on_pushButton_10_clicked</name></member>
+    <member refid="classExtras_1a8d700145f28b8a520b483dc05c06d730" kind="slot"><name>on_use_current_radioButton_clicked</name></member>
+    <member refid="classExtras_1a1b91de2f645453b9e6dbfb0df0d9a020" kind="slot"><name>on_image_from_disk_lock_clicked</name></member>
+    <member refid="classExtras_1a452f0d1959fcbcfc5d09008f20123f50" kind="slot"><name>on_pushButton_12_clicked</name></member>
+    <member refid="classExtras_1adab9da85fd467601913185a5f606585e" kind="slot"><name>on_closeButton_clicked</name></member>
+    <member refid="classExtras_1aa989816befd614edbae50cd7663711bf" kind="slot"><name>set_current</name></member>
+    <member refid="classExtras_1ab39fa52e5ba2c15aecdcc9b751e60718" kind="slot"><name>on_liveEarthActivatePushButton_clicked</name></member>
+    <member refid="classExtras_1a0a392a586384a5ff26855fe15ea13348" kind="slot"><name>on_liveEarthDeactivatePushButton_clicked</name></member>
+    <member refid="classExtras_1a0f662eb3d01932eb602b021add0951a0" kind="signal"><name>start_live_earth</name></member>
+    <member refid="classExtras_1a7b9c6ee6b1f93b43eae14f399554d68d" kind="signal"><name>stop_live_earth</name></member>
+    <member refid="classExtras_1ac542c5ce285f261a6ea07de446632a9f" kind="function"><name>closeEvent</name></member>
+  </compound>
+  <compound refid="classUi_1_1Extras" kind="class"><name>Ui::Extras</name>
+  </compound>
+  <compound refid="classMainWindow" kind="class"><name>MainWindow</name>
+    <member refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="classMainWindow_1a0c42f7496716d94e18650e2a29b07040" kind="variable"><name>trayIcon</name></member>
+    <member refid="classMainWindow_1afea4057830a43daf32bcb7dd6ae7d811" kind="variable"><name>update_time</name></member>
+    <member refid="classMainWindow_1ae54fe9fbfec90cc30b6c2fc9620b3697" kind="variable"><name>earth_timer</name></member>
+    <member refid="classMainWindow_1ae758bf4071658388a74db4977eca6c57" kind="variable"><name>Start_action</name></member>
+    <member refid="classMainWindow_1a29edf592ea67e8bf326e74907c81f0bf" kind="variable"><name>Stop_action</name></member>
+    <member refid="classMainWindow_1a642bd353839a2ef704952544a0311511" kind="variable"><name>Next_action</name></member>
+    <member refid="classMainWindow_1a96fad5597a0dad227c333fda8fa5147e" kind="variable"><name>Previous_action</name></member>
+    <member refid="classMainWindow_1a34d5733f296e745643a7968bede3b308" kind="variable"><name>Show_action</name></member>
+    <member refid="classMainWindow_1a3caafedcf4f4b4edcd060b150263984b" kind="variable"><name>Settings_action</name></member>
+    <member refid="classMainWindow_1a035ad6781b4687b70b5a5e1420c53bc0" kind="variable"><name>About_action</name></member>
+    <member refid="classMainWindow_1a578b97fd02aaafb03ea6e35055ad9055" kind="variable"><name>Quit_action</name></member>
+    <member refid="classMainWindow_1adaf6415cab3c731ddcd19fd5dae23cb3" kind="variable"><name>About</name></member>
+    <member refid="classMainWindow_1a0b82e28646b6fdf626daf1ddb71e502e" kind="variable"><name>preferences</name></member>
+    <member refid="classMainWindow_1a6657eb302411d239bffe608e29115e96" kind="variable"><name>Properties</name></member>
+    <member refid="classMainWindow_1ac56927ea5284bfe9f7dd4350f55744c7" kind="variable"><name>extras</name></member>
+    <member refid="classMainWindow_1ac56041ee03314c41785b10ab86cd95a1" kind="variable"><name>url</name></member>
+    <member refid="classMainWindow_1afa5d1646d9e1b1fe58bf63075cd103ef" kind="variable"><name>qnam</name></member>
+    <member refid="classMainWindow_1ac77db992d9cb7084324cbfaaad0605ce" kind="variable"><name>reply</name></member>
+    <member refid="classMainWindow_1a88cea956ec1346e7b0062502dc7ef1af" kind="variable"><name>delayMinutes</name></member>
+    <member refid="classMainWindow_1a1322b5375e24b0102f5e3afd023aa2bc" kind="variable"><name>timerMinutes</name></member>
+    <member refid="classMainWindow_1ac1a58a2920829a3f09ee71fe36e09bf2" kind="variable"><name>desktopNotification</name></member>
+    <member refid="classMainWindow_1a690cae0a4c253812e5e2fb2de69e77bc" kind="variable"><name>soundNotification</name></member>
+    <member refid="classMainWindow_1a3565b914d8d79bc20add7c9b669b738c" kind="variable"><name>running</name></member>
+    <member refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
+    <member refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="classMainWindow_1af4ca5d0d3d18ddcb7d54b6596bbf4797" kind="function"><name>changeEvent</name></member>
+    <member refid="classMainWindow_1a38edb88d43e844aca9d2e762c8706565" kind="function"><name>closeEvent</name></member>
+    <member refid="classMainWindow_1a5e8b06d2ce1a6fab2e1c4ca453e6adfd" kind="slot"><name>on_previousButton_clicked</name></member>
+    <member refid="classMainWindow_1aca94f669f81a67c3b8d2397530613cdc" kind="slot"><name>on_addfolder_clicked</name></member>
+    <member refid="classMainWindow_1a9c71e1ad2c8d02b13a67d916ca5e8b7d" kind="slot"><name>on_listWidget_customContextMenuRequested</name></member>
+    <member refid="classMainWindow_1aa8d7496511c02ce40e41661e5b736b0f" kind="slot"><name>on_listWidget_itemDoubleClicked</name></member>
+    <member refid="classMainWindow_1aa8ac901eb71ff3757ca7c3dbd05ba432" kind="slot"><name>on_listWidget_itemSelectionChanged</name></member>
+    <member refid="classMainWindow_1a7ae45e74841448dc319c9c9efa222e58" kind="slot"><name>on_removeallButton_clicked</name></member>
+    <member refid="classMainWindow_1ad8adf30d72e904976ed98a7b19d151dd" kind="slot"><name>on_removeButton_clicked</name></member>
+    <member refid="classMainWindow_1a531054788b8045d4a745366b1b49a0a1" kind="slot"><name>on_addButton_clicked</name></member>
+    <member refid="classMainWindow_1abf27a1e863dc2350626ba16c83e925f4" kind="slot"><name>on_stopButton_clicked</name></member>
+    <member refid="classMainWindow_1a6574b7c1c3ceef3d522632e711ec260b" kind="slot"><name>on_nextButton_clicked</name></member>
+    <member refid="classMainWindow_1abcc096120205197b50fa55cb603acb95" kind="slot"><name>on_startButton_clicked</name></member>
+    <member refid="classMainWindow_1a671bf73078069470c19965a3d948b6fa" kind="slot"><name>dragEnterEvent</name></member>
+    <member refid="classMainWindow_1ae7b97e68c51358f6f36be3c40b89c01c" kind="slot"><name>dropEvent</name></member>
+    <member refid="classMainWindow_1a1360cb95e3b9e747902528b1d9c8bf33" kind="slot"><name>dbus_action</name></member>
+    <member refid="classMainWindow_1a2889f63f7951df7e17e9b02b6c92b555" kind="slot"><name>randomImage</name></member>
+    <member refid="classMainWindow_1a6f72d54e28a07c30a592056d0e372124" kind="slot"><name>time_updater</name></member>
+    <member refid="classMainWindow_1af7308fb9467afae1f7ae650a6fc36840" kind="slot"><name>desktopNotify</name></member>
+    <member refid="classMainWindow_1aeff3a9f85141d07110b73bac5a84f48c" kind="slot"><name>soundNotify</name></member>
+    <member refid="classMainWindow_1aaa424b435449112e5c3ba254b2436f10" kind="slot"><name>on_timerSlider_valueChanged</name></member>
+    <member refid="classMainWindow_1af8074a04d9545caad47f28e3648f1581" kind="slot"><name>livearth</name></member>
+    <member refid="classMainWindow_1ac32236a5fb6bfd07c3754d2b59e9d4f3" kind="slot"><name>stop_livearth</name></member>
+    <member refid="classMainWindow_1ab38cda32672980177d1896487a046ca5" kind="slot"><name>add_new_album</name></member>
+    <member refid="classMainWindow_1a0f48ea1de464e67067ac1bd2cfbb24d8" kind="slot"><name>start_livearth_extras_concurrent_thread</name></member>
+    <member refid="classMainWindow_1ae5bc3a55b641320188d04d3002866e9f" kind="slot"><name>livearth_extras</name></member>
+    <member refid="classMainWindow_1aec5ddcfde77d91b6cf45a2cb302d2b48" kind="slot"><name>handle</name></member>
+    <member refid="classMainWindow_1abafbb91dc493fc007f5e6a8ae04f490c" kind="slot"><name>httpFinished</name></member>
+    <member refid="classMainWindow_1a65511be3b48c592ededfaedf37d6aefd" kind="slot"><name>changeBackground</name></member>
+    <member refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" kind="signal"><name>minimized</name></member>
+    <member refid="classMainWindow_1a571e513ee5005742161fd4de81c86ca2" kind="slot"><name>clickSysTrayIcon</name></member>
+    <member refid="classMainWindow_1a7aec36163c9dfeda7da43b3e0854d673" kind="slot"><name>ShowPreferences</name></member>
+    <member refid="classMainWindow_1ae3130ae3dcc5f6261fb633f52ec062a7" kind="slot"><name>ShowExtras</name></member>
+    <member refid="classMainWindow_1a95d7c8c04e09437afc222121d383a722" kind="slot"><name>menushowabout</name></member>
+    <member refid="classMainWindow_1ac2a292cdcf39848ec42e6352f011ddd1" kind="slot"><name>showClicked</name></member>
+    <member refid="classMainWindow_1a202e9111e76a514c151fffa424b01b73" kind="slot"><name>pruneList</name></member>
+    <member refid="classMainWindow_1aea6d2dc29c9cb6f4848a540ba3e5007e" kind="slot"><name>removeDisk</name></member>
+    <member refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" kind="slot"><name>load</name></member>
+    <member refid="classMainWindow_1a4da9a80d3c5a312dde4fa246436d100f" kind="slot"><name>showProperties</name></member>
+    <member refid="classMainWindow_1a3b43993780b5d104db3472ce7e9180e6" kind="slot"><name>Openfolder</name></member>
+    <member refid="classMainWindow_1a0d88444127f5f56a4db14d850938dfb6" kind="slot"><name>copyImage</name></member>
+    <member refid="classMainWindow_1a5dfecbc3190aaa5b1d4ff5fe84f8c12b" kind="slot"><name>copyPath</name></member>
+    <member refid="classMainWindow_1a463ad5b4c5ca193c1ba13247bedcfaca" kind="slot"><name>errorstopprocess</name></member>
+    <member refid="classMainWindow_1a2f76e8dbbe9eca94d07919786a7c5108" kind="slot"><name>close_minimize</name></member>
+    <member refid="classMainWindow_1ae50efe3540a13d96ec86c677ad56880c" kind="slot"><name>save_album</name></member>
+  </compound>
+  <compound refid="classUi_1_1MainWindow" kind="class"><name>Ui::MainWindow</name>
+  </compound>
+  <compound refid="classPreferences" kind="class"><name>Preferences</name>
+    <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4e" kind="enum"><name>startupEnum</name></member>
+    <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea85bfd301c96cc6adcb97b466e8591edf" kind="enumvalue"><name>run</name></member>
+    <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea109228307fbc6fc25e01e9916a3b9e27" kind="enumvalue"><name>once</name></member>
+    <member refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea3ee6d987489659a606564b7a6ba497ad" kind="enumvalue"><name>liveEarth</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776" kind="enum"><name>backgroundSettingEnum</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a9911d049dd17e7b9c51c00f56b7da895" kind="enumvalue"><name>wallpaper</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a0582bc5a23537f96422e76c1377d680c" kind="enumvalue"><name>zoom</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776aa56270bfded51ede160a3ae2dc88257c" kind="enumvalue"><name>centered</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a13ae16c1d103e5b48815c004cb7b33f5" kind="enumvalue"><name>scaled</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a7be613de102c010404ba3f20ca3a4056" kind="enumvalue"><name>streched</name></member>
+    <member refid="classPreferences_1ae93d5c2fc6d19e564778f9921a058776a517033578f1e263d85fe9945eb6c2079" kind="enumvalue"><name>spanned</name></member>
+    <member refid="classPreferences_1ad1e1eb6aa662fc386473268b35c891fb" kind="variable"><name>ui</name></member>
+    <member refid="classPreferences_1aec4faa48fcdfd1ce16d5850bab75cb15" kind="variable"><name>settings</name></member>
+    <member refid="classPreferences_1ab1bfeb4d049bd8f84f8819331afe9b36" kind="variable"><name>sound</name></member>
+    <member refid="classPreferences_1aa31a42c3e90142597b0e21658a5779d5" kind="variable"><name>gconfClient</name></member>
+    <member refid="classPreferences_1aba377fbf9a8118099fb94bf767dc15bb" kind="variable"><name>backgroundSettingNames</name></member>
+    <member refid="classPreferences_1a1da556392f0bd0fc775c01d596ccff64" kind="variable"><name>settingsPlaySound</name></member>
+    <member refid="classPreferences_1ae4973ff7c89eae976131903a1c9be36a" kind="variable"><name>settingsCustomSound</name></member>
+    <member refid="classPreferences_1a809d46a274acee9c4d8f836bf528dfe3" kind="variable"><name>settingsMinimizeToTray</name></member>
+    <member refid="classPreferences_1ab35a8553b4589b774fec31acc04d10f2" kind="variable"><name>settingsDesktopNotification</name></member>
+    <member refid="classPreferences_1a216ea78ba87f148be433abe1175bf038" kind="variable"><name>settingsStartup</name></member>
+    <member refid="classPreferences_1a9289f97acd00f580f6c70183122e6a59" kind="variable"><name>soundFileName</name></member>
+    <member refid="classPreferences_1a8b68e9e210592643ae359daa01b23f52" kind="variable"><name>settingsBackgroundSetting</name></member>
+    <member refid="classPreferences_1a54a2b919ff63be836615593c8cb9bdca" kind="variable"><name>settingsHistory</name></member>
+    <member refid="classPreferences_1a3fc460c1a11115945b78b2d35d7ade00" kind="function"><name>Preferences</name></member>
+    <member refid="classPreferences_1a20020f4fceeefb048a5eeddec6c28376" kind="function"><name>~Preferences</name></member>
+    <member refid="classPreferences_1af581934c73bdbcd595ef7a32a81d19d4" kind="slot"><name>on_resetPreferencesButton_clicked</name></member>
+    <member refid="classPreferences_1a1faf6f20ac96b751a2252a0ca1ebbf7f" kind="slot"><name>on_browseSoundButton_clicked</name></member>
+    <member refid="classPreferences_1ae79fc3e7e24c57cfedd6180fe802eaa3" kind="slot"><name>on_saveButton_clicked</name></member>
+    <member refid="classPreferences_1a47285e79732e1280553247d2ae863973" kind="slot"><name>on_closeButton_clicked</name></member>
+    <member refid="classPreferences_1a0845ec1fdf99b9578aa98f7da0dd7cc3" kind="slot"><name>on_testSoundButton_clicked</name></member>
+    <member refid="classPreferences_1ad735c06145535fc78571c4d9ce8433b5" kind="slot"><name>on_customSoundRadio_toggled</name></member>
+  </compound>
+  <compound refid="classUi_1_1Preferences" kind="class"><name>Ui::Preferences</name>
+  </compound>
+  <compound refid="classUi_1_1properties" kind="class"><name>Ui::properties</name>
+  </compound>
+  <compound refid="classproperties" kind="class"><name>properties</name>
+    <member refid="classproperties_1a4efc9acb45185a83b6246bb8bac7bb88" kind="variable"><name>ui</name></member>
+    <member refid="classproperties_1a193d69d97b06b9e1c327f71daab5a1c5" kind="variable"><name>optionsGroupBox</name></member>
+    <member refid="classproperties_1aa981e0abc88ca9658f4ab14b8ffcdaaa" kind="variable"><name>originalPixmap</name></member>
+    <member refid="classproperties_1aaa6f3b83bb00baa5d17551ba7a17f7da" kind="variable"><name>optionsGroupBoxLayout</name></member>
+    <member refid="classproperties_1a78816072dcc5b84d140ba792a97679c9" kind="variable"><name>mainLayout</name></member>
+    <member refid="classproperties_1ad9ffcfd6b910e7a9f2621975ef313fa0" kind="variable"><name>buttonsLayout</name></member>
+    <member refid="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" kind="function"><name>properties</name></member>
+    <member refid="classproperties_1af8e12abaf059c045cf3f8205b0f5f383" kind="function"><name>~properties</name></member>
+    <member refid="classproperties_1ad0211b85fbce4b735d5d8ee5a6680de3" kind="function"><name>resizeEvent</name></member>
+    <member refid="classproperties_1ae12ba90294b4062891256db305285d9e" kind="function"><name>createOptionsGroupBox</name></member>
+    <member refid="classproperties_1a46102a5c48ead1eac5b4e5899f026a5c" kind="function"><name>createButtonsLayout</name></member>
+    <member refid="classproperties_1abba2fb0698954d2663ec7c175f7ea4fd" kind="function"><name>updateScreenshotLabel</name></member>
+    <member refid="classproperties_1aa86164191110ed2e070a6ad26f269ba8" kind="slot"><name>on_pushButton_clicked</name></member>
+  </compound>
+  <compound refid="classQOpenCVWidget" kind="class"><name>QOpenCVWidget</name>
+    <member refid="classQOpenCVWidget_1a55fa6146d5bb3fe2b818caae44452c2c" kind="variable"><name>imagelabel</name></member>
+    <member refid="classQOpenCVWidget_1a1c6ee0101c1d4e1970f39185c0746aa0" kind="variable"><name>layout</name></member>
+    <member refid="classQOpenCVWidget_1af580a0ef7faa57e1aa6e9f3add2c2688" kind="variable"><name>image</name></member>
+    <member refid="classQOpenCVWidget_1abf749cf9489d7d186a5bed5dccc04f29" kind="function"><name>QOpenCVWidget</name></member>
+    <member refid="classQOpenCVWidget_1adcbcbcc65cf86b35a901a553d9e5ee17" kind="function"><name>~QOpenCVWidget</name></member>
+    <member refid="classQOpenCVWidget_1aa102dac111bb7dda8e9740257c9b629d" kind="function"><name>putImage</name></member>
+  </compound>
+  <compound refid="classstatistics" kind="class"><name>statistics</name>
+    <member refid="classstatistics_1a132d339d01784764b74a7b2a12b39981" kind="variable"><name>ui</name></member>
+    <member refid="classstatistics_1a07cd2b77d6bb65ad880f6e38e91c7359" kind="variable"><name>update_values</name></member>
+    <member refid="classstatistics_1a2dc9a77ff9eb30c4f1e7f80d110807fe" kind="function"><name>statistics</name></member>
+    <member refid="classstatistics_1a8cf720227802726be118712dc6616f94" kind="function"><name>~statistics</name></member>
+    <member refid="classstatistics_1a30369590c935dcfe004c1af34bc43f9d" kind="slot"><name>on_reset_clicked</name></member>
+    <member refid="classstatistics_1aa05c5587c3cc452a1cb27b69dd229004" kind="slot"><name>on_ok_clicked</name></member>
+    <member refid="classstatistics_1acd549a3c6fb05160f90a4a5a0a593637" kind="slot"><name>values_update</name></member>
+  </compound>
+  <compound refid="classUi__about" kind="class"><name>Ui_about</name>
+    <member refid="classUi__about_1a7c764d7b424b82cda32db2aa1067fba4" kind="variable"><name>closeButton</name></member>
+    <member refid="classUi__about_1abeef62c6750cebb3c0f0912ae74409a5" kind="variable"><name>pushButton_2</name></member>
+    <member refid="classUi__about_1a9dedeaa7b70ac20bcd4912ddcdf0ec64" kind="variable"><name>pushButton_3</name></member>
+    <member refid="classUi__about_1a8880d015410b512f4e5768d161b24fb9" kind="variable"><name>pushButton</name></member>
+    <member refid="classUi__about_1ae47ab43139893b6e08dba3cb781dcd4f" kind="variable"><name>stackedWidget</name></member>
+    <member refid="classUi__about_1acdbd820c02029d71cfc119a9832fef24" kind="variable"><name>page</name></member>
+    <member refid="classUi__about_1a30c2d2ae8206508b81d75f45349bd8fc" kind="variable"><name>label</name></member>
+    <member refid="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" kind="variable"><name>label_4</name></member>
+    <member refid="classUi__about_1aaea79e09f696d357043c9bb49f8ca467" kind="variable"><name>label_3</name></member>
+    <member refid="classUi__about_1a8387738d5bdde604124f3f117f367e74" kind="variable"><name>label_2</name></member>
+    <member refid="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" kind="variable"><name>label_5</name></member>
+    <member refid="classUi__about_1aa459ebfad1e0a2648d20c60d4c6fc115" kind="variable"><name>label_6</name></member>
+    <member refid="classUi__about_1ae8fa17161b240480e903aea6b9ada290" kind="variable"><name>page_2</name></member>
+    <member refid="classUi__about_1a3d168e9475d87a9889fa7cb50a9de5a8" kind="variable"><name>tabWidget</name></member>
+    <member refid="classUi__about_1a1849ee3563ac7a6e33685e5a8e3ef77a" kind="variable"><name>tab</name></member>
+    <member refid="classUi__about_1a9af2caf77c8d2dd709c0e7a893d8ae60" kind="variable"><name>textBrowser</name></member>
+    <member refid="classUi__about_1adb6da8ff2f93532372eef3704898e677" kind="variable"><name>tab_2</name></member>
+    <member refid="classUi__about_1a5105430ce15bd81a1a93d192f3ff0428" kind="variable"><name>textBrowser_2</name></member>
+    <member refid="classUi__about_1ab53caedb09cc7a40a6ebd02032006b81" kind="variable"><name>page_3</name></member>
+    <member refid="classUi__about_1a0469ccb1dc32f0b8e757e59148ae3467" kind="variable"><name>plain</name></member>
+    <member refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" kind="function"><name>setupUi</name></member>
+    <member refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" kind="function"><name>retranslateUi</name></member>
+  </compound>
+  <compound refid="classUi__Extras" kind="class"><name>Ui_Extras</name>
+    <member refid="classUi__Extras_1ab6d937b70fceb48a3e7eaa028b5af17a" kind="variable"><name>toolBox</name></member>
+    <member refid="classUi__Extras_1a4f4b0eb303e7bd48ab30a1d3cd0e0b32" kind="variable"><name>page</name></member>
+    <member refid="classUi__Extras_1a0a5ec50ecaca1072b40e7857397ef890" kind="variable"><name>label_12</name></member>
+    <member refid="classUi__Extras_1afa6756d7678bcf68325320b8d0260551" kind="variable"><name>layoutWidget1</name></member>
+    <member refid="classUi__Extras_1a20949d17f93ae9a7fd7a3f2cf309ccad" kind="variable"><name>verticalLayout_7</name></member>
+    <member refid="classUi__Extras_1ac6fd999821ea077a5a9fb543acc16fd4" kind="variable"><name>liveEarthActivatePushButton</name></member>
+    <member refid="classUi__Extras_1a0591653135ec37cba2db9a7cebc06393" kind="variable"><name>liveEarthDeactivatePushButton</name></member>
+    <member refid="classUi__Extras_1a4ad0a03d033f96f16367da8b3d8adf3e" kind="variable"><name>formLayoutWidget</name></member>
+    <member refid="classUi__Extras_1a82e2d79ca46ef7f7009de5b8364830ee" kind="variable"><name>formLayout</name></member>
+    <member refid="classUi__Extras_1a610559fbdb9e6613573ed1f8a5b3e2db" kind="variable"><name>liveEarthRadioHemisphere</name></member>
+    <member refid="classUi__Extras_1a82b9691ce85e1f9a0acc5b7b3ecb93d9" kind="variable"><name>liveEarthRadioRectangular</name></member>
+    <member refid="classUi__Extras_1a47b81ab7a2a08615128f151dd5598384" kind="variable"><name>liveEarthRectangularLabel</name></member>
+    <member refid="classUi__Extras_1a32d0c47f2bdb36fa0dce8dc81bc51223" kind="variable"><name>liveEarthHemisphereLabel</name></member>
+    <member refid="classUi__Extras_1a328f350266fb266b688ca9e27b47ccfe" kind="variable"><name>page_2</name></member>
+    <member refid="classUi__Extras_1ad156478b17efed331b8d0663c871816a" kind="variable"><name>use_current_radioButton</name></member>
+    <member refid="classUi__Extras_1aa1564e61ad2e27f314d022fed8d86383" kind="variable"><name>pushButton_11</name></member>
+    <member refid="classUi__Extras_1a4727a96c8081f654bc01d2094a19fd45" kind="variable"><name>image_from_disk_lock</name></member>
+    <member refid="classUi__Extras_1a6203cc72861a2bf0165a5190c11c2698" kind="variable"><name>pushButton_10</name></member>
+    <member refid="classUi__Extras_1ac4781c1e6ae1e2480713db1da125fe03" kind="variable"><name>preview_lock</name></member>
+    <member refid="classUi__Extras_1aa0bad61fb43a9419d5e023e3abfd5def" kind="variable"><name>pushButton_12</name></member>
+    <member refid="classUi__Extras_1a6938f33168c2bb62d7b3ad3092391a3c" kind="variable"><name>lineEdit_2</name></member>
+    <member refid="classUi__Extras_1a3c1aafcef167011e29b40fdf9b828d51" kind="variable"><name>label</name></member>
+    <member refid="classUi__Extras_1acf8277aeab1f7813505270ed0e7a5e60" kind="variable"><name>closeButton</name></member>
+    <member refid="classUi__Extras_1a3b0e012edd2308486189a348211a84c6" kind="variable"><name>liveEarthTypeGroup</name></member>
+    <member refid="classUi__Extras_1ae9081fb123d2b64bcb3fdf7301707af0" kind="function"><name>setupUi</name></member>
+    <member refid="classUi__Extras_1a91aeaa0a945f969c71283a2860f42495" kind="function"><name>retranslateUi</name></member>
+  </compound>
+  <compound refid="classUi__MainWindow" kind="class"><name>Ui_MainWindow</name>
+    <member refid="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" kind="variable"><name>action_Preferences</name></member>
+    <member refid="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" kind="variable"><name>action_About</name></member>
+    <member refid="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" kind="variable"><name>actionQuit_Ctrl_Q</name></member>
+    <member refid="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" kind="variable"><name>action_Start</name></member>
+    <member refid="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" kind="variable"><name>actionS_top</name></member>
+    <member refid="classUi__MainWindow_1a0c7d1b72703df51a22fba67c15a31e8b" kind="variable"><name>action_Pause</name></member>
+    <member refid="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" kind="variable"><name>action_Next_Image</name></member>
+    <member refid="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" kind="variable"><name>actionRemove_list</name></member>
+    <member refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" kind="variable"><name>action_Load</name></member>
+    <member refid="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" kind="variable"><name>actionAdd_single_images</name></member>
+    <member refid="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" kind="variable"><name>actionAdd_Folder</name></member>
+    <member refid="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" kind="variable"><name>actionAdd_a_Wallch_album</name></member>
+    <member refid="classUi__MainWindow_1a888a3a2a55d1179693017dc98e281b76" kind="variable"><name>actionHistory</name></member>
+    <member refid="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" kind="variable"><name>action_Previous_Image_Shift_Ctrl_B</name></member>
+    <member refid="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" kind="variable"><name>actionExtras</name></member>
+    <member refid="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" kind="variable"><name>save_as</name></member>
+    <member refid="classUi__MainWindow_1a30075506c2116c3ed4ff25e07ae75f81" kind="variable"><name>centralWidget</name></member>
+    <member refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" kind="variable"><name>listWidget</name></member>
+    <member refid="classUi__MainWindow_1ad6bab8fb8903b8f41afea1218ee52695" kind="variable"><name>label_5</name></member>
+    <member refid="classUi__MainWindow_1a663f728e6244926a795c6e6892673b1d" kind="variable"><name>label_6</name></member>
+    <member refid="classUi__MainWindow_1a13936e6f18b1c90402b3c7a3c92b6cdb" kind="variable"><name>label_7</name></member>
+    <member refid="classUi__MainWindow_1af183bfbfb9f38bbdd60caf92b15e23dc" kind="variable"><name>label_8</name></member>
+    <member refid="classUi__MainWindow_1ad9c89133780f28e6efa2ec17ceb9cff5" kind="variable"><name>label</name></member>
+    <member refid="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" kind="variable"><name>label_9</name></member>
+    <member refid="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" kind="variable"><name>addfolder</name></member>
+    <member refid="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" kind="variable"><name>addButton</name></member>
+    <member refid="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" kind="variable"><name>removeallButton</name></member>
+    <member refid="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" kind="variable"><name>removeButton</name></member>
+    <member refid="classUi__MainWindow_1ad200a2549a1067eff25bb476691c6555" kind="variable"><name>time_for_next</name></member>
+    <member refid="classUi__MainWindow_1ab96ab0f0578098521fa69a75aa5cdde8" kind="variable"><name>layoutWidget</name></member>
+    <member refid="classUi__MainWindow_1a525ed3c5fe0784ac502ee222fba4e205" kind="variable"><name>gridLayout</name></member>
+    <member refid="classUi__MainWindow_1a2e2516d755e4dd53fc905dabddf2738a" kind="variable"><name>label_2</name></member>
+    <member refid="classUi__MainWindow_1aed2eea321894fe7a8f3e23b78fc42793" kind="variable"><name>timerSlider</name></member>
+    <member refid="classUi__MainWindow_1a9dc4dba26b83e0c94aa566e1c564420b" kind="variable"><name>label_10</name></member>
+    <member refid="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" kind="variable"><name>previousButton</name></member>
+    <member refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" kind="variable"><name>nextButton</name></member>
+    <member refid="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" kind="variable"><name>startButton</name></member>
+    <member refid="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" kind="variable"><name>stopButton</name></member>
+    <member refid="classUi__MainWindow_1a2be1c24ec9adfca18e1dcc951931457f" kind="variable"><name>menuBar</name></member>
+    <member refid="classUi__MainWindow_1a6d6a92a6bccde97ab13fce9014eb25d4" kind="variable"><name>menu_File</name></member>
+    <member refid="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" kind="variable"><name>menuAdd_Files</name></member>
+    <member refid="classUi__MainWindow_1a11f322f3af9857e5138c8024d84d0279" kind="variable"><name>menu_Edit</name></member>
+    <member refid="classUi__MainWindow_1ab95dbfbb0550206aeac76db36f491548" kind="variable"><name>menuHelp</name></member>
+    <member refid="classUi__MainWindow_1a50fa481337604bcc8bf68de18ab16ecd" kind="variable"><name>statusBar</name></member>
+    <member refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" kind="function"><name>setupUi</name></member>
+    <member refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" kind="function"><name>retranslateUi</name></member>
+  </compound>
+  <compound refid="classUi__Preferences" kind="class"><name>Ui_Preferences</name>
+    <member refid="classUi__Preferences_1a722426c9c3f286e8490cb46d018dde0f" kind="variable"><name>verticalLayout</name></member>
+    <member refid="classUi__Preferences_1a4f58302cca06f93e8714c6bd88b48aa6" kind="variable"><name>tabWidget</name></member>
+    <member refid="classUi__Preferences_1a1fe1c0c2e19204ecd2d8a61d5ae24d0c" kind="variable"><name>tab</name></member>
+    <member refid="classUi__Preferences_1ae3127ba315cedc5477a5de16a64ac2a3" kind="variable"><name>verticalLayout_5</name></member>
+    <member refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" kind="variable"><name>startupOptionsGroupBox</name></member>
+    <member refid="classUi__Preferences_1a8d2ebaea31177b90094be7df939bd59b" kind="variable"><name>verticalLayout_3</name></member>
+    <member refid="classUi__Preferences_1a1eb4559ebb63551ec3ebd03e1209a0c1" kind="variable"><name>startupRunRadio</name></member>
+    <member refid="classUi__Preferences_1a394530273401e5624c80f0b0665a8242" kind="variable"><name>startupChangeOnceRadio</name></member>
+    <member refid="classUi__Preferences_1ad4180835bda75254d45f8f6a8bde10a6" kind="variable"><name>startupLiveEarthRadio</name></member>
+    <member refid="classUi__Preferences_1aa58b4ebc358d2f12989ca10837fa90ea" kind="variable"><name>minimizeToTrayCheckBox</name></member>
+    <member refid="classUi__Preferences_1a5c00b5bc1658f27ec4b4e54a8cd7d934" kind="variable"><name>comboFormLayout</name></member>
+    <member refid="classUi__Preferences_1ab99fc5d0082778ba6c0f80e6fbf14149" kind="variable"><name>backgroundSettingsLabel</name></member>
+    <member refid="classUi__Preferences_1a129964e10a8201a42326692ea118d4d5" kind="variable"><name>backgroundSettingsCombo</name></member>
+    <member refid="classUi__Preferences_1aae955def2c42e4e1c34edf4c65004fe1" kind="variable"><name>desktopNotificationCheckBox</name></member>
+    <member refid="classUi__Preferences_1af7c637ac0c6eb90257bbdac6024e3975" kind="variable"><name>horizontalLayout</name></member>
+    <member refid="classUi__Preferences_1a1178f394ee8cfda62146d337d7f24b43" kind="variable"><name>speakerLLabel</name></member>
+    <member refid="classUi__Preferences_1a643214d4acc744082f2ab12e9920c42b" kind="variable"><name>soundNotificationGroupBox</name></member>
+    <member refid="classUi__Preferences_1ada291fec660d38eddb347e9da5253d35" kind="variable"><name>verticalLayout_2</name></member>
+    <member refid="classUi__Preferences_1aad94bab0c1ff59e70d9504a6a1059b57" kind="variable"><name>verticalLayout_4</name></member>
+    <member refid="classUi__Preferences_1abe820ad572ad1d1bc9464e9fc1e91a81" kind="variable"><name>standardSoundRadio</name></member>
+    <member refid="classUi__Preferences_1a14e5348186c9bd343b89528b172f51a1" kind="variable"><name>customSoundRadio</name></member>
+    <member refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kind="variable"><name>browseSoundButton</name></member>
+    <member refid="classUi__Preferences_1a47f2c2d39f53cc25b5e40b919481cee0" kind="variable"><name>testSoundButton</name></member>
+    <member refid="classUi__Preferences_1aef659dd6026acb1ed7afaabdcdcf55b0" kind="variable"><name>speakerRLabel</name></member>
+    <member refid="classUi__Preferences_1ae765fc291be2c2880f6981dbf106a573" kind="variable"><name>tab_2</name></member>
+    <member refid="classUi__Preferences_1aa975484d171a6009bd13454e1daa5d1b" kind="variable"><name>verticalLayout_6</name></member>
+    <member refid="classUi__Preferences_1adb394ae68ffd7dc787ff6395cab9b385" kind="variable"><name>checkBox</name></member>
+    <member refid="classUi__Preferences_1a3cd5fd04e97e865d68cb74df58dd4a02" kind="variable"><name>groupBox</name></member>
+    <member refid="classUi__Preferences_1a7cc960abfea6a199c966a734c6cd7472" kind="variable"><name>formLayout</name></member>
+    <member refid="classUi__Preferences_1ace264d1e3cdc0323fc42af478d237474" kind="variable"><name>liveEarthRadioRectangular</name></member>
+    <member refid="classUi__Preferences_1aecbe1aff951c2db302cafc5fa1a360d3" kind="variable"><name>liveEarthRectangularLabel</name></member>
+    <member refid="classUi__Preferences_1a3df3e087ec1aad1431fdf2f3094ab18f" kind="variable"><name>liveEarthHemisphereLabel</name></member>
+    <member refid="classUi__Preferences_1a36bc1ebcafd8d193a799520bf4f3e3e1" kind="variable"><name>liveEarthRadioHemisphere</name></member>
+    <member refid="classUi__Preferences_1a3a480e79aca097cfe6d379adb40e520f" kind="variable"><name>controlHorizontalLayout</name></member>
+    <member refid="classUi__Preferences_1a09701ca4cfd864456cd57537ff8f1dff" kind="variable"><name>horizontalSpacer</name></member>
+    <member refid="classUi__Preferences_1aa567cb947008e6d473f92fe94070d29b" kind="variable"><name>resetPreferencesButton</name></member>
+    <member refid="classUi__Preferences_1a63355e36bb93c452d4a383bb77260a7f" kind="variable"><name>closeButton</name></member>
+    <member refid="classUi__Preferences_1ae4ec3c79a28a3832734f67045576804e" kind="variable"><name>saveButton</name></member>
+    <member refid="classUi__Preferences_1a0cb2fcb5f3ae47ee18b9e90be0d88656" kind="variable"><name>customSoundOptionsGroup</name></member>
+    <member refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kind="variable"><name>startupOptionsGroup</name></member>
+    <member refid="classUi__Preferences_1a2c535ca36a3133132a7c858a4972df85" kind="function"><name>setupUi</name></member>
+    <member refid="classUi__Preferences_1ab767b13e8a1f7e884935d112f2e17ab2" kind="function"><name>retranslateUi</name></member>
+  </compound>
+  <compound refid="classUi__properties" kind="class"><name>Ui_properties</name>
+    <member refid="classUi__properties_1a879a624d84a2c970aa6ec8f6409bc0b1" kind="variable"><name>formLayout</name></member>
+    <member refid="classUi__properties_1a1376b8960298c79c539abb1cc5446743" kind="variable"><name>label_2</name></member>
+    <member refid="classUi__properties_1ab9a95da6a6b87b6ceeae64de87feb322" kind="variable"><name>image_name</name></member>
+    <member refid="classUi__properties_1a3cc1c78396a6ff54c641120805eefe57" kind="variable"><name>label_4</name></member>
+    <member refid="classUi__properties_1a16f33c1f91ad25eb781546c86afcf155" kind="variable"><name>image_size</name></member>
+    <member refid="classUi__properties_1acc7d3274c77af03c936c343605939957" kind="variable"><name>label_7</name></member>
+    <member refid="classUi__properties_1a6cb30319918b6af8d51132c79d6dcc23" kind="variable"><name>image_width</name></member>
+    <member refid="classUi__properties_1a71f9da68c3afbed85206add43969427d" kind="variable"><name>label_6</name></member>
+    <member refid="classUi__properties_1a433aba0e45c4e4f765a24849b9b23811" kind="variable"><name>image_height</name></member>
+    <member refid="classUi__properties_1a1bff93f4244d3116dc1257d7d7dc7a0e" kind="variable"><name>label_3</name></member>
+    <member refid="classUi__properties_1adcc106f28130b1fd13a84ef061ac36b6" kind="variable"><name>image_type</name></member>
+    <member refid="classUi__properties_1a6702ccc6363460b0b6df3068f72785d5" kind="variable"><name>label_5</name></member>
+    <member refid="classUi__properties_1aecc35167b0fe37745a8d40bcf25c86d8" kind="variable"><name>image_location</name></member>
+    <member refid="classUi__properties_1aaecc391d7033c644061cb6f1bf380bd2" kind="variable"><name>pushButton</name></member>
+    <member refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" kind="variable"><name>label</name></member>
+    <member refid="classUi__properties_1a03ce4f30d999c6f436cfcba2c71153f5" kind="function"><name>setupUi</name></member>
+    <member refid="classUi__properties_1ac1d56e369ffb4df607eb2ad3d9598e92" kind="function"><name>retranslateUi</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespaceUi" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="about_8cpp" kind="file"><name>about.cpp</name>
+  </compound>
+  <compound refid="about_8h" kind="file"><name>about.h</name>
+  </compound>
+  <compound refid="bup_8cpp" kind="file"><name>bup.cpp</name>
+    <member refid="bup_8cpp_1a0667f65c5279a11dd199910131de3ab7" kind="variable"><name>qt_meta_data_preferences</name></member>
+    <member refid="bup_8cpp_1a47c9e2938c5ff3077690c7328b083163" kind="variable"><name>qt_meta_stringdata_preferences</name></member>
+  </compound>
+  <compound refid="extras_8cpp" kind="file"><name>extras.cpp</name>
+  </compound>
+  <compound refid="extras_8h" kind="file"><name>extras.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+    <member refid="mainwindow_8cpp_1ab5522b54e1fe7195735f5a405f026039" kind="define"><name>QT_NO_KEYWORDS</name></member>
+    <member refid="mainwindow_8cpp_1afe228fb35e2737cb1becbbe9b4308614" kind="variable"><name>_live_earth_running_</name></member>
+    <member refid="mainwindow_8cpp_1a532748c39d92699468edec43c58d8b06" kind="variable"><name>_on_boot_once_running_</name></member>
+    <member refid="mainwindow_8cpp_1aa87fa99b597a16b7c625e511ebbb5581" kind="variable"><name>_on_boot_constant_running_</name></member>
+    <member refid="mainwindow_8cpp_1a652f3ec6c0e23f72e16fa43bf0b407f1" kind="variable"><name>seconds_left</name></member>
+    <member refid="mainwindow_8cpp_1acd8df10a3a7630b3ff5ea0c2b597922e" kind="variable"><name>random_first</name></member>
+    <member refid="mainwindow_8cpp_1a7106e2abc437ad981830d14176d15f09" kind="variable"><name>number</name></member>
+    <member refid="mainwindow_8cpp_1affd617bf010aaf31a24e8b51f6afeea4" kind="variable"><name>tmp_number</name></member>
+    <member refid="mainwindow_8cpp_1a8715771c19d8223abb2abe25f5f06be0" kind="variable"><name>seconds_minutes_hours</name></member>
+    <member refid="mainwindow_8cpp_1ad169bac577628d452c8ddddffcd2c22c" kind="variable"><name>tmp_seconds_minutes_hours</name></member>
+    <member refid="mainwindow_8cpp_1a96203077ee28957ab99fcabaf70abc0f" kind="variable"><name>pref</name></member>
+    <member refid="mainwindow_8cpp_1aeb84694c28fdf361868a5234d9d74db7" kind="variable"><name>add</name></member>
+    <member refid="mainwindow_8cpp_1a57575a2e64cb4b9f815d1cb540689402" kind="variable"><name>show_notification</name></member>
+    <member refid="mainwindow_8cpp_1a2f73f86b6ed098ec989ba1767b5e8c2b" kind="variable"><name>minimize_to_tray</name></member>
+    <member refid="mainwindow_8cpp_1af9a76d8fef8b0c2cb8c58535f33801c1" kind="variable"><name>properties_times</name></member>
+    <member refid="mainwindow_8cpp_1af16ca7cafa7596c54976c19ee1223e4c" kind="variable"><name>close_minimize_app</name></member>
+    <member refid="mainwindow_8cpp_1abe45c1cc4b6d92ec1d811272ee2de8a0" kind="variable"><name>propertieswindow</name></member>
+    <member refid="mainwindow_8cpp_1a98dda529b7c9c1d6bb6edf3644a1954f" kind="variable"><name>extras_shown</name></member>
+    <member refid="mainwindow_8cpp_1a766fcc640f3cd66e7b53c55ec392c842" kind="variable"><name>start_just_clicked</name></member>
+    <member refid="mainwindow_8cpp_1acd4585dbf35a77f014296b8d5f9a30d1" kind="variable"><name>pass_them_as_albums</name></member>
+    <member refid="mainwindow_8cpp_1a2be4ab79f1259f10af556108bc88f5cb" kind="variable"><name>notification_first_time</name></member>
+    <member refid="mainwindow_8cpp_1a2effe0844099f876464abae594ff1fb2" kind="variable"><name>notification</name></member>
+    <member refid="mainwindow_8cpp_1a6e33a04ebc80fee4946b364681fecffd" kind="variable"><name>success</name></member>
+    <member refid="mainwindow_8cpp_1abc39a4bba3587c275762137dee2c3fc1" kind="variable"><name>error</name></member>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="moc__about_8cpp" kind="file"><name>moc_about.cpp</name>
+    <member refid="moc__about_8cpp_1a5b8cd8e989d1603de820d94d0824a83a" kind="variable"><name>qt_meta_data_about</name></member>
+    <member refid="moc__about_8cpp_1ae4a6f29034e53e325a594cff5d0abeda" kind="variable"><name>qt_meta_stringdata_about</name></member>
+  </compound>
+  <compound refid="moc__extras_8cpp" kind="file"><name>moc_extras.cpp</name>
+    <member refid="moc__extras_8cpp_1a31f02cea8dfd579c56d9d6d95f935db4" kind="variable"><name>qt_meta_data_Extras</name></member>
+    <member refid="moc__extras_8cpp_1aa716529dff3650295fc2c863d42cad06" kind="variable"><name>qt_meta_stringdata_Extras</name></member>
+  </compound>
+  <compound refid="moc__history_8cpp" kind="file"><name>moc_history.cpp</name>
+    <member refid="moc__history_8cpp_1aeaa244cea0be3e06f8536c4f79bb228f" kind="variable"><name>qt_meta_data_history</name></member>
+    <member refid="moc__history_8cpp_1af1fa1042d3785f01dc15b46d3942cede" kind="variable"><name>qt_meta_stringdata_history</name></member>
+  </compound>
+  <compound refid="moc__mainwindow_8cpp" kind="file"><name>moc_mainwindow.cpp</name>
+    <member refid="moc__mainwindow_8cpp_1a1dd2e133e39a5ebf8d05650bb3b3741a" kind="variable"><name>qt_meta_data_MainWindow</name></member>
+    <member refid="moc__mainwindow_8cpp_1a82fbcdc12b3520fb6616a53cc8e70274" kind="variable"><name>qt_meta_stringdata_MainWindow</name></member>
+  </compound>
+  <compound refid="moc__MyCameraWindow_8cpp" kind="file"><name>moc_MyCameraWindow.cpp</name>
+    <member refid="moc__MyCameraWindow_8cpp_1a343d46d854aaf8617142e55ae16fbf19" kind="variable"><name>qt_meta_data_MyCameraWindow</name></member>
+    <member refid="moc__MyCameraWindow_8cpp_1a5cfb406f23711194ba435fcf6a6fa8d2" kind="variable"><name>qt_meta_stringdata_MyCameraWindow</name></member>
+  </compound>
+  <compound refid="moc__preferences_8cpp" kind="file"><name>moc_preferences.cpp</name>
+    <member refid="moc__preferences_8cpp_1a3c47d8f25768fdc3e4de2f456d8cf6e7" kind="variable"><name>qt_meta_data_Preferences</name></member>
+    <member refid="moc__preferences_8cpp_1a3a797472fad05c55a0648916638fc3fe" kind="variable"><name>qt_meta_stringdata_Preferences</name></member>
+  </compound>
+  <compound refid="moc__properties_8cpp" kind="file"><name>moc_properties.cpp</name>
+    <member refid="moc__properties_8cpp_1ae650c6ed512d30529ea3ce6784f9176c" kind="variable"><name>qt_meta_data_properties</name></member>
+    <member refid="moc__properties_8cpp_1ab2a59cdde46aba77b6b4943417b49123" kind="variable"><name>qt_meta_stringdata_properties</name></member>
+    <member refid="moc__properties_8cpp_1ab6f3c269fc46c9c1c0f81b3431240138" kind="property"><name>__pad0__</name></member>
+    <member refid="moc__properties_8cpp_1ae31ac69c75bb42f47c8d6a7cde4937c6" kind="property"><name>__pad1__</name></member>
+    <member refid="moc__properties_8cpp_1a16857ed9e195eac0e20e389fd4a68da2" kind="property"><name>_id</name></member>
+  </compound>
+  <compound refid="moc__screenshot_8cpp" kind="file"><name>moc_screenshot.cpp</name>
+    <member refid="moc__screenshot_8cpp_1ad3e6a7361707023e016af9b516a30d8a" kind="variable"><name>qt_meta_data_screenshot</name></member>
+    <member refid="moc__screenshot_8cpp_1a6d5f91b37879937c58f4c5bb8e25214b" kind="variable"><name>qt_meta_stringdata_screenshot</name></member>
+  </compound>
+  <compound refid="moc__statistics_8cpp" kind="file"><name>moc_statistics.cpp</name>
+    <member refid="moc__statistics_8cpp_1aae10660333dc0496676a61d462f1b328" kind="variable"><name>qt_meta_data_statistics</name></member>
+    <member refid="moc__statistics_8cpp_1a0920c01d6718ef2a3a24479d8e62cd81" kind="variable"><name>qt_meta_stringdata_statistics</name></member>
+  </compound>
+  <compound refid="preferences_8cpp" kind="file"><name>preferences.cpp</name>
+  </compound>
+  <compound refid="preferences_8h" kind="file"><name>preferences.h</name>
+    <member refid="preferences_8h_1a8c4f0fd821e3f6f9a963c00064d8d9fa" kind="define"><name>DEFAULTSOUNDFILE</name></member>
+  </compound>
+  <compound refid="properties_8cpp" kind="file"><name>properties.cpp</name>
+    <member refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" kind="variable"><name>image</name></member>
+    <member refid="properties_8cpp_1ab6f3c269fc46c9c1c0f81b3431240138" kind="property"><name>__pad0__</name></member>
+    <member refid="properties_8cpp_1ae31ac69c75bb42f47c8d6a7cde4937c6" kind="property"><name>__pad1__</name></member>
+    <member refid="properties_8cpp_1acb405321a5c6ae16fef21290649f2666" kind="property"><name>__pad2__</name></member>
+    <member refid="properties_8cpp_1a38702cb680157e9541f1610928c148ed" kind="property"><name>optionsGroupBoxLayout</name></member>
+    <member refid="properties_8cpp_1aa6f626203c740423c9dfcbbe727f90b4" kind="property"><name>__pad3__</name></member>
+    <member refid="properties_8cpp_1aa126f02bcfcec342fb72926c73b4aeb3" kind="property"><name>__pad4__</name></member>
+    <member refid="properties_8cpp_1a6be42b5ee467246e7d2ca5b97631f75f" kind="function"><name>scale</name></member>
+    <member refid="properties_8cpp_1a4d79da0f531d0b5df336420a4e85b960" kind="function"><name>if</name></member>
+    <member refid="properties_8cpp_1a270da5afc33d641efa96999c540f8d65" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1ab67e5cf5715d7578bcf3a3bf2189207b" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1aed66291eba7283ab8f1327c84f6a7696" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1a970d4c49866e7910434a42462130ee0d" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1ac525b7e6bd9a5d2dbb8f77cf939443ee" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1ad76e78d828486306dbb55589ce556d9d" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1a4d8fc6077d1d2da6a0a660309e0da85e" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1aecc5c221f6a91d8f35d7c75af17724f9" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1a341cd6d8710f0ddfcc5aad75ae25024e" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1a6254fb5ec70ee671f372c8b9df240cc4" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1ae8eeb8d53d5fc63f2bbfb1d6e46b4fa0" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1ac77f5324e6007d12956bc3307fa8e71d" kind="function"><name>addWidget</name></member>
+    <member refid="properties_8cpp_1af96de5b49f5f6a97407fddab9cacb2ed" kind="function"><name>setLayout</name></member>
+    <member refid="properties_8cpp_1aa811dc4742824b55fc5500989670ddd8" kind="function"><name>addStretch</name></member>
+    <member refid="properties_8cpp_1a6a84531333712c281e4c848677f0348a" kind="function"><name>addWidget</name></member>
+  </compound>
+  <compound refid="properties_8h" kind="file"><name>properties.h</name>
+  </compound>
+  <compound refid="QOpenCVWidget_8cpp" kind="file"><name>QOpenCVWidget.cpp</name>
+  </compound>
+  <compound refid="QOpenCVWidget_8h" kind="file"><name>QOpenCVWidget.h</name>
+  </compound>
+  <compound refid="qrc__icons_8cpp" kind="file"><name>qrc_icons.cpp</name>
+    <member refid="qrc__icons_8cpp_1a67a985282ed24629b630f624b668842b" kind="variable"><name>qt_resource_data</name></member>
+    <member refid="qrc__icons_8cpp_1a7931167bf9d7e883e4194a60d031e431" kind="variable"><name>qt_resource_name</name></member>
+    <member refid="qrc__icons_8cpp_1a37a83d7da2ee18badcd100d79aac64d4" kind="variable"><name>qt_resource_struct</name></member>
+    <member refid="qrc__icons_8cpp_1ab3bec3d1e679084be46edc41e4c91bc1" kind="function"><name>qRegisterResourceData</name></member>
+    <member refid="qrc__icons_8cpp_1ad65f8bca8010dd1fd135a28a085c6d03" kind="function"><name>qUnregisterResourceData</name></member>
+    <member refid="qrc__icons_8cpp_1a604a4b2c01a3fcc04d212c2aabb2171a" kind="function"><name>qInitResources_icons</name></member>
+    <member refid="qrc__icons_8cpp_1a6e1e9924d11f0737f3cf199e822500ab" kind="function"><name>qCleanupResources_icons</name></member>
+  </compound>
+  <compound refid="statistics_8h" kind="file"><name>statistics.h</name>
+  </compound>
+  <compound refid="ui__about_8h" kind="file"><name>ui_about.h</name>
+  </compound>
+  <compound refid="ui__extras_8h" kind="file"><name>ui_extras.h</name>
+  </compound>
+  <compound refid="ui__mainwindow_8h" kind="file"><name>ui_mainwindow.h</name>
+  </compound>
+  <compound refid="ui__preferences_8h" kind="file"><name>ui_preferences.h</name>
+  </compound>
+  <compound refid="ui__properties_8h" kind="file"><name>ui_properties.h</name>
+  </compound>
+</doxygenindex>

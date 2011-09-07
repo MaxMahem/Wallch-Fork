@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classproperties" kind="class" prot="public">
+    <compoundname>properties</compoundname>
+    <includes refid="properties_8h" local="no">properties.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classproperties_1a4efc9acb45185a83b6246bb8bac7bb88" prot="private" static="no" mutable="no">
+        <type><ref refid="classUi_1_1properties" kindref="compound">Ui::properties</ref> *</type>
+        <definition>Ui::properties* properties::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="43" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classproperties_1a193d69d97b06b9e1c327f71daab5a1c5" prot="private" static="no" mutable="no">
+        <type>QGroupBox *</type>
+        <definition>QGroupBox* properties::optionsGroupBox</definition>
+        <argsstring></argsstring>
+        <name>optionsGroupBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="47" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classproperties_1aa981e0abc88ca9658f4ab14b8ffcdaaa" prot="private" static="no" mutable="no">
+        <type>QPixmap</type>
+        <definition>QPixmap properties::originalPixmap</definition>
+        <argsstring></argsstring>
+        <name>originalPixmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="48" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classproperties_1aaa6f3b83bb00baa5d17551ba7a17f7da" prot="private" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout* properties::optionsGroupBoxLayout</definition>
+        <argsstring></argsstring>
+        <name>optionsGroupBoxLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="49" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classproperties_1a78816072dcc5b84d140ba792a97679c9" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* properties::mainLayout</definition>
+        <argsstring></argsstring>
+        <name>mainLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="50" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classproperties_1ad9ffcfd6b910e7a9f2621975ef313fa0" prot="private" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* properties::buttonsLayout</definition>
+        <argsstring></argsstring>
+        <name>buttonsLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="51" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>properties::properties</definition>
+        <argsstring>(QString &amp;img, QWidget *parent=0)</argsstring>
+        <name>properties</name>
+        <param>
+          <type>QString &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="36" bodyend="74"/>
+        <references refid="properties_8cpp_1a059f1ba11b788625374af681fe29b2f3" compoundref="properties_8cpp" startline="34">image</references>
+        <references refid="classUi__properties_1a433aba0e45c4e4f765a24849b9b23811" compoundref="ui__properties_8h" startline="37">Ui_properties::image_height</references>
+        <references refid="classUi__properties_1aecc35167b0fe37745a8d40bcf25c86d8" compoundref="ui__properties_8h" startline="41">Ui_properties::image_location</references>
+        <references refid="classUi__properties_1ab9a95da6a6b87b6ceeae64de87feb322" compoundref="ui__properties_8h" startline="31">Ui_properties::image_name</references>
+        <references refid="classUi__properties_1a16f33c1f91ad25eb781546c86afcf155" compoundref="ui__properties_8h" startline="33">Ui_properties::image_size</references>
+        <references refid="classUi__properties_1adcc106f28130b1fd13a84ef061ac36b6" compoundref="ui__properties_8h" startline="39">Ui_properties::image_type</references>
+        <references refid="classUi__properties_1a6cb30319918b6af8d51132c79d6dcc23" compoundref="ui__properties_8h" startline="35">Ui_properties::image_width</references>
+        <references refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" compoundref="ui__properties_8h" startline="43">Ui_properties::label</references>
+        <references refid="mainwindow_8cpp_1a7106e2abc437ad981830d14176d15f09" compoundref="mainwindow_8cpp" startline="76">number</references>
+        <references refid="properties_8cpp_1af96de5b49f5f6a97407fddab9cacb2ed">setLayout</references>
+        <references refid="classUi__properties_1a03ce4f30d999c6f436cfcba2c71153f5" compoundref="ui__properties_8h" startline="45" endline="150">Ui_properties::setupUi</references>
+      </memberdef>
+      <memberdef kind="function" id="classproperties_1af8e12abaf059c045cf3f8205b0f5f383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>properties::~properties</definition>
+        <argsstring>()</argsstring>
+        <name>~properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="37" bodyfile="/home/maxmahem/wallch-2.0/properties.cpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classproperties_1ad0211b85fbce4b735d5d8ee5a6680de3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void properties::resizeEvent</definition>
+        <argsstring>(QResizeEvent *event)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classproperties_1ae12ba90294b4062891256db305285d9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void properties::createOptionsGroupBox</definition>
+        <argsstring>()</argsstring>
+        <name>createOptionsGroupBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classproperties_1a46102a5c48ead1eac5b4e5899f026a5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void properties::createButtonsLayout</definition>
+        <argsstring>()</argsstring>
+        <name>createButtonsLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classproperties_1abba2fb0698954d2663ec7c175f7ea4fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void properties::updateScreenshotLabel</definition>
+        <argsstring>()</argsstring>
+        <name>updateScreenshotLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classproperties_1aa86164191110ed2e070a6ad26f269ba8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void properties::on_pushButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/properties.h" line="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>Ui::properties</label>
+        <link refid="classUi_1_1properties"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>Ui_properties</label>
+        <link refid="classUi__properties"/>
+      </node>
+      <node id="120">
+        <label>properties</label>
+        <link refid="classproperties"/>
+        <childnode refid="121" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/properties.h" line="32" bodyfile="/home/maxmahem/wallch-2.0/properties.h" bodystart="31" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classproperties_1ad9ffcfd6b910e7a9f2621975ef313fa0" prot="private" virt="non-virtual"><scope>properties</scope><name>buttonsLayout</name></member>
+      <member refid="classproperties_1a46102a5c48ead1eac5b4e5899f026a5c" prot="private" virt="non-virtual"><scope>properties</scope><name>createButtonsLayout</name></member>
+      <member refid="classproperties_1ae12ba90294b4062891256db305285d9e" prot="private" virt="non-virtual"><scope>properties</scope><name>createOptionsGroupBox</name></member>
+      <member refid="classproperties_1a78816072dcc5b84d140ba792a97679c9" prot="private" virt="non-virtual"><scope>properties</scope><name>mainLayout</name></member>
+      <member refid="classproperties_1aa86164191110ed2e070a6ad26f269ba8" prot="private" virt="non-virtual"><scope>properties</scope><name>on_pushButton_clicked</name></member>
+      <member refid="classproperties_1a193d69d97b06b9e1c327f71daab5a1c5" prot="private" virt="non-virtual"><scope>properties</scope><name>optionsGroupBox</name></member>
+      <member refid="classproperties_1aaa6f3b83bb00baa5d17551ba7a17f7da" prot="private" virt="non-virtual"><scope>properties</scope><name>optionsGroupBoxLayout</name></member>
+      <member refid="classproperties_1aa981e0abc88ca9658f4ab14b8ffcdaaa" prot="private" virt="non-virtual"><scope>properties</scope><name>originalPixmap</name></member>
+      <member refid="classproperties_1aa7592a90ccdf6a691b0fa2ca54f77641" prot="public" virt="non-virtual"><scope>properties</scope><name>properties</name></member>
+      <member refid="classproperties_1ad0211b85fbce4b735d5d8ee5a6680de3" prot="protected" virt="non-virtual"><scope>properties</scope><name>resizeEvent</name></member>
+      <member refid="classproperties_1a4efc9acb45185a83b6246bb8bac7bb88" prot="private" virt="non-virtual"><scope>properties</scope><name>ui</name></member>
+      <member refid="classproperties_1abba2fb0698954d2663ec7c175f7ea4fd" prot="private" virt="non-virtual"><scope>properties</scope><name>updateScreenshotLabel</name></member>
+      <member refid="classproperties_1af8e12abaf059c045cf3f8205b0f5f383" prot="public" virt="non-virtual"><scope>properties</scope><name>~properties</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

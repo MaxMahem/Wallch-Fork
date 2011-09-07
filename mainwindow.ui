@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Wallch</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/Pictures/wallpaper.png</normaloff>:/icons/Pictures/wallpaper.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3" columnstretch="5,0,5">
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="addButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string>Add images</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <attribute name="buttonGroup">
+         <string>localControlButtonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Add Site</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addfolder">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string>Add all images from a folder and its subfolders</string>
+        </property>
+        <property name="text">
+         <string>Add Folder</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string>localControlButtonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string>Remove selected image</string>
+        </property>
+        <property name="text">
+         <string>Remove</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeallButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string>Remove all images from list</string>
+        </property>
+        <property name="text">
+         <string>Clear</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sortButton">
+        <property name="text">
+         <string>Sort</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <widget class="QProgressBar" name="time_for_next">
+      <property name="statusTip">
+       <string>Estimated time for next wallpaper</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="format">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="wallpaperPreviewLabel">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="wallpaperCountLabel">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <layout class="QGridLayout" name="commandButtonGridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="previousButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="statusTip">
+         <string>Proceed to previous image</string>
+        </property>
+        <property name="text">
+         <string>&amp;Previous</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="nextButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="statusTip">
+         <string>Proceed to next image</string>
+        </property>
+        <property name="text">
+         <string>&amp;Next</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="startButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="statusTip">
+         <string>Start/Pause the wallpaper changing module</string>
+        </property>
+        <property name="text">
+         <string>&amp;Start</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="stopButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="statusTip">
+         <string>Stop the wallpaper changing module</string>
+        </property>
+        <property name="text">
+         <string>St&amp;op</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="timerSliderLabel">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Timer Slider:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSlider" name="timerSlider">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QListWidget" name="listWidget">
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragDrop</enum>
+      </property>
+      <property name="defaultDropAction">
+       <enum>Qt::MoveAction</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="wallpaperSourceGroupBox">
+      <property name="title">
+       <string>Wallpaper Source</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="localSourceRadio">
+         <property name="text">
+          <string>Local</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="webSourceRadio">
+         <property name="text">
+          <string>Web</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="randomButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Random</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_Files">
+     <property name="tearOffEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Add Files</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/Pictures/add2.png</normaloff>:/icons/Pictures/add2.png</iconset>
+     </property>
+     <property name="separatorsCollapsible">
+      <bool>false</bool>
+     </property>
+     <addaction name="action_Load"/>
+     <addaction name="actionAdd_single_images"/>
+     <addaction name="actionAdd_Folder"/>
+    </widget>
+    <addaction name="menuAdd_Files"/>
+    <addaction name="save_as"/>
+    <addaction name="separator"/>
+    <addaction name="action_Start"/>
+    <addaction name="actionS_top"/>
+    <addaction name="action_Next_Image"/>
+    <addaction name="action_Previous_Image_Shift_Ctrl_B"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit_Ctrl_Q"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="action_Preferences"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Preferences">
+   <property name="text">
+    <string>&amp;Preferences          Ctrl+P</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionQuit_Ctrl_Q">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/Pictures/Exit.png</normaloff>:/icons/Pictures/Exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit                                    Ctrl+Q</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Start">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Buttons/Pictures/Buttons/button_play_red.png</normaloff>:/Buttons/Pictures/Buttons/button_play_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Start                                    Shift+Ctrl+S</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Start                        Shift+Ctrl+S</string>
+   </property>
+   <property name="toolTip">
+    <string>&amp;Start                        Shift+Ctrl+S</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionS_top">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Buttons/Pictures/Buttons/button_stop_red.png</normaloff>:/Buttons/Pictures/Buttons/button_stop_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>S&amp;top                                    Shift+Ctrl+O</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Pause">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Buttons/Pictures/Buttons/button_pause_red.png</normaloff>:/Buttons/Pictures/Buttons/button_pause_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Pause                                 Shift+Ctrl+P</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Next_Image">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Buttons/Pictures/Buttons/button_fastforward_red.png</normaloff>:/Buttons/Pictures/Buttons/button_fastforward_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Next Image                     Shift+Ctrl+N</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionRemove_list">
+   <property name="text">
+    <string>Remove non-existent files</string>
+   </property>
+  </action>
+  <action name="action_Load">
+   <property name="text">
+    <string>Add a Wallch Album         Ctrl+O</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAdd_single_images">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/Pictures/picture_add.png</normaloff>:/icons/Pictures/picture_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add single images             Ctrl+I</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAdd_Folder">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/Pictures/folder-new.png</normaloff>:/icons/Pictures/folder-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Folder                             Ctrl+F</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAdd_a_Wallch_album">
+   <property name="text">
+    <string>Add a Wallch album</string>
+   </property>
+  </action>
+  <action name="actionHistory">
+   <property name="text">
+    <string>&amp;History                    Ctrl+H</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Previous_Image_Shift_Ctrl_B">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Buttons/Pictures/Buttons/button_fastbackward_red.png</normaloff>:/Buttons/Pictures/Buttons/button_fastbackward_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Previous Image            Shift+Ctrl+P</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionExtras">
+   <property name="text">
+    <string>&amp;Extras                      Ctrl+E</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="save_as">
+   <property name="text">
+    <string>Save images as a wallch album</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="localControlButtonGroup"/>
+ </buttongroups>
+</ui>

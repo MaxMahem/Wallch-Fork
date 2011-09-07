@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi__screenshot" kind="class" prot="public">
+    <compoundname>Ui_screenshot</compoundname>
+    <derivedcompoundref refid="classUi_1_1screenshot" prot="public" virt="non-virtual">Ui::screenshot</derivedcompoundref>
+    <includes refid="ui__screenshot_8h" local="no">ui_screenshot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" prot="public" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* Ui_screenshot::hideThisWindowCheckBox</definition>
+        <argsstring></argsstring>
+        <name>hideThisWindowCheckBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="31" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_screenshot::screenshotLabel</definition>
+        <argsstring></argsstring>
+        <name>screenshotLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="32" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_screenshot::layoutWidget</definition>
+        <argsstring></argsstring>
+        <name>layoutWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="33" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" prot="public" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* Ui_screenshot::horizontalLayout_2</definition>
+        <argsstring></argsstring>
+        <name>horizontalLayout_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="34" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_screenshot::newScreenshotButton</definition>
+        <argsstring></argsstring>
+        <name>newScreenshotButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="35" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_screenshot::saveScreenshot</definition>
+        <argsstring></argsstring>
+        <name>saveScreenshot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_screenshot::QuitButton</definition>
+        <argsstring></argsstring>
+        <name>QuitButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="37" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_screenshot::layoutWidget_2</definition>
+        <argsstring></argsstring>
+        <name>layoutWidget_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="38" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" prot="public" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* Ui_screenshot::horizontalLayout</definition>
+        <argsstring></argsstring>
+        <name>horizontalLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a748678988896dca422c17f13394f3d90" prot="public" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* Ui_screenshot::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="40" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1a37924d707077bd389b53ac026e132883" prot="public" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* Ui_screenshot::delaySpinBox</definition>
+        <argsstring></argsstring>
+        <name>delaySpinBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="41" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" prot="public" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* Ui_screenshot::hideMainWindow</definition>
+        <argsstring></argsstring>
+        <name>hideMainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="42" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</referencedby>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_screenshot::setupUi</definition>
+        <argsstring>(QDialog *screenshot)</argsstring>
+        <name>setupUi</name>
+        <param>
+          <type>QDialog *</type>
+          <declname>screenshot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="45" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="44" bodyend="117"/>
+        <references refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" compoundref="ui__screenshot_8h" startline="41">delaySpinBox</references>
+        <references refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" compoundref="ui__screenshot_8h" startline="42">hideMainWindow</references>
+        <references refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" compoundref="ui__screenshot_8h" startline="31">hideThisWindowCheckBox</references>
+        <references refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" compoundref="ui__screenshot_8h" startline="39">horizontalLayout</references>
+        <references refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" compoundref="ui__screenshot_8h" startline="34">horizontalLayout_2</references>
+        <references refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" compoundref="ui__screenshot_8h" startline="40">label</references>
+        <references refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" compoundref="ui__screenshot_8h" startline="33">layoutWidget</references>
+        <references refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" compoundref="ui__screenshot_8h" startline="38">layoutWidget_2</references>
+        <references refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" compoundref="ui__screenshot_8h" startline="35">newScreenshotButton</references>
+        <references refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" compoundref="ui__screenshot_8h" startline="37">QuitButton</references>
+        <references refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" compoundref="ui__screenshot_8h" startline="119" endline="129">retranslateUi</references>
+        <references refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" compoundref="ui__screenshot_8h" startline="36">saveScreenshot</references>
+        <references refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" compoundref="ui__screenshot_8h" startline="32">screenshotLabel</references>
+      </memberdef>
+      <memberdef kind="function" id="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_screenshot::retranslateUi</definition>
+        <argsstring>(QDialog *screenshot)</argsstring>
+        <name>retranslateUi</name>
+        <param>
+          <type>QDialog *</type>
+          <declname>screenshot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="120" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="119" bodyend="129"/>
+        <references refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" compoundref="ui__screenshot_8h" startline="42">hideMainWindow</references>
+        <references refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" compoundref="ui__screenshot_8h" startline="31">hideThisWindowCheckBox</references>
+        <references refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" compoundref="ui__screenshot_8h" startline="40">label</references>
+        <references refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" compoundref="ui__screenshot_8h" startline="35">newScreenshotButton</references>
+        <references refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" compoundref="ui__screenshot_8h" startline="37">QuitButton</references>
+        <references refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" compoundref="ui__screenshot_8h" startline="36">saveScreenshot</references>
+        <references refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" compoundref="ui__screenshot_8h" startline="32">screenshotLabel</references>
+        <referencedby refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" compoundref="ui__screenshot_8h" startline="44" endline="117">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="167">
+        <label>Ui_screenshot</label>
+        <link refid="classUi__screenshot"/>
+      </node>
+      <node id="168">
+        <label>Ui::screenshot</label>
+        <link refid="classUi_1_1screenshot"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="29" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="28" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>delaySpinBox</name></member>
+      <member refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>hideMainWindow</name></member>
+      <member refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>hideThisWindowCheckBox</name></member>
+      <member refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>horizontalLayout</name></member>
+      <member refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>horizontalLayout_2</name></member>
+      <member refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>label</name></member>
+      <member refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>layoutWidget</name></member>
+      <member refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>layoutWidget_2</name></member>
+      <member refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>newScreenshotButton</name></member>
+      <member refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>QuitButton</name></member>
+      <member refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>retranslateUi</name></member>
+      <member refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>saveScreenshot</name></member>
+      <member refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>screenshotLabel</name></member>
+      <member refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" prot="public" virt="non-virtual"><scope>Ui_screenshot</scope><name>setupUi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+.TH "/home/maxmahem/wallch-2.0/properties.cpp" 3 "Wed Aug 31 2011" "Version 2.1" "Wallch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/maxmahem/wallch-2.0/properties.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'properties.h'\fP
+.br
+\fC#include 'ui_properties.h'\fP
+.br
+\fC#include 'glob.h'\fP
+.br
+\fC#include <QDir>\fP
+.br
+\fC#include <QImage>\fP
+.br
+\fC#include <QFileInfo>\fP
+.br
+\fC#include <sys/stat.h>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <stdio.h>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "scaledSize \fBscale\fP (ui->label->size(), Qt::KeepAspectRatio)"
+.br
+.ti -1c
+.RI "\fBif\fP (!ui->label->pixmap()||scaledSize!=ui->label->pixmap()->size()) updateScreenshotLabel()"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->label_2, 0, 0)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->image_name, 0, 1)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->label_4, 1, 0)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->image_size, 1, 1)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->label_7, 2, 0)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->image_width, 2, 1)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->label_6, 3, 0)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->image_height, 3, 1)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->label_3, 4, 0)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->image_type, 4, 1)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->label_5, 5, 0)"
+.br
+.ti -1c
+.RI "optionsGroupBoxLayout \fBaddWidget\fP (ui->image_location, 5, 1)"
+.br
+.ti -1c
+.RI "optionsGroupBox \fBsetLayout\fP (optionsGroupBoxLayout)"
+.br
+.ti -1c
+.RI "buttonsLayout \fBaddStretch\fP ()"
+.br
+.ti -1c
+.RI "buttonsLayout \fBaddWidget\fP (ui->pushButton)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "QString \fBimage\fP"
+.br
+.ti -1c
+.RI "\fB__pad0__\fP"
+.br
+.ti -1c
+.RI "\fB__pad1__\fP"
+.br
+.ti -1c
+.RI "\fB__pad2__\fP"
+.br
+.ti -1c
+.RI "\fBoptionsGroupBoxLayout\fP = new QGridLayout"
+.br
+.ti -1c
+.RI "\fB__pad3__\fP"
+.br
+.ti -1c
+.RI "\fB__pad4__\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "buttonsLayout addStretch ()"
+.SS "buttonsLayout addWidget (ui->pushButton)"
+.SS "optionsGroupBoxLayout addWidget (ui->label_2, 0, 0)"
+.SS "optionsGroupBoxLayout addWidget (ui->image_name, 0, 1)"
+.SS "optionsGroupBoxLayout addWidget (ui->image_location, 5, 1)"
+.SS "optionsGroupBoxLayout addWidget (ui->label_5, 5, 0)"
+.SS "optionsGroupBoxLayout addWidget (ui->image_width, 2, 1)"
+.SS "optionsGroupBoxLayout addWidget (ui->label_3, 4, 0)"
+.SS "optionsGroupBoxLayout addWidget (ui->image_height, 3, 1)"
+.SS "optionsGroupBoxLayout addWidget (ui->label_6, 3, 0)"
+.SS "optionsGroupBoxLayout addWidget (ui->label_4, 1, 0)"
+.SS "optionsGroupBoxLayout addWidget (ui->label_7, 2, 0)"
+.SS "optionsGroupBoxLayout addWidget (ui->image_type, 4, 1)"
+.SS "optionsGroupBoxLayout addWidget (ui->image_size, 1, 1)"
+.SS "if (!ui->label->pixmap()||scaledSize! = \fCui->label->pixmap()->size()\fP)"
+.SS "scaledSize scale (ui->label->size(), Qt::KeepAspectRatio)"
+.SS "optionsGroupBox setLayout (optionsGroupBoxLayout)"
+.SH "Variable Documentation"
+.PP 
+.SS "__pad0__"
+.PP
+Definition at line 78 of file properties.cpp.
+.SS "__pad1__"
+.PP
+Definition at line 81 of file properties.cpp.
+.SS "__pad2__"
+.PP
+Definition at line 88 of file properties.cpp.
+.SS "__pad3__"
+.PP
+Definition at line 107 of file properties.cpp.
+.SS "__pad4__"
+.PP
+Definition at line 113 of file properties.cpp.
+.SS "QString \fBimage\fP"
+.PP
+Definition at line 34 of file properties.cpp.
+.SS "optionsGroupBoxLayout = new QGridLayout"
+.PP
+Definition at line 90 of file properties.cpp.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Wallch from the source code.

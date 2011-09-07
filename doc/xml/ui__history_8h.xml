@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="ui__history_8h" kind="file">
+    <compoundname>ui_history.h</compoundname>
+    <includes local="no">QtCore/QVariant</includes>
+    <includes local="no">QtGui/QAction</includes>
+    <includes local="no">QtGui/QApplication</includes>
+    <includes local="no">QtGui/QButtonGroup</includes>
+    <includes local="no">QtGui/QDialog</includes>
+    <includes local="no">QtGui/QHeaderView</includes>
+    <includes local="no">QtGui/QListWidget</includes>
+    <includes local="no">QtGui/QPushButton</includes>
+    <includes local="no">QtGui/QTreeWidget</includes>
+    <incdepgraph>
+      <node id="994">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="999">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="996">
+        <label>QtGui/QDialog</label>
+      </node>
+      <node id="992">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="998">
+        <label>QtGui/QListWidget</label>
+      </node>
+      <node id="1000">
+        <label>QtGui/QTreeWidget</label>
+      </node>
+      <node id="993">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="995">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="991">
+        <label>/home/maxmahem/wallch-2.0/ui_history.h</label>
+        <link refid="ui_history.h"/>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="994" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+        <childnode refid="997" relation="include">
+        </childnode>
+        <childnode refid="998" relation="include">
+        </childnode>
+        <childnode refid="999" relation="include">
+        </childnode>
+        <childnode refid="1000" relation="include">
+        </childnode>
+      </node>
+      <node id="997">
+        <label>QtGui/QHeaderView</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classUi__history" prot="public">Ui_history</innerclass>
+    <innerclass refid="classUi_1_1history" prot="public">Ui::history</innerclass>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>generated<sp/>from<sp/>reading<sp/>UI<sp/>file<sp/>&apos;history.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Wed<sp/>Aug<sp/>31<sp/>02:21:09<sp/>2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>Qt<sp/>User<sp/>Interface<sp/>Compiler<sp/>version<sp/>4.7.2</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost<sp/>when<sp/>recompiling<sp/>UI<sp/>file!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UI_HISTORY_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UI_HISTORY_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QAction&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QButtonGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QHeaderView&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QListWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QTreeWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classUi__history" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUi__history" kindref="compound">Ui_history</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QListWidget<sp/>*<ref refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTreeWidget<sp/>*<ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" kindref="member">pushButton</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" kindref="member">pushButton_2</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" kindref="member">closeButton</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" kindref="member">setupUi</ref>(QDialog<sp/>*history)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(history-&gt;objectName().isEmpty())</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>history-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;history&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>history-&gt;resize(714,<sp/>479);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" kindref="member">info</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QListWidget(history);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" kindref="member">info</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;info&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" kindref="member">info</ref>-&gt;setGeometry(QRect(250,<sp/>10,<sp/>461,<sp/>421));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" kindref="member">info</ref>-&gt;setFocusPolicy(Qt::NoFocus);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTreeWidget(history);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTreeWidgetItem<sp/>*__qtreewidgetitem<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTreeWidgetItem();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__qtreewidgetitem-&gt;setText(0,<sp/>QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setHeaderItem(__qtreewidgetitem);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;treeWidget&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setGeometry(QRect(5,<sp/>10,<sp/>231,<sp/>421));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setMaximumSize(QSize(231,<sp/>16777215));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setFocusPolicy(Qt::NoFocus);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setFrameShape(QFrame::StyledPanel);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setFrameShadow(QFrame::Sunken);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" kindref="member">treeWidget</ref>-&gt;setAnimated(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" kindref="member">pushButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(history);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" kindref="member">pushButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;pushButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" kindref="member">pushButton</ref>-&gt;setGeometry(QRect(290,<sp/>442,<sp/>151,<sp/>27));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" kindref="member">pushButton_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(history);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" kindref="member">pushButton_2</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;pushButton_2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" kindref="member">pushButton_2</ref>-&gt;setGeometry(QRect(450,<sp/>442,<sp/>131,<sp/>27));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" kindref="member">closeButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(history);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" kindref="member">closeButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;closeButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" kindref="member">closeButton</ref>-&gt;setGeometry(QRect(590,<sp/>442,<sp/>111,<sp/>27));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" kindref="member">closeButton</ref>-&gt;setDefault(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" kindref="member">retranslateUi</ref>(history);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMetaObject::connectSlotsByName(history);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>setupUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" kindref="member">retranslateUi</ref>(QDialog<sp/>*history)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>history-&gt;setWindowTitle(QApplication::translate(</highlight><highlight class="stringliteral">&quot;history&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;History&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" kindref="member">pushButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;history&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&amp;Remove<sp/>History&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" kindref="member">pushButton_2</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;history&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&amp;Update<sp/>List&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" kindref="member">closeButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;history&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&amp;Close&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>retranslateUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="81" refid="classUi_1_1history" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUi_1_1history" kindref="compound">history</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUi__history" kindref="compound">Ui_history</ref><sp/>{};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Ui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>UI_HISTORY_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/ui_history.h"/>
+  </compounddef>
+</doxygen>

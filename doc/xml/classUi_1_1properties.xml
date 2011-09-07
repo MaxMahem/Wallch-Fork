@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi_1_1properties" kind="class" prot="public">
+    <compoundname>Ui::properties</compoundname>
+    <basecompoundref refid="classUi__properties" prot="public" virt="non-virtual">Ui_properties</basecompoundref>
+    <includes refid="ui__properties_8h" local="no">ui_properties.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="115">
+        <label>Ui::properties</label>
+        <link refid="classUi_1_1properties"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>Ui_properties</label>
+        <link refid="classUi__properties"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>Ui::properties</label>
+        <link refid="classUi_1_1properties"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>Ui_properties</label>
+        <link refid="classUi__properties"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_properties.h" line="172" bodyfile="/home/maxmahem/wallch-2.0/ui_properties.h" bodystart="172" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classUi__properties_1a879a624d84a2c970aa6ec8f6409bc0b1" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>formLayout</name></member>
+      <member refid="classUi__properties_1a433aba0e45c4e4f765a24849b9b23811" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>image_height</name></member>
+      <member refid="classUi__properties_1aecc35167b0fe37745a8d40bcf25c86d8" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>image_location</name></member>
+      <member refid="classUi__properties_1ab9a95da6a6b87b6ceeae64de87feb322" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>image_name</name></member>
+      <member refid="classUi__properties_1a16f33c1f91ad25eb781546c86afcf155" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>image_size</name></member>
+      <member refid="classUi__properties_1adcc106f28130b1fd13a84ef061ac36b6" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>image_type</name></member>
+      <member refid="classUi__properties_1a6cb30319918b6af8d51132c79d6dcc23" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>image_width</name></member>
+      <member refid="classUi__properties_1ac89da5db2b698990b8f75f2f1f1ac43b" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label</name></member>
+      <member refid="classUi__properties_1a1376b8960298c79c539abb1cc5446743" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label_2</name></member>
+      <member refid="classUi__properties_1a1bff93f4244d3116dc1257d7d7dc7a0e" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label_3</name></member>
+      <member refid="classUi__properties_1a3cc1c78396a6ff54c641120805eefe57" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label_4</name></member>
+      <member refid="classUi__properties_1a6702ccc6363460b0b6df3068f72785d5" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label_5</name></member>
+      <member refid="classUi__properties_1a71f9da68c3afbed85206add43969427d" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label_6</name></member>
+      <member refid="classUi__properties_1acc7d3274c77af03c936c343605939957" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>label_7</name></member>
+      <member refid="classUi__properties_1aaecc391d7033c644061cb6f1bf380bd2" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>pushButton</name></member>
+      <member refid="classUi__properties_1ac1d56e369ffb4df607eb2ad3d9598e92" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>retranslateUi</name></member>
+      <member refid="classUi__properties_1a03ce4f30d999c6f436cfcba2c71153f5" prot="public" virt="non-virtual"><scope>Ui::properties</scope><name>setupUi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

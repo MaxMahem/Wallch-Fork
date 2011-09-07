@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="preferences_8cpp" kind="file">
+    <compoundname>preferences.cpp</compoundname>
+    <includes refid="preferences_8h" local="yes">preferences.h</includes>
+    <includes refid="ui__preferences_8h" local="yes">ui_preferences.h</includes>
+    <includes local="yes">glob.h</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QFileDialog</includes>
+    <includes local="no">QTextStream</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QShortcut</includes>
+    <includes local="no">QtDebug</includes>
+    <includes local="no">QMetaEnum</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="851">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="849">
+        <label>QtDebug</label>
+      </node>
+      <node id="844">
+        <label>glob.h</label>
+      </node>
+      <node id="842">
+        <label>QtGui/QVBoxLayout</label>
+      </node>
+      <node id="840">
+        <label>QtGui/QSpacerItem</label>
+      </node>
+      <node id="822">
+        <label>QSettings</label>
+      </node>
+      <node id="831">
+        <label>QtGui/QComboBox</label>
+      </node>
+      <node id="847">
+        <label>QMessageBox</label>
+      </node>
+      <node id="821">
+        <label>QObject</label>
+      </node>
+      <node id="830">
+        <label>QtGui/QCheckBox</label>
+      </node>
+      <node id="818">
+        <label>/home/maxmahem/wallch-2.0/preferences.cpp</label>
+        <link refid="preferences.cpp"/>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+        <childnode refid="822" relation="include">
+        </childnode>
+        <childnode refid="845" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+        <childnode refid="848" relation="include">
+        </childnode>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="850" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="852" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+      </node>
+      <node id="824">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="839">
+        <label>QtGui/QRadioButton</label>
+      </node>
+      <node id="828">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="838">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="853">
+        <label>fstream</label>
+      </node>
+      <node id="832">
+        <label>QtGui/QDialog</label>
+      </node>
+      <node id="848">
+        <label>QShortcut</label>
+      </node>
+      <node id="826">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="841">
+        <label>QtGui/QTabWidget</label>
+      </node>
+      <node id="845">
+        <label>QFileDialog</label>
+      </node>
+      <node id="843">
+        <label>QtGui/QWidget</label>
+      </node>
+      <node id="820">
+        <label>QDialog</label>
+      </node>
+      <node id="850">
+        <label>QMetaEnum</label>
+      </node>
+      <node id="837">
+        <label>QtGui/QLabel</label>
+      </node>
+      <node id="827">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="823">
+        <label>gconf/gconf-client.h</label>
+      </node>
+      <node id="834">
+        <label>QtGui/QGroupBox</label>
+      </node>
+      <node id="833">
+        <label>QtGui/QFormLayout</label>
+      </node>
+      <node id="852">
+        <label>iostream</label>
+      </node>
+      <node id="825">
+        <label>ui_preferences.h</label>
+        <link refid="ui__preferences_8h"/>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="819">
+        <label>preferences.h</label>
+        <link refid="preferences_8h"/>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
+        <childnode refid="822" relation="include">
+        </childnode>
+        <childnode refid="823" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="846">
+        <label>QTextStream</label>
+      </node>
+      <node id="836">
+        <label>QtGui/QHeaderView</label>
+      </node>
+      <node id="835">
+        <label>QtGui/QHBoxLayout</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*Wallch<sp/>-<sp/>WallpaperChanger</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">A<sp/>tool<sp/>for<sp/>changing<sp/>Desktop<sp/>Wallpapers<sp/>automatically</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">with<sp/>lots<sp/>of<sp/>features</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Copyright<sp/>©<sp/>2011<sp/>by<sp/>Alex<sp/>Solanos<sp/>and<sp/>Leon<sp/>Vytanos</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="preferences_8h" kindref="compound">preferences.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ui__preferences_8h" kindref="compound">ui_preferences.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;glob.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTextStream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QShortcut&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMetaEnum&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classPreferences_1a3fc460c1a11115945b78b2d35d7ade00" refkind="member"><highlight class="normal"><ref refid="classPreferences_1a3fc460c1a11115945b78b2d35d7ade00" kindref="member">Preferences::Preferences</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QDialog(parent),<sp/>ui(new<sp/>Ui::<ref refid="classPreferences" kindref="compound">Preferences</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a2c535ca36a3133132a7c858a4972df85" kindref="member">setupUi</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>build<sp/>Startup<sp/>Options<sp/>Group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kindref="member">startupOptionsGroup</ref>-&gt;setId(ui-&gt;<ref refid="classUi__Preferences_1a394530273401e5624c80f0b0665a8242" kindref="member">startupChangeOnceRadio</ref>,<sp/><ref refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea109228307fbc6fc25e01e9916a3b9e27" kindref="member">Preferences::once</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kindref="member">startupOptionsGroup</ref>-&gt;setId(ui-&gt;<ref refid="classUi__Preferences_1a1eb4559ebb63551ec3ebd03e1209a0c1" kindref="member">startupRunRadio</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea85bfd301c96cc6adcb97b466e8591edf" kindref="member">Preferences::run</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kindref="member">startupOptionsGroup</ref>-&gt;setId(ui-&gt;<ref refid="classUi__Preferences_1ad4180835bda75254d45f8f6a8bde10a6" kindref="member">startupLiveEarthRadio</ref>,<sp/><sp/><ref refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea3ee6d987489659a606564b7a6ba497ad" kindref="member">Preferences::liveEarth</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>icons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a47f2c2d39f53cc25b5e40b919481cee0" kindref="member">testSoundButton</ref>-&gt;setIcon(QIcon::fromTheme(</highlight><highlight class="stringliteral">&quot;audio-volume-high&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;setIcon(QIcon::fromTheme(</highlight><highlight class="stringliteral">&quot;audio-x-generic&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>QMetaEnum<sp/>startupMetaEnum<sp/>=<sp/>Preferences::staticMetaObject.enumerator(</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Preferences::staticMetaObject.indexOfEnumerator(</highlight><highlight class="stringliteral">&quot;startupEnum&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>QMetaEnum<sp/>backgroundMetaEnum<sp/>=<sp/>Preferences::staticMetaObject.enumerator(</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Preferences::staticMetaObject.indexOfEnumerator(</highlight><highlight class="stringliteral">&quot;backgroundSettingEnum&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>convience<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>startupOption<sp/><sp/><sp/><sp/>=<sp/>settings.value(</highlight><highlight class="stringliteral">&quot;preferences/startupOption&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;run&quot;</highlight><highlight class="normal">).toString();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>backgroundOption<sp/>=<sp/>settings.value(</highlight><highlight class="stringliteral">&quot;preferences/backgroundOption&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;wallpaper&quot;</highlight><highlight class="normal">).toString();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>soundFileName<sp/><sp/><sp/><sp/>=<sp/>settings.value(</highlight><highlight class="stringliteral">&quot;preferences/soundFileName&quot;</highlight><highlight class="normal">).toString();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>customSound<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>settings.value(</highlight><highlight class="stringliteral">&quot;preferences/customSound&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>settings<sp/>to<sp/>ui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" kindref="member">startupOptionsGroupBox</ref>-&gt;setChecked(settings.value(</highlight><highlight class="stringliteral">&quot;preferences/startup&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kindref="member">startupOptionsGroup</ref>-&gt;button(startupMetaEnum.keyToValue(startupOption.toLocal8Bit()))-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a129964e10a8201a42326692ea118d4d5" kindref="member">backgroundSettingsCombo</ref>-&gt;setCurrentIndex(backgroundMetaEnum.keyToValue(backgroundOption.toLocal8Bit()));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1aa58b4ebc358d2f12989ca10837fa90ea" kindref="member">minimizeToTrayCheckBox</ref>-&gt;setChecked(settings.value(</highlight><highlight class="stringliteral">&quot;preferences/minimizeToTray&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a643214d4acc744082f2ab12e9920c42b" kindref="member">soundNotificationGroupBox</ref>-&gt;setChecked(settings.value(</highlight><highlight class="stringliteral">&quot;preferences/playSound&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a14e5348186c9bd343b89528b172f51a1" kindref="member">customSoundRadio</ref>-&gt;setChecked(customSound);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>Preferences::on_customSoundRadio_toggled(customSound);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calling<sp/>this<sp/>sets<sp/>the<sp/>other<sp/>button<sp/>states<sp/>appropriately</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1aae955def2c42e4e1c34edf4c65004fe1" kindref="member">desktopNotificationCheckBox</ref>-&gt;setChecked(settings.value(</highlight><highlight class="stringliteral">&quot;preferences/desktopNotification&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">).toBool());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>browse<sp/>sound<sp/>button<sp/>text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;isEnabled())<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;(None)&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundFileName<sp/>=<sp/><ref refid="preferences_8h_1a8c4f0fd821e3f6f9a963c00064d8d9fa" kindref="member">DEFAULTSOUNDFILE</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;setText(soundFileName);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classPreferences_1a20020f4fceeefb048a5eeddec6c28376" refkind="member"><highlight class="normal"><ref refid="classPreferences_1a20020f4fceeefb048a5eeddec6c28376" kindref="member">Preferences::~Preferences</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;<sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Preferences::on_closeButton_clicked()<sp/>{<sp/>close();<sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Preferences::on_saveButton_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setup<sp/>the<sp/>enums</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>QMetaEnum<sp/>startupMetaEnum<sp/>=<sp/>Preferences::staticMetaObject.enumerator(</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Preferences::staticMetaObject.indexOfEnumerator(</highlight><highlight class="stringliteral">&quot;startupEnum&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>QMetaEnum<sp/>backgroundMetaEnum<sp/>=<sp/>Preferences::staticMetaObject.enumerator(</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Preferences::staticMetaObject.indexOfEnumerator(</highlight><highlight class="stringliteral">&quot;backgroundSettingEnum&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>startup<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui-&gt;<ref refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" kindref="member">startupOptionsGroupBox</ref>-&gt;isChecked())<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>options;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>comment;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>filename;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ui-&gt;<ref refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kindref="member">startupOptionsGroup</ref>-&gt;checkedId())<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea109228307fbc6fc25e01e9916a3b9e27" kindref="member">Preferences::once</ref>:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;--once&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comment<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Change<sp/>desktop<sp/>background<sp/>once.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WallchOnBoot.desktop&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea3ee6d987489659a606564b7a6ba497ad" kindref="member">Preferences::liveEarth</ref>:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;--earth&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comment<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Enable<sp/>Live<sp/>Earth<sp/>Wallpaper.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WallchLiveEarthOnBoot.desktop&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classPreferences_1a95be5e16f0907d341543bc9b7f396e4ea85bfd301c96cc6adcb97b466e8591edf" kindref="member">Preferences::run</ref>:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;--constant&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comment<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Start<sp/>changing<sp/>desktop<sp/>background<sp/>after<sp/>a<sp/>certain<sp/>time.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WallachOnBootConstantApp.desktop&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>should<sp/>never<sp/>reach<sp/>this<sp/>fall<sp/>through:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Somehow<sp/>startupOptionsGroup<sp/>was<sp/>checked,<sp/>but<sp/>one<sp/>of<sp/>the<sp/>options<sp/>wasn&apos;t<sp/>checked,<sp/>or<sp/>it<sp/>missed<sp/>the<sp/>enum&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>command<sp/>=<sp/>QString(</highlight><highlight class="stringliteral">&quot;echo<sp/>\&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;[Desktop<sp/>Entry]\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Type=Application\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Name=Wallch\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Exec=/usr/bin/wallch<sp/>%1\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Terminal=false\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Icon=wallch\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Comment=%2\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Categories=Utility;Application;\&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&gt;<sp/>~/.config/autostart/%3&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.arg(options).arg(comment).arg(filename);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(system(command.toLocal8Bit()))</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>creating<sp/>new<sp/>startup<sp/>command:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>filename.toLocal8Bit();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//<sp/>startup<sp/>option<sp/>not<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFile::remove(</highlight><highlight class="stringliteral">&quot;~/.config/autostart/WallchOnBoot.desktop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFile::remove(</highlight><highlight class="stringliteral">&quot;~/.config/autostart/WallchLiveEarthOnBoot.desktop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFile::remove(</highlight><highlight class="stringliteral">&quot;~/.config/autostart/WallchOnBootConstantApp.desktop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>save<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/startup&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" kindref="member">startupOptionsGroupBox</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/startupOption&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>startupMetaEnum.key(ui-&gt;<ref refid="classUi__Preferences_1a675b828e13ef715d551de75d9f1d9aa7" kindref="member">startupOptionsGroup</ref>-&gt;checkedId()));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/minimizeToTray&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1aa58b4ebc358d2f12989ca10837fa90ea" kindref="member">minimizeToTrayCheckBox</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/backgroundOption&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/>backgroundMetaEnum.key(ui-&gt;<ref refid="classUi__Preferences_1a129964e10a8201a42326692ea118d4d5" kindref="member">backgroundSettingsCombo</ref>-&gt;currentIndex()));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/desktopNotification&quot;</highlight><highlight class="normal">,<sp/>ui-&gt;<ref refid="classUi__Preferences_1aae955def2c42e4e1c34edf4c65004fe1" kindref="member">desktopNotificationCheckBox</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/playSound&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a643214d4acc744082f2ab12e9920c42b" kindref="member">soundNotificationGroupBox</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/customSound&quot;</highlight><highlight class="normal"><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a14e5348186c9bd343b89528b172f51a1" kindref="member">customSoundRadio</ref>-&gt;isChecked());</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.setValue(</highlight><highlight class="stringliteral">&quot;preferences/soundFileName&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;text());</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>settings.sync();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>//<sp/>set<sp/>background<sp/>gconf<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>if<sp/>(!gconf_client_set_string(gconfClient,<sp/>&quot;/desktop/gnome/background/picture_options&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type.toLatin1(),<sp/>NULL))<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::warning(this,<sp/>tr(&quot;Error<sp/>Changing<sp/>Settings&quot;),<sp/>tr(&quot;Error<sp/>changing<sp/>gconf<sp/>settings,<sp/>check<sp/>permissions<sp/>on<sp/>home<sp/>foler<sp/>and<sp/>.gconf.&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/>&quot;Error<sp/>while<sp/>trying<sp/>to<sp/>change<sp/>style.<sp/>Check<sp/>.gconf<sp/>permissions.\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>close();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Preferences::on_browseSoundButton_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>file<sp/>from<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>userFileName;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>userFileName<sp/>=<sp/>QFileDialog::getOpenFileName(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>tr(</highlight><highlight class="stringliteral">&quot;Choose<sp/>Custom<sp/>Sound&quot;</highlight><highlight class="normal">),<sp/>QDir::homePath(),<sp/></highlight><highlight class="stringliteral">&quot;*.wav<sp/>*.ogg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(userFileName<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>user<sp/>clicked<sp/>cancel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>open<sp/>the<sp/>sound</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sound.OpenFromFile(userFileName.toStdString()))<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::warning(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>tr(</highlight><highlight class="stringliteral">&quot;Bad<sp/>Sound<sp/>File&quot;</highlight><highlight class="normal">),<sp/>tr(</highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>load<sp/>sound<sp/>file,<sp/>inncorrect<sp/>permissions<sp/>or<sp/>bad<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>open<sp/>sound<sp/>file!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>the<sp/>sounds<sp/>duration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sound.GetDuration()<sp/>&gt;<sp/>5)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(QMessageBox::question(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>tr(</highlight><highlight class="stringliteral">&quot;Long<sp/>Alert<sp/>Sound&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tr(</highlight><highlight class="stringliteral">&quot;This<sp/>sound<sp/>is<sp/>longer<sp/>then<sp/>5<sp/>secounds,\n<sp/>are<sp/>you<sp/>sure<sp/>you<sp/>want<sp/>to<sp/>use<sp/>this<sp/>sound?&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Yes<sp/>|<sp/>QMessageBox::No,<sp/>QMessageBox::No)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!=<sp/>QMessageBox::Yes)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;setText(soundFileName);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>soundFileName<sp/>=<sp/>userFileName;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Preferences::on_testSoundButton_clicked()<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>open<sp/>the<sp/>sound</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sound.OpenFromFile(soundFileName.toStdString()))<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::warning(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>tr(</highlight><highlight class="stringliteral">&quot;Bad<sp/>Sound<sp/>File&quot;</highlight><highlight class="normal">),<sp/>tr(</highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>load<sp/>sound<sp/>file,<sp/>inncorrect<sp/>permissions<sp/>or<sp/>bad<sp/>file.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unable<sp/>to<sp/>open<sp/>sound<sp/>file!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>sound.Play();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>while<sp/>the<sp/>music<sp/>is<sp/>playing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(sound.GetStatus()<sp/>==<sp/>sf::Music::Playing)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Leave<sp/>some<sp/>CPU<sp/>time<sp/>for<sp/>other<sp/>threads</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Sleep(0.1f);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Preferences::on_resetPreferencesButton_clicked()</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Warning<sp/>Dialog,<sp/>return<sp/>if<sp/>not<sp/>given<sp/>yes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(QMessageBox::question(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>tr(</highlight><highlight class="stringliteral">&quot;Reset<sp/>Preferences&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tr(</highlight><highlight class="stringliteral">&quot;Are<sp/>you<sp/>sure<sp/>you<sp/>want<sp/>to<sp/>reset<sp/>your<sp/>Wallch<sp/>preferences?&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Yes<sp/>|<sp/>QMessageBox::No,<sp/>QMessageBox::No)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!=<sp/>QMessageBox::Yes)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1aa58b4ebc358d2f12989ca10837fa90ea" kindref="member">minimizeToTrayCheckBox</ref>-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a14e5348186c9bd343b89528b172f51a1" kindref="member">customSoundRadio</ref>-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a6b9f14014b45e259f04af95ab2f0bab2" kindref="member">startupOptionsGroupBox</ref>-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a643214d4acc744082f2ab12e9920c42b" kindref="member">soundNotificationGroupBox</ref>-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Preferences::on_customSoundRadio_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;setEnabled(state);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!state)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>customSoundRadio<sp/>is<sp/>toggled<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundFileName<sp/>=<sp/><ref refid="preferences_8h_1a8c4f0fd821e3f6f9a963c00064d8d9fa" kindref="member">DEFAULTSOUNDFILE</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;<ref refid="classUi__Preferences_1a687d18226c76dca51355fac0f77f09a9" kindref="member">browseSoundButton</ref>-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;(None)&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/preferences.cpp"/>
+  </compounddef>
+</doxygen>

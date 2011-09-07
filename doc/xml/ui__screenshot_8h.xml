@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="ui__screenshot_8h" kind="file">
+    <compoundname>ui_screenshot.h</compoundname>
+    <includes local="no">QtCore/QVariant</includes>
+    <includes local="no">QtGui/QAction</includes>
+    <includes local="no">QtGui/QApplication</includes>
+    <includes local="no">QtGui/QButtonGroup</includes>
+    <includes local="no">QtGui/QCheckBox</includes>
+    <includes local="no">QtGui/QDialog</includes>
+    <includes local="no">QtGui/QHBoxLayout</includes>
+    <includes local="no">QtGui/QHeaderView</includes>
+    <includes local="no">QtGui/QLabel</includes>
+    <includes local="no">QtGui/QPushButton</includes>
+    <includes local="no">QtGui/QSpinBox</includes>
+    <includes local="no">QtGui/QWidget</includes>
+    <incdepgraph>
+      <node id="1069">
+        <label>QtGui/QSpinBox</label>
+      </node>
+      <node id="1063">
+        <label>QtGui/QCheckBox</label>
+      </node>
+      <node id="1061">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="1068">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="1064">
+        <label>QtGui/QDialog</label>
+      </node>
+      <node id="1059">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="1070">
+        <label>QtGui/QWidget</label>
+      </node>
+      <node id="1067">
+        <label>QtGui/QLabel</label>
+      </node>
+      <node id="1060">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="1058">
+        <label>/home/maxmahem/wallch-2.0/ui_screenshot.h</label>
+        <link refid="ui_screenshot.h"/>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="1066">
+        <label>QtGui/QHeaderView</label>
+      </node>
+      <node id="1065">
+        <label>QtGui/QHBoxLayout</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classUi__screenshot" prot="public">Ui_screenshot</innerclass>
+    <innerclass refid="classUi_1_1screenshot" prot="public">Ui::screenshot</innerclass>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>generated<sp/>from<sp/>reading<sp/>UI<sp/>file<sp/>&apos;screenshot.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Wed<sp/>Aug<sp/>31<sp/>02:21:10<sp/>2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>Qt<sp/>User<sp/>Interface<sp/>Compiler<sp/>version<sp/>4.7.2</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost<sp/>when<sp/>recompiling<sp/>UI<sp/>file!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UI_SCREENSHOT_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UI_SCREENSHOT_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtCore/QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QAction&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QButtonGroup&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QCheckBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QHBoxLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QHeaderView&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QSpinBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">QT_BEGIN_NAMESPACE</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classUi__screenshot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUi__screenshot" kindref="compound">Ui_screenshot</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox<sp/>*<ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*<ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" kindref="member">newScreenshotButton</ref>;</highlight></codeline>
+<codeline lineno="36" refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" kindref="member">saveScreenshot</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" kindref="member">QuitButton</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QHBoxLayout<sp/>*<ref refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" kindref="member">horizontalLayout</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel<sp/>*<ref refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" kindref="member">label</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpinBox<sp/>*<ref refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" kindref="member">delaySpinBox</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox<sp/>*<ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" kindref="member">setupUi</ref>(QDialog<sp/>*screenshot)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(screenshot-&gt;objectName().isEmpty())</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screenshot-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screenshot-&gt;resize(393,<sp/>349);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screenshot-&gt;setMinimumSize(QSize(393,<sp/>349));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QIcon<sp/>icon;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>icon.addFile(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;:/icons/Pictures/wallpaper.png&quot;</highlight><highlight class="normal">),<sp/>QSize(),<sp/>QIcon::Normal,<sp/>QIcon::Off);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screenshot-&gt;setWindowIcon(icon);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QCheckBox(screenshot);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;hideThisWindowCheckBox&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref>-&gt;setGeometry(QRect(30,<sp/>245,<sp/>221,<sp/>22));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref>-&gt;setFocusPolicy(Qt::NoFocus);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref>-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(screenshot);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;screenshotLabel&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;setGeometry(QRect(70,<sp/>20,<sp/>251,<sp/>161));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSizePolicy<sp/>sizePolicy(QSizePolicy::Expanding,<sp/>QSizePolicy::Expanding);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizePolicy.setHorizontalStretch(0);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizePolicy.setVerticalStretch(0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizePolicy.setHeightForWidth(<ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;sizePolicy().hasHeightForWidth());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;setSizePolicy(sizePolicy);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;setMinimumSize(QSize(251,<sp/>161));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;setAlignment(Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(screenshot);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;layoutWidget&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>-&gt;setGeometry(QRect(20,<sp/>300,<sp/>354,<sp/>29));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout(<ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;horizontalLayout_2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref>-&gt;setContentsMargins(0,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" kindref="member">newScreenshotButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" kindref="member">newScreenshotButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;newScreenshotButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref>-&gt;addWidget(<ref refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" kindref="member">newScreenshotButton</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" kindref="member">saveScreenshot</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" kindref="member">saveScreenshot</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;saveScreenshot&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref>-&gt;addWidget(<ref refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" kindref="member">saveScreenshot</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" kindref="member">QuitButton</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton(<ref refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" kindref="member">layoutWidget</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" kindref="member">QuitButton</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;QuitButton&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" kindref="member">horizontalLayout_2</ref>-&gt;addWidget(<ref refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" kindref="member">QuitButton</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(screenshot);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;layoutWidget_2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref>-&gt;setGeometry(QRect(30,<sp/>210,<sp/>321,<sp/>29));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" kindref="member">horizontalLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout(<ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" kindref="member">horizontalLayout</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;horizontalLayout&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" kindref="member">horizontalLayout</ref>-&gt;setContentsMargins(0,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" kindref="member">label</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" kindref="member">label</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;label&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" kindref="member">horizontalLayout</ref>-&gt;addWidget(<ref refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" kindref="member">label</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" kindref="member">delaySpinBox</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpinBox(<ref refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" kindref="member">layoutWidget_2</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" kindref="member">delaySpinBox</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;delaySpinBox&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" kindref="member">delaySpinBox</ref>-&gt;setSuffix(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;<sp/>s&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" kindref="member">delaySpinBox</ref>-&gt;setMaximum(60);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" kindref="member">horizontalLayout</ref>-&gt;addWidget(<ref refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" kindref="member">delaySpinBox</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QCheckBox(screenshot);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>-&gt;setObjectName(QString::fromUtf8(</highlight><highlight class="stringliteral">&quot;hideMainWindow&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>-&gt;setGeometry(QRect(30,<sp/>270,<sp/>241,<sp/>22));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>-&gt;setMinimumSize(QSize(241,<sp/>0));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>-&gt;setFocusPolicy(Qt::NoFocus);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" kindref="member">retranslateUi</ref>(screenshot);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMetaObject::connectSlotsByName(screenshot);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>setupUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" kindref="member">retranslateUi</ref>(QDialog<sp/>*screenshot)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screenshot-&gt;setWindowTitle(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Take<sp/>Screenshot&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" kindref="member">hideThisWindowCheckBox</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Hide<sp/>This<sp/>Window&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" kindref="member">screenshotLabel</ref>-&gt;setText(QString());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" kindref="member">newScreenshotButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;New<sp/>Screenshot&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" kindref="member">saveScreenshot</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Save<sp/>Screenshot&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" kindref="member">QuitButton</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Quit&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" kindref="member">label</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Screenshot<sp/>Delay:&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" kindref="member">hideMainWindow</ref>-&gt;setText(QApplication::translate(</highlight><highlight class="stringliteral">&quot;screenshot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Hide<sp/>Wallch&apos;s<sp/>Main<sp/>Window&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>QApplication::UnicodeUTF8));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>retranslateUi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="134" refid="classUi_1_1screenshot" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUi_1_1screenshot" kindref="compound">screenshot</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUi__screenshot" kindref="compound">Ui_screenshot</ref><sp/>{};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Ui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">QT_END_NAMESPACE</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>UI_SCREENSHOT_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h"/>
+  </compounddef>
+</doxygen>

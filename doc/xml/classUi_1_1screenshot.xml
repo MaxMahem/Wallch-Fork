@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi_1_1screenshot" kind="class" prot="public">
+    <compoundname>Ui::screenshot</compoundname>
+    <basecompoundref refid="classUi__screenshot" prot="public" virt="non-virtual">Ui_screenshot</basecompoundref>
+    <includes refid="ui__screenshot_8h" local="no">ui_screenshot.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="144">
+        <label>Ui_screenshot</label>
+        <link refid="classUi__screenshot"/>
+      </node>
+      <node id="143">
+        <label>Ui::screenshot</label>
+        <link refid="classUi_1_1screenshot"/>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="146">
+        <label>Ui_screenshot</label>
+        <link refid="classUi__screenshot"/>
+      </node>
+      <node id="145">
+        <label>Ui::screenshot</label>
+        <link refid="classUi_1_1screenshot"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_screenshot.h" line="134" bodyfile="/home/maxmahem/wallch-2.0/ui_screenshot.h" bodystart="134" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classUi__screenshot_1a37924d707077bd389b53ac026e132883" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>delaySpinBox</name></member>
+      <member refid="classUi__screenshot_1acbaa4ec23e0b6f51e1aac36432b3d142" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>hideMainWindow</name></member>
+      <member refid="classUi__screenshot_1a302c64bae3d7e039369b7ff51a6cfd96" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>hideThisWindowCheckBox</name></member>
+      <member refid="classUi__screenshot_1a6e891cbda23b216532845c5ca2b3edb3" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>horizontalLayout</name></member>
+      <member refid="classUi__screenshot_1a9674ef9297d04ecba53e20df684cd955" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>horizontalLayout_2</name></member>
+      <member refid="classUi__screenshot_1a748678988896dca422c17f13394f3d90" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>label</name></member>
+      <member refid="classUi__screenshot_1ab547916593a2a044de05f06d60f00adb" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>layoutWidget</name></member>
+      <member refid="classUi__screenshot_1a814d1f5ebdeeb7cb2c083253609f71c2" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>layoutWidget_2</name></member>
+      <member refid="classUi__screenshot_1a1968e684c0abd18197e33de63bbf597d" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>newScreenshotButton</name></member>
+      <member refid="classUi__screenshot_1a0147ccabb2901f567d2524bd495315da" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>QuitButton</name></member>
+      <member refid="classUi__screenshot_1afefaa506ec424c6c481a953afea4187e" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>retranslateUi</name></member>
+      <member refid="classUi__screenshot_1afb9c97a8b8838d3459b2fe7741bce4a3" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>saveScreenshot</name></member>
+      <member refid="classUi__screenshot_1aa935229caf3a6831fd0b9e9372882f9e" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>screenshotLabel</name></member>
+      <member refid="classUi__screenshot_1a2953c741ab7b0b4aa2901f3fa3326bc3" prot="public" virt="non-virtual"><scope>Ui::screenshot</scope><name>setupUi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

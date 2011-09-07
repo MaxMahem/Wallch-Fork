@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi_1_1MainWindow" kind="class" prot="public">
+    <compoundname>Ui::MainWindow</compoundname>
+    <basecompoundref refid="classUi__MainWindow" prot="public" virt="non-virtual">Ui_MainWindow</basecompoundref>
+    <includes refid="ui__mainwindow_8h" local="no">ui_mainwindow.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="103">
+        <label>Ui::MainWindow</label>
+        <link refid="classUi_1_1MainWindow"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>Ui_MainWindow</label>
+        <link refid="classUi__MainWindow"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="105">
+        <label>Ui::MainWindow</label>
+        <link refid="classUi_1_1MainWindow"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>Ui_MainWindow</label>
+        <link refid="classUi__MainWindow"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_mainwindow.h" line="417" bodyfile="/home/maxmahem/wallch-2.0/ui_mainwindow.h" bodystart="417" bodyend="417"/>
+    <listofallmembers>
+      <member refid="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_About</name></member>
+      <member refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_Load</name></member>
+      <member refid="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_Next_Image</name></member>
+      <member refid="classUi__MainWindow_1a0c7d1b72703df51a22fba67c15a31e8b" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_Pause</name></member>
+      <member refid="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_Preferences</name></member>
+      <member refid="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_Previous_Image_Shift_Ctrl_B</name></member>
+      <member refid="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>action_Start</name></member>
+      <member refid="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionAdd_a_Wallch_album</name></member>
+      <member refid="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionAdd_Folder</name></member>
+      <member refid="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionAdd_single_images</name></member>
+      <member refid="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionExtras</name></member>
+      <member refid="classUi__MainWindow_1a888a3a2a55d1179693017dc98e281b76" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionHistory</name></member>
+      <member refid="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionQuit_Ctrl_Q</name></member>
+      <member refid="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionRemove_list</name></member>
+      <member refid="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>actionS_top</name></member>
+      <member refid="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>addButton</name></member>
+      <member refid="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>addfolder</name></member>
+      <member refid="classUi__MainWindow_1a30075506c2116c3ed4ff25e07ae75f81" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>centralWidget</name></member>
+      <member refid="classUi__MainWindow_1a525ed3c5fe0784ac502ee222fba4e205" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>gridLayout</name></member>
+      <member refid="classUi__MainWindow_1ad9c89133780f28e6efa2ec17ceb9cff5" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label</name></member>
+      <member refid="classUi__MainWindow_1a9dc4dba26b83e0c94aa566e1c564420b" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_10</name></member>
+      <member refid="classUi__MainWindow_1a2e2516d755e4dd53fc905dabddf2738a" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_2</name></member>
+      <member refid="classUi__MainWindow_1ad6bab8fb8903b8f41afea1218ee52695" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_5</name></member>
+      <member refid="classUi__MainWindow_1a663f728e6244926a795c6e6892673b1d" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_6</name></member>
+      <member refid="classUi__MainWindow_1a13936e6f18b1c90402b3c7a3c92b6cdb" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_7</name></member>
+      <member refid="classUi__MainWindow_1af183bfbfb9f38bbdd60caf92b15e23dc" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_8</name></member>
+      <member refid="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>label_9</name></member>
+      <member refid="classUi__MainWindow_1ab96ab0f0578098521fa69a75aa5cdde8" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>layoutWidget</name></member>
+      <member refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>listWidget</name></member>
+      <member refid="classUi__MainWindow_1a11f322f3af9857e5138c8024d84d0279" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>menu_Edit</name></member>
+      <member refid="classUi__MainWindow_1a6d6a92a6bccde97ab13fce9014eb25d4" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>menu_File</name></member>
+      <member refid="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>menuAdd_Files</name></member>
+      <member refid="classUi__MainWindow_1a2be1c24ec9adfca18e1dcc951931457f" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>menuBar</name></member>
+      <member refid="classUi__MainWindow_1ab95dbfbb0550206aeac76db36f491548" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>menuHelp</name></member>
+      <member refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>nextButton</name></member>
+      <member refid="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>previousButton</name></member>
+      <member refid="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>removeallButton</name></member>
+      <member refid="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>removeButton</name></member>
+      <member refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>retranslateUi</name></member>
+      <member refid="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>save_as</name></member>
+      <member refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>setupUi</name></member>
+      <member refid="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>startButton</name></member>
+      <member refid="classUi__MainWindow_1a50fa481337604bcc8bf68de18ab16ecd" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>statusBar</name></member>
+      <member refid="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>stopButton</name></member>
+      <member refid="classUi__MainWindow_1ad200a2549a1067eff25bb476691c6555" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>time_for_next</name></member>
+      <member refid="classUi__MainWindow_1aed2eea321894fe7a8f3e23b78fc42793" prot="public" virt="non-virtual"><scope>Ui::MainWindow</scope><name>timerSlider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

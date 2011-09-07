@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classabout" kind="class" prot="public">
+    <compoundname>about</compoundname>
+    <includes refid="about_8h" local="no">about.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classabout_1a921a73e13c18de06b1449693631b3e68" prot="private" static="no" mutable="no">
+        <type><ref refid="classUi_1_1about" kindref="compound">Ui::about</ref> *</type>
+        <definition>Ui::about* about::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="39" bodyfile="/home/maxmahem/wallch-2.0/about.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classabout_1ab16a8ec628d97aee17f0332e09964f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>about::about</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>about</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="32" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="24" bodyend="42"/>
+        <references refid="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" compoundref="ui__about_8h" startline="39">Ui_about::label_4</references>
+        <references refid="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" compoundref="ui__about_8h" startline="42">Ui_about::label_5</references>
+        <references refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" compoundref="ui__about_8h" startline="53" endline="173">Ui_about::setupUi</references>
+        <references refid="classUi__about_1a9af2caf77c8d2dd709c0e7a893d8ae60" compoundref="ui__about_8h" startline="47">Ui_about::textBrowser</references>
+        <references refid="classUi__about_1a5105430ce15bd81a1a93d192f3ff0428" compoundref="ui__about_8h" startline="49">Ui_about::textBrowser_2</references>
+      </memberdef>
+      <memberdef kind="function" id="classabout_1a0d7ebadcc35f58044fe6cbc7d8d4f636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>about::~about</definition>
+        <argsstring>()</argsstring>
+        <name>~about</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="33" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classabout_1a8c1b88bafc3aa839bfb45fc1d5c99e60" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void about::changeEvent</definition>
+        <argsstring>(QEvent *e)</argsstring>
+        <name>changeEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="36" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="46" bodyend="55"/>
+        <references refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" compoundref="ui__about_8h" startline="175" endline="190">Ui_about::retranslateUi</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classabout_1a73f47770fb71fa8a38c61deb4d683981" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void about::on_pushButton_3_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_3_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="42" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="slot" id="classabout_1aeb2178570e0429e90e7f19a5db426240" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void about::on_pushButton_2_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_2_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="43" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="slot" id="classabout_1ac49744ca76cb25b052cf45d4c8b57cc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void about::on_closeButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_closeButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="44" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="slot" id="classabout_1ab06ec260ce6b4205aba10da23c55562b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void about::on_pushButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/about.h" line="45" bodyfile="/home/maxmahem/wallch-2.0/about.cpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="72">
+        <label>about</label>
+        <link refid="classabout"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Ui_about</label>
+        <link refid="classUi__about"/>
+      </node>
+      <node id="73">
+        <label>Ui::about</label>
+        <link refid="classUi_1_1about"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/about.h" line="29" bodyfile="/home/maxmahem/wallch-2.0/about.h" bodystart="29" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classabout_1ab16a8ec628d97aee17f0332e09964f52" prot="public" virt="non-virtual"><scope>about</scope><name>about</name></member>
+      <member refid="classabout_1a8c1b88bafc3aa839bfb45fc1d5c99e60" prot="protected" virt="non-virtual"><scope>about</scope><name>changeEvent</name></member>
+      <member refid="classabout_1ac49744ca76cb25b052cf45d4c8b57cc1" prot="private" virt="non-virtual"><scope>about</scope><name>on_closeButton_clicked</name></member>
+      <member refid="classabout_1aeb2178570e0429e90e7f19a5db426240" prot="private" virt="non-virtual"><scope>about</scope><name>on_pushButton_2_clicked</name></member>
+      <member refid="classabout_1a73f47770fb71fa8a38c61deb4d683981" prot="private" virt="non-virtual"><scope>about</scope><name>on_pushButton_3_clicked</name></member>
+      <member refid="classabout_1ab06ec260ce6b4205aba10da23c55562b" prot="private" virt="non-virtual"><scope>about</scope><name>on_pushButton_clicked</name></member>
+      <member refid="classabout_1a921a73e13c18de06b1449693631b3e68" prot="private" virt="non-virtual"><scope>about</scope><name>ui</name></member>
+      <member refid="classabout_1a0d7ebadcc35f58044fe6cbc7d8d4f636" prot="public" virt="non-virtual"><scope>about</scope><name>~about</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi_1_1about" kind="class" prot="public">
+    <compoundname>Ui::about</compoundname>
+    <basecompoundref refid="classUi__about" prot="public" virt="non-virtual">Ui_about</basecompoundref>
+    <includes refid="ui__about_8h" local="no">ui_about.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="76">
+        <label>Ui_about</label>
+        <link refid="classUi__about"/>
+      </node>
+      <node id="75">
+        <label>Ui::about</label>
+        <link refid="classUi_1_1about"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="78">
+        <label>Ui_about</label>
+        <link refid="classUi__about"/>
+      </node>
+      <node id="77">
+        <label>Ui::about</label>
+        <link refid="classUi_1_1about"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_about.h" line="195" bodyfile="/home/maxmahem/wallch-2.0/ui_about.h" bodystart="195" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classUi__about_1a7c764d7b424b82cda32db2aa1067fba4" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>closeButton</name></member>
+      <member refid="classUi__about_1a30c2d2ae8206508b81d75f45349bd8fc" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>label</name></member>
+      <member refid="classUi__about_1a8387738d5bdde604124f3f117f367e74" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>label_2</name></member>
+      <member refid="classUi__about_1aaea79e09f696d357043c9bb49f8ca467" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>label_3</name></member>
+      <member refid="classUi__about_1ae19cfd158b2f8da605548ed66ca3e370" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>label_4</name></member>
+      <member refid="classUi__about_1aef1b6ef4e3a01966c0e1036b3aa7f23f" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>label_5</name></member>
+      <member refid="classUi__about_1aa459ebfad1e0a2648d20c60d4c6fc115" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>label_6</name></member>
+      <member refid="classUi__about_1acdbd820c02029d71cfc119a9832fef24" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>page</name></member>
+      <member refid="classUi__about_1ae8fa17161b240480e903aea6b9ada290" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>page_2</name></member>
+      <member refid="classUi__about_1ab53caedb09cc7a40a6ebd02032006b81" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>page_3</name></member>
+      <member refid="classUi__about_1a0469ccb1dc32f0b8e757e59148ae3467" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>plain</name></member>
+      <member refid="classUi__about_1a8880d015410b512f4e5768d161b24fb9" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>pushButton</name></member>
+      <member refid="classUi__about_1abeef62c6750cebb3c0f0912ae74409a5" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>pushButton_2</name></member>
+      <member refid="classUi__about_1a9dedeaa7b70ac20bcd4912ddcdf0ec64" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>pushButton_3</name></member>
+      <member refid="classUi__about_1aaba8586f919f4992e98e10f693f1e2dc" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>retranslateUi</name></member>
+      <member refid="classUi__about_1ade605029c03d96bbda6ca78d9e982804" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>setupUi</name></member>
+      <member refid="classUi__about_1ae47ab43139893b6e08dba3cb781dcd4f" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>stackedWidget</name></member>
+      <member refid="classUi__about_1a1849ee3563ac7a6e33685e5a8e3ef77a" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>tab</name></member>
+      <member refid="classUi__about_1adb6da8ff2f93532372eef3704898e677" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>tab_2</name></member>
+      <member refid="classUi__about_1a3d168e9475d87a9889fa7cb50a9de5a8" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>tabWidget</name></member>
+      <member refid="classUi__about_1a9af2caf77c8d2dd709c0e7a893d8ae60" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>textBrowser</name></member>
+      <member refid="classUi__about_1a5105430ce15bd81a1a93d192f3ff0428" prot="public" virt="non-virtual"><scope>Ui::about</scope><name>textBrowser_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

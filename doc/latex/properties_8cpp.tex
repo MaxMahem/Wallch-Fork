@@ -1,0 +1,335 @@
+\hypertarget{properties_8cpp}{
+\section{/home/maxmahem/wallch-\/2.0/properties.cpp File Reference}
+\label{properties_8cpp}\index{/home/maxmahem/wallch-\/2.0/properties.cpp@{/home/maxmahem/wallch-\/2.0/properties.cpp}}
+}
+{\ttfamily \#include \char`\"{}properties.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ui\_\-properties.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}glob.h\char`\"{}}\par
+{\ttfamily \#include $<$QDir$>$}\par
+{\ttfamily \#include $<$QImage$>$}\par
+{\ttfamily \#include $<$QFileInfo$>$}\par
+{\ttfamily \#include $<$sys/stat.h$>$}\par
+{\ttfamily \#include $<$fstream$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$iostream$>$}\par
+Include dependency graph for properties.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{properties_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+scaledSize \hyperlink{properties_8cpp_a6be42b5ee467246e7d2ca5b97631f75f}{scale} (ui-\/$>$label-\/$>$size(), Qt::KeepAspectRatio)
+\item 
+\hyperlink{properties_8cpp_a4d79da0f531d0b5df336420a4e85b960}{if} (!ui-\/$>$label-\/$>$pixmap()$|$$|$scaledSize!=ui-\/$>$label-\/$>$pixmap()-\/$>$size()) updateScreenshotLabel()
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_a270da5afc33d641efa96999c540f8d65}{addWidget} (ui-\/$>$label\_\-2, 0, 0)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_ab67e5cf5715d7578bcf3a3bf2189207b}{addWidget} (ui-\/$>$image\_\-name, 0, 1)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_aed66291eba7283ab8f1327c84f6a7696}{addWidget} (ui-\/$>$label\_\-4, 1, 0)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_a970d4c49866e7910434a42462130ee0d}{addWidget} (ui-\/$>$image\_\-size, 1, 1)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_ac525b7e6bd9a5d2dbb8f77cf939443ee}{addWidget} (ui-\/$>$label\_\-7, 2, 0)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_ad76e78d828486306dbb55589ce556d9d}{addWidget} (ui-\/$>$image\_\-width, 2, 1)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_a4d8fc6077d1d2da6a0a660309e0da85e}{addWidget} (ui-\/$>$label\_\-6, 3, 0)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_aecc5c221f6a91d8f35d7c75af17724f9}{addWidget} (ui-\/$>$image\_\-height, 3, 1)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_a341cd6d8710f0ddfcc5aad75ae25024e}{addWidget} (ui-\/$>$label\_\-3, 4, 0)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_a6254fb5ec70ee671f372c8b9df240cc4}{addWidget} (ui-\/$>$image\_\-type, 4, 1)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_ae8eeb8d53d5fc63f2bbfb1d6e46b4fa0}{addWidget} (ui-\/$>$label\_\-5, 5, 0)
+\item 
+optionsGroupBoxLayout \hyperlink{properties_8cpp_ac77f5324e6007d12956bc3307fa8e71d}{addWidget} (ui-\/$>$image\_\-location, 5, 1)
+\item 
+optionsGroupBox \hyperlink{properties_8cpp_af96de5b49f5f6a97407fddab9cacb2ed}{setLayout} (optionsGroupBoxLayout)
+\item 
+buttonsLayout \hyperlink{properties_8cpp_aa811dc4742824b55fc5500989670ddd8}{addStretch} ()
+\item 
+buttonsLayout \hyperlink{properties_8cpp_a6a84531333712c281e4c848677f0348a}{addWidget} (ui-\/$>$pushButton)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+QString \hyperlink{properties_8cpp_a059f1ba11b788625374af681fe29b2f3}{image}
+\item 
+\hyperlink{properties_8cpp_ab6f3c269fc46c9c1c0f81b3431240138}{\_\-\_\-pad0\_\-\_\-}
+\item 
+\hyperlink{properties_8cpp_ae31ac69c75bb42f47c8d6a7cde4937c6}{\_\-\_\-pad1\_\-\_\-}
+\item 
+\hyperlink{properties_8cpp_acb405321a5c6ae16fef21290649f2666}{\_\-\_\-pad2\_\-\_\-}
+\item 
+\hyperlink{properties_8cpp_a38702cb680157e9541f1610928c148ed}{optionsGroupBoxLayout} = new QGridLayout
+\item 
+\hyperlink{properties_8cpp_aa6f626203c740423c9dfcbbe727f90b4}{\_\-\_\-pad3\_\-\_\-}
+\item 
+\hyperlink{properties_8cpp_aa126f02bcfcec342fb72926c73b4aeb3}{\_\-\_\-pad4\_\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{properties_8cpp_aa811dc4742824b55fc5500989670ddd8}{
+\index{properties.cpp@{properties.cpp}!addStretch@{addStretch}}
+\index{addStretch@{addStretch}!properties.cpp@{properties.cpp}}
+\subsubsection[{addStretch}]{\setlength{\rightskip}{0pt plus 5cm}buttonsLayout addStretch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_aa811dc4742824b55fc5500989670ddd8}
+\hypertarget{properties_8cpp_a6a84531333712c281e4c848677f0348a}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}buttonsLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{pushButton}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a6a84531333712c281e4c848677f0348a}
+\hypertarget{properties_8cpp_a270da5afc33d641efa96999c540f8d65}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{label\_\-2, }
+\item[{0}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a270da5afc33d641efa96999c540f8d65}
+\hypertarget{properties_8cpp_ab67e5cf5715d7578bcf3a3bf2189207b}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{image\_\-name, }
+\item[{0}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_ab67e5cf5715d7578bcf3a3bf2189207b}
+\hypertarget{properties_8cpp_ac77f5324e6007d12956bc3307fa8e71d}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{image\_\-location, }
+\item[{5}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_ac77f5324e6007d12956bc3307fa8e71d}
+\hypertarget{properties_8cpp_ae8eeb8d53d5fc63f2bbfb1d6e46b4fa0}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{label\_\-5, }
+\item[{5}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_ae8eeb8d53d5fc63f2bbfb1d6e46b4fa0}
+\hypertarget{properties_8cpp_ad76e78d828486306dbb55589ce556d9d}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{image\_\-width, }
+\item[{2}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_ad76e78d828486306dbb55589ce556d9d}
+\hypertarget{properties_8cpp_a341cd6d8710f0ddfcc5aad75ae25024e}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{label\_\-3, }
+\item[{4}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a341cd6d8710f0ddfcc5aad75ae25024e}
+\hypertarget{properties_8cpp_aecc5c221f6a91d8f35d7c75af17724f9}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{image\_\-height, }
+\item[{3}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_aecc5c221f6a91d8f35d7c75af17724f9}
+\hypertarget{properties_8cpp_a4d8fc6077d1d2da6a0a660309e0da85e}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{label\_\-6, }
+\item[{3}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a4d8fc6077d1d2da6a0a660309e0da85e}
+\hypertarget{properties_8cpp_aed66291eba7283ab8f1327c84f6a7696}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{label\_\-4, }
+\item[{1}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_aed66291eba7283ab8f1327c84f6a7696}
+\hypertarget{properties_8cpp_ac525b7e6bd9a5d2dbb8f77cf939443ee}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{label\_\-7, }
+\item[{2}]{, }
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_ac525b7e6bd9a5d2dbb8f77cf939443ee}
+\hypertarget{properties_8cpp_a6254fb5ec70ee671f372c8b9df240cc4}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{image\_\-type, }
+\item[{4}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a6254fb5ec70ee671f372c8b9df240cc4}
+\hypertarget{properties_8cpp_a970d4c49866e7910434a42462130ee0d}{
+\index{properties.cpp@{properties.cpp}!addWidget@{addWidget}}
+\index{addWidget@{addWidget}!properties.cpp@{properties.cpp}}
+\subsubsection[{addWidget}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout addWidget (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$}]{image\_\-size, }
+\item[{1}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a970d4c49866e7910434a42462130ee0d}
+\hypertarget{properties_8cpp_a4d79da0f531d0b5df336420a4e85b960}{
+\index{properties.cpp@{properties.cpp}!if@{if}}
+\index{if@{if}!properties.cpp@{properties.cpp}}
+\subsubsection[{if}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{!ui-\/$>$label-\/$>$pixmap()$|$$|$scaledSize!}]{ = {\ttfamily ui-\/$>$label-\/$>$pixmap()-\/$>$size()}}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a4d79da0f531d0b5df336420a4e85b960}
+\hypertarget{properties_8cpp_a6be42b5ee467246e7d2ca5b97631f75f}{
+\index{properties.cpp@{properties.cpp}!scale@{scale}}
+\index{scale@{scale}!properties.cpp@{properties.cpp}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}scaledSize scale (
+\begin{DoxyParamCaption}
+\item[{ui-\/$>$label-\/$>$}]{size(), }
+\item[{Qt::KeepAspectRatio}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_a6be42b5ee467246e7d2ca5b97631f75f}
+\hypertarget{properties_8cpp_af96de5b49f5f6a97407fddab9cacb2ed}{
+\index{properties.cpp@{properties.cpp}!setLayout@{setLayout}}
+\index{setLayout@{setLayout}!properties.cpp@{properties.cpp}}
+\subsubsection[{setLayout}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBox setLayout (
+\begin{DoxyParamCaption}
+\item[{optionsGroupBoxLayout}]{}
+\end{DoxyParamCaption}
+)}}
+\label{properties_8cpp_af96de5b49f5f6a97407fddab9cacb2ed}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{properties_8cpp_af96de5b49f5f6a97407fddab9cacb2ed_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{properties_8cpp_ab6f3c269fc46c9c1c0f81b3431240138}{
+\index{properties.cpp@{properties.cpp}!\_\-\_\-pad0\_\-\_\-@{\_\-\_\-pad0\_\-\_\-}}
+\index{\_\-\_\-pad0\_\-\_\-@{\_\-\_\-pad0\_\-\_\-}!properties.cpp@{properties.cpp}}
+\subsubsection[{\_\-\_\-pad0\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-pad0\_\-\_\-}}
+\label{properties_8cpp_ab6f3c269fc46c9c1c0f81b3431240138}
+
+
+Definition at line 78 of file properties.cpp.
+
+\hypertarget{properties_8cpp_ae31ac69c75bb42f47c8d6a7cde4937c6}{
+\index{properties.cpp@{properties.cpp}!\_\-\_\-pad1\_\-\_\-@{\_\-\_\-pad1\_\-\_\-}}
+\index{\_\-\_\-pad1\_\-\_\-@{\_\-\_\-pad1\_\-\_\-}!properties.cpp@{properties.cpp}}
+\subsubsection[{\_\-\_\-pad1\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-pad1\_\-\_\-}}
+\label{properties_8cpp_ae31ac69c75bb42f47c8d6a7cde4937c6}
+
+
+Definition at line 81 of file properties.cpp.
+
+\hypertarget{properties_8cpp_acb405321a5c6ae16fef21290649f2666}{
+\index{properties.cpp@{properties.cpp}!\_\-\_\-pad2\_\-\_\-@{\_\-\_\-pad2\_\-\_\-}}
+\index{\_\-\_\-pad2\_\-\_\-@{\_\-\_\-pad2\_\-\_\-}!properties.cpp@{properties.cpp}}
+\subsubsection[{\_\-\_\-pad2\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-pad2\_\-\_\-}}
+\label{properties_8cpp_acb405321a5c6ae16fef21290649f2666}
+
+
+Definition at line 88 of file properties.cpp.
+
+\hypertarget{properties_8cpp_aa6f626203c740423c9dfcbbe727f90b4}{
+\index{properties.cpp@{properties.cpp}!\_\-\_\-pad3\_\-\_\-@{\_\-\_\-pad3\_\-\_\-}}
+\index{\_\-\_\-pad3\_\-\_\-@{\_\-\_\-pad3\_\-\_\-}!properties.cpp@{properties.cpp}}
+\subsubsection[{\_\-\_\-pad3\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-pad3\_\-\_\-}}
+\label{properties_8cpp_aa6f626203c740423c9dfcbbe727f90b4}
+
+
+Definition at line 107 of file properties.cpp.
+
+\hypertarget{properties_8cpp_aa126f02bcfcec342fb72926c73b4aeb3}{
+\index{properties.cpp@{properties.cpp}!\_\-\_\-pad4\_\-\_\-@{\_\-\_\-pad4\_\-\_\-}}
+\index{\_\-\_\-pad4\_\-\_\-@{\_\-\_\-pad4\_\-\_\-}!properties.cpp@{properties.cpp}}
+\subsubsection[{\_\-\_\-pad4\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-pad4\_\-\_\-}}
+\label{properties_8cpp_aa126f02bcfcec342fb72926c73b4aeb3}
+
+
+Definition at line 113 of file properties.cpp.
+
+\hypertarget{properties_8cpp_a059f1ba11b788625374af681fe29b2f3}{
+\index{properties.cpp@{properties.cpp}!image@{image}}
+\index{image@{image}!properties.cpp@{properties.cpp}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}QString {\bf image}}}
+\label{properties_8cpp_a059f1ba11b788625374af681fe29b2f3}
+
+
+Definition at line 34 of file properties.cpp.
+
+\hypertarget{properties_8cpp_a38702cb680157e9541f1610928c148ed}{
+\index{properties.cpp@{properties.cpp}!optionsGroupBoxLayout@{optionsGroupBoxLayout}}
+\index{optionsGroupBoxLayout@{optionsGroupBoxLayout}!properties.cpp@{properties.cpp}}
+\subsubsection[{optionsGroupBoxLayout}]{\setlength{\rightskip}{0pt plus 5cm}optionsGroupBoxLayout = new QGridLayout}}
+\label{properties_8cpp_a38702cb680157e9541f1610928c148ed}
+
+
+Definition at line 90 of file properties.cpp.
+

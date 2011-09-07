@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="moc__mainwindow_8cpp" kind="file">
+    <compoundname>moc_mainwindow.cpp</compoundname>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <incdepgraph>
+      <node id="779">
+        <label>QSettings</label>
+      </node>
+      <node id="766">
+        <label>QtGui/QMainWindow</label>
+      </node>
+      <node id="778">
+        <label>QObject</label>
+      </node>
+      <node id="786">
+        <label>QMenuBar</label>
+      </node>
+      <node id="784">
+        <label>QMainWindow</label>
+      </node>
+      <node id="781">
+        <label>SFML/Audio.hpp</label>
+      </node>
+      <node id="785">
+        <label>QSystemTrayIcon</label>
+      </node>
+      <node id="790">
+        <label>QUrl</label>
+      </node>
+      <node id="760">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="770">
+        <label>QtGui/QPushButton</label>
+      </node>
+      <node id="787">
+        <label>QDragEnterEvent</label>
+      </node>
+      <node id="758">
+        <label>QtCore/QVariant</label>
+      </node>
+      <node id="765">
+        <label>QtGui/QListWidget</label>
+      </node>
+      <node id="789">
+        <label>QtNetwork</label>
+      </node>
+      <node id="773">
+        <label>QtGui/QWidget</label>
+      </node>
+      <node id="768">
+        <label>QtGui/QMenuBar</label>
+      </node>
+      <node id="756">
+        <label>QDialog</label>
+      </node>
+      <node id="783">
+        <label>QTimer</label>
+      </node>
+      <node id="753">
+        <label>/home/maxmahem/wallch-2.0/moc_mainwindow.cpp</label>
+        <link refid="moc_mainwindow.cpp"/>
+        <childnode refid="754" relation="include">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>QGroupBox</label>
+      </node>
+      <node id="764">
+        <label>QtGui/QLabel</label>
+      </node>
+      <node id="774">
+        <label>properties.h</label>
+        <link refid="properties_8h"/>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+      </node>
+      <node id="791">
+        <label>QFile</label>
+      </node>
+      <node id="759">
+        <label>QtGui/QAction</label>
+      </node>
+      <node id="780">
+        <label>gconf/gconf-client.h</label>
+      </node>
+      <node id="754">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>ui_mainwindow.h</label>
+        <link refid="ui__mainwindow_8h"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>QtGui/QMenu</label>
+      </node>
+      <node id="776">
+        <label>QGridLayout</label>
+      </node>
+      <node id="771">
+        <label>QtGui/QSlider</label>
+      </node>
+      <node id="761">
+        <label>QtGui/QButtonGroup</label>
+      </node>
+      <node id="788">
+        <label>QDropEvent</label>
+      </node>
+      <node id="782">
+        <label>extras.h</label>
+        <link refid="extras_8h"/>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>preferences.h</label>
+        <link refid="preferences_8h"/>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>about.h</label>
+        <link refid="about_8h"/>
+        <childnode refid="756" relation="include">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>QtGui/QStatusBar</label>
+      </node>
+      <node id="763">
+        <label>QtGui/QHeaderView</label>
+      </node>
+      <node id="762">
+        <label>QtGui/QGridLayout</label>
+      </node>
+      <node id="769">
+        <label>QtGui/QProgressBar</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="moc__mainwindow_8cpp_1a1dd2e133e39a5ebf8d05650bb3b3741a" prot="public" static="yes" mutable="no">
+        <type>QT_BEGIN_MOC_NAMESPACE const uint</type>
+        <definition>QT_BEGIN_MOC_NAMESPACE const uint qt_meta_data_MainWindow[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qt_meta_data_MainWindow</name>
+        <initializer> {
+
+ 
+       5,       
+       0,       
+       0,    0, 
+      43,   14, 
+       0,    0, 
+       0,    0, 
+       0,    0, 
+       0,       
+       1,       
+
+ 
+      12,   11,   11,   11, 0x05,
+
+ 
+      24,   11,   11,   11, 0x08,
+      52,   11,   11,   11, 0x08,
+      75,   11,   11,   11, 0x08,
+     118,   11,   11,   11, 0x08,
+     152,   11,   11,   11, 0x08,
+     189,   11,   11,   11, 0x08,
+     218,   11,   11,   11, 0x08,
+     244,   11,   11,   11, 0x08,
+     267,   11,   11,   11, 0x08,
+     291,   11,   11,   11, 0x08,
+     315,   11,   11,   11, 0x08,
+     346,  340,   11,   11, 0x08,
+     379,  340,   11,   11, 0x08,
+     406,  402,   11,   11, 0x08,
+     427,   11,   11,   11, 0x08,
+     441,   11,   11,   11, 0x08,
+     463,  456,   11,   11, 0x08,
+     486,   11,   11,   11, 0x08,
+     506,  500,   11,   11, 0x08,
+     539,   11,   11,   11, 0x08,
+     550,   11,   11,   11, 0x08,
+     566,   11,   11,   11, 0x08,
+     582,   11,   11,   11, 0x08,
+     624,   11,   11,   11, 0x08,
+     642,   11,   11,   11, 0x08,
+     651,   11,   11,   11, 0x08,
+     679,  671,  666,   11, 0x08,
+     712,  705,   11,   11, 0x0a,
+     764,   11,   11,   11, 0x0a,
+     782,   11,   11,   11, 0x0a,
+     795,   11,   11,   11, 0x0a,
+     811,   11,   11,   11, 0x0a,
+     825,   11,   11,   11, 0x0a,
+     837,   11,   11,   11, 0x0a,
+     850,   11,   11,   11, 0x0a,
+     857,   11,   11,   11, 0x0a,
+     874,   11,   11,   11, 0x0a,
+     887,   11,   11,   11, 0x0a,
+     899,   11,   11,   11, 0x0a,
+     910,   11,   11,   11, 0x0a,
+     929,   11,   11,   11, 0x0a,
+     946,   11,   11,   11, 0x0a,
+
+       0        
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/moc_mainwindow.cpp" line="81" bodyfile="/home/maxmahem/wallch-2.0/moc_mainwindow.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="moc__mainwindow_8cpp_1a82fbcdc12b3520fb6616a53cc8e70274" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char qt_meta_stringdata_MainWindow[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qt_meta_stringdata_MainWindow</name>
+        <initializer> {
+    &quot;MainWindow\0\0minimized()\0&quot;
+    &quot;on_previousButton_clicked()\0&quot;
+    &quot;on_addfolder_clicked()\0&quot;
+    &quot;on_listWidget_customContextMenuRequested()\0&quot;
+    &quot;on_listWidget_itemDoubleClicked()\0&quot;
+    &quot;on_listWidget_itemSelectionChanged()\0&quot;
+    &quot;on_removeallButton_clicked()\0&quot;
+    &quot;on_removeButton_clicked()\0&quot;
+    &quot;on_addButton_clicked()\0on_stopButton_clicked()\0&quot;
+    &quot;on_nextButton_clicked()\0&quot;
+    &quot;on_startButton_clicked()\0event\0&quot;
+    &quot;dragEnterEvent(QDragEnterEvent*)\0&quot;
+    &quot;dropEvent(QDropEvent*)\0msg\0&quot;
+    &quot;dbus_action(QString)\0randomImage()\0&quot;
+    &quot;time_updater()\0qimage\0desktopNotify(QString)\0&quot;
+    &quot;soundNotify()\0value\0&quot;
+    &quot;on_timerSlider_valueChanged(int)\0&quot;
+    &quot;livearth()\0stop_livearth()\0add_new_album()\0&quot;
+    &quot;start_livearth_extras_concurrent_thread()\0&quot;
+    &quot;livearth_extras()\0handle()\0httpFinished()\0&quot;
+    &quot;bool\0picture\0changeBackground(QString)\0&quot;
+    &quot;reason\0clickSysTrayIcon(QSystemTrayIcon::ActivationReason)\0&quot;
+    &quot;ShowPreferences()\0ShowExtras()\0&quot;
+    &quot;menushowabout()\0showClicked()\0pruneList()\0&quot;
+    &quot;removeDisk()\0load()\0showProperties()\0&quot;
+    &quot;Openfolder()\0copyImage()\0copyPath()\0&quot;
+    &quot;errorstopprocess()\0close_minimize()\0&quot;
+    &quot;save_album()\0&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/moc_mainwindow.cpp" line="112" bodyfile="/home/maxmahem/wallch-2.0/moc_mainwindow.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Meta<sp/>object<sp/>code<sp/>from<sp/>reading<sp/>C++<sp/>file<sp/>&apos;mainwindow.h&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Wed<sp/>Aug<sp/>31<sp/>15:26:19<sp/>2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>Qt<sp/>Meta<sp/>Object<sp/>Compiler<sp/>version<sp/>62<sp/>(Qt<sp/>4.7.2)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(Q_MOC_OUTPUT_REVISION)</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;The<sp/>header<sp/>file<sp/>&apos;mainwindow.h&apos;<sp/>doesn&apos;t<sp/>include<sp/>&lt;QObject&gt;.&quot;</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>Q_MOC_OUTPUT_REVISION<sp/>!=<sp/>62</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;This<sp/>file<sp/>was<sp/>generated<sp/>using<sp/>the<sp/>moc<sp/>from<sp/>4.7.2.<sp/>It&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;cannot<sp/>be<sp/>used<sp/>with<sp/>the<sp/>include<sp/>files<sp/>from<sp/>this<sp/>version<sp/>of<sp/>Qt.&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;(The<sp/>moc<sp/>has<sp/>changed<sp/>too<sp/>much.)&quot;</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">QT_BEGIN_MOC_NAMESPACE</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>qt_meta_data_MainWindow[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>content:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>revision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>classname</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>classinfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>43,<sp/><sp/><sp/>14,<sp/></highlight><highlight class="comment">//<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>enums/sets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>constructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signalCount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>signals:<sp/>signature,<sp/>parameters,<sp/>type,<sp/>tag,<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>12,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x05,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>slots:<sp/>signature,<sp/>parameters,<sp/>type,<sp/>tag,<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>24,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>52,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>75,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>118,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>152,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>189,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>218,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>244,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>267,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>291,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>315,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>346,<sp/><sp/>340,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>379,<sp/><sp/>340,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>406,<sp/><sp/>402,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>427,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>441,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>463,<sp/><sp/>456,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>486,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>506,<sp/><sp/>500,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>539,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>550,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>566,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>582,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>624,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>642,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>651,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>679,<sp/><sp/>671,<sp/><sp/>666,<sp/><sp/><sp/>11,<sp/>0x08,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>712,<sp/><sp/>705,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>764,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>782,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>795,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>811,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>825,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>837,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>850,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>857,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>874,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>887,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>899,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>910,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>929,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>946,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>qt_meta_stringdata_MainWindow[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MainWindow\0\0minimized()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_previousButton_clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_addfolder_clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_listWidget_customContextMenuRequested()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_listWidget_itemDoubleClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_listWidget_itemSelectionChanged()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_removeallButton_clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_removeButton_clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_addButton_clicked()\0on_stopButton_clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_nextButton_clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_startButton_clicked()\0event\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;dragEnterEvent(QDragEnterEvent*)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;dropEvent(QDropEvent*)\0msg\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;dbus_action(QString)\0randomImage()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;time_updater()\0qimage\0desktopNotify(QString)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;soundNotify()\0value\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;on_timerSlider_valueChanged(int)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;livearth()\0stop_livearth()\0add_new_album()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;start_livearth_extras_concurrent_thread()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;livearth_extras()\0handle()\0httpFinished()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;bool\0picture\0changeBackground(QString)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;reason\0clickSysTrayIcon(QSystemTrayIcon::ActivationReason)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ShowPreferences()\0ShowExtras()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;menushowabout()\0showClicked()\0pruneList()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;removeDisk()\0load()\0showProperties()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Openfolder()\0copyImage()\0copyPath()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;errorstopprocess()\0close_minimize()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;save_album()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>MainWindow::staticMetaObject<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>&amp;QMainWindow::staticMetaObject,<sp/>qt_meta_stringdata_MainWindow,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>qt_meta_data_MainWindow,<sp/>0<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_NO_DATA_RELOCATION</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>&amp;MainWindow::getStaticMetaObject()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>staticMetaObject;<sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//Q_NO_DATA_RELOCATION</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>*MainWindow::metaObject()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QObject::d_ptr-&gt;metaObject<sp/>?<sp/>QObject::d_ptr-&gt;metaObject<sp/>:<sp/>&amp;staticMetaObject;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*MainWindow::qt_metacast(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*_clname)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_clname)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp(_clname,<sp/>qt_meta_stringdata_MainWindow))</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="classMainWindow" kindref="compound">MainWindow</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QMainWindow::qt_metacast(_clname);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MainWindow::qt_metacall(QMetaObject::Call<sp/>_c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="moc__properties_8cpp_1a16857ed9e195eac0e20e389fd4a68da2" kindref="member">_id</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**_a)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>_id<sp/>=<sp/>QMainWindow::qt_metacall(_c,<sp/>_id,<sp/>_a);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_id<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="moc__properties_8cpp_1a16857ed9e195eac0e20e389fd4a68da2" kindref="member">_id</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_c<sp/>==<sp/>QMetaObject::InvokeMetaMethod)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(_id)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:<sp/><ref refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" kindref="member">minimized</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/>on_previousButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>on_addfolder_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/>on_listWidget_customContextMenuRequested();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:<sp/>on_listWidget_itemDoubleClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:<sp/>on_listWidget_itemSelectionChanged();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6:<sp/>on_removeallButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>7:<sp/>on_removeButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>8:<sp/>on_addButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>9:<sp/>on_stopButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>10:<sp/>on_nextButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>11:<sp/>on_startButton_clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>12:<sp/>dragEnterEvent((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/>QDragEnterEvent*(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>13:<sp/>dropEvent((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/>QDropEvent*(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>14:<sp/>dbus_action((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">QString(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>15:<sp/>randomImage();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>16:<sp/>time_updater();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>17:<sp/>desktopNotify((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/>QString(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>18:<sp/>soundNotify();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>19:<sp/>on_timerSlider_valueChanged((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>20:<sp/>livearth();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>21:<sp/>stop_livearth();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>22:<sp/>add_new_album();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>23:<sp/>start_livearth_extras_concurrent_thread();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>24:<sp/>livearth_extras();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>25:<sp/>handle();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>26:<sp/>httpFinished();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>27:<sp/>{<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_r<sp/>=<sp/>changeBackground((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/>QString(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_a[0])<sp/>*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[0])<sp/>=<sp/>_r;<sp/>}<sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>28:<sp/><ref refid="classMainWindow_1a571e513ee5005742161fd4de81c86ca2" kindref="member">clickSysTrayIcon</ref>((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/>QSystemTrayIcon::ActivationReason(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>29:<sp/><ref refid="classMainWindow_1a7aec36163c9dfeda7da43b3e0854d673" kindref="member">ShowPreferences</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>30:<sp/><ref refid="classMainWindow_1ae3130ae3dcc5f6261fb633f52ec062a7" kindref="member">ShowExtras</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>31:<sp/><ref refid="classMainWindow_1a95d7c8c04e09437afc222121d383a722" kindref="member">menushowabout</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>32:<sp/><ref refid="classMainWindow_1ac2a292cdcf39848ec42e6352f011ddd1" kindref="member">showClicked</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>33:<sp/><ref refid="classMainWindow_1a202e9111e76a514c151fffa424b01b73" kindref="member">pruneList</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>34:<sp/><ref refid="classMainWindow_1aea6d2dc29c9cb6f4848a540ba3e5007e" kindref="member">removeDisk</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>35:<sp/><ref refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" kindref="member">load</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>36:<sp/><ref refid="classMainWindow_1a4da9a80d3c5a312dde4fa246436d100f" kindref="member">showProperties</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>37:<sp/><ref refid="classMainWindow_1a3b43993780b5d104db3472ce7e9180e6" kindref="member">Openfolder</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>38:<sp/><ref refid="classMainWindow_1a0d88444127f5f56a4db14d850938dfb6" kindref="member">copyImage</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>39:<sp/><ref refid="classMainWindow_1a5dfecbc3190aaa5b1d4ff5fe84f8c12b" kindref="member">copyPath</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>40:<sp/><ref refid="classMainWindow_1a463ad5b4c5ca193c1ba13247bedcfaca" kindref="member">errorstopprocess</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>41:<sp/><ref refid="classMainWindow_1a2f76e8dbbe9eca94d07919786a7c5108" kindref="member">close_minimize</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>42:<sp/><ref refid="classMainWindow_1ae50efe3540a13d96ec86c677ad56880c" kindref="member">save_album</ref>();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_id<sp/>-=<sp/>43;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="moc__properties_8cpp_1a16857ed9e195eac0e20e389fd4a68da2" kindref="member">_id</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SIGNAL<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" kindref="member">MainWindow::minimized</ref>()</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>QMetaObject::activate(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;staticMetaObject,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">QT_END_MOC_NAMESPACE</highlight></codeline>
+    </programlisting>
+    <location file="/home/maxmahem/wallch-2.0/moc_mainwindow.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="namespaceUi" kind="namespace">
+    <compoundname>Ui</compoundname>
+    <innerclass refid="classUi_1_1about" prot="public">Ui::about</innerclass>
+    <innerclass refid="classUi_1_1Extras" prot="public">Ui::Extras</innerclass>
+    <innerclass refid="classUi_1_1MainWindow" prot="public">Ui::MainWindow</innerclass>
+    <innerclass refid="classUi_1_1Preferences" prot="public">Ui::Preferences</innerclass>
+    <innerclass refid="classUi_1_1properties" prot="public">Ui::properties</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/maxmahem/wallch-2.0/about.h" line="25"/>
+  </compounddef>
+</doxygen>

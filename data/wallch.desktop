@@ -1,0 +1,37 @@
+[Desktop Entry]
+Version=2.0
+Name=Wallch
+Comment=Change desktop wallpapers automatically
+Exec=/usr/bin/wallch
+Icon=wallch
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+MimeType=application/x-wallch-project
+
+X-Ayatana-Desktop-Shortcuts=Start;Pause;Stop;Next;Previous;Change_Wallpaper;Change_Wallpaper_Constant;Live_Earth;
+
+[Start Shortcut Group]
+Name=Start
+Exec=/usr/bin/wallch --start
+TargetEnvironment=Unity
+
+[Pause Shortcut Group]
+Name=Pause
+Exec=/usr/bin/wallch --pause
+TargetEnvironment=Unity
+
+[Stop Shortcut Group]
+Name=Stop
+Exec=/usr/bin/wallch --stop
+TargetEnvironment=Unity
+
+[Next Shortcut Group]
+Name=Next
+Exec=/usr/bin/wallch --next
+TargetEnvironment=Unity
+
+[Previous Shortcut Group]
+Name=Previous
+Exec=/usr/bin/wallch --previous 
+TargetEnvironment=Unity

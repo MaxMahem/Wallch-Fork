@@ -1,0 +1,252 @@
+.TH "/home/maxmahem/wallch-2.0/mainwindow.cpp" 3 "Wed Aug 31 2011" "Version 2.1" "Wallch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/maxmahem/wallch-2.0/mainwindow.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'mainwindow.h'\fP
+.br
+\fC#include 'ui_mainwindow.h'\fP
+.br
+\fC#include 'preferences.h'\fP
+.br
+\fC#include 'about.h'\fP
+.br
+\fC#include 'properties.h'\fP
+.br
+\fC#include 'extras.h'\fP
+.br
+\fC#include 'QOpenCVWidget.h'\fP
+.br
+\fC#include 'glob.h'\fP
+.br
+\fC#include <sys/stat.h>\fP
+.br
+\fC#include <opencv/cv.h>\fP
+.br
+\fC#include <opencv/highgui.h>\fP
+.br
+\fC#include <libnotify/notify.h>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <QMessageBox>\fP
+.br
+\fC#include <QClipboard>\fP
+.br
+\fC#include <QtDBus/QtDBus>\fP
+.br
+\fC#include <QtDBus/QDBusMessage>\fP
+.br
+\fC#include <QUrl>\fP
+.br
+\fC#include <QTransform>\fP
+.br
+\fC#include <QDrag>\fP
+.br
+\fC#include <QProgressDialog>\fP
+.br
+\fC#include <QFileDialog>\fP
+.br
+\fC#include <QTextStream>\fP
+.br
+\fC#include <QAction>\fP
+.br
+\fC#include <QSettings>\fP
+.br
+\fC#include <QRect>\fP
+.br
+\fC#include <QDesktopWidget>\fP
+.br
+\fC#include <QSystemTrayIcon>\fP
+.br
+\fC#include <QCloseEvent>\fP
+.br
+\fC#include <QMenu>\fP
+.br
+\fC#include <QShortcut>\fP
+.br
+\fC#include <QListWidgetItem>\fP
+.br
+\fC#include <QListWidget>\fP
+.br
+\fC#include <QWidget>\fP
+.br
+\fC#include <QtConcurrentRun>\fP
+.br
+\fC#include <QtNetwork/QNetworkAccessManager>\fP
+.br
+\fC#include <QtNetwork/QNetworkReply>\fP
+.br
+\fC#include <QtNetwork/QNetworkRequest>\fP
+.br
+\fC#include <QDesktopServices>\fP
+.br
+\fC#include <SFML/Audio.hpp>\fP
+.br
+\fC#include <gconf/gconf-client.h>\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBQT_NO_KEYWORDS\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fB_live_earth_running_\fP = 0"
+.br
+.ti -1c
+.RI "int \fB_on_boot_once_running_\fP"
+.br
+.ti -1c
+.RI "int \fB_on_boot_constant_running_\fP"
+.br
+.ti -1c
+.RI "int \fBseconds_left\fP = 0"
+.br
+.ti -1c
+.RI "int \fBrandom_first\fP = 0"
+.br
+.ti -1c
+.RI "int \fBnumber\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtmp_number\fP = 0"
+.br
+.ti -1c
+.RI "int \fBseconds_minutes_hours\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtmp_seconds_minutes_hours\fP = 0"
+.br
+.ti -1c
+.RI "int \fBpref\fP = 0"
+.br
+.ti -1c
+.RI "int \fBadd\fP = 0"
+.br
+.ti -1c
+.RI "int \fBshow_notification\fP"
+.br
+.ti -1c
+.RI "int \fBminimize_to_tray\fP = 0"
+.br
+.ti -1c
+.RI "int \fBproperties_times\fP = 0"
+.br
+.ti -1c
+.RI "int \fBclose_minimize_app\fP = 0"
+.br
+.ti -1c
+.RI "int \fBpropertieswindow\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBextras_shown\fP = false"
+.br
+.ti -1c
+.RI "bool \fBstart_just_clicked\fP = false"
+.br
+.ti -1c
+.RI "bool \fBpass_them_as_albums\fP = true"
+.br
+.ti -1c
+.RI "bool \fBnotification_first_time\fP = true"
+.br
+.ti -1c
+.RI "NotifyNotification * \fBnotification\fP"
+.br
+.ti -1c
+.RI "gboolean \fBsuccess\fP"
+.br
+.ti -1c
+.RI "GError * \fBerror\fP = NULL"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define QT_NO_KEYWORDS"
+.PP
+Definition at line 20 of file mainwindow.cpp.
+.SH "Variable Documentation"
+.PP 
+.SS "int \fB_live_earth_running_\fP = 0"
+.PP
+Definition at line 71 of file mainwindow.cpp.
+.SS "int \fB_on_boot_constant_running_\fP"
+.PP
+Definition at line 73 of file mainwindow.cpp.
+.SS "int \fB_on_boot_once_running_\fP"
+.PP
+Definition at line 72 of file mainwindow.cpp.
+.SS "int \fBadd\fP = 0"
+.PP
+Definition at line 81 of file mainwindow.cpp.
+.SS "int \fBclose_minimize_app\fP = 0"
+.PP
+Definition at line 85 of file mainwindow.cpp.
+.SS "GError* \fBerror\fP = NULL"
+.PP
+Definition at line 95 of file mainwindow.cpp.
+.SS "bool \fBextras_shown\fP = false"
+.PP
+Definition at line 88 of file mainwindow.cpp.
+.SS "int \fBminimize_to_tray\fP = 0"
+.PP
+Definition at line 83 of file mainwindow.cpp.
+.SS "NotifyNotification* \fBnotification\fP"
+.PP
+Definition at line 93 of file mainwindow.cpp.
+.SS "bool \fBnotification_first_time\fP = true"
+.PP
+Definition at line 91 of file mainwindow.cpp.
+.SS "int \fBnumber\fP = 0"
+.PP
+Definition at line 76 of file mainwindow.cpp.
+.SS "bool \fBpass_them_as_albums\fP = true"
+.PP
+Definition at line 90 of file mainwindow.cpp.
+.SS "int \fBpref\fP = 0"
+.PP
+Definition at line 80 of file mainwindow.cpp.
+.SS "int \fBproperties_times\fP = 0"
+.PP
+Definition at line 84 of file mainwindow.cpp.
+.SS "int \fBpropertieswindow\fP = 0"
+.PP
+Definition at line 86 of file mainwindow.cpp.
+.SS "int \fBrandom_first\fP = 0"
+.PP
+Definition at line 75 of file mainwindow.cpp.
+.SS "int \fBseconds_left\fP = 0"
+.PP
+Definition at line 74 of file mainwindow.cpp.
+.SS "int \fBseconds_minutes_hours\fP = 0"
+.PP
+Definition at line 77 of file mainwindow.cpp.
+.SS "int \fBshow_notification\fP"
+.PP
+Definition at line 82 of file mainwindow.cpp.
+.SS "bool \fBstart_just_clicked\fP = false"
+.PP
+Definition at line 89 of file mainwindow.cpp.
+.SS "gboolean \fBsuccess\fP"
+.PP
+Definition at line 94 of file mainwindow.cpp.
+.SS "int \fBtmp_number\fP = 0"
+.PP
+Definition at line 76 of file mainwindow.cpp.
+.SS "int \fBtmp_seconds_minutes_hours\fP = 0"
+.PP
+Definition at line 78 of file mainwindow.cpp.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Wallch from the source code.

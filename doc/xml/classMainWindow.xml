@@ -1,0 +1,1231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classMainWindow" kind="class" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMainWindow_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUi_1_1MainWindow" kindref="compound">Ui::MainWindow</ref> *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="55" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a0c42f7496716d94e18650e2a29b07040" prot="private" static="no" mutable="no">
+        <type>QSystemTrayIcon *</type>
+        <definition>QSystemTrayIcon* MainWindow::trayIcon</definition>
+        <argsstring></argsstring>
+        <name>trayIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="56" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1afea4057830a43daf32bcb7dd6ae7d811" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* MainWindow::update_time</definition>
+        <argsstring></argsstring>
+        <name>update_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="58" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ae54fe9fbfec90cc30b6c2fc9620b3697" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* MainWindow::earth_timer</definition>
+        <argsstring></argsstring>
+        <name>earth_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="59" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ae758bf4071658388a74db4977eca6c57" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Start_action</definition>
+        <argsstring></argsstring>
+        <name>Start_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="61" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a29edf592ea67e8bf326e74907c81f0bf" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Stop_action</definition>
+        <argsstring></argsstring>
+        <name>Stop_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="62" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a642bd353839a2ef704952544a0311511" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Next_action</definition>
+        <argsstring></argsstring>
+        <name>Next_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="63" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a96fad5597a0dad227c333fda8fa5147e" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Previous_action</definition>
+        <argsstring></argsstring>
+        <name>Previous_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="64" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a34d5733f296e745643a7968bede3b308" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Show_action</definition>
+        <argsstring></argsstring>
+        <name>Show_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="65" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a3caafedcf4f4b4edcd060b150263984b" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Settings_action</definition>
+        <argsstring></argsstring>
+        <name>Settings_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="66" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a035ad6781b4687b70b5a5e1420c53bc0" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::About_action</definition>
+        <argsstring></argsstring>
+        <name>About_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="67" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a578b97fd02aaafb03ea6e35055ad9055" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::Quit_action</definition>
+        <argsstring></argsstring>
+        <name>Quit_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="68" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1adaf6415cab3c731ddcd19fd5dae23cb3" prot="private" static="no" mutable="no">
+        <type><ref refid="classabout" kindref="compound">about</ref> *</type>
+        <definition>about* MainWindow::About</definition>
+        <argsstring></argsstring>
+        <name>About</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="72" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a0b82e28646b6fdf626daf1ddb71e502e" prot="private" static="no" mutable="no">
+        <type><ref refid="classPreferences" kindref="compound">Preferences</ref> *</type>
+        <definition>Preferences* MainWindow::preferences</definition>
+        <argsstring></argsstring>
+        <name>preferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="73" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a6657eb302411d239bffe608e29115e96" prot="private" static="no" mutable="no">
+        <type><ref refid="classproperties" kindref="compound">properties</ref> *</type>
+        <definition>properties* MainWindow::Properties</definition>
+        <argsstring></argsstring>
+        <name>Properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="74" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac56927ea5284bfe9f7dd4350f55744c7" prot="private" static="no" mutable="no">
+        <type><ref refid="classExtras" kindref="compound">Extras</ref> *</type>
+        <definition>Extras* MainWindow::extras</definition>
+        <argsstring></argsstring>
+        <name>extras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="75" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac56041ee03314c41785b10ab86cd95a1" prot="private" static="no" mutable="no">
+        <type>QUrl</type>
+        <definition>QUrl MainWindow::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="77" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1afa5d1646d9e1b1fe58bf63075cd103ef" prot="private" static="no" mutable="no">
+        <type>QNetworkAccessManager</type>
+        <definition>QNetworkAccessManager MainWindow::qnam</definition>
+        <argsstring></argsstring>
+        <name>qnam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="78" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac77db992d9cb7084324cbfaaad0605ce" prot="private" static="no" mutable="no">
+        <type>QNetworkReply *</type>
+        <definition>QNetworkReply* MainWindow::reply</definition>
+        <argsstring></argsstring>
+        <name>reply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="79" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a88cea956ec1346e7b0062502dc7ef1af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::delayMinutes</definition>
+        <argsstring></argsstring>
+        <name>delayMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="81" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a1322b5375e24b0102f5e3afd023aa2bc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::timerMinutes</definition>
+        <argsstring></argsstring>
+        <name>timerMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="82" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac1a58a2920829a3f09ee71fe36e09bf2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::desktopNotification</definition>
+        <argsstring></argsstring>
+        <name>desktopNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="83" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a690cae0a4c253812e5e2fb2de69e77bc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::soundNotification</definition>
+        <argsstring></argsstring>
+        <name>soundNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="84" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a3565b914d8d79bc20add7c9b669b738c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="85" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="48" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="97" bodyend="267"/>
+        <references refid="classUi__MainWindow_1ac2669cdd6ec6085dbd477c3636ddab29" compoundref="ui__mainwindow_8h" startline="36">Ui_MainWindow::action_About</references>
+        <references refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" compoundref="ui__mainwindow_8h" startline="43">Ui_MainWindow::action_Load</references>
+        <references refid="classUi__MainWindow_1ae13b44517a6ac27b75f9068fedaf43b3" compoundref="ui__mainwindow_8h" startline="41">Ui_MainWindow::action_Next_Image</references>
+        <references refid="classUi__MainWindow_1a0c698e3df44548c69ba5d38d50402d32" compoundref="ui__mainwindow_8h" startline="35">Ui_MainWindow::action_Preferences</references>
+        <references refid="classUi__MainWindow_1a109a2b59e51d886849f706bf6ff4a13d" compoundref="ui__mainwindow_8h" startline="48">Ui_MainWindow::action_Previous_Image_Shift_Ctrl_B</references>
+        <references refid="classUi__MainWindow_1ae338c30b4948a2301c9b166b4f384671" compoundref="ui__mainwindow_8h" startline="38">Ui_MainWindow::action_Start</references>
+        <references refid="classUi__MainWindow_1adbdbc9d312e983ed7ffa1a99793eeec7" compoundref="ui__mainwindow_8h" startline="46">Ui_MainWindow::actionAdd_a_Wallch_album</references>
+        <references refid="classUi__MainWindow_1a3cae951a389067a889312a8db264268e" compoundref="ui__mainwindow_8h" startline="45">Ui_MainWindow::actionAdd_Folder</references>
+        <references refid="classUi__MainWindow_1a48c15a8b0d5bd0ba1289d785e76a744b" compoundref="ui__mainwindow_8h" startline="44">Ui_MainWindow::actionAdd_single_images</references>
+        <references refid="classUi__MainWindow_1ace7456abb046b1c717cb786b1643e60e" compoundref="ui__mainwindow_8h" startline="49">Ui_MainWindow::actionExtras</references>
+        <references refid="classUi__MainWindow_1a5b3976b2349b3d27d15ef51b0b09513a" compoundref="ui__mainwindow_8h" startline="37">Ui_MainWindow::actionQuit_Ctrl_Q</references>
+        <references refid="classUi__MainWindow_1af6c2d7008e1c022ea212377f7e1d2996" compoundref="ui__mainwindow_8h" startline="42">Ui_MainWindow::actionRemove_list</references>
+        <references refid="classUi__MainWindow_1a77fdca5e1deec736a80260027d4914ae" compoundref="ui__mainwindow_8h" startline="39">Ui_MainWindow::actionS_top</references>
+        <references refid="classUi__MainWindow_1a1761410af45480e8a833dae3c88e96e4" compoundref="ui__mainwindow_8h" startline="60">Ui_MainWindow::addButton</references>
+        <references refid="classUi__MainWindow_1ac80c9560810ddceb7494fa1f77079559" compoundref="ui__mainwindow_8h" startline="59">Ui_MainWindow::addfolder</references>
+        <references refid="classMainWindow_1a571e513ee5005742161fd4de81c86ca2" compoundref="mainwindow_8cpp" startline="324" endline="350">clickSysTrayIcon</references>
+        <references refid="classMainWindow_1a2f76e8dbbe9eca94d07919786a7c5108" compoundref="mainwindow_8cpp" startline="583" endline="587">close_minimize</references>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+        <references refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" compoundref="mainwindow_8cpp" startline="485" endline="509">load</references>
+        <references refid="classUi__MainWindow_1a041df64e03e576dd5318db1d942f0c56" compoundref="ui__mainwindow_8h" startline="75">Ui_MainWindow::menuAdd_Files</references>
+        <references refid="classMainWindow_1a95d7c8c04e09437afc222121d383a722" compoundref="mainwindow_8cpp" startline="906" endline="913">menushowabout</references>
+        <references refid="mainwindow_8cpp_1a2f73f86b6ed098ec989ba1767b5e8c2b" compoundref="mainwindow_8cpp" startline="83">minimize_to_tray</references>
+        <references refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" compoundref="moc__mainwindow_8cpp" startline="195" endline="198">minimized</references>
+        <references refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" compoundref="ui__mainwindow_8h" startline="70">Ui_MainWindow::nextButton</references>
+        <references refid="classUi__MainWindow_1a815d904c6cdc28fc7037862121696ade" compoundref="ui__mainwindow_8h" startline="69">Ui_MainWindow::previousButton</references>
+        <references refid="classMainWindow_1a202e9111e76a514c151fffa424b01b73" compoundref="mainwindow_8cpp" startline="465" endline="474">pruneList</references>
+        <references refid="classUi__MainWindow_1ab1e1013dda0abf675c1b37639a0b8f51" compoundref="ui__mainwindow_8h" startline="61">Ui_MainWindow::removeallButton</references>
+        <references refid="classUi__MainWindow_1ae4ea0ab11a595b2a964115c05f7603f4" compoundref="ui__mainwindow_8h" startline="62">Ui_MainWindow::removeButton</references>
+        <references refid="classMainWindow_1ae50efe3540a13d96ec86c677ad56880c" compoundref="mainwindow_8cpp" startline="986" endline="1008">save_album</references>
+        <references refid="classUi__MainWindow_1aecff87ababbfe64a3e91c5129cba2274" compoundref="ui__mainwindow_8h" startline="50">Ui_MainWindow::save_as</references>
+        <references refid="classUi__MainWindow_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="80" endline="328">Ui_MainWindow::setupUi</references>
+        <references refid="classMainWindow_1ac2a292cdcf39848ec42e6352f011ddd1" compoundref="mainwindow_8cpp" startline="352" endline="356">showClicked</references>
+        <references refid="classMainWindow_1ae3130ae3dcc5f6261fb633f52ec062a7" compoundref="mainwindow_8cpp" startline="925" endline="935">ShowExtras</references>
+        <references refid="classMainWindow_1a7aec36163c9dfeda7da43b3e0854d673" compoundref="mainwindow_8cpp" startline="915" endline="923">ShowPreferences</references>
+        <references refid="classMainWindow_1a4da9a80d3c5a312dde4fa246436d100f" compoundref="mainwindow_8cpp" startline="941" endline="946">showProperties</references>
+        <references refid="classUi__MainWindow_1a58a84cd3057ab5459819f986b08942b1" compoundref="ui__mainwindow_8h" startline="71">Ui_MainWindow::startButton</references>
+        <references refid="classUi__MainWindow_1a32791e01697a0fa4c2e5219b2d717a95" compoundref="ui__mainwindow_8h" startline="72">Ui_MainWindow::stopButton</references>
+        <references refid="classUi__MainWindow_1aed2eea321894fe7a8f3e23b78fc42793" compoundref="ui__mainwindow_8h" startline="67">Ui_MainWindow::timerSlider</references>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="49" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="287" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMainWindow_1af4ca5d0d3d18ddcb7d54b6596bbf4797" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::changeEvent</definition>
+        <argsstring>(QEvent *e)</argsstring>
+        <name>changeEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="52" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="289" bodyend="322"/>
+        <references refid="mainwindow_8cpp_1aeb84694c28fdf361868a5234d9d74db7" compoundref="mainwindow_8cpp" startline="81">add</references>
+        <references refid="mainwindow_8cpp_1a2f73f86b6ed098ec989ba1767b5e8c2b" compoundref="mainwindow_8cpp" startline="83">minimize_to_tray</references>
+        <references refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" compoundref="moc__mainwindow_8cpp" startline="195" endline="198">minimized</references>
+        <references refid="mainwindow_8cpp_1a96203077ee28957ab99fcabaf70abc0f" compoundref="mainwindow_8cpp" startline="80">pref</references>
+        <references refid="classUi__MainWindow_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="330" endline="412">Ui_MainWindow::retranslateUi</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMainWindow_1a38edb88d43e844aca9d2e762c8706565" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::closeEvent</definition>
+        <argsstring>(QCloseEvent *)</argsstring>
+        <name>closeEvent</name>
+        <param>
+          <type>QCloseEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="70" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="269" bodyend="285"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classMainWindow_1a5e8b06d2ce1a6fab2e1c4ca453e6adfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_previousButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_previousButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="88" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="814" bodyend="826"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aca94f669f81a67c3b8d2397530613cdc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_addfolder_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_addfolder_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="89" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="541" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a9c71e1ad2c8d02b13a67d916ca5e8b7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_listWidget_customContextMenuRequested</definition>
+        <argsstring>()</argsstring>
+        <name>on_listWidget_customContextMenuRequested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="90" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="521" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aa8d7496511c02ce40e41661e5b736b0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_listWidget_itemDoubleClicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_listWidget_itemDoubleClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="91" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="460" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aa8ac901eb71ff3757ca7c3dbd05ba432" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_listWidget_itemSelectionChanged</definition>
+        <argsstring>()</argsstring>
+        <name>on_listWidget_itemSelectionChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="92" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="452" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7ae45e74841448dc319c9c9efa222e58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_removeallButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_removeallButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="93" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="445" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ad8adf30d72e904976ed98a7b19d151dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_removeButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_removeButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="94" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="440" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a531054788b8045d4a745366b1b49a0a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_addButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_addButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="95" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="421" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1abf27a1e863dc2350626ba16c83e925f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_stopButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_stopButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="96" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="785" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a6574b7c1c3ceef3d522632e711ec260b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_nextButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_nextButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="97" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="800" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1abcc096120205197b50fa55cb603acb95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_startButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_startButton_clicked</name>
+        <briefdescription>
+<para>The startButton controls starting and stopping of playback, it is actually functions as a toggle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="98" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="674" bodyend="718"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a671bf73078069470c19965a3d948b6fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::dragEnterEvent</definition>
+        <argsstring>(QDragEnterEvent *event)</argsstring>
+        <name>dragEnterEvent</name>
+        <param>
+          <type>QDragEnterEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="99" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="589" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ae7b97e68c51358f6f36be3c40b89c01c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::dropEvent</definition>
+        <argsstring>(QDropEvent *event)</argsstring>
+        <name>dropEvent</name>
+        <param>
+          <type>QDropEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="100" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="596" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a1360cb95e3b9e747902528b1d9c8bf33" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::dbus_action</definition>
+        <argsstring>(const QString &amp;msg)</argsstring>
+        <name>dbus_action</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="101" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="631" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a2889f63f7951df7e17e9b02b6c92b555" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::randomImage</definition>
+        <argsstring>()</argsstring>
+        <name>randomImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="102" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="720" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a6f72d54e28a07c30a592056d0e372124" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::time_updater</definition>
+        <argsstring>()</argsstring>
+        <name>time_updater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="103" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="769" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1af7308fb9467afae1f7ae650a6fc36840" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::desktopNotify</definition>
+        <argsstring>(QString qimage)</argsstring>
+        <name>desktopNotify</name>
+        <param>
+          <type>QString</type>
+          <declname>qimage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="104" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="828" bodyend="863"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aeff3a9f85141d07110b73bac5a84f48c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::soundNotify</definition>
+        <argsstring>()</argsstring>
+        <name>soundNotify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="105" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="884" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aaa424b435449112e5c3ba254b2436f10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_timerSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_timerSlider_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="106" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="734" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1af8074a04d9545caad47f28e3648f1581" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::livearth</definition>
+        <argsstring>()</argsstring>
+        <name>livearth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="107" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="358" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ac32236a5fb6bfd07c3754d2b59e9d4f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::stop_livearth</definition>
+        <argsstring>()</argsstring>
+        <name>stop_livearth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="108" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="386" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ab38cda32672980177d1896487a046ca5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::add_new_album</definition>
+        <argsstring>()</argsstring>
+        <name>add_new_album</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="109" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="948" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a0f48ea1de464e67067ac1bd2cfbb24d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::start_livearth_extras_concurrent_thread</definition>
+        <argsstring>()</argsstring>
+        <name>start_livearth_extras_concurrent_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="110" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="382" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ae5bc3a55b641320188d04d3002866e9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::livearth_extras</definition>
+        <argsstring>()</argsstring>
+        <name>livearth_extras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="111" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="391" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aec5ddcfde77d91b6cf45a2cb302d2b48" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::handle</definition>
+        <argsstring>()</argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="112" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="865" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1abafbb91dc493fc007f5e6a8ae04f490c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::httpFinished</definition>
+        <argsstring>()</argsstring>
+        <name>httpFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="114" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="400" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a65511be3b48c592ededfaedf37d6aefd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MainWindow::changeBackground</definition>
+        <argsstring>(QString picture)</argsstring>
+        <name>changeBackground</name>
+        <param>
+          <type>QString</type>
+          <declname>picture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="115" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="867" bodyend="882"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::minimized</definition>
+        <argsstring>()</argsstring>
+        <name>minimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="118" bodyfile="/home/maxmahem/wallch-2.0/moc_mainwindow.cpp" bodystart="195" bodyend="198"/>
+        <referencedby refid="classMainWindow_1af4ca5d0d3d18ddcb7d54b6596bbf4797" compoundref="mainwindow_8cpp" startline="289" endline="322">changeEvent</referencedby>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classMainWindow_1a571e513ee5005742161fd4de81c86ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::clickSysTrayIcon</definition>
+        <argsstring>(QSystemTrayIcon::ActivationReason reason)</argsstring>
+        <name>clickSysTrayIcon</name>
+        <param>
+          <type>QSystemTrayIcon::ActivationReason</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="121" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="324" bodyend="350"/>
+        <references refid="classUi__MainWindow_1ad2577b5dd34f235616d6afe36c225b27" compoundref="ui__mainwindow_8h" startline="70">Ui_MainWindow::nextButton</references>
+        <references refid="mainwindow_8cpp_1a96203077ee28957ab99fcabaf70abc0f" compoundref="mainwindow_8cpp" startline="80">pref</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7aec36163c9dfeda7da43b3e0854d673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ShowPreferences</definition>
+        <argsstring>()</argsstring>
+        <name>ShowPreferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="122" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="915" bodyend="923"/>
+        <references refid="mainwindow_8cpp_1a96203077ee28957ab99fcabaf70abc0f" compoundref="mainwindow_8cpp" startline="80">pref</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ae3130ae3dcc5f6261fb633f52ec062a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ShowExtras</definition>
+        <argsstring>()</argsstring>
+        <name>ShowExtras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="123" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="925" bodyend="935"/>
+        <references refid="mainwindow_8cpp_1a98dda529b7c9c1d6bb6edf3644a1954f" compoundref="mainwindow_8cpp" startline="88">extras_shown</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a95d7c8c04e09437afc222121d383a722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::menushowabout</definition>
+        <argsstring>()</argsstring>
+        <name>menushowabout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="124" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="906" bodyend="913"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ac2a292cdcf39848ec42e6352f011ddd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::showClicked</definition>
+        <argsstring>()</argsstring>
+        <name>showClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="125" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="352" bodyend="356"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a202e9111e76a514c151fffa424b01b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::pruneList</definition>
+        <argsstring>()</argsstring>
+        <name>pruneList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="126" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="465" bodyend="474"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aea6d2dc29c9cb6f4848a540ba3e5007e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::removeDisk</definition>
+        <argsstring>()</argsstring>
+        <name>removeDisk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="127" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="476" bodyend="483"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::load</definition>
+        <argsstring>()</argsstring>
+        <name>load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="128" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="485" bodyend="509"/>
+        <references refid="classUi__MainWindow_1a738e92d19d3efa6a6c8c7054f23fbd26" compoundref="ui__mainwindow_8h" startline="43">Ui_MainWindow::action_Load</references>
+        <references refid="classUi__MainWindow_1a0e90c7e9ad77386881e0b264ddb9dd22" compoundref="ui__mainwindow_8h" startline="58">Ui_MainWindow::label_9</references>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a4da9a80d3c5a312dde4fa246436d100f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::showProperties</definition>
+        <argsstring>()</argsstring>
+        <name>showProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="129" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="941" bodyend="946"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a3b43993780b5d104db3472ce7e9180e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::Openfolder</definition>
+        <argsstring>()</argsstring>
+        <name>Openfolder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="130" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="937" bodyend="939"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a0d88444127f5f56a4db14d850938dfb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::copyImage</definition>
+        <argsstring>()</argsstring>
+        <name>copyImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="131" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="516" bodyend="519"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a5dfecbc3190aaa5b1d4ff5fe84f8c12b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::copyPath</definition>
+        <argsstring>()</argsstring>
+        <name>copyPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="132" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="511" bodyend="514"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a463ad5b4c5ca193c1ba13247bedcfaca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::errorstopprocess</definition>
+        <argsstring>()</argsstring>
+        <name>errorstopprocess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="133" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="536" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a2f76e8dbbe9eca94d07919786a7c5108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::close_minimize</definition>
+        <argsstring>()</argsstring>
+        <name>close_minimize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="134" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="583" bodyend="587"/>
+        <references refid="mainwindow_8cpp_1a2f73f86b6ed098ec989ba1767b5e8c2b" compoundref="mainwindow_8cpp" startline="83">minimize_to_tray</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ae50efe3540a13d96ec86c677ad56880c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::save_album</definition>
+        <argsstring>()</argsstring>
+        <name>save_album</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="135" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.cpp" bodystart="986" bodyend="1008"/>
+        <references refid="classUi__MainWindow_1ae647a15635ba8a0e5d5aec475db99d8f" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::listWidget</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="97" endline="267">MainWindow</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="100">
+        <label>Extras</label>
+        <link refid="classExtras"/>
+        <childnode refid="101" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Ui::MainWindow</label>
+        <link refid="classUi_1_1MainWindow"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>Ui::Extras</label>
+        <link refid="classUi_1_1Extras"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>about</label>
+        <link refid="classabout"/>
+        <childnode refid="95" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+      <node id="89">
+        <label>Preferences</label>
+        <link refid="classPreferences"/>
+        <childnode refid="90" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="89" relation="usage">
+          <edgelabel>preferences</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>About</edgelabel>
+        </childnode>
+        <childnode refid="97" relation="usage">
+          <edgelabel>Properties</edgelabel>
+        </childnode>
+        <childnode refid="100" relation="usage">
+          <edgelabel>extras</edgelabel>
+        </childnode>
+      </node>
+      <node id="102">
+        <label>Ui_Extras</label>
+        <link refid="classUi__Extras"/>
+      </node>
+      <node id="91">
+        <label>Ui_Preferences</label>
+        <link refid="classUi__Preferences"/>
+      </node>
+      <node id="90">
+        <label>Ui::Preferences</label>
+        <link refid="classUi_1_1Preferences"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Ui_MainWindow</label>
+        <link refid="classUi__MainWindow"/>
+      </node>
+      <node id="96">
+        <label>Ui_about</label>
+        <link refid="classUi__about"/>
+      </node>
+      <node id="95">
+        <label>Ui::about</label>
+        <link refid="classUi_1_1about"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>Ui::properties</label>
+        <link refid="classUi_1_1properties"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>Ui_properties</label>
+        <link refid="classUi__properties"/>
+      </node>
+      <node id="97">
+        <label>properties</label>
+        <link refid="classproperties"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>ui</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/mainwindow.h" line="45" bodyfile="/home/maxmahem/wallch-2.0/mainwindow.h" bodystart="45" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classMainWindow_1adaf6415cab3c731ddcd19fd5dae23cb3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>About</name></member>
+      <member refid="classMainWindow_1a035ad6781b4687b70b5a5e1420c53bc0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>About_action</name></member>
+      <member refid="classMainWindow_1ab38cda32672980177d1896487a046ca5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>add_new_album</name></member>
+      <member refid="classMainWindow_1a65511be3b48c592ededfaedf37d6aefd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>changeBackground</name></member>
+      <member refid="classMainWindow_1af4ca5d0d3d18ddcb7d54b6596bbf4797" prot="protected" virt="non-virtual"><scope>MainWindow</scope><name>changeEvent</name></member>
+      <member refid="classMainWindow_1a571e513ee5005742161fd4de81c86ca2" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>clickSysTrayIcon</name></member>
+      <member refid="classMainWindow_1a2f76e8dbbe9eca94d07919786a7c5108" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>close_minimize</name></member>
+      <member refid="classMainWindow_1a38edb88d43e844aca9d2e762c8706565" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>closeEvent</name></member>
+      <member refid="classMainWindow_1a0d88444127f5f56a4db14d850938dfb6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>copyImage</name></member>
+      <member refid="classMainWindow_1a5dfecbc3190aaa5b1d4ff5fe84f8c12b" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>copyPath</name></member>
+      <member refid="classMainWindow_1a1360cb95e3b9e747902528b1d9c8bf33" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>dbus_action</name></member>
+      <member refid="classMainWindow_1a88cea956ec1346e7b0062502dc7ef1af" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>delayMinutes</name></member>
+      <member refid="classMainWindow_1ac1a58a2920829a3f09ee71fe36e09bf2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>desktopNotification</name></member>
+      <member refid="classMainWindow_1af7308fb9467afae1f7ae650a6fc36840" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>desktopNotify</name></member>
+      <member refid="classMainWindow_1a671bf73078069470c19965a3d948b6fa" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>dragEnterEvent</name></member>
+      <member refid="classMainWindow_1ae7b97e68c51358f6f36be3c40b89c01c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>dropEvent</name></member>
+      <member refid="classMainWindow_1ae54fe9fbfec90cc30b6c2fc9620b3697" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>earth_timer</name></member>
+      <member refid="classMainWindow_1a463ad5b4c5ca193c1ba13247bedcfaca" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>errorstopprocess</name></member>
+      <member refid="classMainWindow_1ac56927ea5284bfe9f7dd4350f55744c7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>extras</name></member>
+      <member refid="classMainWindow_1aec5ddcfde77d91b6cf45a2cb302d2b48" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>handle</name></member>
+      <member refid="classMainWindow_1abafbb91dc493fc007f5e6a8ae04f490c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>httpFinished</name></member>
+      <member refid="classMainWindow_1af8074a04d9545caad47f28e3648f1581" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>livearth</name></member>
+      <member refid="classMainWindow_1ae5bc3a55b641320188d04d3002866e9f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>livearth_extras</name></member>
+      <member refid="classMainWindow_1a692f2f28196cc9ee41b10e89c5d32922" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>load</name></member>
+      <member refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classMainWindow_1a95d7c8c04e09437afc222121d383a722" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>menushowabout</name></member>
+      <member refid="classMainWindow_1a3b1f97543263266499a860cbb03b71fb" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>minimized</name></member>
+      <member refid="classMainWindow_1a642bd353839a2ef704952544a0311511" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Next_action</name></member>
+      <member refid="classMainWindow_1a531054788b8045d4a745366b1b49a0a1" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_addButton_clicked</name></member>
+      <member refid="classMainWindow_1aca94f669f81a67c3b8d2397530613cdc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_addfolder_clicked</name></member>
+      <member refid="classMainWindow_1a9c71e1ad2c8d02b13a67d916ca5e8b7d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_listWidget_customContextMenuRequested</name></member>
+      <member refid="classMainWindow_1aa8d7496511c02ce40e41661e5b736b0f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_listWidget_itemDoubleClicked</name></member>
+      <member refid="classMainWindow_1aa8ac901eb71ff3757ca7c3dbd05ba432" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_listWidget_itemSelectionChanged</name></member>
+      <member refid="classMainWindow_1a6574b7c1c3ceef3d522632e711ec260b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_nextButton_clicked</name></member>
+      <member refid="classMainWindow_1a5e8b06d2ce1a6fab2e1c4ca453e6adfd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_previousButton_clicked</name></member>
+      <member refid="classMainWindow_1a7ae45e74841448dc319c9c9efa222e58" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_removeallButton_clicked</name></member>
+      <member refid="classMainWindow_1ad8adf30d72e904976ed98a7b19d151dd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_removeButton_clicked</name></member>
+      <member refid="classMainWindow_1abcc096120205197b50fa55cb603acb95" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_startButton_clicked</name></member>
+      <member refid="classMainWindow_1abf27a1e863dc2350626ba16c83e925f4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_stopButton_clicked</name></member>
+      <member refid="classMainWindow_1aaa424b435449112e5c3ba254b2436f10" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_timerSlider_valueChanged</name></member>
+      <member refid="classMainWindow_1a3b43993780b5d104db3472ce7e9180e6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>Openfolder</name></member>
+      <member refid="classMainWindow_1a0b82e28646b6fdf626daf1ddb71e502e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>preferences</name></member>
+      <member refid="classMainWindow_1a96fad5597a0dad227c333fda8fa5147e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Previous_action</name></member>
+      <member refid="classMainWindow_1a6657eb302411d239bffe608e29115e96" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Properties</name></member>
+      <member refid="classMainWindow_1a202e9111e76a514c151fffa424b01b73" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>pruneList</name></member>
+      <member refid="classMainWindow_1afa5d1646d9e1b1fe58bf63075cd103ef" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>qnam</name></member>
+      <member refid="classMainWindow_1a578b97fd02aaafb03ea6e35055ad9055" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Quit_action</name></member>
+      <member refid="classMainWindow_1a2889f63f7951df7e17e9b02b6c92b555" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>randomImage</name></member>
+      <member refid="classMainWindow_1aea6d2dc29c9cb6f4848a540ba3e5007e" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>removeDisk</name></member>
+      <member refid="classMainWindow_1ac77db992d9cb7084324cbfaaad0605ce" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>reply</name></member>
+      <member refid="classMainWindow_1a3565b914d8d79bc20add7c9b669b738c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>running</name></member>
+      <member refid="classMainWindow_1ae50efe3540a13d96ec86c677ad56880c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>save_album</name></member>
+      <member refid="classMainWindow_1a3caafedcf4f4b4edcd060b150263984b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Settings_action</name></member>
+      <member refid="classMainWindow_1a34d5733f296e745643a7968bede3b308" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Show_action</name></member>
+      <member refid="classMainWindow_1ac2a292cdcf39848ec42e6352f011ddd1" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>showClicked</name></member>
+      <member refid="classMainWindow_1ae3130ae3dcc5f6261fb633f52ec062a7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ShowExtras</name></member>
+      <member refid="classMainWindow_1a7aec36163c9dfeda7da43b3e0854d673" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ShowPreferences</name></member>
+      <member refid="classMainWindow_1a4da9a80d3c5a312dde4fa246436d100f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>showProperties</name></member>
+      <member refid="classMainWindow_1a690cae0a4c253812e5e2fb2de69e77bc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>soundNotification</name></member>
+      <member refid="classMainWindow_1aeff3a9f85141d07110b73bac5a84f48c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>soundNotify</name></member>
+      <member refid="classMainWindow_1ae758bf4071658388a74db4977eca6c57" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Start_action</name></member>
+      <member refid="classMainWindow_1a0f48ea1de464e67067ac1bd2cfbb24d8" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>start_livearth_extras_concurrent_thread</name></member>
+      <member refid="classMainWindow_1a29edf592ea67e8bf326e74907c81f0bf" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>Stop_action</name></member>
+      <member refid="classMainWindow_1ac32236a5fb6bfd07c3754d2b59e9d4f3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>stop_livearth</name></member>
+      <member refid="classMainWindow_1a6f72d54e28a07c30a592056d0e372124" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>time_updater</name></member>
+      <member refid="classMainWindow_1a1322b5375e24b0102f5e3afd023aa2bc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>timerMinutes</name></member>
+      <member refid="classMainWindow_1a0c42f7496716d94e18650e2a29b07040" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>trayIcon</name></member>
+      <member refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="classMainWindow_1afea4057830a43daf32bcb7dd6ae7d811" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>update_time</name></member>
+      <member refid="classMainWindow_1ac56041ee03314c41785b10ab86cd95a1" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>url</name></member>
+      <member refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

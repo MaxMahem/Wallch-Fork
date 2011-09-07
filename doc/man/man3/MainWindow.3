@@ -1,0 +1,151 @@
+.TH "MainWindow" 3 "Wed Aug 31 2011" "Version 2.1" "Wallch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainWindow \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <mainwindow.h>\fP
+.SS "Public Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBclickSysTrayIcon\fP (QSystemTrayIcon::ActivationReason reason)"
+.br
+.ti -1c
+.RI "void \fBShowPreferences\fP ()"
+.br
+.ti -1c
+.RI "void \fBShowExtras\fP ()"
+.br
+.ti -1c
+.RI "void \fBmenushowabout\fP ()"
+.br
+.ti -1c
+.RI "void \fBshowClicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBpruneList\fP ()"
+.br
+.ti -1c
+.RI "void \fBremoveDisk\fP ()"
+.br
+.ti -1c
+.RI "void \fBload\fP ()"
+.br
+.ti -1c
+.RI "void \fBshowProperties\fP ()"
+.br
+.ti -1c
+.RI "void \fBOpenfolder\fP ()"
+.br
+.ti -1c
+.RI "void \fBcopyImage\fP ()"
+.br
+.ti -1c
+.RI "void \fBcopyPath\fP ()"
+.br
+.ti -1c
+.RI "void \fBerrorstopprocess\fP ()"
+.br
+.ti -1c
+.RI "void \fBclose_minimize\fP ()"
+.br
+.ti -1c
+.RI "void \fBsave_album\fP ()"
+.br
+.in -1c
+.SS "Signals"
+
+.in +1c
+.ti -1c
+.RI "void \fBminimized\fP ()"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainWindow\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~MainWindow\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBchangeEvent\fP (QEvent *e)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 45 of file mainwindow.h.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MainWindow::MainWindow (QWidget *parent = \fC0\fP)"
+.PP
+Definition at line 97 of file mainwindow.cpp.
+.SS "MainWindow::~MainWindow ()"
+.PP
+Definition at line 287 of file mainwindow.cpp.
+.SH "Member Function Documentation"
+.PP 
+.SS "void MainWindow::changeEvent (QEvent *e)\fC [protected]\fP"
+.PP
+Definition at line 289 of file mainwindow.cpp.
+.SS "void MainWindow::clickSysTrayIcon (QSystemTrayIcon::ActivationReasonreason)\fC [slot]\fP"
+.PP
+Definition at line 324 of file mainwindow.cpp.
+.SS "void MainWindow::close_minimize ()\fC [slot]\fP"
+.PP
+Definition at line 583 of file mainwindow.cpp.
+.SS "void MainWindow::copyImage ()\fC [slot]\fP"
+.PP
+Definition at line 516 of file mainwindow.cpp.
+.SS "void MainWindow::copyPath ()\fC [slot]\fP"
+.PP
+Definition at line 511 of file mainwindow.cpp.
+.SS "void MainWindow::errorstopprocess ()\fC [slot]\fP"
+.PP
+Definition at line 536 of file mainwindow.cpp.
+.SS "void MainWindow::load ()\fC [slot]\fP"
+.PP
+Definition at line 485 of file mainwindow.cpp.
+.SS "void MainWindow::menushowabout ()\fC [slot]\fP"
+.PP
+Definition at line 906 of file mainwindow.cpp.
+.SS "void MainWindow::minimized ()\fC [signal]\fP"
+.PP
+Definition at line 195 of file moc_mainwindow.cpp.
+.SS "void MainWindow::Openfolder ()\fC [slot]\fP"
+.PP
+Definition at line 937 of file mainwindow.cpp.
+.SS "void MainWindow::pruneList ()\fC [slot]\fP"
+.PP
+Definition at line 465 of file mainwindow.cpp.
+.SS "void MainWindow::removeDisk ()\fC [slot]\fP"
+.PP
+Definition at line 476 of file mainwindow.cpp.
+.SS "void MainWindow::save_album ()\fC [slot]\fP"
+.PP
+Definition at line 986 of file mainwindow.cpp.
+.SS "void MainWindow::showClicked ()\fC [slot]\fP"
+.PP
+Definition at line 352 of file mainwindow.cpp.
+.SS "void MainWindow::ShowExtras ()\fC [slot]\fP"
+.PP
+Definition at line 925 of file mainwindow.cpp.
+.SS "void MainWindow::ShowPreferences ()\fC [slot]\fP"
+.PP
+Definition at line 915 of file mainwindow.cpp.
+.SS "void MainWindow::showProperties ()\fC [slot]\fP"
+.PP
+Definition at line 941 of file mainwindow.cpp.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Wallch from the source code.

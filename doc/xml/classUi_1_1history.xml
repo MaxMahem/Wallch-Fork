@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi_1_1history" kind="class" prot="public">
+    <compoundname>Ui::history</compoundname>
+    <basecompoundref refid="classUi__history" prot="public" virt="non-virtual">Ui_history</basecompoundref>
+    <includes refid="ui__history_8h" local="no">ui_history.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="101">
+        <label>Ui::history</label>
+        <link refid="classUi_1_1history"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>Ui_history</label>
+        <link refid="classUi__history"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>Ui::history</label>
+        <link refid="classUi_1_1history"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>Ui_history</label>
+        <link refid="classUi__history"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="81" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="81" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>closeButton</name></member>
+      <member refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>info</name></member>
+      <member refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>pushButton</name></member>
+      <member refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>pushButton_2</name></member>
+      <member refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>retranslateUi</name></member>
+      <member refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>setupUi</name></member>
+      <member refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" prot="public" virt="non-virtual"><scope>Ui::history</scope><name>treeWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

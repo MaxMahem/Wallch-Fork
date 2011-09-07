@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classUi__history" kind="class" prot="public">
+    <compoundname>Ui_history</compoundname>
+    <derivedcompoundref refid="classUi_1_1history" prot="public" virt="non-virtual">Ui::history</derivedcompoundref>
+    <includes refid="ui__history_8h" local="no">ui_history.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUi__history_1ad735c929553117f86647de09fef4bc7c" prot="public" static="no" mutable="no">
+        <type>QListWidget *</type>
+        <definition>QListWidget* Ui_history::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="28" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" compoundref="ui__history_8h" startline="34" endline="68">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" prot="public" static="no" mutable="no">
+        <type>QTreeWidget *</type>
+        <definition>QTreeWidget* Ui_history::treeWidget</definition>
+        <argsstring></argsstring>
+        <name>treeWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="29" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" compoundref="ui__history_8h" startline="34" endline="68">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_history::pushButton</definition>
+        <argsstring></argsstring>
+        <name>pushButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="30" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" compoundref="ui__history_8h" startline="70" endline="76">retranslateUi</referencedby>
+        <referencedby refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" compoundref="ui__history_8h" startline="34" endline="68">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_history::pushButton_2</definition>
+        <argsstring></argsstring>
+        <name>pushButton_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="31" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" compoundref="ui__history_8h" startline="70" endline="76">retranslateUi</referencedby>
+        <referencedby refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" compoundref="ui__history_8h" startline="34" endline="68">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_history::closeButton</definition>
+        <argsstring></argsstring>
+        <name>closeButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="32" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" compoundref="ui__history_8h" startline="70" endline="76">retranslateUi</referencedby>
+        <referencedby refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" compoundref="ui__history_8h" startline="34" endline="68">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_history::setupUi</definition>
+        <argsstring>(QDialog *history)</argsstring>
+        <name>setupUi</name>
+        <param>
+          <type>QDialog *</type>
+          <declname>history</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="35" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="34" bodyend="68"/>
+        <references refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" compoundref="ui__history_8h" startline="32">closeButton</references>
+        <references refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" compoundref="ui__history_8h" startline="28">info</references>
+        <references refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" compoundref="ui__history_8h" startline="30">pushButton</references>
+        <references refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" compoundref="ui__history_8h" startline="31">pushButton_2</references>
+        <references refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" compoundref="ui__history_8h" startline="70" endline="76">retranslateUi</references>
+        <references refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" compoundref="ui__history_8h" startline="29">treeWidget</references>
+      </memberdef>
+      <memberdef kind="function" id="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ui_history::retranslateUi</definition>
+        <argsstring>(QDialog *history)</argsstring>
+        <name>retranslateUi</name>
+        <param>
+          <type>QDialog *</type>
+          <declname>history</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="71" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="70" bodyend="76"/>
+        <references refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" compoundref="ui__history_8h" startline="32">closeButton</references>
+        <references refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" compoundref="ui__history_8h" startline="30">pushButton</references>
+        <references refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" compoundref="ui__history_8h" startline="31">pushButton_2</references>
+        <referencedby refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" compoundref="ui__history_8h" startline="34" endline="68">setupUi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="156">
+        <label>Ui::history</label>
+        <link refid="classUi_1_1history"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>Ui_history</label>
+        <link refid="classUi__history"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/maxmahem/wallch-2.0/ui_history.h" line="26" bodyfile="/home/maxmahem/wallch-2.0/ui_history.h" bodystart="25" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classUi__history_1a9e18bf35bee38f50a27f4ef1425fae28" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>closeButton</name></member>
+      <member refid="classUi__history_1ad735c929553117f86647de09fef4bc7c" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>info</name></member>
+      <member refid="classUi__history_1a7691a5d3d60ce064af93e73a3a784630" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>pushButton</name></member>
+      <member refid="classUi__history_1a2d6dfc354da94241b8d00b1a15e2f6b9" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>pushButton_2</name></member>
+      <member refid="classUi__history_1a09bc4c4501c23a46385d4dde46f2ac37" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>retranslateUi</name></member>
+      <member refid="classUi__history_1a2fca8cb3073919a83d20d8beb211e489" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>setupUi</name></member>
+      <member refid="classUi__history_1a276cc06c05a31289ab6d85cbdf233f50" prot="public" virt="non-virtual"><scope>Ui_history</scope><name>treeWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classPreferences.html" title="Preferences" alt="" coords="29,181,120,211"/>
+<area shape="rect" id="node4" href="$classUi_1_1Preferences.html" title="Ui::Preferences" alt="" coords="5,85,117,115"/>
+<area shape="rect" id="node6" href="$classUi__Preferences.html" title="Ui_Preferences" alt="" coords="5,5,117,35"/>
+<area shape="rect" id="node8" href="$classUi_1_1MainWindow.html" title="Ui::MainWindow" alt="" coords="149,181,267,211"/>
+<area shape="rect" id="node10" href="$classUi__MainWindow.html" title="Ui_MainWindow" alt="" coords="141,85,259,115"/>
+<area shape="rect" id="node12" href="$classabout.html" title="about" alt="" coords="293,181,347,211"/>
+<area shape="rect" id="node14" href="$classUi_1_1about.html" title="Ui::about" alt="" coords="283,85,357,115"/>
+<area shape="rect" id="node16" href="$classUi__about.html" title="Ui_about" alt="" coords="283,5,357,35"/>
+<area shape="rect" id="node18" href="$classproperties.html" title="properties" alt="" coords="376,181,453,211"/>
+<area shape="rect" id="node20" href="$classUi_1_1properties.html" title="Ui::properties" alt="" coords="381,85,480,115"/>
+<area shape="rect" id="node22" href="$classUi__properties.html" title="Ui_properties" alt="" coords="381,5,480,35"/>
+<area shape="rect" id="node24" href="$classExtras.html" title="Extras" alt="" coords="485,181,544,211"/>
+<area shape="rect" id="node26" href="$classUi_1_1Extras.html" title="Ui::Extras" alt="" coords="504,85,584,115"/>
+<area shape="rect" id="node28" href="$classUi__Extras.html" title="Ui_Extras" alt="" coords="504,5,584,35"/>
+</map>

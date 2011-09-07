@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMainWindow.html#a571e513ee5005742161fd4de81c86ca2" title="MainWindow::clickSysTrayIcon" alt="" coords="236,5,441,35"/>
+<area shape="rect" id="node5" href="$classMainWindow.html#a2f76e8dbbe9eca94d07919786a7c5108" title="MainWindow::close_minimize" alt="" coords="241,59,436,88"/>
+<area shape="rect" id="node7" href="$classMainWindow.html#a692f2f28196cc9ee41b10e89c5d32922" title="MainWindow::load" alt="" coords="275,112,403,141"/>
+<area shape="rect" id="node9" href="$classMainWindow.html#a95d7c8c04e09437afc222121d383a722" title="MainWindow::menushowabout" alt="" coords="239,165,439,195"/>
+<area shape="rect" id="node11" href="$classMainWindow.html#a3b1f97543263266499a860cbb03b71fb" title="MainWindow::minimized" alt="" coords="257,219,420,248"/>
+<area shape="rect" id="node13" href="$classMainWindow.html#a202e9111e76a514c151fffa424b01b73" title="MainWindow::pruneList" alt="" coords="260,272,417,301"/>
+<area shape="rect" id="node15" href="$classMainWindow.html#ae50efe3540a13d96ec86c677ad56880c" title="MainWindow::save_album" alt="" coords="252,325,425,355"/>
+<area shape="rect" id="node17" href="$classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58" title="Ui_MainWindow::setupUi" alt="" coords="253,379,424,408"/>
+<area shape="rect" id="node21" href="$classMainWindow.html#ac2a292cdcf39848ec42e6352f011ddd1" title="MainWindow::showClicked" alt="" coords="249,432,428,461"/>
+<area shape="rect" id="node23" href="$classMainWindow.html#ae3130ae3dcc5f6261fb633f52ec062a7" title="MainWindow::ShowExtras" alt="" coords="251,485,427,515"/>
+<area shape="rect" id="node25" href="$classMainWindow.html#a7aec36163c9dfeda7da43b3e0854d673" title="MainWindow::ShowPreferences" alt="" coords="235,539,443,568"/>
+<area shape="rect" id="node27" href="$classMainWindow.html#a4da9a80d3c5a312dde4fa246436d100f" title="MainWindow::showProperties" alt="" coords="241,592,436,621"/>
+<area shape="rect" id="node19" href="$classUi__MainWindow.html#a097dd160c3534a204904cb374412c618" title="Ui_MainWindow::retranslateUi" alt="" coords="492,379,689,408"/>
+</map>
