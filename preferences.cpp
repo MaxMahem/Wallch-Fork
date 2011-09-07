@@ -30,10 +30,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <QtDebug>
 #include <QMetaEnum>
 
-#include <sys/stat.h>
-#include <iostream>
-#include <fstream>
-
 using namespace std;
 
 /**
