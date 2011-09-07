@@ -23,7 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <QDialog>
 #include <QObject>
 #include <QSettings>
-#include <gconfmm-2.6/gconfmm.h>
+#include <gconf/gconf-client.h>
 #include <SFML/Audio.hpp>
 
 #define DEFAULTSOUNDFILE "/usr/share/wallch/files/notification.ogg";

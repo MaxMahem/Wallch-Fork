@@ -5,11 +5,11 @@
 TEMPLATE = app
 TARGET = wallch
 DEPENDPATH += .
-INCLUDEPATH += /usr/include /usr/include/gconfmm-2.6
+INCLUDEPATH += /usr/include
 CONFIG += link_pkgconfig no_keywords
-PKGCONFIG += libnotifymm-1.0 gtkmm-2.4 gconfmm-2.6
+PKGCONFIG += libnotifymm-1.0 gtkmm-2.4 gconf-2.0
 QT += dbus network
-LIBS += -lcv -lhighgui -gconfmm-2.6 -lsfml-audio
+LIBS += -lcv -lhighgui -lsfml-audio
 
 # Input
 HEADERS += about.h \

@@ -49,7 +49,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <SFML/Audio.hpp>
 #include <libnotifymm/init.h>
 #include <libnotifymm/notification.h>
-#include <gconfmm-2.6/gconfmm.h>
 
 using namespace std;
 
@@ -149,6 +148,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->action_Load->setIcon(QIcon::fromTheme("folder"));
 
     on_timerSlider_valueChanged(ui->timerSlider->value());
+
+    // fire off a random Image on start, will need to add a group of startup options later.
+    MainWindow::randomImage();
 }
 
 void MainWindow::loadSettings() {
