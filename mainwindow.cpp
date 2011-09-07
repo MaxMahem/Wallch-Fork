@@ -42,13 +42,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <QSettings>
 #include <QMenu>
 #include <QShortcut>
+#include <QDropEvent>
 
 #include <QWidget>
 #include <QtConcurrentRun>
 
-#include <QtNetwork/QNetworkAccessManager>
-#include <QtNetwork/QNetworkReply>
-#include <QtNetwork/QNetworkRequest>
+#include <QtNetwork>
 #include <QDesktopServices>
 
 #include <SFML/Audio.hpp>

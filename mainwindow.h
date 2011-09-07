@@ -24,17 +24,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include "properties.h"
 #include "preferences.h"
 
-#include <QTimer>
-#include <QMainWindow>
-#include <QMenuBar>
-#include <QDragEnterEvent>
-#include <QDropEvent>
 #include <QtNetwork>
-#include <QUrl>
-#include <QFile>
 #include <QObject>
-
-class QSystemTrayIcon;
 
 namespace Notify {
     class Notification;
