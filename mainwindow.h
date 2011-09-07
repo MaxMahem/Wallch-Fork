@@ -21,7 +21,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #define MAINWINDOW_H
 #include "about.h"
 #include "ui_mainwindow.h"
-#include "properties.h"
 #include "preferences.h"
 
 #include <QtNetwork>
@@ -64,7 +63,6 @@ private:
 
     about       *About;             /**< TODO */
     Preferences *preferences;       /**< TODO */
-    properties  *Properties;        /**< TODO */
 
     GConfClient* gconfClient;       /**< TODO */
 
@@ -127,7 +125,6 @@ public Q_SLOTS:
     void pruneList();
     void removeDisk();
     void load();
-    void showProperties();
     void Openfolder();
     void copyImage();
     void copyPath();

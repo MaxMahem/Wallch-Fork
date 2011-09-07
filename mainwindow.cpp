@@ -21,7 +21,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include "ui_mainwindow.h"
 #include "preferences.h"
 #include "about.h"
-#include "properties.h"
 
 #include <fstream>
 #include <iostream>
@@ -122,7 +121,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     (void) new QShortcut(Qt::CTRL + Qt::Key_F, this, SLOT(on_addfolder_clicked()));
     (void) new QShortcut(Qt::Key_Delete, this, SLOT(on_removeButton_clicked()));
     (void) new QShortcut(Qt::Key_Return, this, SLOT(on_listWidget_itemDoubleClicked()));
-    (void) new QShortcut(Qt::ALT + Qt::Key_Return, this, SLOT(showProperties()));
     (void) new QShortcut(Qt::SHIFT + Qt::CTRL + Qt::Key_P, this, SLOT(on_previousButton_clicked()));
 
     // SetMouseTracking to true so the items of the listwidget can have statusbar
@@ -375,8 +373,7 @@ void MainWindow::on_listWidget_customContextMenuRequested()
     menu.addAction(tr("Delete image from disk"),this,SLOT(removeDisk()));
     menu.addAction(tr("Copy path to clipboard"),this,SLOT(copyPath()));
     menu.addAction(tr("Copy image to clipboard"),this,SLOT(copyImage()));
-    menu.addAction(tr("Open folder"),this,SLOT(Openfolder()));
-    menu.addAction(tr("Properties"),this,SLOT(showProperties()));
+    menu.addAction(tr("Open folder"),this,SLOT(Openfolder()));;
 
     if (ui->listWidget->count() > 0)
         menu.exec(QCursor::pos());
@@ -770,17 +767,6 @@ void MainWindow::ShowPreferences()
  */
 void MainWindow::Openfolder(){
     QDesktopServices::openUrl(QUrl("file:///" + ui->listWidget->currentItem()->text()));
-}
-
-/**
- * @brief
- *
- */
-void MainWindow::showProperties()
-{
-    QString img_filename = ui->listWidget->currentItem()->text();
-    Properties = new properties(img_filename,this);
-    Properties->show();
 }
 
 /**
