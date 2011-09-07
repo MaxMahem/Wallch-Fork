@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon Sep 5 16:22:04 2011
+** Created: Wed Sep 7 00:42:02 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -473,7 +473,7 @@ public:
         wallpaperSourceGroupBox->setTitle(QApplication::translate("MainWindow", "Wallpaper Source", 0, QApplication::UnicodeUTF8));
         localSourceRadio->setText(QApplication::translate("MainWindow", "Local", 0, QApplication::UnicodeUTF8));
         webSourceRadio->setText(QApplication::translate("MainWindow", "Web", 0, QApplication::UnicodeUTF8));
-        randomButton->setText(QApplication::translate("MainWindow", "Random", 0, QApplication::UnicodeUTF8));
+        randomButton->setText(QApplication::translate("MainWindow", "&Random", 0, QApplication::UnicodeUTF8));
         menu_File->setTitle(QApplication::translate("MainWindow", "&File", 0, QApplication::UnicodeUTF8));
         menuAdd_Files->setTitle(QApplication::translate("MainWindow", "Add Files", 0, QApplication::UnicodeUTF8));
         menu_Edit->setTitle(QApplication::translate("MainWindow", "&Edit", 0, QApplication::UnicodeUTF8));

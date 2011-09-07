@@ -554,10 +554,17 @@
  </widget>
  <tabstops>
   <tabstop>closeButton</tabstop>
-  <tabstop>resetPreferencesButton</tabstop>
-  <tabstop>testSoundButton</tabstop>
-  <tabstop>standardSoundRadio</tabstop>
   <tabstop>saveButton</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>startupOptionsGroupBox</tabstop>
+  <tabstop>soundNotificationGroupBox</tabstop>
+  <tabstop>standardSoundRadio</tabstop>
+  <tabstop>testSoundButton</tabstop>
+  <tabstop>resetPreferencesButton</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>groupBox</tabstop>
+  <tabstop>liveEarthRadioRectangular</tabstop>
+  <tabstop>liveEarthRadioHemisphere</tabstop>
  </tabstops>
  <resources>
   <include location="icons.qrc"/>

@@ -382,7 +382,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Random</string>
+       <string>&amp;Random</string>
       </property>
      </widget>
     </item>

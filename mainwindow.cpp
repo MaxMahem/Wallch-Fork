@@ -35,19 +35,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <QtDBus/QtDBus>
 #include <QtDBus/QDBusMessage>
 #include <QUrl>
-#include <QTransform>
 #include <QDrag>
 #include <QProgressDialog>
 #include <QFileDialog>
-#include <QTextStream>
 #include <QAction>
 #include <QSettings>
-#include <QRect>
-#include <QDesktopWidget>
 #include <QMenu>
 #include <QShortcut>
-#include <QListWidgetItem>
-#include <QListWidget>
+
 #include <QWidget>
 #include <QtConcurrentRun>
 
@@ -57,9 +52,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <QDesktopServices>
 
 #include <SFML/Audio.hpp>
-#include <gconf/gconf-client.h>
 #include <libnotifymm/init.h>
 #include <libnotifymm/notification.h>
+#include <gconfmm-2.6/gconfmm.h>
 
 using namespace std;
 

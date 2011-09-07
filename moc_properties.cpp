@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'properties.h'
 **
-** Created: Thu Sep 1 23:34:28 2011
+** Created: Wed Sep 7 00:39:43 2011
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.2)
 **
 ** WARNING! All changes made in this file will be lost!

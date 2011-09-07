@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'preferences.ui'
 **
-** Created: Thu Sep 1 23:21:31 2011
+** Created: Wed Sep 7 00:41:12 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -335,10 +335,17 @@ public:
 #ifndef QT_NO_SHORTCUT
         backgroundSettingsLabel->setBuddy(backgroundSettingsCombo);
 #endif // QT_NO_SHORTCUT
-        QWidget::setTabOrder(closeButton, resetPreferencesButton);
-        QWidget::setTabOrder(resetPreferencesButton, testSoundButton);
-        QWidget::setTabOrder(testSoundButton, standardSoundRadio);
-        QWidget::setTabOrder(standardSoundRadio, saveButton);
+        QWidget::setTabOrder(closeButton, saveButton);
+        QWidget::setTabOrder(saveButton, tabWidget);
+        QWidget::setTabOrder(tabWidget, startupOptionsGroupBox);
+        QWidget::setTabOrder(startupOptionsGroupBox, soundNotificationGroupBox);
+        QWidget::setTabOrder(soundNotificationGroupBox, standardSoundRadio);
+        QWidget::setTabOrder(standardSoundRadio, testSoundButton);
+        QWidget::setTabOrder(testSoundButton, resetPreferencesButton);
+        QWidget::setTabOrder(resetPreferencesButton, checkBox);
+        QWidget::setTabOrder(checkBox, groupBox);
+        QWidget::setTabOrder(groupBox, liveEarthRadioRectangular);
+        QWidget::setTabOrder(liveEarthRadioRectangular, liveEarthRadioHemisphere);
 
         retranslateUi(Preferences);
 
