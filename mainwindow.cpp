@@ -75,6 +75,17 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     }
     settingsItemList.endArray();
 
+    this->sqliteDatabase = QSqlDatabase::addDatabase("QSQLITE");
+    this->sqliteDatabase.setDatabaseName("wallpaper.db");
+    if (!this->sqliteDatabase.open()) {
+        QMessageBox::critical(this, qApp->tr("Cannot open database"),
+            qApp->tr("Error connecting to the sqlite database, this program will now exit."), QMessageBox::Ok);
+        qDebug() << "Error connecting to sqlite database.";
+        QCoreApplication::exit(1);
+    }
+
+//    this->itemTableModel;
+
     // set the item count
     ui->wallpaperCountLabel->setText(QString::number(ui->listWidget->count()));
 

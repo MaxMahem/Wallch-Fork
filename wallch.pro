@@ -6,9 +6,9 @@ TEMPLATE = app
 TARGET = wallch
 DEPENDPATH += .
 INCLUDEPATH += /usr/include
-CONFIG += link_pkgconfig no_keywords
+CONFIG += link_pkgconfig no_keywords plugin-sql-sqlite
 PKGCONFIG += libnotifymm-1.0 gtkmm-2.4 gconf-2.0
-QT += dbus network
+QT += dbus network sql
 LIBS += -lcv -lhighgui -lsfml-audio
 
 # Input

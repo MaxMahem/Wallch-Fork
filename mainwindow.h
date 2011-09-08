@@ -26,6 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include <QtNetwork>
 #include <QObject>
 #include <gconf/gconf-client.h>
+#include <QtSql>
 
 namespace Notify {
     class Notification;
@@ -63,6 +64,9 @@ private:
 
     about       *About;             /**< TODO */
     Preferences *preferences;       /**< TODO */
+
+    QSqlTableModel itemTableModel;
+    QSqlDatabase   sqliteDatabase;
 
     GConfClient* gconfClient;       /**< TODO */
 
