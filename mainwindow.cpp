@@ -75,8 +75,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     }
     settingsItemList.endArray();
 
+    // set up database connection
     this->sqliteDatabase = QSqlDatabase::addDatabase("QSQLITE");
-    this->sqliteDatabase.setDatabaseName("wallpaper.db");
+    this->sqliteDatabase.setDatabaseName(QDir::currentPath()+"/wallpaper.db");
+
     if (!this->sqliteDatabase.open()) {
         QMessageBox::critical(this, qApp->tr("Cannot open database"),
             qApp->tr("Error connecting to the sqlite database, this program will now exit."), QMessageBox::Ok);
@@ -84,7 +86,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         QCoreApplication::exit(1);
     }
 
-//    this->itemTableModel;
+    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY,"
+                                                     "filename TEXT NOT NULL,"
+                                                     "fullpath TEXT NOT NULL UNIQUE);");
+
+    itemTableModel = new QSqlTableModel(this, this->sqliteDatabase);
+    itemTableModel->setTable("wallpapers");
+    itemTableModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
+    itemTableModel->select();
 
     // set the item count
     ui->wallpaperCountLabel->setText(QString::number(ui->listWidget->count()));
@@ -94,7 +103,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     // build the GConfConnection
     gconfClient = gconf_client_get_default();
-//    gconfClient->add_dir();
 
     // initilise the RNG
     qsrand(QDateTime::currentMSecsSinceEpoch());
@@ -193,6 +201,8 @@ void MainWindow::closeEvent(QCloseEvent *)
     QSettings settingsPreferences;
     settingsPreferences.setValue("general/timeSlider", ui->timerSlider->value());
     settingsPreferences.sync();
+
+    this->sqliteDatabase.close();
 }
 
 /**
@@ -204,28 +214,55 @@ MainWindow::~MainWindow() {
     delete this->notification;
 }
 
+void MainWindow::addItems(QStringList imageList) {
+    // itterate over the given entries, if we get nothing, there will be nothing to do.
+    Q_FOREACH(QString imagePath, imageList) {
+        // we only want to operate on valid images
+        if (MainWindow::isValidImage(imagePath)) {
+            // get a record item
+            QSqlRecord record = this->itemTableModel->record();
+
+            // set it's values
+            record.setValue(1, QFileInfo(imagePath).fileName());
+            record.setValue(2, imagePath);
+
+            // add image to database
+            this->itemTableModel->insertRecord(-1, record);
+            if (!this->itemTableModel->submitAll()) {
+                // submit failed, almost certianly because the item is already in the database.
+                if (this->itemTableModel->lastError().number() == 19) {
+                    QMessageBox::warning(this, qApp->tr("Duplicate Image"), QFileInfo(imagePath).fileName() + qApp->tr(" is already in the database."));
+                } else {
+                    QMessageBox::warning(this, qApp->tr("Insert Error"), qApp->tr("Error inserting "), QFileInfo(imagePath).fileName() + qApp->tr(" into the database."));
+                    qDebug() << this->itemTableModel->lastError();
+                }
+
+                // if this happens, we need to have the itemTableModel revert it changes.
+                this->itemTableModel->revertAll();
+            }
+        } else {
+            QMessageBox::warning(this, qApp->tr("Invalid Image"), QFileInfo(imagePath).fileName() + qApp->tr(" is not a valid image file."));
+        }
+    }
+}
+
 /**
- * @brief
+ * @brief Adds an item to the item model/sql database
  *
  */
 void MainWindow::on_addButton_clicked()
 {
-    if (!ui->addButton->isEnabled())
-        return;
-    QStringList path;
-    path = QFileDialog::getOpenFileNames(this, tr("Choose Pictures"), QDir::homePath(), "*png *gif *bmp *jpg *jpeg");
+    QStringList imageList = QFileDialog::getOpenFileNames(this, tr("Choose Pictures"),
+                                                          QDir::homePath(), "*png *gif *bmp *jpg *jpeg");
 
-    if (path.count() == 0)
-        return;
+    MainWindow::addItems(imageList);
 
-    for (int count=0; count < path.count(); count++) {
-        QString qstr = path[count];
-        QListWidgetItem *item = new QListWidgetItem;
-        item->setText(qstr);
-        item->setStatusTip(tr("Double-click to set an item from the list as Background"));
-        ui->listWidget->addItem(item);
-    }
 }
+
+//            QListWidgetItem *listItem = new QListWidgetItem;
+//            listItem->setText(image);
+//            listItem->setStatusTip(tr("Double-click to set an item from the list as Background"));
+//            ui->listWidget->addItem(listItem);
 
 /**
  * @brief
@@ -280,7 +317,7 @@ void MainWindow::pruneList()
 //    QList<QListWidgetItem*> items = ui->listWidget->findItems("*", Qt::MatchWildcard | Qt::MatchWrap);
 
     QFutureWatcher<void> futureWatcher;
-    QFuture<void> badList = QtConcurrent::filter(items, MainWindow::validateImage);
+    QFuture<void> badList = QtConcurrent::filter(items, MainWindow::isValidImage);
     futureWatcher.setFuture(badList);
 
     QProgressDialog progressDialog(tr("Processing Images..."), tr("Cancel"), badList.progressMinimum(), badList.progressMaximum());
@@ -346,8 +383,8 @@ void MainWindow::load() {
     }
 }
 
-bool MainWindow::validateImage (const QString &image) {
-    return QImage(image).isNull();
+bool MainWindow::isValidImage (const QString &image) {
+    return !QImage(image).isNull();
 }
 
 //bool MainWindow::validateImage (const QListWidgetItem &item) {

@@ -65,8 +65,8 @@ private:
     about       *About;             /**< TODO */
     Preferences *preferences;       /**< TODO */
 
-    QSqlTableModel itemTableModel;
-    QSqlDatabase   sqliteDatabase;
+    QSqlTableModel *itemTableModel;
+    QSqlDatabase    sqliteDatabase;
 
     GConfClient* gconfClient;       /**< TODO */
 
@@ -88,6 +88,7 @@ private:
     Notify::Notification *notification;
 
     void loadSettings();
+    void addItems(QStringList imageList);
     void closeEvent(QCloseEvent*);
     void randomImage();
     void desktopNotify(QString qimage);
@@ -95,7 +96,7 @@ private:
     void updateProgressBar();
     void changeBackground(QString picture);
 //    static bool validateImage(const QListWidgetItem &item);
-    static bool validateImage(const QString &image);
+    static bool isValidImage(const QString &image);
 
 private Q_SLOTS:
     void on_previousButton_clicked();
