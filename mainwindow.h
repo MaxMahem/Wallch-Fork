@@ -95,15 +95,15 @@ private:
     void soundNotify();
     void updateProgressBar();
     void changeBackground(QString picture);
-//    static bool validateImage(const QListWidgetItem &item);
+    void changeWallpaperToCurrent();
     static bool isValidImage(const QString &image);
 
 private Q_SLOTS:
     void on_previousButton_clicked();
     void on_addfolder_clicked();
     void on_listWidget_customContextMenuRequested();
-    void on_listWidget_itemDoubleClicked();
-    void on_listWidget_itemSelectionChanged();
+    void on_itemView_doubleClicked(QModelIndex index);
+    void on_itemView_itemSelectionChanged();
     void on_removeallButton_clicked();
     void on_removeButton_clicked();
     void on_addButton_clicked();
@@ -122,6 +122,7 @@ private Q_SLOTS:
     void on_webSourceRadio_toggled(bool checked);
 
     void on_randomButton_clicked();
+
 
 public Q_SLOTS:
 

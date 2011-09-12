@@ -63,21 +63,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // listening to DBUS for another wallch instance/or to open a new album/or to do some action
     QDBusConnection::sessionBus().connect(QString(),QString(), "do.action", "wallch_message", this, SLOT(dbus_action(QString)));
 
-    // Read in the item list
-    QSettings settingsItemList("Wallch", "ItemList");
-    int size = settingsItemList.beginReadArray("listwidgetitem");
-    for (int i = 0; i < size; ++i) {
-        settingsItemList.setArrayIndex(i);
-        QListWidgetItem *item = new QListWidgetItem;
-        item->setText(settingsItemList.value("item").toString());
-        item->setStatusTip(tr("Double-click to set an item from the list as Background"));
-        ui->listWidget->addItem(item);
-    }
-    settingsItemList.endArray();
-
     // set up database connection
     this->sqliteDatabase = QSqlDatabase::addDatabase("QSQLITE");
-    this->sqliteDatabase.setDatabaseName(QDir::currentPath()+"/wallpaper.db");
+    this->sqliteDatabase.setDatabaseName("wallpaper.db");
 
     if (!this->sqliteDatabase.open()) {
         QMessageBox::critical(this, qApp->tr("Cannot open database"),
@@ -86,17 +74,21 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         QCoreApplication::exit(1);
     }
 
-    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY,"
-                                                     "filename TEXT NOT NULL,"
-                                                     "fullpath TEXT NOT NULL UNIQUE);");
+    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY, filename TEXT NOT NULL, fullpath TEXT NOT NULL UNIQUE);");
 
-    itemTableModel = new QSqlTableModel(this, this->sqliteDatabase);
-    itemTableModel->setTable("wallpapers");
-    itemTableModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
-    itemTableModel->select();
+    this->itemTableModel = new QSqlTableModel(this, this->sqliteDatabase);
+    this->itemTableModel->setTable("wallpapers");
+    this->itemTableModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
+    this->itemTableModel->select();
+
+    ui->itemView->setModel(this->itemTableModel);
+
+    ui->itemView->hideColumn(0);
+    this->itemTableModel->setHeaderData(1, Qt::Horizontal, tr("Filename"));
+    this->itemTableModel->setHeaderData(2, Qt::Horizontal, tr("Path"));
 
     // set the item count
-    ui->wallpaperCountLabel->setText(QString::number(ui->listWidget->count()));
+    ui->wallpaperCountLabel->setText(QString::number(this->itemTableModel->rowCount()));
 
     // load settings
     MainWindow::loadSettings();
@@ -130,20 +122,18 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->save_as, SIGNAL(triggered()), this, SLOT(save_album()));
 
     //setting up the shortcut keys!
-    (void) new QShortcut(Qt::CTRL + Qt::Key_Q, this, SLOT(close()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_P, this, SLOT(ShowPreferences()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_Q,             this, SLOT(close()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_P,             this, SLOT(ShowPreferences()));
     (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_S, this, SLOT(on_startButton_clicked()));
     (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_O, this, SLOT(on_stopButton_clicked()));
     (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_N, this, SLOT(on_nextButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_O, this, SLOT(load()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_I, this, SLOT(on_addButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_F, this, SLOT(on_addfolder_clicked()));
-    (void) new QShortcut(Qt::Key_Delete, this, SLOT(on_removeButton_clicked()));
-    (void) new QShortcut(Qt::Key_Return, this, SLOT(on_listWidget_itemDoubleClicked()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_O,             this, SLOT(load()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_I,             this, SLOT(on_addButton_clicked()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_F,             this, SLOT(on_addfolder_clicked()));
+    (void) new QShortcut(Qt::Key_Delete,                   this, SLOT(on_removeButton_clicked()));
+    (void) new QShortcut(Qt::Key_Return,                   this, SLOT(changeWallpaperToCurrent()));
     (void) new QShortcut(Qt::SHIFT + Qt::CTRL + Qt::Key_P, this, SLOT(on_previousButton_clicked()));
 
-    // SetMouseTracking to true so the items of the listwidget can have statusbar
-    ui->listWidget->setMouseTracking(true);
     ui->startButton->setIcon(QIcon::fromTheme("media-playback-start"));
     ui->action_Start->setIcon(QIcon::fromTheme("media-playback-start"));
     ui->stopButton->setIcon(QIcon::fromTheme("media-playback-stop"));
@@ -187,16 +177,7 @@ void MainWindow::loadSettings() {
  */
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QApplication::setQuitOnLastWindowClosed(1);
-
-    QSettings settingsItemList("Wallch", "ItemList");
-    settingsItemList.beginWriteArray("listwidgetitem");
-    for (int i = 0; i < ui->listWidget->count(); ++i) {
-        settingsItemList.setArrayIndex(i);
-        settingsItemList.setValue("item", ui->listWidget->item(i)->text() );
-    }
-    settingsItemList.endArray();
-    settingsItemList.sync();
+    QApplication::setQuitOnLastWindowClosed(true);
 
     QSettings settingsPreferences;
     settingsPreferences.setValue("general/timeSlider", ui->timerSlider->value());
@@ -243,13 +224,8 @@ void MainWindow::addItems(QStringList imageList) {
             // add image to database
             this->itemTableModel->insertRecord(-1, record);
             if (!this->itemTableModel->submitAll()) {
-                // submit failed, almost certianly because the item is already in the database.
-                if (this->itemTableModel->lastError().number() == 19) {
-                    warningMessage.append(qApp->tr("Duplicate Image: ") + QFileInfo(imagePath).fileName());
-                } else {
-                    warningMessage.append(qApp->tr("Error inserting: ") + QFileInfo(imagePath).fileName());
-                    qDebug() << this->itemTableModel->lastError();
-                }
+                warningMessage.append(qApp->tr("Error inserting: ") + QFileInfo(imagePath).fileName());
+                qDebug() << this->itemTableModel->lastError();
 
                 // if this happens, we need to have the itemTableModel revert it changes.
                 this->itemTableModel->revertAll();
@@ -282,12 +258,16 @@ void MainWindow::on_addButton_clicked()
 }
 
 /**
- * @brief
+ * @brief Removes the currently selected item.
  *
  */
 void MainWindow::on_removeButton_clicked()
 {
-    delete ui->listWidget->currentItem();
+    qDebug() << ui->itemView->currentIndex();
+    qDebug() << this->itemTableModel->removeRow(ui->itemView->currentIndex().row());
+    qDebug() << this->itemTableModel->lastError().text();
+    qDebug() << this->itemTableModel->submitAll();
+    qDebug() << this->itemTableModel->lastError().text();
 }
 
 /**
@@ -308,19 +288,11 @@ void MainWindow::on_removeallButton_clicked()
  * @brief
  *
  */
-void MainWindow::on_listWidget_itemSelectionChanged()
+void MainWindow::on_itemView_itemSelectionChanged()
 {
-    QImage image(ui->listWidget->currentItem()->text());
-    ui->wallpaperPreviewLabel->setPixmap(QPixmap::fromImage(image));
-}
-
-/**
- * @brief
- *
- */
-void MainWindow::on_listWidget_itemDoubleClicked()
-{
-    MainWindow::changeBackground(ui->listWidget->currentItem()->text());
+    qDebug() << "Fix Me";
+//    QImage image(ui->listWidget->currentItem()->text());
+//    ui->wallpaperPreviewLabel->setPixmap(QPixmap::fromImage(image));
 }
 
 /**
@@ -331,63 +303,67 @@ void MainWindow::on_listWidget_itemDoubleClicked()
  */
 void MainWindow::pruneList()
 {   
-    QStringList items;
-    for (int r = 0; r < ui->listWidget->count() - 1;  r++) {
-        items.append(ui->listWidget->item(r)->text());
-    }
+        qDebug() << "Fix Me";
+//    QStringList items;
+//    for (int r = 0; r < ui->listWidget->count() - 1;  r++) {
+//        items.append(ui->listWidget->item(r)->text());
+//    }
 
-//    QList<QListWidgetItem*> items = ui->listWidget->findItems("*", Qt::MatchWildcard | Qt::MatchWrap);
+////    QList<QListWidgetItem*> items = ui->listWidget->findItems("*", Qt::MatchWildcard | Qt::MatchWrap);
 
-    QFutureWatcher<void> futureWatcher;
-    QFuture<void> badList = QtConcurrent::filter(items, MainWindow::isValidImage);
-    futureWatcher.setFuture(badList);
+//    QFutureWatcher<void> futureWatcher;
+//    QFuture<void> badList = QtConcurrent::filter(items, MainWindow::isValidImage);
+//    futureWatcher.setFuture(badList);
 
-    QProgressDialog progressDialog(tr("Processing Images..."), tr("Cancel"), badList.progressMinimum(), badList.progressMaximum());
+//    QProgressDialog progressDialog(tr("Processing Images..."), tr("Cancel"), badList.progressMinimum(), badList.progressMaximum());
 
-    QObject::connect(&futureWatcher, SIGNAL(finished()), &progressDialog, SLOT(reset()));
-//    QObject::connect(progressDialog, SIGNAL(canceled()), &futureWatcher, SLOT(cancel()));
-    QObject::connect(&futureWatcher, SIGNAL(progressValueChanged(int)), &progressDialog, SLOT(setValue(int)));
+//    QObject::connect(&futureWatcher, SIGNAL(finished()), &progressDialog, SLOT(reset()));
+////    QObject::connect(progressDialog, SIGNAL(canceled()), &futureWatcher, SLOT(cancel()));
+//    QObject::connect(&futureWatcher, SIGNAL(progressValueChanged(int)), &progressDialog, SLOT(setValue(int)));
 
-    progressDialog.exec();
+//    progressDialog.exec();
 
-    badList.waitForFinished();
+//    badList.waitForFinished();
 
-    QString badItemsForDialog = "";
-    for (int r = 0; r < items.count() - 1; r++) {
-        badItemsForDialog.append(items.value(r) + QString("\n"));
-    }
+//    QString badItemsForDialog = "";
+//    for (int r = 0; r < items.count() - 1; r++) {
+//        badItemsForDialog.append(items.value(r) + QString("\n"));
+//    }
 
-    badItemsForDialog.prepend(tr("Invalid Wallpapers found:") + QString("\n"));
+//    badItemsForDialog.prepend(tr("Invalid Wallpapers found:") + QString("\n"));
 
-    if (QMessageBox::question(this, tr("Remove wallpapers from list?"), badItemsForDialog,
-                          QMessageBox::Ok | QMessageBox::Cancel)) {
-        for (int r = 0; r < items.count() - 1; r++) {
-            QList<QListWidgetItem*> itemsToDelete = ui->listWidget->findItems(items.value(r), Qt::MatchExactly);
-            for (int i = 0; r < itemsToDelete.count() - 1; i++)
-                delete itemsToDelete.value(i);
-//            delete ui->listWidget->findItems(items.value(r), Qt::MatchExactly);
-        }
-    }
+//    if (QMessageBox::question(this, tr("Remove wallpapers from list?"), badItemsForDialog,
+//                          QMessageBox::Ok | QMessageBox::Cancel)) {
+//        for (int r = 0; r < items.count() - 1; r++) {
+//            QList<QListWidgetItem*> itemsToDelete = ui->listWidget->findItems(items.value(r), Qt::MatchExactly);
+//            for (int i = 0; r < itemsToDelete.count() - 1; i++)
+//                delete itemsToDelete.value(i);
+////            delete ui->listWidget->findItems(items.value(r), Qt::MatchExactly);
+//        }
+//    }
 }
 
 /**
  * @brief
  *
  */
-void MainWindow::removeDisk() {
-    if (QMessageBox::warning(this, tr("Image Deltion"), "The image you selected will be permently deleted from your disk.",
-                         QMessageBox::Ok | QMessageBox::Cancel)
-            == QMessageBox::Ok)
-        QFile::remove(ui->listWidget->currentItem()->text());
+void MainWindow::removeDisk()
+{
+    qDebug() << "Fix Me";
+//    if (QMessageBox::warning(this, tr("Image Deltion"), "The image you selected will be permently deleted from your disk.",
+//                         QMessageBox::Ok | QMessageBox::Cancel)
+//            == QMessageBox::Ok)
+//        QFile::remove(ui->listWidget->currentItem()->text());
 
-    delete ui->listWidget->currentItem();
+//    delete ui->listWidget->currentItem();
 }
 
 /**
  * @brief
  *
  */
-void MainWindow::load() {
+void MainWindow::load()
+{
     QString selection = QFileDialog::getOpenFileName(this, tr("Choose Album"), QDir::homePath(), "*.wallch");
 
     if (selection.count()) {
@@ -401,7 +377,7 @@ void MainWindow::load() {
 
         file.close();
 
-        ui->listWidget->addItems(list);
+        this->addItems(list);
     }
 }
 
@@ -409,17 +385,15 @@ bool MainWindow::isValidImage (const QString &image) {
     return !QImage(image).isNull();
 }
 
-//bool MainWindow::validateImage (const QListWidgetItem &item) {
-//    return QImage(item.text()).isNull();
-//}
-
 /**
  * @brief
  *
  */
-void MainWindow::copyPath() {
+void MainWindow::copyPath()
+{
+    qDebug() << "Fix Me";
     QClipboard *clip = QApplication::clipboard();
-    clip->setText(ui->listWidget->currentItem()->text());
+//    clip->setText(ui->listWidget->currentItem()->text());
 }
 
 /**
@@ -427,8 +401,9 @@ void MainWindow::copyPath() {
  *
  */
 void MainWindow::copyImage() {
+    qDebug() << "Fix Me";
     QClipboard *clip = QApplication::clipboard();
-    clip->setImage(QImage(ui->listWidget->currentItem()->text()), QClipboard::Clipboard);
+//    clip->setImage(QImage(ui->listWidget->currentItem()->text()), QClipboard::Clipboard);
 }
 
 /**
@@ -438,15 +413,16 @@ void MainWindow::copyImage() {
 void MainWindow::on_listWidget_customContextMenuRequested()
 {
     QMenu menu;
-    menu.addAction(tr("Set this item as Background"),this,SLOT(on_listWidget_itemDoubleClicked()));
-    menu.addAction(tr("Remove non-existent Pictures"),this,SLOT(pruneList()));
-    menu.addAction(tr("Delete image from disk"),this,SLOT(removeDisk()));
-    menu.addAction(tr("Copy path to clipboard"),this,SLOT(copyPath()));
-    menu.addAction(tr("Copy image to clipboard"),this,SLOT(copyImage()));
-    menu.addAction(tr("Open folder"),this,SLOT(Openfolder()));;
+    menu.addAction(tr("Set this item as Background"),  this, SLOT(changeWallpaperToCurrent()));
+    menu.addAction(tr("Remove non-existent Pictures"), this, SLOT(pruneList()));
+    menu.addAction(tr("Delete image from disk"),       this, SLOT(removeDisk()));
+    menu.addAction(tr("Copy path to clipboard"),       this, SLOT(copyPath()));
+    menu.addAction(tr("Copy image to clipboard"),      this, SLOT(copyImage()));
+    menu.addAction(tr("Open folder"),                  this, SLOT(Openfolder()));;
 
-    if (ui->listWidget->count() > 0)
-        menu.exec(QCursor::pos());
+    qDebug() << "Fix Me";
+//    if (ui->listWidget->count() > 0)
+//        menu.exec(QCursor::pos());
 }
 
 /**
@@ -493,37 +469,32 @@ void MainWindow::dragEnterEvent(QDragEnterEvent *event)
  */
 void MainWindow::dropEvent(QDropEvent *event)
 {
-    QList<QUrl> urlList = event->mimeData()->urls();
-    for (QList<QUrl>::const_iterator i = urlList.begin(); i != urlList.end();i++)
-    {
-       QString strFile2 = (*i).toString();
-       if(strFile2.endsWith(".png") || strFile2.endsWith(".gif") || strFile2.endsWith(".bmp") || strFile2.endsWith(".jpg") || strFile2.endsWith(".jpeg") || strFile2.endsWith(".PNG") || strFile2.endsWith(".GIF") || strFile2.endsWith(".BMP") || strFile2.endsWith(".JPG") || strFile2.endsWith(".JPEG")){
-          QString strFile1 = strFile2.mid(7, strFile2.length() - 2);
-          ui->listWidget->addItem(strFile1);
-       }
-       else if(strFile2.endsWith(".wallch"))
-       {
-           QString file1 = strFile2.mid(7,strFile2.length()-2);
-           char *path = file1.toUtf8().data();
-           FILE *file = fopen ( path, "r" );
-                  if ( file != NULL )
-                  {
-                      ifstream file( path ) ;
-                      string line ;
-                      while( std::getline( file, line ) )
-                      {
-                          QString qstr = QString::fromUtf8(line.c_str());
-                          QListWidgetItem *item = new QListWidgetItem;
-                                           item->setText(qstr);
-                                           item->setStatusTip(tr("Double-click to set an item from the list as Background"));
-                          ui->listWidget->addItem(item);
-                      }
-                  }
-                  fclose ( file );
-       }
-    }
+    qDebug() << "Test Me";
 
-    event->acceptProposedAction();
+//    QList<QUrl> urlList = event->mimeData()->urls();
+//    Q_FOREACH (QUrl url, urlList) {
+//       ui->listWidget->addItem(strFile1);
+//       }
+//       if(url.toString().endsWith(".wallch")) {
+//           QString file1 = url.toString().mid(7,url.toString().length()-2);
+//           char *path = file1.toUtf8().data();
+//           FILE *file = fopen ( path, "r" );
+//           if (file != NULL) {
+//               ifstream file( path ) ;
+//               string line ;
+//               while(std::getline( file, line)) {
+//                   QString qstr = QString::fromUtf8(line.c_str());
+//                   QListWidgetItem *item = new QListWidgetItem;
+//                   item->setText(qstr);
+//                   item->setStatusTip(tr("Double-click to set an item from the list as Background"));
+//                   ui->listWidget->addItem(item);
+//               }
+//           }
+//           fclose ( file );
+//       }
+//    }
+
+//    event->acceptProposedAction();
 }
 
 /**
@@ -584,24 +555,25 @@ void MainWindow::on_startButton_clicked() {
  */
 void MainWindow::randomImage()
 {
+    qDebug() << "Fix Me";
     // if the count is 0 (false) we don't want to run any of this code, we'll divide by 0!
-    if (ui->listWidget->count()) {
-        int randomRow = (qrand() % ui->listWidget->count());
+//    if (ui->listWidget->count()) {
+//        int randomRow = (qrand() % ui->listWidget->count());
 
-        if (QImage(ui->listWidget->item(randomRow)->text()).isNull()) {
-            // if a bad image file is passed we want to instead select another one, calling this function again.
-            // currently the bad file is deleted from the item list, not sure if this is desired
-            // removing it does prevent a potential infinate loop condition (if there was only one bad item).
-            delete ui->listWidget->item(randomRow);
-            MainWindow::randomImage();
-            qDebug() << ui->listWidget->item(randomRow)->text() << "is invalid, check existance and permissions."
-                     << "It has been removed from the list.";
-        } else {
-            // recieved a good background so we are good to go.
-            MainWindow::changeBackground(ui->listWidget->item(randomRow)->text());
-            ui->listWidget->setCurrentRow(randomRow);
-        }
-    }
+//        if (QImage(ui->listWidget->item(randomRow)->text()).isNull()) {
+//            // if a bad image file is passed we want to instead select another one, calling this function again.
+//            // currently the bad file is deleted from the item list, not sure if this is desired
+//            // removing it does prevent a potential infinate loop condition (if there was only one bad item).
+//            delete ui->listWidget->item(randomRow);
+//            MainWindow::randomImage();
+//            qDebug() << ui->listWidget->item(randomRow)->text() << "is invalid, check existance and permissions."
+//                     << "It has been removed from the list.";
+//        } else {
+//            // recieved a good background so we are good to go.
+//            MainWindow::changeBackground(ui->listWidget->item(randomRow)->text());
+//            ui->listWidget->setCurrentRow(randomRow);
+//        }
+//    }
 }
 
 /**
@@ -706,16 +678,16 @@ void MainWindow::on_stopButton_clicked()
  */
 void MainWindow::on_nextButton_clicked()
 {
-    if (ui->listWidget->count() != 0) {
-        int row = ui->listWidget->currentRow() + 1;
+//    if (ui->listWidget->count() != 0) {
+//        int row = ui->listWidget->currentRow() + 1;
 
-        if (row >= ui->listWidget->count())
-            row = 0;
+//        if (row >= ui->listWidget->count())
+//            row = 0;
 
-        ui->listWidget->setCurrentRow(row);
+//        ui->listWidget->setCurrentRow(row);
 
-        MainWindow::changeBackground(ui->listWidget->currentItem()->text());
-    }
+//        MainWindow::changeBackground(ui->listWidget->currentItem()->text());
+//    }
 }
 
 /**
@@ -724,16 +696,16 @@ void MainWindow::on_nextButton_clicked()
  */
 void MainWindow::on_previousButton_clicked()
 {
-    if (ui->listWidget->count() != 0) {
+//    if (ui->listWidget->count() != 0) {
 
-        int row = ui->listWidget->currentRow() - 1;
-        if (row < 0)
-            row = ui->listWidget->count() - 1;
+//        int row = ui->listWidget->currentRow() - 1;
+//        if (row < 0)
+//            row = ui->listWidget->count() - 1;
 
-        ui->listWidget->setCurrentRow(row);
+//        ui->listWidget->setCurrentRow(row);
 
-        MainWindow::changeBackground(ui->listWidget->currentItem()->text());
-    }
+//        MainWindow::changeBackground(ui->listWidget->currentItem()->text());
+//    }
 }
 
 /**
@@ -818,7 +790,7 @@ void MainWindow::ShowPreferences()
  *
  */
 void MainWindow::Openfolder(){
-    QDesktopServices::openUrl(QUrl("file:///" + ui->listWidget->currentItem()->text()));
+//    QDesktopServices::openUrl(QUrl("file:///" + ui->listWidget->currentItem()->text()));
 }
 
 /**
@@ -826,27 +798,27 @@ void MainWindow::Openfolder(){
  *
  */
 void MainWindow::save_album() {
-    QString format = "wallch";
-    QString initialPath = QDir::currentPath() + "/album." + format;
-    QString fileName;
-    fileName = QFileDialog::getSaveFileName(this, tr("Save As"),
-                               initialPath,
-                               tr("%1 Files (*.%2);;All Files (*)")
-                               .arg(format.toUpper())
-                               .arg(format));
-    if(!fileName.isEmpty()){
-        QFile file8( fileName );
+//    QString format = "wallch";
+//    QString initialPath = QDir::currentPath() + "/album." + format;
+//    QString fileName;
+//    fileName = QFileDialog::getSaveFileName(this, tr("Save As"),
+//                               initialPath,
+//                               tr("%1 Files (*.%2);;All Files (*)")
+//                               .arg(format.toUpper())
+//                               .arg(format));
+//    if(!fileName.isEmpty()){
+//        QFile file8( fileName );
 
-        if( file8.open( QIODevice::WriteOnly ) ) {
-          // file opened and is overwriten with WriteOnly
-          QTextStream textStream( &file8 );
-          for( int i=0; i < ui->listWidget->count(); ++i ){
-             textStream << ui->listWidget->item(i)->text();
-             textStream << '\n';
-          }
-          file8.close();
-        }
-    }
+//        if( file8.open( QIODevice::WriteOnly ) ) {
+//          // file opened and is overwriten with WriteOnly
+//          QTextStream textStream( &file8 );
+//          for( int i=0; i < ui->listWidget->count(); ++i ){
+//             textStream << ui->listWidget->item(i)->text();
+//             textStream << '\n';
+//          }
+//          file8.close();
+//        }
+//    }
 }
 
 void MainWindow::on_webSourceRadio_toggled(bool checked)
@@ -861,4 +833,18 @@ void MainWindow::on_webSourceRadio_toggled(bool checked)
 void MainWindow::on_randomButton_clicked()
 {
     MainWindow::randomImage();
+}
+
+void MainWindow::on_itemView_doubleClicked(QModelIndex index)
+{
+    // get the index that refers to the item double clicked row, but column 1.
+    QModelIndex rightIndex = this->itemTableModel->index(index.row(), 1);
+    // display it. We could do this on one line, but I use two for readability.
+    MainWindow::changeBackground(rightIndex.data().toString());
+}
+
+void MainWindow::changeWallpaperToCurrent()
+{
+    // this function exists because I guess some callers can't pass along the right data to on_itemView_doubleClicked
+    MainWindow::on_itemView_doubleClicked(ui->itemView->currentIndex());
 }

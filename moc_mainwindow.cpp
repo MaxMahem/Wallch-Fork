@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Wed Sep 7 00:42:07 2011
+** Created: Sun Sep 11 23:23:31 2011
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MainWindow[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-      28,   14, // methods
+      27,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -35,30 +35,29 @@ static const uint qt_meta_data_MainWindow[] = {
       40,   11,   11,   11, 0x08,
       63,   11,   11,   11, 0x08,
      106,   11,   11,   11, 0x08,
-     140,   11,   11,   11, 0x08,
-     177,   11,   11,   11, 0x08,
-     206,   11,   11,   11, 0x08,
-     232,   11,   11,   11, 0x08,
-     255,   11,   11,   11, 0x08,
-     279,   11,   11,   11, 0x08,
-     303,   11,   11,   11, 0x08,
-     334,  328,   11,   11, 0x08,
-     367,   11,   11,   11, 0x08,
-     387,  381,   11,   11, 0x08,
-     420,  381,   11,   11, 0x08,
-     447,  443,   11,   11, 0x08,
-     476,  468,   11,   11, 0x08,
-     508,   11,   11,   11, 0x08,
-     534,   11,   11,   11, 0x0a,
-     552,   11,   11,   11, 0x0a,
-     568,   11,   11,   11, 0x0a,
-     580,   11,   11,   11, 0x0a,
-     593,   11,   11,   11, 0x0a,
-     600,   11,   11,   11, 0x0a,
-     617,   11,   11,   11, 0x0a,
-     630,   11,   11,   11, 0x0a,
-     642,   11,   11,   11, 0x0a,
-     653,   11,   11,   11, 0x0a,
+     139,   11,   11,   11, 0x08,
+     175,   11,   11,   11, 0x08,
+     204,   11,   11,   11, 0x08,
+     230,   11,   11,   11, 0x08,
+     253,   11,   11,   11, 0x08,
+     277,   11,   11,   11, 0x08,
+     301,   11,   11,   11, 0x08,
+     332,  326,   11,   11, 0x08,
+     365,   11,   11,   11, 0x08,
+     385,  379,   11,   11, 0x08,
+     418,  379,   11,   11, 0x08,
+     445,  441,   11,   11, 0x08,
+     474,  466,   11,   11, 0x08,
+     506,   11,   11,   11, 0x08,
+     532,   11,   11,   11, 0x0a,
+     550,   11,   11,   11, 0x0a,
+     566,   11,   11,   11, 0x0a,
+     578,   11,   11,   11, 0x0a,
+     591,   11,   11,   11, 0x0a,
+     598,   11,   11,   11, 0x0a,
+     611,   11,   11,   11, 0x0a,
+     623,   11,   11,   11, 0x0a,
+     634,   11,   11,   11, 0x0a,
 
        0        // eod
 };
@@ -67,8 +66,8 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "MainWindow\0\0on_previousButton_clicked()\0"
     "on_addfolder_clicked()\0"
     "on_listWidget_customContextMenuRequested()\0"
-    "on_listWidget_itemDoubleClicked()\0"
-    "on_listWidget_itemSelectionChanged()\0"
+    "on_tableView_itemDoubleClicked()\0"
+    "on_tableView_itemSelectionChanged()\0"
     "on_removeallButton_clicked()\0"
     "on_removeButton_clicked()\0"
     "on_addButton_clicked()\0on_stopButton_clicked()\0"
@@ -82,8 +81,8 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_webSourceRadio_toggled(bool)\0"
     "on_randomButton_clicked()\0ShowPreferences()\0"
     "menushowabout()\0pruneList()\0removeDisk()\0"
-    "load()\0showProperties()\0Openfolder()\0"
-    "copyImage()\0copyPath()\0save_album()\0"
+    "load()\0Openfolder()\0copyImage()\0"
+    "copyPath()\0save_album()\0"
 };
 
 const QMetaObject MainWindow::staticMetaObject = {
@@ -118,8 +117,8 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 0: on_previousButton_clicked(); break;
         case 1: on_addfolder_clicked(); break;
         case 2: on_listWidget_customContextMenuRequested(); break;
-        case 3: on_listWidget_itemDoubleClicked(); break;
-        case 4: on_listWidget_itemSelectionChanged(); break;
+        case 3: on_tableView_itemDoubleClicked(); break;
+        case 4: on_tableView_itemSelectionChanged(); break;
         case 5: on_removeallButton_clicked(); break;
         case 6: on_removeButton_clicked(); break;
         case 7: on_addButton_clicked(); break;
@@ -138,14 +137,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 20: pruneList(); break;
         case 21: removeDisk(); break;
         case 22: load(); break;
-        case 23: showProperties(); break;
-        case 24: Openfolder(); break;
-        case 25: copyImage(); break;
-        case 26: copyPath(); break;
-        case 27: save_album(); break;
+        case 23: Openfolder(); break;
+        case 24: copyImage(); break;
+        case 25: copyPath(); break;
+        case 26: save_album(); break;
         default: ;
         }
-        _id -= 28;
+        _id -= 27;
     }
     return _id;
 }

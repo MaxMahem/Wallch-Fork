@@ -12,14 +12,14 @@ QT += dbus network sql
 LIBS += -lcv -lhighgui -lsfml-audio
 
 # Input
-HEADERS += about.h \
-           mainwindow.h \
+HEADERS += about.h        \
+           mainwindow.h   \
            preferences.h
-FORMS += about.ui \
-         mainwindow.ui \
-         preferences.ui
-SOURCES += about.cpp \
-           main.cpp \
+FORMS += about.ui         \
+         preferences.ui   \
+         mainwindow.ui
+SOURCES += about.cpp      \
+           main.cpp       \
            mainwindow.cpp \
            preferences.cpp
 RESOURCES += icons.qrc

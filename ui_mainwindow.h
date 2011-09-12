@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed Sep 7 00:42:02 2011
+** Created: Sun Sep 11 23:23:26 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -19,7 +19,6 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QListWidget>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
@@ -28,6 +27,7 @@
 #include <QtGui/QRadioButton>
 #include <QtGui/QSlider>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTableView>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
 
@@ -72,12 +72,13 @@ public:
     QGridLayout *gridLayout;
     QLabel *timerSliderLabel;
     QSlider *timerSlider;
-    QListWidget *listWidget;
     QGroupBox *wallpaperSourceGroupBox;
     QHBoxLayout *horizontalLayout;
     QRadioButton *localSourceRadio;
     QRadioButton *webSourceRadio;
+    QRadioButton *radioButton;
     QPushButton *randomButton;
+    QTableView *itemView;
     QMenuBar *menuBar;
     QMenu *menu_File;
     QMenu *menuAdd_Files;
@@ -304,18 +305,6 @@ public:
 
         gridLayout_3->addLayout(gridLayout, 1, 0, 1, 1);
 
-        listWidget = new QListWidget(centralWidget);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setFocusPolicy(Qt::WheelFocus);
-        listWidget->setContextMenuPolicy(Qt::CustomContextMenu);
-        listWidget->setDragEnabled(true);
-        listWidget->setDragDropMode(QAbstractItemView::DragDrop);
-        listWidget->setDefaultDropAction(Qt::MoveAction);
-        listWidget->setAlternatingRowColors(false);
-        listWidget->setSelectionMode(QAbstractItemView::SingleSelection);
-
-        gridLayout_3->addWidget(listWidget, 0, 0, 1, 1);
-
         wallpaperSourceGroupBox = new QGroupBox(centralWidget);
         wallpaperSourceGroupBox->setObjectName(QString::fromUtf8("wallpaperSourceGroupBox"));
         horizontalLayout = new QHBoxLayout(wallpaperSourceGroupBox);
@@ -333,6 +322,11 @@ public:
 
         horizontalLayout->addWidget(webSourceRadio);
 
+        radioButton = new QRadioButton(wallpaperSourceGroupBox);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+
+        horizontalLayout->addWidget(radioButton);
+
 
         gridLayout_3->addWidget(wallpaperSourceGroupBox, 2, 0, 1, 1);
 
@@ -345,6 +339,17 @@ public:
         randomButton->setSizePolicy(sizePolicy);
 
         gridLayout_3->addWidget(randomButton, 2, 1, 1, 1);
+
+        itemView = new QTableView(centralWidget);
+        itemView->setObjectName(QString::fromUtf8("itemView"));
+        itemView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        itemView->setSelectionMode(QAbstractItemView::SingleSelection);
+        itemView->setSelectionBehavior(QAbstractItemView::SelectRows);
+        itemView->setSortingEnabled(true);
+        itemView->setCornerButtonEnabled(false);
+        itemView->verticalHeader()->setVisible(false);
+
+        gridLayout_3->addWidget(itemView, 0, 0, 1, 1);
 
         gridLayout_3->setColumnStretch(0, 5);
         gridLayout_3->setColumnStretch(2, 5);
@@ -473,6 +478,7 @@ public:
         wallpaperSourceGroupBox->setTitle(QApplication::translate("MainWindow", "Wallpaper Source", 0, QApplication::UnicodeUTF8));
         localSourceRadio->setText(QApplication::translate("MainWindow", "Local", 0, QApplication::UnicodeUTF8));
         webSourceRadio->setText(QApplication::translate("MainWindow", "Web", 0, QApplication::UnicodeUTF8));
+        radioButton->setText(QApplication::translate("MainWindow", "RadioButton", 0, QApplication::UnicodeUTF8));
         randomButton->setText(QApplication::translate("MainWindow", "&Random", 0, QApplication::UnicodeUTF8));
         menu_File->setTitle(QApplication::translate("MainWindow", "&File", 0, QApplication::UnicodeUTF8));
         menuAdd_Files->setTitle(QApplication::translate("MainWindow", "Add Files", 0, QApplication::UnicodeUTF8));
