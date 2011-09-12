@@ -216,8 +216,7 @@ MainWindow::~MainWindow() {
 
 void MainWindow::addItems(QStringList imageList) {
     QStringList     warningMessage;
-    QStringList     succesfulMessage;
-    QProgressDialog progressDialog(qApp->tr("Adding Wallpapers..."), qApp->tr("Cancel"), 0, imageList.count(), this);
+    QProgressDialog progressDialog(qApp->tr("Adding %1 Wallpapers...").arg(imageList.count()), qApp->tr("Cancel"), 0, imageList.count(), this);
     int             progress = 1;
 
     progressDialog.show();
@@ -229,9 +228,10 @@ void MainWindow::addItems(QStringList imageList) {
             break;
 
         progressDialog.setValue(progress);
-        progressDialog.setLabelText(qApp->tr("Adding file number %1 of %2...").arg(progress).arg(imageList.count()));
 
         // we only want to operate on valid images
+        // TODO: Consider checking insert/duplicates first, faster then checking valid images, so can bail out sooner.
+        // TODO: Speed up validation!
         if (MainWindow::isValidImage(imagePath)) {
             // get a record item
             QSqlRecord record = this->itemTableModel->record();
@@ -291,12 +291,17 @@ void MainWindow::on_removeButton_clicked()
 }
 
 /**
- * @brief
+ * @brief Displays a warning, and then removes all wallpapers from the DB.
  *
  */
 void MainWindow::on_removeallButton_clicked()
 {
-    ui->listWidget->clear();
+    if (QMessageBox::question(this, qApp->tr("Delete all wallpapers"), qApp->tr("All wallpapers will be removed."),
+                              QMessageBox::Ok | QMessageBox::Cancel)
+            == QMessageBox::Ok) {
+        this->sqliteDatabase.exec("DELETE FROM wallpapers");
+        this->itemTableModel->select();
+    }
 }
 
 /**
