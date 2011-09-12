@@ -437,16 +437,18 @@ void MainWindow::on_addfolder_clicked()
 
     // if we have items returned, path.count won't be 0 and so we process, otherwise we fall through.
     if (path.count()) {
-        QDir currentDir(path);
-        currentDir.setNameFilters(QStringList() << "*.png" << "*.gif" << "*.bmp" << "*.jpg" << "*.jpeg");
-        QFileInfoList fileInfoList = currentDir.entryInfoList(QDir::Files | QDir::Readable);
+        QStringList  extensionList = (QStringList() << "png" << "gif" << "bmp" << "jpg" << "jpeg");
+        QDirIterator dirIterator(path, QDir::Files, QDirIterator::Subdirectories);
+        QStringList  imageList;
 
-        QStringList imageList;
-        Q_FOREACH(QFileInfo fileInfo, fileInfoList) {
-            imageList.append(fileInfo.absoluteFilePath());
+        // walk the directory and its sub-directories, adding any files therin.
+        while(dirIterator.hasNext()) {
+            if (extensionList.contains(dirIterator.fileInfo().suffix(), Qt::CaseInsensitive))
+                imageList.append(dirIterator.fileInfo().absoluteFilePath());
+
+            dirIterator.next();
         }
 
-//        QDirIterator
         this->addItems(imageList);
     }
 }
