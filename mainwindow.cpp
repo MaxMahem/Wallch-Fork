@@ -433,42 +433,22 @@ void MainWindow::on_listWidget_customContextMenuRequested()
  */
 void MainWindow::on_addfolder_clicked()
 {
-    QString path;
-    path = QFileDialog::getExistingDirectory(this, tr("Choose Folder"), QDir::homePath());
+    QString path = QFileDialog::getExistingDirectory(this, tr("Choose Folder"), QDir::homePath());
 
-    if(path.count() == 0) return;
-    QFile file9( QDir::homePath()+"/.config/Wallch/Checks/add_folder" );
+    // if we have items returned, path.count won't be 0 and so we process, otherwise we fall through.
+    if (path.count()) {
+        QDir currentDir(path);
+        currentDir.setNameFilters(QStringList() << "*.png" << "*.gif" << "*.bmp" << "*.jpg" << "*.jpeg");
+        QFileInfoList fileInfoList = currentDir.entryInfoList(QDir::Files | QDir::Readable);
 
-    if( file9.open( QIODevice::WriteOnly ) ) {
-      // file opened and is overwriten with WriteOnly
-      QTextStream textStream( &file9 );
-      textStream << path;
-      file9.close();
-    }
-    //find pictures
-    if (system("find \"$(cat ~/.config/Wallch/Checks/add_folder)\" \\( -name \"*.png\" -o -name \"*.gif\" -o -name \"*.bmp\" -o -name \"*jpg\" -o -name \"*jpeg\"  -o -name \"*PNG\" -o -name \"*.GIF\" -o -name \"*.BMP\" -o -name \"*JPG\" -o -name \"*JPEG\" \\) -print > ~/.config/Wallch/Checks/add_folder_pics"))
-        cerr << "Error while trying to use command 'find'\n";
-    //add files to listwidget
-    FILE *file = fopen ( QString(QDir::homePath()+"/.config/Wallch/Checks/add_folder_pics").toLocal8Bit().data(), "r" );
-    if (file != NULL) {
-        ifstream file( QString(QDir::homePath()+"/.config/Wallch/Checks/add_folder_pics").toLocal8Bit().data() ) ;
-        string line ;
-        while(std::getline(file, line )) {
-            QString qstr = QString::fromUtf8(line.c_str());
-            QListWidgetItem *item = new QListWidgetItem;
-            item->setText(qstr);
-            item->setStatusTip(tr("Double-click to set an item from the list as Background"));
-            ui->listWidget->addItem(item);
+        QStringList imageList;
+        Q_FOREACH(QFileInfo fileInfo, fileInfoList) {
+            imageList.append(fileInfo.absoluteFilePath());
         }
+
+//        QDirIterator
+        this->addItems(imageList);
     }
-
-    fclose ( file );
-
-    //remove temp files used
-    if(system("rm -rf ~/.config/Wallch/Checks/add_fodler*"))
-        cerr << "Error while trying to remove ~/.config/Wallch/Checks/add_folder* .Please check file(s) permissions!";
-
-    if ( ui->listWidget->count() >= 3 ) ui->save_as->setEnabled(true);
 }
 
 /**
