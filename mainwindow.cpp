@@ -215,8 +215,22 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::addItems(QStringList imageList) {
+    QStringList     warningMessage;
+    QStringList     succesfulMessage;
+    QProgressDialog progressDialog(qApp->tr("Adding Wallpapers..."), qApp->tr("Cancel"), 0, imageList.count(), this);
+    int             progress = 1;
+
+    progressDialog.show();
+
     // itterate over the given entries, if we get nothing, there will be nothing to do.
     Q_FOREACH(QString imagePath, imageList) {
+        // check to see if we were cancled.
+        if (progressDialog.wasCanceled())
+            break;
+
+        progressDialog.setValue(progress);
+        progressDialog.setLabelText(qApp->tr("Adding file number %1 of %2...").arg(progress).arg(imageList.count()));
+
         // we only want to operate on valid images
         if (MainWindow::isValidImage(imagePath)) {
             // get a record item
@@ -231,9 +245,9 @@ void MainWindow::addItems(QStringList imageList) {
             if (!this->itemTableModel->submitAll()) {
                 // submit failed, almost certianly because the item is already in the database.
                 if (this->itemTableModel->lastError().number() == 19) {
-                    QMessageBox::warning(this, qApp->tr("Duplicate Image"), QFileInfo(imagePath).fileName() + qApp->tr(" is already in the database."));
+                    warningMessage.append(qApp->tr("Duplicate Image: ") + QFileInfo(imagePath).fileName());
                 } else {
-                    QMessageBox::warning(this, qApp->tr("Insert Error"), qApp->tr("Error inserting "), QFileInfo(imagePath).fileName() + qApp->tr(" into the database."));
+                    warningMessage.append(qApp->tr("Error inserting: ") + QFileInfo(imagePath).fileName());
                     qDebug() << this->itemTableModel->lastError();
                 }
 
@@ -241,8 +255,16 @@ void MainWindow::addItems(QStringList imageList) {
                 this->itemTableModel->revertAll();
             }
         } else {
-            QMessageBox::warning(this, qApp->tr("Invalid Image"), QFileInfo(imagePath).fileName() + qApp->tr(" is not a valid image file."));
+            warningMessage.append(qApp->tr("Invalid Image: ") + QFileInfo(imagePath).fileName());
         }
+
+        progress++;
+    }
+
+    progressDialog.setValue(progress);
+
+    if (warningMessage.count()) {
+        QMessageBox::warning(this, qApp->tr("Item Addition Errors"), warningMessage.join("\n"));
     }
 }
 
