@@ -252,17 +252,12 @@ void MainWindow::addItems(QStringList imageList) {
  */
 void MainWindow::on_addButton_clicked()
 {
-    QStringList imageList = QFileDialog::getOpenFileNames(this, tr("Choose Pictures"),
-                                                          QDir::homePath(), "*png *gif *bmp *jpg *jpeg");
+    QStringList imageList = QFileDialog::getOpenFileNames(this, tr("Choose Pictures"), QDir::homePath(),
+                                                          "Images (*.png *.gif *.bmp *.jpg *.jpeg);;"
+                                                          "All Files (*.*)");
 
     MainWindow::addItems(imageList);
-
 }
-
-//            QListWidgetItem *listItem = new QListWidgetItem;
-//            listItem->setText(image);
-//            listItem->setStatusTip(tr("Double-click to set an item from the list as Background"));
-//            ui->listWidget->addItem(listItem);
 
 /**
  * @brief
