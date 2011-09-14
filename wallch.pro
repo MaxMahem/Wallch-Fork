@@ -14,14 +14,16 @@ LIBS += -lcv -lhighgui -lsfml-audio
 # Input
 HEADERS += about.h        \
            mainwindow.h   \
-           preferences.h
+           preferences.h \
+    raitingdelegate.h
 FORMS += about.ui         \
          preferences.ui   \
          mainwindow.ui
 SOURCES += about.cpp      \
            main.cpp       \
            mainwindow.cpp \
-           preferences.cpp
+           preferences.cpp \
+    raitingdelegate.cpp
 RESOURCES += icons.qrc
 
 binfiles.files += wallch

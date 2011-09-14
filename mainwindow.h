@@ -96,14 +96,15 @@ private:
     void updateProgressBar();
     void changeBackground(QString picture);
     void changeWallpaperToCurrent();
+
     static bool isValidImage(const QString &image);
 
 private Q_SLOTS:
     void on_previousButton_clicked();
     void on_addfolder_clicked();
-    void on_listWidget_customContextMenuRequested();
     void on_itemView_doubleClicked(QModelIndex index);
     void on_itemView_itemSelectionChanged();
+    void on_itemView_customContextMenuRequested(QPoint position);
     void on_removeallButton_clicked();
     void on_removeButton_clicked();
     void on_addButton_clicked();
@@ -111,6 +112,8 @@ private Q_SLOTS:
     void on_nextButton_clicked();
     void on_startButton_clicked();
     void on_timerSlider_valueChanged(int value);
+    void on_webSourceRadio_toggled(bool checked);
+    void on_randomButton_clicked();
 
     void timeUpdater();
 
@@ -119,11 +122,6 @@ private Q_SLOTS:
 
     void dbus_action(const QString &msg);
 
-    void on_webSourceRadio_toggled(bool checked);
-
-    void on_randomButton_clicked();
-
-
 public Q_SLOTS:
 
     void ShowPreferences();
@@ -131,9 +129,7 @@ public Q_SLOTS:
     void pruneList();
     void removeDisk();
     void load();
-    void Openfolder();
-    void copyImage();
-    void copyPath();
+    void openFolder();
     void save_album();
 };
 

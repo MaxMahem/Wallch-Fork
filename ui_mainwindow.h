@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun Sep 11 23:23:26 2011
+** Created: Mon Sep 12 02:02:10 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -342,11 +342,14 @@ public:
 
         itemView = new QTableView(centralWidget);
         itemView->setObjectName(QString::fromUtf8("itemView"));
+        itemView->setContextMenuPolicy(Qt::CustomContextMenu);
         itemView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         itemView->setSelectionMode(QAbstractItemView::SingleSelection);
         itemView->setSelectionBehavior(QAbstractItemView::SelectRows);
         itemView->setSortingEnabled(true);
         itemView->setCornerButtonEnabled(false);
+        itemView->horizontalHeader()->setCascadingSectionResizes(true);
+        itemView->horizontalHeader()->setStretchLastSection(true);
         itemView->verticalHeader()->setVisible(false);
 
         gridLayout_3->addWidget(itemView, 0, 0, 1, 1);

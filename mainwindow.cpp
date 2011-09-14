@@ -21,14 +21,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include "ui_mainwindow.h"
 #include "preferences.h"
 #include "about.h"
+#include "raitingdelegate.h"
 
 #include <fstream>
 #include <iostream>
 
 #include <QMessageBox>
-#include <QClipboard>
-#include <QtDBus/QtDBus>
-#include <QtDBus/QDBusMessage>
+#include <QtDBus>
 #include <QUrl>
 #include <QDrag>
 #include <QProgressDialog>
@@ -74,7 +73,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         QCoreApplication::exit(1);
     }
 
-    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY, filename TEXT NOT NULL, fullpath TEXT NOT NULL UNIQUE);");
+    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY, filename TEXT NOT NULL,"
+              "fullpath TEXT NOT NULL UNIQUE, filesize TEXT NOT NULL, imagesize TEXT NOT NULL,"
+              "ratio TEXT NOT NULL, raiting INTEGER)");
 
     this->itemTableModel = new QSqlTableModel(this, this->sqliteDatabase);
     this->itemTableModel->setTable("wallpapers");
@@ -86,6 +87,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->itemView->hideColumn(0);
     this->itemTableModel->setHeaderData(1, Qt::Horizontal, tr("Filename"));
     this->itemTableModel->setHeaderData(2, Qt::Horizontal, tr("Path"));
+    this->itemTableModel->setHeaderData(3, Qt::Horizontal, tr("Filesize"));
+    this->itemTableModel->setHeaderData(4, Qt::Horizontal, tr("Imagesize"));
+    this->itemTableModel->setHeaderData(5, Qt::Horizontal, tr("Ratio"));
+    this->itemTableModel->setHeaderData(6, Qt::Horizontal, tr("Raiting"));
+
+    ui->itemView->setItemDelegateForColumn(6, new RaitingDelegate);
 
     // set the item count
     ui->wallpaperCountLabel->setText(QString::number(this->itemTableModel->rowCount()));
@@ -213,13 +220,19 @@ void MainWindow::addItems(QStringList imageList) {
         // we only want to operate on valid images
         // TODO: Consider checking insert/duplicates first, faster then checking valid images, so can bail out sooner.
         // TODO: Speed up validation!
-        if (MainWindow::isValidImage(imagePath)) {
+        QImage    image(imagePath);
+        QFileInfo imageInfo(imagePath);
+
+        if (!imagePath.isNull()) {
             // get a record item
             QSqlRecord record = this->itemTableModel->record();
 
             // set it's values
-            record.setValue(1, QFileInfo(imagePath).fileName());
+            record.setValue(1, imageInfo.fileName());
             record.setValue(2, imagePath);
+            record.setValue(3, QLocale(QLocale::system()).toString(double(imageInfo.size() / 1024), 'f', 0) + "kb");
+            record.setValue(4, QString::number(image.size().width()) + "x" + QString::number(image.size().height()));
+            record.setValue(5, QString::number(image.size().width()) + ":" + QString::number(image.size().height()));
 
             // add image to database
             this->itemTableModel->insertRecord(-1, record);
@@ -389,46 +402,6 @@ bool MainWindow::isValidImage (const QString &image) {
  * @brief
  *
  */
-void MainWindow::copyPath()
-{
-    qDebug() << "Fix Me";
-    QClipboard *clip = QApplication::clipboard();
-//    clip->setText(ui->listWidget->currentItem()->text());
-}
-
-/**
- * @brief
- *
- */
-void MainWindow::copyImage() {
-    qDebug() << "Fix Me";
-    QClipboard *clip = QApplication::clipboard();
-//    clip->setImage(QImage(ui->listWidget->currentItem()->text()), QClipboard::Clipboard);
-}
-
-/**
- * @brief
- *
- */
-void MainWindow::on_listWidget_customContextMenuRequested()
-{
-    QMenu menu;
-    menu.addAction(tr("Set this item as Background"),  this, SLOT(changeWallpaperToCurrent()));
-    menu.addAction(tr("Remove non-existent Pictures"), this, SLOT(pruneList()));
-    menu.addAction(tr("Delete image from disk"),       this, SLOT(removeDisk()));
-    menu.addAction(tr("Copy path to clipboard"),       this, SLOT(copyPath()));
-    menu.addAction(tr("Copy image to clipboard"),      this, SLOT(copyImage()));
-    menu.addAction(tr("Open folder"),                  this, SLOT(Openfolder()));;
-
-    qDebug() << "Fix Me";
-//    if (ui->listWidget->count() > 0)
-//        menu.exec(QCursor::pos());
-}
-
-/**
- * @brief
- *
- */
 void MainWindow::on_addfolder_clicked()
 {
     QString path = QFileDialog::getExistingDirectory(this, tr("Choose Folder"), QDir::homePath());
@@ -555,25 +528,17 @@ void MainWindow::on_startButton_clicked() {
  */
 void MainWindow::randomImage()
 {
-    qDebug() << "Fix Me";
-    // if the count is 0 (false) we don't want to run any of this code, we'll divide by 0!
-//    if (ui->listWidget->count()) {
-//        int randomRow = (qrand() % ui->listWidget->count());
+    // if we currently have no rows we don't want to run any of this code, we'll divide by 0!
+    if (this->itemTableModel->rowCount()) {
+        // get a random image... this all could be compressed, but we do it this way to be readable.
+        int         randomRow   = (qrand() % this->itemTableModel->rowCount());
+        QModelIndex randomIndex = this->itemTableModel->index(randomRow, 2);
+        QString     randomImage = randomIndex.data().toString();
 
-//        if (QImage(ui->listWidget->item(randomRow)->text()).isNull()) {
-//            // if a bad image file is passed we want to instead select another one, calling this function again.
-//            // currently the bad file is deleted from the item list, not sure if this is desired
-//            // removing it does prevent a potential infinate loop condition (if there was only one bad item).
-//            delete ui->listWidget->item(randomRow);
-//            MainWindow::randomImage();
-//            qDebug() << ui->listWidget->item(randomRow)->text() << "is invalid, check existance and permissions."
-//                     << "It has been removed from the list.";
-//        } else {
-//            // recieved a good background so we are good to go.
-//            MainWindow::changeBackground(ui->listWidget->item(randomRow)->text());
-//            ui->listWidget->setCurrentRow(randomRow);
-//        }
-//    }
+        // recieved a good background so we are good to go.
+        MainWindow::changeBackground(randomImage);
+        ui->itemView->setCurrentIndex(randomIndex);
+    }
 }
 
 /**
@@ -678,16 +643,18 @@ void MainWindow::on_stopButton_clicked()
  */
 void MainWindow::on_nextButton_clicked()
 {
-//    if (ui->listWidget->count() != 0) {
-//        int row = ui->listWidget->currentRow() + 1;
+    if (this->itemTableModel->rowCount()) {
+        QModelIndex currentIndex = ui->itemView->currentIndex();
+        QModelIndex newIndex;
 
-//        if (row >= ui->listWidget->count())
-//            row = 0;
+        if ((currentIndex.row() + 2) <= this->itemTableModel->rowCount())
+            newIndex = this->itemTableModel->index(currentIndex.row() + 1, 2);
+        else
+            newIndex = this->itemTableModel->index(0, 2);
 
-//        ui->listWidget->setCurrentRow(row);
-
-//        MainWindow::changeBackground(ui->listWidget->currentItem()->text());
-//    }
+        ui->itemView->setCurrentIndex(newIndex);
+        MainWindow::changeBackground(newIndex.data().toString());
+    }
 }
 
 /**
@@ -696,16 +663,18 @@ void MainWindow::on_nextButton_clicked()
  */
 void MainWindow::on_previousButton_clicked()
 {
-//    if (ui->listWidget->count() != 0) {
+    if (this->itemTableModel->rowCount()) {
+        QModelIndex currentIndex = ui->itemView->currentIndex();
+        QModelIndex newIndex;
 
-//        int row = ui->listWidget->currentRow() - 1;
-//        if (row < 0)
-//            row = ui->listWidget->count() - 1;
+        if (currentIndex.row() > 0)
+            newIndex = this->itemTableModel->index(currentIndex.row() - 1, 2);
+        else
+            newIndex = this->itemTableModel->index(this->itemTableModel->rowCount() - 1, 2);
 
-//        ui->listWidget->setCurrentRow(row);
-
-//        MainWindow::changeBackground(ui->listWidget->currentItem()->text());
-//    }
+        ui->itemView->setCurrentIndex(newIndex);
+        MainWindow::changeBackground(newIndex.data().toString());
+    }
 }
 
 /**
@@ -789,8 +758,11 @@ void MainWindow::ShowPreferences()
  * @brief
  *
  */
-void MainWindow::Openfolder(){
-//    QDesktopServices::openUrl(QUrl("file:///" + ui->listWidget->currentItem()->text()));
+void MainWindow::openFolder()
+{
+    QModelIndex currentIndex = ui->itemView->currentIndex();
+    QModelIndex rightIndex   = this->itemTableModel->index(currentIndex.row(), 2);
+    QDesktopServices::openUrl(QUrl("file:///" + rightIndex.data().toString()));
 }
 
 /**
@@ -798,27 +770,13 @@ void MainWindow::Openfolder(){
  *
  */
 void MainWindow::save_album() {
-//    QString format = "wallch";
-//    QString initialPath = QDir::currentPath() + "/album." + format;
-//    QString fileName;
-//    fileName = QFileDialog::getSaveFileName(this, tr("Save As"),
-//                               initialPath,
-//                               tr("%1 Files (*.%2);;All Files (*)")
-//                               .arg(format.toUpper())
-//                               .arg(format));
-//    if(!fileName.isEmpty()){
-//        QFile file8( fileName );
+    QString initialPath = QDir::currentPath() + "/album.wallch";
+    QString fileName    = QFileDialog::getSaveFileName(this, tr("Save As"), initialPath,
+                                                       tr("Wallch Files (*.wallch);;All Files (*)"));
 
-//        if( file8.open( QIODevice::WriteOnly ) ) {
-//          // file opened and is overwriten with WriteOnly
-//          QTextStream textStream( &file8 );
-//          for( int i=0; i < ui->listWidget->count(); ++i ){
-//             textStream << ui->listWidget->item(i)->text();
-//             textStream << '\n';
-//          }
-//          file8.close();
-//        }
-//    }
+    /**
+     * @todo: Implement this as an xml save
+     */
 }
 
 void MainWindow::on_webSourceRadio_toggled(bool checked)
@@ -838,7 +796,7 @@ void MainWindow::on_randomButton_clicked()
 void MainWindow::on_itemView_doubleClicked(QModelIndex index)
 {
     // get the index that refers to the item double clicked row, but column 1.
-    QModelIndex rightIndex = this->itemTableModel->index(index.row(), 1);
+    QModelIndex rightIndex = this->itemTableModel->index(index.row(), 2);
     // display it. We could do this on one line, but I use two for readability.
     MainWindow::changeBackground(rightIndex.data().toString());
 }
@@ -847,4 +805,22 @@ void MainWindow::changeWallpaperToCurrent()
 {
     // this function exists because I guess some callers can't pass along the right data to on_itemView_doubleClicked
     MainWindow::on_itemView_doubleClicked(ui->itemView->currentIndex());
+}
+
+
+/**
+ * @brief Calls a custom context menu.
+ *
+ * @param position
+ */
+void MainWindow::on_itemView_customContextMenuRequested(QPoint position)
+{
+    // check to see if the cursor is on a valid item, we can't do any of this if it isn't.
+    if (ui->itemView->indexAt(position) != QModelIndex()) {
+        QMenu menu;
+        menu.addAction(tr("Set this item as Background"),  this, SLOT(changeWallpaperToCurrent()));
+        menu.addAction(tr("Delete image from disk"),       this, SLOT(removeDisk()));
+        menu.addAction(tr("Open image"),                   this, SLOT(openFolder()));;
+        menu.exec(QCursor::pos());
+    }
 }
