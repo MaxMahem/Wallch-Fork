@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon Sep 12 02:02:10 2011
+** Created: Sun Sep 18 01:11:57 2011
 **      by: Qt User Interface Compiler version 4.7.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -36,20 +36,17 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QAction *action_Preferences;
+    QAction *actionPreferences;
     QAction *action_About;
     QAction *actionQuit_Ctrl_Q;
     QAction *action_Start;
     QAction *actionS_top;
-    QAction *action_Pause;
     QAction *action_Next_Image;
     QAction *actionRemove_list;
-    QAction *action_Load;
-    QAction *actionAdd_single_images;
-    QAction *actionAdd_Folder;
-    QAction *actionAdd_a_Wallch_album;
-    QAction *actionHistory;
-    QAction *action_Previous_Image_Shift_Ctrl_B;
+    QAction *actionAddImages;
+    QAction *actionAddFolder;
+    QAction *actionAddAlbum;
+    QAction *actionPreviousImage;
     QAction *actionExtras;
     QAction *save_as;
     QWidget *centralWidget;
@@ -98,9 +95,9 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/icons/Pictures/wallpaper.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
-        action_Preferences = new QAction(MainWindow);
-        action_Preferences->setObjectName(QString::fromUtf8("action_Preferences"));
-        action_Preferences->setIconVisibleInMenu(true);
+        actionPreferences = new QAction(MainWindow);
+        actionPreferences->setObjectName(QString::fromUtf8("actionPreferences"));
+        actionPreferences->setIconVisibleInMenu(true);
         action_About = new QAction(MainWindow);
         action_About->setObjectName(QString::fromUtf8("action_About"));
         actionQuit_Ctrl_Q = new QAction(MainWindow);
@@ -121,46 +118,34 @@ public:
         icon3.addFile(QString::fromUtf8(":/Buttons/Pictures/Buttons/button_stop_red.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionS_top->setIcon(icon3);
         actionS_top->setIconVisibleInMenu(true);
-        action_Pause = new QAction(MainWindow);
-        action_Pause->setObjectName(QString::fromUtf8("action_Pause"));
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8(":/Buttons/Pictures/Buttons/button_pause_red.png"), QSize(), QIcon::Normal, QIcon::Off);
-        action_Pause->setIcon(icon4);
-        action_Pause->setIconVisibleInMenu(true);
         action_Next_Image = new QAction(MainWindow);
         action_Next_Image->setObjectName(QString::fromUtf8("action_Next_Image"));
-        QIcon icon5;
-        icon5.addFile(QString::fromUtf8(":/Buttons/Pictures/Buttons/button_fastforward_red.png"), QSize(), QIcon::Normal, QIcon::Off);
-        action_Next_Image->setIcon(icon5);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/Buttons/Pictures/Buttons/button_fastforward_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_Next_Image->setIcon(icon4);
         action_Next_Image->setIconVisibleInMenu(true);
         actionRemove_list = new QAction(MainWindow);
         actionRemove_list->setObjectName(QString::fromUtf8("actionRemove_list"));
-        action_Load = new QAction(MainWindow);
-        action_Load->setObjectName(QString::fromUtf8("action_Load"));
-        action_Load->setIconVisibleInMenu(true);
-        actionAdd_single_images = new QAction(MainWindow);
-        actionAdd_single_images->setObjectName(QString::fromUtf8("actionAdd_single_images"));
+        actionAddImages = new QAction(MainWindow);
+        actionAddImages->setObjectName(QString::fromUtf8("actionAddImages"));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/icons/Pictures/picture_add.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionAddImages->setIcon(icon5);
+        actionAddImages->setIconVisibleInMenu(true);
+        actionAddFolder = new QAction(MainWindow);
+        actionAddFolder->setObjectName(QString::fromUtf8("actionAddFolder"));
         QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/icons/Pictures/picture_add.png"), QSize(), QIcon::Normal, QIcon::Off);
-        actionAdd_single_images->setIcon(icon6);
-        actionAdd_single_images->setIconVisibleInMenu(true);
-        actionAdd_Folder = new QAction(MainWindow);
-        actionAdd_Folder->setObjectName(QString::fromUtf8("actionAdd_Folder"));
+        icon6.addFile(QString::fromUtf8(":/icons/Pictures/folder-new.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionAddFolder->setIcon(icon6);
+        actionAddFolder->setIconVisibleInMenu(true);
+        actionAddAlbum = new QAction(MainWindow);
+        actionAddAlbum->setObjectName(QString::fromUtf8("actionAddAlbum"));
+        actionPreviousImage = new QAction(MainWindow);
+        actionPreviousImage->setObjectName(QString::fromUtf8("actionPreviousImage"));
         QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/icons/Pictures/folder-new.png"), QSize(), QIcon::Normal, QIcon::Off);
-        actionAdd_Folder->setIcon(icon7);
-        actionAdd_Folder->setIconVisibleInMenu(true);
-        actionAdd_a_Wallch_album = new QAction(MainWindow);
-        actionAdd_a_Wallch_album->setObjectName(QString::fromUtf8("actionAdd_a_Wallch_album"));
-        actionHistory = new QAction(MainWindow);
-        actionHistory->setObjectName(QString::fromUtf8("actionHistory"));
-        actionHistory->setIconVisibleInMenu(true);
-        action_Previous_Image_Shift_Ctrl_B = new QAction(MainWindow);
-        action_Previous_Image_Shift_Ctrl_B->setObjectName(QString::fromUtf8("action_Previous_Image_Shift_Ctrl_B"));
-        QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/Buttons/Pictures/Buttons/button_fastbackward_red.png"), QSize(), QIcon::Normal, QIcon::Off);
-        action_Previous_Image_Shift_Ctrl_B->setIcon(icon8);
-        action_Previous_Image_Shift_Ctrl_B->setIconVisibleInMenu(true);
+        icon7.addFile(QString::fromUtf8(":/Buttons/Pictures/Buttons/button_fastbackward_red.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionPreviousImage->setIcon(icon7);
+        actionPreviousImage->setIconVisibleInMenu(true);
         actionExtras = new QAction(MainWindow);
         actionExtras->setObjectName(QString::fromUtf8("actionExtras"));
         actionExtras->setIconVisibleInMenu(true);
@@ -365,9 +350,9 @@ public:
         menuAdd_Files = new QMenu(menu_File);
         menuAdd_Files->setObjectName(QString::fromUtf8("menuAdd_Files"));
         menuAdd_Files->setTearOffEnabled(false);
-        QIcon icon9;
-        icon9.addFile(QString::fromUtf8(":/icons/Pictures/add2.png"), QSize(), QIcon::Normal, QIcon::Off);
-        menuAdd_Files->setIcon(icon9);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8(":/icons/Pictures/add2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        menuAdd_Files->setIcon(icon8);
         menuAdd_Files->setSeparatorsCollapsible(false);
         menu_Edit = new QMenu(menuBar);
         menu_Edit->setObjectName(QString::fromUtf8("menu_Edit"));
@@ -387,13 +372,13 @@ public:
         menu_File->addAction(action_Start);
         menu_File->addAction(actionS_top);
         menu_File->addAction(action_Next_Image);
-        menu_File->addAction(action_Previous_Image_Shift_Ctrl_B);
+        menu_File->addAction(actionPreviousImage);
         menu_File->addSeparator();
         menu_File->addAction(actionQuit_Ctrl_Q);
-        menuAdd_Files->addAction(action_Load);
-        menuAdd_Files->addAction(actionAdd_single_images);
-        menuAdd_Files->addAction(actionAdd_Folder);
-        menu_Edit->addAction(action_Preferences);
+        menuAdd_Files->addAction(actionAddAlbum);
+        menuAdd_Files->addAction(actionAddImages);
+        menuAdd_Files->addAction(actionAddFolder);
+        menu_Edit->addAction(actionPreferences);
         menuHelp->addSeparator();
         menuHelp->addSeparator();
         menuHelp->addAction(action_About);
@@ -405,7 +390,11 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        action_Preferences->setText(QApplication::translate("MainWindow", "&Preferences          Ctrl+P", 0, QApplication::UnicodeUTF8));
+        actionPreferences->setText(QApplication::translate("MainWindow", "&Preferences", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        actionPreferences->setToolTip(QApplication::translate("MainWindow", "Preferences", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
+        actionPreferences->setShortcut(QApplication::translate("MainWindow", "Ctrl+P", 0, QApplication::UnicodeUTF8));
         action_About->setText(QApplication::translate("MainWindow", "&About", 0, QApplication::UnicodeUTF8));
         actionQuit_Ctrl_Q->setText(QApplication::translate("MainWindow", "Quit                                    Ctrl+Q", 0, QApplication::UnicodeUTF8));
         action_Start->setText(QApplication::translate("MainWindow", "&Start                                    Shift+Ctrl+S", 0, QApplication::UnicodeUTF8));
@@ -414,17 +403,27 @@ public:
         action_Start->setToolTip(QApplication::translate("MainWindow", "&Start                        Shift+Ctrl+S", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         actionS_top->setText(QApplication::translate("MainWindow", "S&top                                    Shift+Ctrl+O", 0, QApplication::UnicodeUTF8));
-        action_Pause->setText(QApplication::translate("MainWindow", "&Pause                                 Shift+Ctrl+P", 0, QApplication::UnicodeUTF8));
         action_Next_Image->setText(QApplication::translate("MainWindow", "&Next Image                     Shift+Ctrl+N", 0, QApplication::UnicodeUTF8));
         actionRemove_list->setText(QApplication::translate("MainWindow", "Remove non-existent files", 0, QApplication::UnicodeUTF8));
-        action_Load->setText(QApplication::translate("MainWindow", "Add a Wallch Album         Ctrl+O", 0, QApplication::UnicodeUTF8));
-        actionAdd_single_images->setText(QApplication::translate("MainWindow", "Add single images             Ctrl+I", 0, QApplication::UnicodeUTF8));
-        actionAdd_Folder->setText(QApplication::translate("MainWindow", "Add Folder                             Ctrl+F", 0, QApplication::UnicodeUTF8));
-        actionAdd_a_Wallch_album->setText(QApplication::translate("MainWindow", "Add a Wallch album", 0, QApplication::UnicodeUTF8));
-        actionHistory->setText(QApplication::translate("MainWindow", "&History                    Ctrl+H", 0, QApplication::UnicodeUTF8));
-        action_Previous_Image_Shift_Ctrl_B->setText(QApplication::translate("MainWindow", "&Previous Image            Shift+Ctrl+P", 0, QApplication::UnicodeUTF8));
+        actionAddImages->setText(QApplication::translate("MainWindow", "Add Images", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        actionAddImages->setToolTip(QApplication::translate("MainWindow", "Add Images", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
+        actionAddImages->setShortcut(QApplication::translate("MainWindow", "Ctrl+I", 0, QApplication::UnicodeUTF8));
+        actionAddFolder->setText(QApplication::translate("MainWindow", "Add Folder", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        actionAddFolder->setToolTip(QApplication::translate("MainWindow", "Add Folder", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
+        actionAddFolder->setShortcut(QApplication::translate("MainWindow", "Ctrl+F", 0, QApplication::UnicodeUTF8));
+        actionAddAlbum->setText(QApplication::translate("MainWindow", "Add a Wallch album", 0, QApplication::UnicodeUTF8));
+        actionAddAlbum->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", 0, QApplication::UnicodeUTF8));
+        actionPreviousImage->setText(QApplication::translate("MainWindow", "&Previous Image ", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        actionPreviousImage->setToolTip(QApplication::translate("MainWindow", "Previous Image", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
+        actionPreviousImage->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+P", 0, QApplication::UnicodeUTF8));
         actionExtras->setText(QApplication::translate("MainWindow", "&Extras                      Ctrl+E", 0, QApplication::UnicodeUTF8));
-        save_as->setText(QApplication::translate("MainWindow", "Save images as a wallch album", 0, QApplication::UnicodeUTF8));
+        save_as->setText(QApplication::translate("MainWindow", "Save Album", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         addButton->setToolTip(QString());
 #endif // QT_NO_TOOLTIP

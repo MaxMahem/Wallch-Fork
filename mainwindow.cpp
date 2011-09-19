@@ -17,6 +17,8 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*/
 
+#define QT_NO_KEYWORDS
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "preferences.h"
@@ -40,11 +42,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 
 #include <QWidget>
 #include <QtConcurrentRun>
+#include <QtXml>
 
 #include <QtNetwork>
 #include <QDesktopServices>
 
 #include <SFML/Audio.hpp>
+
 #include <libnotifymm/init.h>
 #include <libnotifymm/notification.h>
 
@@ -73,9 +77,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         QCoreApplication::exit(1);
     }
 
-    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY, filename TEXT NOT NULL,"
-              "fullpath TEXT NOT NULL UNIQUE, filesize TEXT NOT NULL, imagesize TEXT NOT NULL,"
-              "ratio TEXT NOT NULL, raiting INTEGER)");
+    QSqlQuery("CREATE TABLE IF NOT EXISTS wallpapers (id INTEGER PRIMARY KEY,"
+                                                     "filename TEXT NOT NULL,"
+                                                     "fullpath TEXT NOT NULL UNIQUE,"
+                                                     "filesize TEXT NOT NULL,"
+                                                     "imagesize TEXT NOT NULL,"
+                                                     "ratio TEXT NOT NULL,"
+                                                     "raiting INTEGER)");
 
     this->itemTableModel = new QSqlTableModel(this, this->sqliteDatabase);
     this->itemTableModel->setTable("wallpapers");
@@ -116,17 +124,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     //SIGNAL-SLOT action here
     connect(ui->action_About, SIGNAL(triggered()), this, SLOT(menushowabout()));
-    connect(ui->action_Preferences, SIGNAL(triggered()), this, SLOT(ShowPreferences()));
+    connect(ui->actionPreferences, SIGNAL(triggered()), this, SLOT(ShowPreferences()));
     connect(ui->actionQuit_Ctrl_Q, SIGNAL(triggered()), this, SLOT(close()));
     connect(ui->action_Start, SIGNAL(triggered()), this, SLOT(on_startButton_clicked()));
     connect(ui->actionS_top, SIGNAL(triggered()), this, SLOT(on_stopButton_clicked()));
-    connect(ui->action_Load, SIGNAL(triggered()), this, SLOT(load()));
     connect(ui->actionRemove_list, SIGNAL(triggered()), this, SLOT(pruneList()));
-    connect(ui->action_Previous_Image_Shift_Ctrl_B, SIGNAL(triggered()), this, SLOT(on_previousButton_clicked()));
+    connect(ui->actionPreviousImage, SIGNAL(triggered()), this, SLOT(on_previousButton_clicked()));
     connect(ui->action_Next_Image, SIGNAL(triggered()), this, SLOT(on_nextButton_clicked()));
-    connect(ui->actionAdd_single_images, SIGNAL(triggered()), this, SLOT(on_addButton_clicked()));
-    connect(ui->actionAdd_Folder, SIGNAL(triggered()), this, SLOT(on_addfolder_clicked()));
-    connect(ui->save_as, SIGNAL(triggered()), this, SLOT(save_album()));
+    connect(ui->save_as, SIGNAL(triggered()), this, SLOT(saveAlbum()));
 
     //setting up the shortcut keys!
     (void) new QShortcut(Qt::CTRL + Qt::Key_Q,             this, SLOT(close()));
@@ -134,7 +139,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_S, this, SLOT(on_startButton_clicked()));
     (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_O, this, SLOT(on_stopButton_clicked()));
     (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_N, this, SLOT(on_nextButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_O,             this, SLOT(load()));
     (void) new QShortcut(Qt::CTRL + Qt::Key_I,             this, SLOT(on_addButton_clicked()));
     (void) new QShortcut(Qt::CTRL + Qt::Key_F,             this, SLOT(on_addfolder_clicked()));
     (void) new QShortcut(Qt::Key_Delete,                   this, SLOT(on_removeButton_clicked()));
@@ -146,20 +150,20 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->stopButton->setIcon(QIcon::fromTheme("media-playback-stop"));
     ui->actionS_top->setIcon(QIcon::fromTheme("media-playback-stop"));
     ui->previousButton->setIcon(QIcon::fromTheme("media-seek-backward"));
-    ui->action_Previous_Image_Shift_Ctrl_B->setIcon(QIcon::fromTheme("media-seek-backward"));
+    ui->actionPreviousImage->setIcon(QIcon::fromTheme("media-seek-backward"));
     ui->nextButton->setIcon(QIcon::fromTheme("media-seek-forward"));
     ui->action_Next_Image->setIcon(QIcon::fromTheme("media-seek-forward"));
     ui->removeButton->setIcon(QIcon::fromTheme("list-remove"));
     ui->removeallButton->setIcon(QIcon::fromTheme("edit-delete"));
     ui->addfolder->setIcon(QIcon::fromTheme("folder-new"));
-    ui->actionAdd_Folder->setIcon(QIcon::fromTheme("folder-new"));
+    ui->actionAddFolder->setIcon(QIcon::fromTheme("folder-new"));
     ui->addButton->setIcon(QIcon::fromTheme("list-add"));
     ui->actionQuit_Ctrl_Q->setIcon(QIcon::fromTheme("application-exit"));
-    ui->action_Preferences->setIcon(QIcon::fromTheme("preferences-desktop"));
-    ui->actionAdd_single_images->setIcon(QIcon::fromTheme("insert-image"));
-    ui->actionAdd_a_Wallch_album->setIcon(QIcon::fromTheme("list-add"));
+    ui->actionPreferences->setIcon(QIcon::fromTheme("preferences-desktop"));
+    ui->actionAddImages->setIcon(QIcon::fromTheme("insert-image"));
+    ui->actionAddAlbum->setIcon(QIcon::fromTheme("list-add"));
     ui->action_Start->setIcon(QIcon::fromTheme("media-playback-start"));
-    ui->action_Load->setIcon(QIcon::fromTheme("folder"));
+
 
     on_timerSlider_valueChanged(ui->timerSlider->value());
 
@@ -223,7 +227,7 @@ void MainWindow::addItems(QStringList imageList) {
         QImage    image(imagePath);
         QFileInfo imageInfo(imagePath);
 
-        if (!imagePath.isNull()) {
+        if (!image.isNull()) {
             // get a record item
             QSqlRecord record = this->itemTableModel->record();
 
@@ -255,6 +259,8 @@ void MainWindow::addItems(QStringList imageList) {
     if (warningMessage.count()) {
         QMessageBox::warning(this, qApp->tr("Item Addition Errors"), warningMessage.join("\n"));
     }
+
+    this->itemTableModel->select();
 }
 
 /**
@@ -369,29 +375,6 @@ void MainWindow::removeDisk()
 //        QFile::remove(ui->listWidget->currentItem()->text());
 
 //    delete ui->listWidget->currentItem();
-}
-
-/**
- * @brief
- *
- */
-void MainWindow::load()
-{
-    QString selection = QFileDialog::getOpenFileName(this, tr("Choose Album"), QDir::homePath(), "*.wallch");
-
-    if (selection.count()) {
-        QFile file(selection);
-        file.open(QIODevice::ReadOnly | QIODevice::Text);
-
-        QStringList list;
-        while (!file.atEnd()) {
-            list << file.readLine().trimmed();
-        }
-
-        file.close();
-
-        this->addItems(list);
-    }
 }
 
 bool MainWindow::isValidImage (const QString &image) {
@@ -769,14 +752,48 @@ void MainWindow::openFolder()
  * @brief
  *
  */
-void MainWindow::save_album() {
+void MainWindow::saveAlbum() {
+    // get the filename from the user.
     QString initialPath = QDir::currentPath() + "/album.wallch";
     QString fileName    = QFileDialog::getSaveFileName(this, tr("Save As"), initialPath,
                                                        tr("Wallch Files (*.wallch);;All Files (*)"));
 
-    /**
-     * @todo: Implement this as an xml save
-     */
+    // create/open the file
+    QFile file(fileName);
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+
+    // check to see if we got any errors
+    if (file.error() == QFile::NoError) {
+        QDomDocument album("album");
+
+        QDomElement root = album.createElementNS("http://maxmahem.net/album.xsd", "album");
+        root.setAttribute("version", "1.0");
+        album.appendChild(root);
+
+        for (int i = 0; i < this->itemTableModel->rowCount(); ++i) {
+            QDomElement wallpaper = album.createElement("wallpaper");
+
+            QDomElement filenameElement = album.createElement("filename");
+            filenameElement.appendChild(album.createTextNode(this->itemTableModel->record(i).value("Filename").toString()));
+
+            QDomElement fullpathElement = album.createElement("fullpath");
+            fullpathElement.appendChild(album.createTextNode(this->itemTableModel->record(i).value("Fullpath").toString()));
+
+            QDomElement raitingElement = album.createElement("raiting");
+            raitingElement.appendChild(album.createTextNode(this->itemTableModel->record(i).value("Raiting").toString()));
+
+            wallpaper.appendChild(filenameElement);
+            wallpaper.appendChild(fullpathElement);
+            wallpaper.appendChild(raitingElement);
+
+            root.appendChild(wallpaper);
+        }
+
+        QTextStream(&file) << album.toString();
+    } else {
+        QMessageBox::critical(this, tr("Error Writing File"), tr("Error writing file %1.").arg(file.fileName()));
+        qCritical() << file.errorString();
+    }
 }
 
 void MainWindow::on_webSourceRadio_toggled(bool checked)
@@ -822,5 +839,62 @@ void MainWindow::on_itemView_customContextMenuRequested(QPoint position)
         menu.addAction(tr("Delete image from disk"),       this, SLOT(removeDisk()));
         menu.addAction(tr("Open image"),                   this, SLOT(openFolder()));;
         menu.exec(QCursor::pos());
+    }
+}
+
+/**
+ * @brief
+ *
+ */
+void MainWindow::on_actionAddAlbum_triggered()
+{
+    QString fileName    = QFileDialog::getOpenFileName(this, tr("Open"), QDir::currentPath(),
+                                                       tr("Wallch Files (*.wallch);;All Files (*)"));
+
+    // open the file
+    QFile file(fileName);
+    file.open(QIODevice::ReadOnly | QIODevice::Text);
+
+    // check to see if we got any errors
+    if (file.error() == QFile::NoError) {
+        QDomDocument album;
+        QString errorMessage;
+        int errorLine;
+        int errorColumn;
+
+        // have Qt pase in the xml.
+        album.setContent(&file, &errorMessage, &errorLine, &errorColumn);
+
+        // check to see if the error message is null, if it is, we parsed w/ no problem.
+        if (errorMessage.isNull()) {
+            qCritical() << "Error reading error xml:" << errorMessage << "Line: " << errorLine << "Column:" << errorColumn;
+
+            // get the root element
+            QDomElement root = album.documentElement();
+
+            // TODO: Re-evaluate document version validation.
+            if (root.tagName() == "Album") {
+                if (root.attribute("version") != "1.0")
+                    qWarning() << "Processing different version xml. File Version:" << root.attribute("version");
+
+                QDomNodeList wallpaperNodes = root.elementsByTagName("Wallpaper");
+                QStringList fileNames;
+
+                // step through the list of nodes, and add them to our item list.
+                for (uint i = 0; i < wallpaperNodes.length(); i++) {
+                    fileNames << wallpaperNodes.item(i).firstChildElement("Fullpath").text();
+                }
+
+                MainWindow::addItems(fileNames);
+            }
+        } else {
+            // errors parsing xml.
+            QMessageBox::critical(this, tr("Error Parsing XML"), tr("Error parsing xml in file."));
+            qCritical() << "Error parsing xml:" << errorMessage << "Line: " << errorLine << "Column:" << errorColumn;
+        }
+    } else {
+        // errors reading file.
+        QMessageBox::critical(this, tr("Error Reading File"), tr("Error reading file %1.").arg(file.fileName()));
+        qCritical() << "Error reading file:" << file.errorString();
     }
 }

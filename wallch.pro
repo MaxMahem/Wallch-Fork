@@ -6,16 +6,18 @@ TEMPLATE = app
 TARGET = wallch
 DEPENDPATH += .
 INCLUDEPATH += /usr/include
-CONFIG += link_pkgconfig no_keywords plugin-sql-sqlite
+CONFIG += link_pkgconfig plugin-sql-sqlite
 PKGCONFIG += libnotifymm-1.0 gtkmm-2.4 gconf-2.0
-QT += dbus network sql
+QT += dbus network sql xml
 LIBS += -lcv -lhighgui -lsfml-audio
+
+include(qtsingleapplication/src/qtsingleapplication.pri)
 
 # Input
 HEADERS += about.h        \
            mainwindow.h   \
            preferences.h \
-    raitingdelegate.h
+           raitingdelegate.h
 FORMS += about.ui         \
          preferences.ui   \
          mainwindow.ui
@@ -23,7 +25,7 @@ SOURCES += about.cpp      \
            main.cpp       \
            mainwindow.cpp \
            preferences.cpp \
-    raitingdelegate.cpp
+           raitingdelegate.cpp
 RESOURCES += icons.qrc
 
 binfiles.files += wallch
@@ -60,3 +62,5 @@ helpfiles.files += data/help/*
 helpfiles.path = /usr/share/gnome/help
 
 INSTALLS += configfiles shortcutfiles helpfiles binfiles manfiles docfiles imagefiles
+
+OTHER_FILES +=

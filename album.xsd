@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="wallpaper"/>
+      </xs:sequence>
+      <xs:attribute name="version" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wallpaper">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="filename"/>
+        <xs:element ref="fullpath"/>
+        <xs:element ref="raiting"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="filename" type="xs:string"/>
+  <xs:element name="fullpath" type="xs:string"/>
+  <xs:element name="raiting">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>

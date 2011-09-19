@@ -122,15 +122,16 @@ private Q_SLOTS:
 
     void dbus_action(const QString &msg);
 
+    void on_actionAddAlbum_triggered();
+
 public Q_SLOTS:
 
     void ShowPreferences();
     void menushowabout();
     void pruneList();
     void removeDisk();
-    void load();
     void openFolder();
-    void save_album();
+    void saveAlbum();
 };
 
 #endif // MAINWINDOW_H
