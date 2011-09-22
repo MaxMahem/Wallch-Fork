@@ -22,11 +22,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "preferences.h"
-#include "about.h"
 #include "raitingdelegate.h"
-
-#include <fstream>
-#include <iostream>
 
 #include <QMessageBox>
 #include <QtDBus>
@@ -63,17 +59,21 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     //after all the basic checks, setting up the UI
     ui->setupUi(this);
 
+    // set up the source QMetaEnum
+    int sourceIndex = MainWindow::staticMetaObject.indexOfEnumerator("Source");
+    this->sourceEnum = MainWindow::staticMetaObject.enumerator(sourceIndex);
+
     // listening to DBUS for another wallch instance/or to open a new album/or to do some action
-    QDBusConnection::sessionBus().connect(QString(),QString(), "do.action", "wallch_message", this, SLOT(dbus_action(QString)));
+    QDBusConnection dbusConnection = QDBusConnection::sessionBus();
+    dbusConnection.connect(QString(),QString(), "do.action", "wallch_message", this, SLOT(dbusAction(QString)));
 
     // set up database connection
     this->sqliteDatabase = QSqlDatabase::addDatabase("QSQLITE");
     this->sqliteDatabase.setDatabaseName("wallpaper.db");
 
     if (!this->sqliteDatabase.open()) {
-        QMessageBox::critical(this, qApp->tr("Cannot open database"),
-            qApp->tr("Error connecting to the sqlite database, this program will now exit."), QMessageBox::Ok);
-        qDebug() << "Error connecting to sqlite database.";
+        QMessageBox::critical(this, tr("Cannot open database"), tr("Error connecting to the database."), QMessageBox::Ok);
+        qCritical() << "Error connecting to sqlite database.";
         QCoreApplication::exit(1);
     }
 
@@ -81,29 +81,31 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
                                                      "filename TEXT NOT NULL,"
                                                      "fullpath TEXT NOT NULL UNIQUE,"
                                                      "filesize TEXT NOT NULL,"
+                                                     "hash TEXT NOT NULL UNIQUE,"
                                                      "imagesize TEXT NOT NULL,"
                                                      "ratio TEXT NOT NULL,"
                                                      "raiting INTEGER)");
 
-    this->itemTableModel = new QSqlTableModel(this, this->sqliteDatabase);
-    this->itemTableModel->setTable("wallpapers");
-    this->itemTableModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
-    this->itemTableModel->select();
+    QSqlQuery("CREATE TABLE IF NOT EXISTS remoteurls (id INTEGER PRIMARY KEY,"
+                                                      "name TEXT NOT NULL,"
+                                                      "url TEXT NOT NULL UNIQUE)");
 
-    ui->itemView->setModel(this->itemTableModel);
+    QSqlQuery("INSERT INTO remoteurls (name, url) VALUES ('Live Earth Rectangular', 'http://www.opentopia.com/images/data/sunlight/world_sunlight_map_rectangular.jpg')");
+    QSqlQuery("INSERT INTO remoteurls (name, url) VALUES ('Live Earth Hemisphere',  'http://www.opentopia.com/images/data/sunlight/world_sunlight_map_hemisphere.jpg')");
+    QSqlQuery("INSERT INTO remoteurls (name, url) VALUES ('Local Random', 'http://localhost/cakephp/walls/show/random')");
 
+    this->wallpaperTable = new QSqlTableModel(this, this->sqliteDatabase);
+    this->wallpaperTable->setEditStrategy(QSqlTableModel::OnManualSubmit);
+    ui->itemView->setModel(this->wallpaperTable);
+
+    this->source = MainWindow::LOCAL;
+    this->changeModel(source);
     ui->itemView->hideColumn(0);
-    this->itemTableModel->setHeaderData(1, Qt::Horizontal, tr("Filename"));
-    this->itemTableModel->setHeaderData(2, Qt::Horizontal, tr("Path"));
-    this->itemTableModel->setHeaderData(3, Qt::Horizontal, tr("Filesize"));
-    this->itemTableModel->setHeaderData(4, Qt::Horizontal, tr("Imagesize"));
-    this->itemTableModel->setHeaderData(5, Qt::Horizontal, tr("Ratio"));
-    this->itemTableModel->setHeaderData(6, Qt::Horizontal, tr("Raiting"));
 
-    ui->itemView->setItemDelegateForColumn(6, new RaitingDelegate);
+//    ui->itemView->selectionChanged();
 
     // set the item count
-    ui->wallpaperCountLabel->setText(QString::number(this->itemTableModel->rowCount()));
+    ui->wallpaperCountLabel->setText(QString::number(this->wallpaperTable->rowCount()));
 
     // load settings
     MainWindow::loadSettings();
@@ -122,53 +124,36 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     Notify::init(QCoreApplication::applicationName().toStdString());
     notification = new Notify::Notification(tr("Wallpaper Changed").toStdString(), "Filename");
 
-    //SIGNAL-SLOT action here
-    connect(ui->action_About, SIGNAL(triggered()), this, SLOT(menushowabout()));
-    connect(ui->actionPreferences, SIGNAL(triggered()), this, SLOT(ShowPreferences()));
-    connect(ui->actionQuit_Ctrl_Q, SIGNAL(triggered()), this, SLOT(close()));
-    connect(ui->action_Start, SIGNAL(triggered()), this, SLOT(on_startButton_clicked()));
-    connect(ui->actionS_top, SIGNAL(triggered()), this, SLOT(on_stopButton_clicked()));
-    connect(ui->actionRemove_list, SIGNAL(triggered()), this, SLOT(pruneList()));
-    connect(ui->actionPreviousImage, SIGNAL(triggered()), this, SLOT(on_previousButton_clicked()));
-    connect(ui->action_Next_Image, SIGNAL(triggered()), this, SLOT(on_nextButton_clicked()));
-    connect(ui->save_as, SIGNAL(triggered()), this, SLOT(saveAlbum()));
+    // Set up Network Manager
+    this->networkManager = new QNetworkAccessManager(this);
+    this->connect(networkManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
 
-    //setting up the shortcut keys!
-    (void) new QShortcut(Qt::CTRL + Qt::Key_Q,             this, SLOT(close()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_P,             this, SLOT(ShowPreferences()));
-    (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_S, this, SLOT(on_startButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_O, this, SLOT(on_stopButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_N, this, SLOT(on_nextButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_I,             this, SLOT(on_addButton_clicked()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_F,             this, SLOT(on_addfolder_clicked()));
-    (void) new QShortcut(Qt::Key_Delete,                   this, SLOT(on_removeButton_clicked()));
-    (void) new QShortcut(Qt::Key_Return,                   this, SLOT(changeWallpaperToCurrent()));
-    (void) new QShortcut(Qt::SHIFT + Qt::CTRL + Qt::Key_P, this, SLOT(on_previousButton_clicked()));
-
+    // Set up Icons
     ui->startButton->setIcon(QIcon::fromTheme("media-playback-start"));
-    ui->action_Start->setIcon(QIcon::fromTheme("media-playback-start"));
+    ui->actionStart->setIcon(QIcon::fromTheme("media-playback-start"));
     ui->stopButton->setIcon(QIcon::fromTheme("media-playback-stop"));
-    ui->actionS_top->setIcon(QIcon::fromTheme("media-playback-stop"));
+    ui->actionStop->setIcon(QIcon::fromTheme("media-playback-stop"));
     ui->previousButton->setIcon(QIcon::fromTheme("media-seek-backward"));
     ui->actionPreviousImage->setIcon(QIcon::fromTheme("media-seek-backward"));
     ui->nextButton->setIcon(QIcon::fromTheme("media-seek-forward"));
-    ui->action_Next_Image->setIcon(QIcon::fromTheme("media-seek-forward"));
+    ui->actionNextImage->setIcon(QIcon::fromTheme("media-seek-forward"));
     ui->removeButton->setIcon(QIcon::fromTheme("list-remove"));
     ui->removeallButton->setIcon(QIcon::fromTheme("edit-delete"));
     ui->addfolder->setIcon(QIcon::fromTheme("folder-new"));
     ui->actionAddFolder->setIcon(QIcon::fromTheme("folder-new"));
     ui->addButton->setIcon(QIcon::fromTheme("list-add"));
-    ui->actionQuit_Ctrl_Q->setIcon(QIcon::fromTheme("application-exit"));
+    ui->actionQuit->setIcon(QIcon::fromTheme("application-exit"));
     ui->actionPreferences->setIcon(QIcon::fromTheme("preferences-desktop"));
     ui->actionAddImages->setIcon(QIcon::fromTheme("insert-image"));
     ui->actionAddAlbum->setIcon(QIcon::fromTheme("list-add"));
-    ui->action_Start->setIcon(QIcon::fromTheme("media-playback-start"));
+    ui->actionStart->setIcon(QIcon::fromTheme("media-playback-start"));
 
 
     on_timerSlider_valueChanged(ui->timerSlider->value());
+    this->updateProgressBar();
 
     // fire off a random Image on start, will need to add a group of startup options later.
-    MainWindow::randomImage();
+    this->randomImage();
 }
 
 void MainWindow::loadSettings() {
@@ -221,31 +206,41 @@ void MainWindow::addItems(QStringList imageList) {
 
         progressDialog.setValue(progress);
 
-        // we only want to operate on valid images
         // TODO: Consider checking insert/duplicates first, faster then checking valid images, so can bail out sooner.
         // TODO: Speed up validation!
-        QImage    image(imagePath);
-        QFileInfo imageInfo(imagePath);
+        QSqlRecord  record;
+        QImage      image(imagePath);
+        QFileInfo   imageInfo(imagePath);
+        QString     hash;
+        QFile       file(imagePath);
 
+        // we only want to operate on valid images
         if (!image.isNull()) {
             // get a record item
-            QSqlRecord record = this->itemTableModel->record();
+            record = this->wallpaperTable->record();
+
+            // get it's hash
+            file.open(QIODevice::ReadOnly);
+            hash = QCryptographicHash::hash(file.readAll(), QCryptographicHash::Md5).toHex();
 
             // set it's values
-            record.setValue(1, imageInfo.fileName());
-            record.setValue(2, imagePath);
-            record.setValue(3, QLocale(QLocale::system()).toString(double(imageInfo.size() / 1024), 'f', 0) + "kb");
-            record.setValue(4, QString::number(image.size().width()) + "x" + QString::number(image.size().height()));
-            record.setValue(5, QString::number(image.size().width()) + ":" + QString::number(image.size().height()));
+            record.setValue("filename", imageInfo.fileName());
+            record.setValue("fullpath", imagePath);
+            record.setValue("filesize", QLocale(QLocale::system()).toString(double(imageInfo.size() / 1024), 'f', 0) + "kb");
+            record.setValue("hash", hash);
+            record.setValue("imagesize", QString::number(image.size().width()) + "x" + QString::number(image.size().height()));
+
+            // TODO: Really calculate the ratio here.
+            record.setValue("ratio", QString::number(image.size().width()) + ":" + QString::number(image.size().height()));
 
             // add image to database
-            this->itemTableModel->insertRecord(-1, record);
-            if (!this->itemTableModel->submitAll()) {
+            this->wallpaperTable->insertRecord(-1, record);
+            if (!this->wallpaperTable->submitAll()) {
                 warningMessage.append(qApp->tr("Error inserting: ") + QFileInfo(imagePath).fileName());
-                qDebug() << this->itemTableModel->lastError();
+                qDebug() << this->wallpaperTable->lastError();
 
                 // if this happens, we need to have the itemTableModel revert it changes.
-                this->itemTableModel->revertAll();
+                this->wallpaperTable->revertAll();
             }
         } else {
             warningMessage.append(qApp->tr("Invalid Image: ") + QFileInfo(imagePath).fileName());
@@ -260,7 +255,7 @@ void MainWindow::addItems(QStringList imageList) {
         QMessageBox::warning(this, qApp->tr("Item Addition Errors"), warningMessage.join("\n"));
     }
 
-    this->itemTableModel->select();
+    this->wallpaperTable->select();
 }
 
 /**
@@ -282,11 +277,8 @@ void MainWindow::on_addButton_clicked()
  */
 void MainWindow::on_removeButton_clicked()
 {
-    qDebug() << ui->itemView->currentIndex();
-    qDebug() << this->itemTableModel->removeRow(ui->itemView->currentIndex().row());
-    qDebug() << this->itemTableModel->lastError().text();
-    qDebug() << this->itemTableModel->submitAll();
-    qDebug() << this->itemTableModel->lastError().text();
+    this->wallpaperTable->removeRow(ui->itemView->currentIndex().row());
+    this->wallpaperTable->submitAll();
 }
 
 /**
@@ -299,7 +291,7 @@ void MainWindow::on_removeallButton_clicked()
                               QMessageBox::Ok | QMessageBox::Cancel)
             == QMessageBox::Ok) {
         this->sqliteDatabase.exec("DELETE FROM wallpapers");
-        this->itemTableModel->select();
+        this->wallpaperTable->select();
     }
 }
 
@@ -368,7 +360,6 @@ void MainWindow::pruneList()
  */
 void MainWindow::removeDisk()
 {
-    qDebug() << "Fix Me";
 //    if (QMessageBox::warning(this, tr("Image Deltion"), "The image you selected will be permently deleted from your disk.",
 //                         QMessageBox::Ok | QMessageBox::Cancel)
 //            == QMessageBox::Ok)
@@ -387,7 +378,7 @@ bool MainWindow::isValidImage (const QString &image) {
  */
 void MainWindow::on_addfolder_clicked()
 {
-    QString path = QFileDialog::getExistingDirectory(this, tr("Choose Folder"), QDir::homePath());
+    QString path = QFileDialog::getExistingDirectory(this, tr("Choose Folder"), QDir::homePath(), QFileDialog::ShowDirsOnly);
 
     // if we have items returned, path.count won't be 0 and so we process, otherwise we fall through.
     if (path.count()) {
@@ -424,70 +415,52 @@ void MainWindow::dragEnterEvent(QDragEnterEvent *event)
  * @param event
  */
 void MainWindow::dropEvent(QDropEvent *event)
-{
-    qDebug() << "Test Me";
+{   
+    QList<QUrl> urlList = event->mimeData()->urls();
 
-//    QList<QUrl> urlList = event->mimeData()->urls();
-//    Q_FOREACH (QUrl url, urlList) {
-//       ui->listWidget->addItem(strFile1);
-//       }
-//       if(url.toString().endsWith(".wallch")) {
-//           QString file1 = url.toString().mid(7,url.toString().length()-2);
-//           char *path = file1.toUtf8().data();
-//           FILE *file = fopen ( path, "r" );
-//           if (file != NULL) {
-//               ifstream file( path ) ;
-//               string line ;
-//               while(std::getline( file, line)) {
-//                   QString qstr = QString::fromUtf8(line.c_str());
-//                   QListWidgetItem *item = new QListWidgetItem;
-//                   item->setText(qstr);
-//                   item->setStatusTip(tr("Double-click to set an item from the list as Background"));
-//                   ui->listWidget->addItem(item);
-//               }
-//           }
-//           fclose ( file );
-//       }
-//    }
+    Q_FOREACH (QUrl url, urlList) {
+//        ui->listWidget->addItem(strFile1);
+    }
 
-//    event->acceptProposedAction();
+    event->acceptProposedAction();
 }
 
 /**
  * @brief
  *
- * @param msg
+ * @param message
  */
-void MainWindow::dbus_action(const QString &msg) //QDBus signal handling
+void MainWindow::dbusAction(const QString &message) //QDBus signal handling
 {
-    if (msg=="FOCUS") { //another application instance has come without any arguments, so focus to the already running process!
+    if (message=="FOCUS") { //another application instance has come without any arguments, so focus to the already running process!
         this->showNormal();
         this->setFocusPolicy(Qt::StrongFocus);
         this->setFocus();
         this->raise();
         this->setVisible(1);
         this->activateWindow();    
-    } else if(msg=="--start") {
+    } else if(message=="--start") {
         on_startButton_clicked();
-    } else if(msg=="--pause") {
+    } else if(message=="--pause") {
         on_startButton_clicked();
-    } else if(msg=="--stop") {
+    } else if(message=="--stop") {
         on_stopButton_clicked();
-    } else if(msg=="--next") {
+    } else if(message=="--next") {
         on_nextButton_clicked();
-    } else if(msg=="--previous") {
+    } else if(message=="--previous") {
         on_previousButton_clicked();
-    } else if(msg=="--constant") {
+    } else if(message=="--constant") {
         on_startButton_clicked();
-    } else if(msg=="--once") {
+    } else if(message=="--once") {
         MainWindow::randomImage();
     } else
-        cerr << QString("Program received the unknown dbus message: " + msg +"\n").toLocal8Bit().data();
+        qCritical() << QString("Program received the unknown dbus message: " + message +"\n").toLocal8Bit().data();
 }
 
 
 /**
- * @brief The startButton controls starting and stopping of playback, it is actually functions as a play/pause toggle
+ * @brief The startButton controls starting of playback
+ * TODO:  Consider changing back to a play/pause button
  *
  */
 void MainWindow::on_startButton_clicked() {
@@ -512,10 +485,10 @@ void MainWindow::on_startButton_clicked() {
 void MainWindow::randomImage()
 {
     // if we currently have no rows we don't want to run any of this code, we'll divide by 0!
-    if (this->itemTableModel->rowCount()) {
+    if (this->wallpaperTable->rowCount()) {
         // get a random image... this all could be compressed, but we do it this way to be readable.
-        int         randomRow   = (qrand() % this->itemTableModel->rowCount());
-        QModelIndex randomIndex = this->itemTableModel->index(randomRow, 2);
+        int         randomRow   = (qrand() % this->wallpaperTable->rowCount());
+        QModelIndex randomIndex = this->wallpaperTable->index(randomRow, 2);
         QString     randomImage = randomIndex.data().toString();
 
         // recieved a good background so we are good to go.
@@ -525,7 +498,7 @@ void MainWindow::randomImage()
 }
 
 /**
- * @brief
+ * @brief Updates the progressbar
  *
  */
 void MainWindow::updateProgressBar()
@@ -621,55 +594,55 @@ void MainWindow::on_stopButton_clicked()
 }
 
 /**
- * @brief
+ * @brief Cycles to the previous image in the list. At the top, goes back to the bottom.
  *
  */
 void MainWindow::on_nextButton_clicked()
 {
-    if (this->itemTableModel->rowCount()) {
-        QModelIndex currentIndex = ui->itemView->currentIndex();
-        QModelIndex newIndex;
+    // Only act if we have itmes in the list.
+    if (this->wallpaperTable->rowCount()) {
+        QModelIndex index = ui->itemView->currentIndex();
 
-        if ((currentIndex.row() + 2) <= this->itemTableModel->rowCount())
-            newIndex = this->itemTableModel->index(currentIndex.row() + 1, 2);
+        if ((index.row() + 1) < this->wallpaperTable->rowCount())
+            index = this->wallpaperTable->index(index.row() + 1, 2);
         else
-            newIndex = this->itemTableModel->index(0, 2);
+            index = this->wallpaperTable->index(0, 2);
 
-        ui->itemView->setCurrentIndex(newIndex);
-        MainWindow::changeBackground(newIndex.data().toString());
+        ui->itemView->setCurrentIndex(index);                   // set the current selection
+        MainWindow::changeBackground(index.data().toString());  // change the background
     }
 }
 
 /**
- * @brief
+ * @brief Cycles to the next image in the list. At the bottom, goes back to the top.
  *
  */
 void MainWindow::on_previousButton_clicked()
 {
-    if (this->itemTableModel->rowCount()) {
-        QModelIndex currentIndex = ui->itemView->currentIndex();
-        QModelIndex newIndex;
+    // Only act if we have items in the list.
+    if (this->wallpaperTable->rowCount()) {
+        QModelIndex index = ui->itemView->currentIndex();
 
-        if (currentIndex.row() > 0)
-            newIndex = this->itemTableModel->index(currentIndex.row() - 1, 2);
+        if (index.row() > 0)
+            index = this->wallpaperTable->index(index.row() - 1, 2);
         else
-            newIndex = this->itemTableModel->index(this->itemTableModel->rowCount() - 1, 2);
+            index = this->wallpaperTable->index(this->wallpaperTable->rowCount() - 1, 2);
 
-        ui->itemView->setCurrentIndex(newIndex);
-        MainWindow::changeBackground(newIndex.data().toString());
+        ui->itemView->setCurrentIndex(index);                   // set the current selection.
+        MainWindow::changeBackground(index.data().toString());  // change the background
     }
 }
 
 /**
- * @brief
+ * @brief Do a desktop notification.
  *
- * @param qimage
+ * @param image
  */
 void MainWindow::desktopNotify(QString image)
 {
     if(!QImage(image).isNull()) {
-        this->notification->update(tr("Wallpaper Changed").toStdString(), QFileInfo(image).fileName().toStdString(),
-                                   image.toStdString());
+        QString fileName = QFileInfo(image).fileName();
+        this->notification->update(tr("Wallpaper Changed").toStdString(), fileName.toStdString(), image.toStdString());
         this->notification->show();
     }
 }
@@ -678,16 +651,43 @@ void MainWindow::desktopNotify(QString image)
  * @brief
  *
  * @param picture
- * @return bool
  */
 void MainWindow::changeBackground(QString picture) {
     // Change the Background
     if (gconf_client_set_string(gconfClient, "/desktop/gnome/background/picture_filename", picture.toLatin1(), NULL)) {
-        // Show notifications, play sounds, and update history, according to preferences.
-        if(this->desktopNotification)  QtConcurrent::run(this, &MainWindow::desktopNotify, picture);
-        if(this->soundNotification)    QtConcurrent::run(this, &MainWindow::soundNotify);
+        // Show notifications, play sounds according to preferences.
+        if(this->desktopNotification)
+            QtConcurrent::run(this, &MainWindow::desktopNotify, picture);
+        if(this->soundNotification)
+            QtConcurrent::run(this, &MainWindow::soundNotify);
     } else {
-        qDebug() << "Unable to change background, check .gconf permissions";
+        qCritical() << "Unable to change background, check .gconf permissions";
+    }
+}
+
+void MainWindow::getRemoteWallpaper(QUrl url) {
+    QNetworkRequest networkRequest(url);
+    this->networkManager->get(networkRequest);
+}
+
+void MainWindow::downloadFinished(QNetworkReply* reply) {
+    // check if we got redirected
+    QUrl redirectUrl = reply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl();
+
+    if (redirectUrl.isValid() && (redirectUrl != reply->url())) {   // we got redirected
+        // redirect url may be relative, so we need to resolve it.
+        redirectUrl = reply->url().resolved(redirectUrl);
+
+        this->getRemoteWallpaper(redirectUrl);
+    } else {                                                        // no redirect
+        QFile file(QDir::homePath() + "/remotewallpaper");
+        file.open(QIODevice::WriteOnly);
+        file.write(reply->readAll());
+        file.close();
+
+        reply->deleteLater();
+
+        changeBackground(file.fileName());
     }
 }
 
@@ -696,20 +696,18 @@ void MainWindow::changeBackground(QString picture) {
  *
  */
 void MainWindow::soundNotify() {
-    QString soundFile;
+    QString soundFile = "/usr/share/wallch/files/notification.ogg";
 
-    // TODO: Add logic for playing custom sound
-    soundFile = "/usr/share/wallch/files/notification.ogg";
-
-    // Load the sound
     sf::Music sound;
 
+    // Load the sound
     if (!sound.OpenFromFile(soundFile.toStdString())) {
-        qDebug() << "Sound didn't open right.";
+        qCritical() << "Sound didn't open right.";
         return;
     }
 
     sound.Play();
+
     // Loop while the music is playing
     while (sound.GetStatus() == sf::Music::Playing) {
         // Leave some CPU time for other threads
@@ -721,106 +719,91 @@ void MainWindow::soundNotify() {
  * @brief
  *
  */
-void MainWindow::menushowabout() {
-    About = new about(this);
-    About->show();
-}
-
-/**
- * @brief Displays the Preferences window
- *
- */
-void MainWindow::ShowPreferences()
-{
-    preferences = new Preferences(this);
-    preferences->exec(); //executing the preferences dialog.
-    MainWindow::loadSettings();
-}
-
-/**
- * @brief
- *
- */
 void MainWindow::openFolder()
 {
     QModelIndex currentIndex = ui->itemView->currentIndex();
-    QModelIndex rightIndex   = this->itemTableModel->index(currentIndex.row(), 2);
+    QModelIndex rightIndex   = this->wallpaperTable->index(currentIndex.row(), 2);
     QDesktopServices::openUrl(QUrl("file:///" + rightIndex.data().toString()));
 }
 
-/**
- * @brief
- *
- */
-void MainWindow::saveAlbum() {
-    // get the filename from the user.
-    QString initialPath = QDir::currentPath() + "/album.wallch";
-    QString fileName    = QFileDialog::getSaveFileName(this, tr("Save As"), initialPath,
-                                                       tr("Wallch Files (*.wallch);;All Files (*)"));
+void MainWindow::changeModel(Source source) {
+    bool localControlsVisible;
+    bool remoteControlsVisible;
 
-    // create/open the file
-    QFile file(fileName);
-    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    switch (source) {
+    case MainWindow::LOCAL:
+        this->wallpaperTable->setTable("wallpapers");
 
-    // check to see if we got any errors
-    if (file.error() == QFile::NoError) {
-        QDomDocument album("album");
+        this->wallpaperTable->setHeaderData(0, Qt::Horizontal, tr("ID"));
+        this->wallpaperTable->setHeaderData(1, Qt::Horizontal, tr("Filename"));
+        ui->itemView->hideColumn(2);
+        this->wallpaperTable->setHeaderData(2, Qt::Horizontal, tr("Path"));
+        this->wallpaperTable->setHeaderData(3, Qt::Horizontal, tr("Filesize"));
+        ui->itemView->hideColumn(4);
+        this->wallpaperTable->setHeaderData(4, Qt::Horizontal, tr("Hash"));
+        this->wallpaperTable->setHeaderData(5, Qt::Horizontal, tr("Imagesize"));
+        this->wallpaperTable->setHeaderData(6, Qt::Horizontal, tr("Ratio"));
+        this->wallpaperTable->setHeaderData(7, Qt::Horizontal, tr("Raiting"));
+        ui->itemView->setItemDelegateForColumn(7, new RaitingDelegate);
 
-        QDomElement root = album.createElementNS("http://maxmahem.net/album.xsd", "album");
-        root.setAttribute("version", "1.0");
-        album.appendChild(root);
+        localControlsVisible  = true;
+        remoteControlsVisible = false;
 
-        for (int i = 0; i < this->itemTableModel->rowCount(); ++i) {
-            QDomElement wallpaper = album.createElement("wallpaper");
+        break;
 
-            QDomElement filenameElement = album.createElement("filename");
-            filenameElement.appendChild(album.createTextNode(this->itemTableModel->record(i).value("Filename").toString()));
+    case MainWindow::REMOTE:
+        this->wallpaperTable->setTable("remoteurls");
 
-            QDomElement fullpathElement = album.createElement("fullpath");
-            fullpathElement.appendChild(album.createTextNode(this->itemTableModel->record(i).value("Fullpath").toString()));
+        this->wallpaperTable->setHeaderData(0, Qt::Horizontal, tr("ID"));
+        this->wallpaperTable->setHeaderData(1, Qt::Horizontal, tr("Name"));
+        ui->itemView->showColumn(1);
+        this->wallpaperTable->setHeaderData(2, Qt::Horizontal, tr("URL"));
 
-            QDomElement raitingElement = album.createElement("raiting");
-            raitingElement.appendChild(album.createTextNode(this->itemTableModel->record(i).value("Raiting").toString()));
+        localControlsVisible  = false;
+        remoteControlsVisible = true;
 
-            wallpaper.appendChild(filenameElement);
-            wallpaper.appendChild(fullpathElement);
-            wallpaper.appendChild(raitingElement);
+        break;
+    }
 
-            root.appendChild(wallpaper);
-        }
+    this->wallpaperTable->select();
 
-        QTextStream(&file) << album.toString();
-    } else {
-        QMessageBox::critical(this, tr("Error Writing File"), tr("Error writing file %1.").arg(file.fileName()));
-        qCritical() << file.errorString();
+    QList<QAbstractButton *> localControlButtons  = ui->localControlButtons->buttons();
+    QList<QAbstractButton *> remoteControlButtons = ui->remoteControlButtons->buttons();
+
+    Q_FOREACH(QAbstractButton *button, localControlButtons) {
+        button->setVisible(localControlsVisible);
+        button->setDisabled(!localControlsVisible);
+    }
+
+    Q_FOREACH(QAbstractButton *button, remoteControlButtons) {
+        button->setVisible(remoteControlsVisible);
+        button->setDisabled(!remoteControlsVisible);
     }
 }
 
 void MainWindow::on_webSourceRadio_toggled(bool checked)
 {
-    QList<QAbstractButton *> buttons = ui->localControlButtonGroup->buttons();
-    Q_FOREACH(QAbstractButton *button, ui->localControlButtonGroup->buttons()) {
-        button->setVisible(!checked);
+    if (checked) {
+        this->changeModel(MainWindow::REMOTE);
+        this->source = MainWindow::REMOTE;
+    } else {
+        this->changeModel(MainWindow::LOCAL);
+        this->source = MainWindow::LOCAL;
     }
-
-}
-
-void MainWindow::on_randomButton_clicked()
-{
-    MainWindow::randomImage();
 }
 
 void MainWindow::on_itemView_doubleClicked(QModelIndex index)
 {
     // get the index that refers to the item double clicked row, but column 1.
-    QModelIndex rightIndex = this->itemTableModel->index(index.row(), 2);
+    QModelIndex rightIndex = this->wallpaperTable->index(index.row(), 2);
     // display it. We could do this on one line, but I use two for readability.
     MainWindow::changeBackground(rightIndex.data().toString());
 }
 
 void MainWindow::changeWallpaperToCurrent()
 {
-    // this function exists because I guess some callers can't pass along the right data to on_itemView_doubleClicked
+    // some callers can't pass enough data, so we call this. We could just call changeWallpaper directly,
+    // but on_itemView_doubleClicked handles the model->file translation for us.
     MainWindow::on_itemView_doubleClicked(ui->itemView->currentIndex());
 }
 
@@ -848,53 +831,215 @@ void MainWindow::on_itemView_customContextMenuRequested(QPoint position)
  */
 void MainWindow::on_actionAddAlbum_triggered()
 {
-    QString fileName    = QFileDialog::getOpenFileName(this, tr("Open"), QDir::currentPath(),
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open"), QDir::currentPath(), tr("Wallch Files (*.wallch);;All Files (*)"));
+
+    if (!fileName.isNull()) {
+        // open the file
+        QFile file(fileName);
+        file.open(QIODevice::ReadOnly | QIODevice::Text);
+
+        // check to see if we got any errors
+        if (file.error() == QFile::NoError) {
+            QDomDocument album;
+            QString errorMessage;
+            int errorLine;
+            int errorColumn;
+
+            // have Qt pase in the xml.
+            album.setContent(&file, &errorMessage, &errorLine, &errorColumn);
+
+            // check to see if the error message is null, if it is, we parsed w/ no problem.
+            if (errorMessage.isNull()) {
+                qCritical() << "Error reading error xml:" << errorMessage
+                            << "Line: " << errorLine
+                            << "Column:" << errorColumn;
+
+                // get the root element
+                QDomElement root = album.documentElement();
+
+                // TODO: Re-evaluate document version validation.
+                if (root.tagName() == "Album") {
+                    if (root.attribute("version") != "1.0")
+                        qWarning() << "Processing different version xml. File Version:" << root.attribute("version");
+
+                    QDomNodeList wallpaperNodes = root.elementsByTagName("Wallpaper");
+                    QStringList fileNames;
+
+                    // step through the list of nodes, and add them to our item list.
+                    for (uint i = 0; i < wallpaperNodes.length(); i++) {
+                        fileNames << wallpaperNodes.item(i).firstChildElement("Fullpath").text();
+                    }
+
+                    MainWindow::addItems(fileNames);
+                }
+            } else {
+                // errors parsing xml.
+                QMessageBox::critical(this, tr("Error Parsing XML"), tr("Error parsing xml in file."));
+                qCritical() << "Error parsing xml:" << errorMessage
+                            << "Line: " << errorLine
+                            << "Column:" << errorColumn;
+            }
+        } else {
+            // errors reading file.
+            QMessageBox::critical(this, tr("Error Reading File"), tr("Error reading file %1.").arg(file.fileName()));
+            qCritical() << "Error reading file:" << file.errorString();
+        }
+    }
+}
+
+/**
+ * @brief Displays the about window, non-modal.
+ *
+ */
+void MainWindow::on_actionAbout_triggered()
+{
+//    about = new About(this);
+//    about->show();
+}
+
+/**
+ * @brief Displays the Preferences window, modal.
+ *
+ */
+void MainWindow::on_actionPreferences_triggered()
+{
+    preferences = new Preferences(this);
+    preferences->exec();
+
+    // when we return from preferences, our settings may be changed, so we reload them.
+    MainWindow::loadSettings();
+}
+
+/**
+ * @brief saves our album as xml.
+ *
+ */
+void MainWindow::on_actionSaveAlbum_triggered()
+{
+    // get the filename from the user.
+    QString initialPath = QDir::currentPath() + "/album.wallch";
+    QString fileName    = QFileDialog::getSaveFileName(this, tr("Save As"), initialPath,
                                                        tr("Wallch Files (*.wallch);;All Files (*)"));
 
-    // open the file
+    // create/open the file
     QFile file(fileName);
-    file.open(QIODevice::ReadOnly | QIODevice::Text);
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
 
     // check to see if we got any errors
     if (file.error() == QFile::NoError) {
-        QDomDocument album;
-        QString errorMessage;
-        int errorLine;
-        int errorColumn;
+        QDomDocument album("album");
 
-        // have Qt pase in the xml.
-        album.setContent(&file, &errorMessage, &errorLine, &errorColumn);
+        QDomElement root = album.createElementNS("http://maxmahem.net/album.xsd", "album");
+        root.setAttribute("version", "1.0");
+        album.appendChild(root);
 
-        // check to see if the error message is null, if it is, we parsed w/ no problem.
-        if (errorMessage.isNull()) {
-            qCritical() << "Error reading error xml:" << errorMessage << "Line: " << errorLine << "Column:" << errorColumn;
+        for (int i = 0; i < this->wallpaperTable->rowCount(); ++i) {
+            QDomElement wallpaper = album.createElement("wallpaper");
 
-            // get the root element
-            QDomElement root = album.documentElement();
+            QDomElement filenameElement = album.createElement("filename");
+            filenameElement.appendChild(album.createTextNode(this->wallpaperTable->record(i).value("Filename").toString()));
 
-            // TODO: Re-evaluate document version validation.
-            if (root.tagName() == "Album") {
-                if (root.attribute("version") != "1.0")
-                    qWarning() << "Processing different version xml. File Version:" << root.attribute("version");
+            QDomElement fullpathElement = album.createElement("fullpath");
+            fullpathElement.appendChild(album.createTextNode(this->wallpaperTable->record(i).value("Fullpath").toString()));
 
-                QDomNodeList wallpaperNodes = root.elementsByTagName("Wallpaper");
-                QStringList fileNames;
+            QDomElement raitingElement = album.createElement("raiting");
+            raitingElement.appendChild(album.createTextNode(this->wallpaperTable->record(i).value("Raiting").toString()));
 
-                // step through the list of nodes, and add them to our item list.
-                for (uint i = 0; i < wallpaperNodes.length(); i++) {
-                    fileNames << wallpaperNodes.item(i).firstChildElement("Fullpath").text();
-                }
+            wallpaper.appendChild(filenameElement);
+            wallpaper.appendChild(fullpathElement);
+            wallpaper.appendChild(raitingElement);
 
-                MainWindow::addItems(fileNames);
-            }
-        } else {
-            // errors parsing xml.
-            QMessageBox::critical(this, tr("Error Parsing XML"), tr("Error parsing xml in file."));
-            qCritical() << "Error parsing xml:" << errorMessage << "Line: " << errorLine << "Column:" << errorColumn;
+            root.appendChild(wallpaper);
         }
+
+        QTextStream(&file) << album.toString();
     } else {
-        // errors reading file.
-        QMessageBox::critical(this, tr("Error Reading File"), tr("Error reading file %1.").arg(file.fileName()));
-        qCritical() << "Error reading file:" << file.errorString();
+        QMessageBox::critical(this, tr("Error Writing File"), tr("Error writing file %1.").arg(file.fileName()));
+        qCritical() << file.errorString();
     }
+}
+
+void MainWindow::on_actionSaveGnome_triggered()
+{
+    // get the filename from the user.
+    QString initialPath = QDir::homePath() + "/background.xml";
+    QString fileName    = QFileDialog::getSaveFileName(this, tr("Save As"), initialPath,
+                                                       tr("Gnome Background XML (*.xml);;All Files (*)"));
+
+    // create/open the file
+    QFile file(fileName);
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+
+    // check to see if we got any errors
+    if (file.error() == QFile::NoError) {
+        QDomDocument album("background");
+
+        QDomElement root = album.createElement("background");
+        album.appendChild(root);
+
+        QDomDocument starttime("starttime");
+        starttime.setContent(QString("<starttime><year>2009</year><month>08</month><day>04</day>"
+                                     "<hour>00</hour><minute>00</minute><second>00</second></starttime>"));
+        root.appendChild(starttime);
+
+        for (int i = 0; i < this->wallpaperTable->rowCount(); ++i) {
+            // build <static> will contain <duration> and <file>
+            QDomElement staticElement   = album.createElement("static");
+
+            // build <duration> time is set to our current delay time. Append to static.
+            QDomElement staticDurationElement = album.createElement("duration");
+            QDomText    staticDurationText    = album.createTextNode(QString::number(this->delaySeconds)+ ".0");
+            staticDurationElement.appendChild(staticDurationText);
+            staticElement.appendChild(staticDurationElement);
+
+            // build <file> contains full path to file. Append to static.
+            QDomElement staticFileElement = album.createElement("file");
+            QDomText    staticFileText    = album.createTextNode(this->wallpaperTable->record(i).value("Fullpath").toString());
+            staticFileElement.appendChild(staticFileText);
+            staticElement.appendChild(staticFileElement);
+
+            root.appendChild(staticElement);
+
+            // fence post problem, this only occurs between items.
+            if (i != this->wallpaperTable->rowCount()) {
+                // build <transition> will contain <duration> <from> and <to>
+                QDomElement transitionElement = album.createElement("transition");
+
+                // build <duration> append to <transition>
+                QDomElement transitionDurationElement = album.createElement("duration");
+                QDomText    transitionDurationText    = album.createTextNode("5.0");
+                transitionDurationElement.appendChild(transitionDurationText);
+                transitionElement.appendChild(transitionDurationElement);
+
+                QDomElement transitionFromElement = album.createElement("from");
+                QDomText    transitionFromText    = album.createTextNode(this->wallpaperTable->record(i).value("Fullpath").toString());
+                transitionFromElement.appendChild(transitionFromText);
+                transitionElement.appendChild(transitionFromElement);
+
+                QDomElement transitionToElement = album.createElement("to");
+                QDomText    transitionToText    = album.createTextNode(this->wallpaperTable->record(i+1).value("Fullpath").toString());
+                transitionToElement.appendChild(transitionToText);
+                transitionElement.appendChild(transitionToElement);
+
+                root.appendChild(transitionElement);
+            }
+        }
+
+        QTextStream(&file) << album.toString();
+    } else {
+        QMessageBox::critical(this, tr("Error Writing File"), tr("Error writing file %1.").arg(file.fileName()));
+        qCritical() << file.errorString();
+    }
+}
+
+void MainWindow::on_refreshButton_clicked()
+{
+    QModelIndex currentIndex = ui->itemView->currentIndex();
+
+    // get the index on the correct column of that row.
+    QModelIndex rightIndex = this->wallpaperTable->index(currentIndex.row(), 2);
+
+    QUrl url(rightIndex.data().toString());
+
+    this->getRemoteWallpaper(url);
 }

@@ -14,14 +14,14 @@ LIBS += -lcv -lhighgui -lsfml-audio
 include(qtsingleapplication/src/qtsingleapplication.pri)
 
 # Input
-HEADERS += about.h        \
+HEADERS +=        \
            mainwindow.h   \
            preferences.h \
            raitingdelegate.h
-FORMS += about.ui         \
+FORMS +=         \
          preferences.ui   \
          mainwindow.ui
-SOURCES += about.cpp      \
+SOURCES +=      \
            main.cpp       \
            mainwindow.cpp \
            preferences.cpp \

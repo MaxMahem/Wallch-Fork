@@ -19,14 +19,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*
 
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "about.h"
-#include "ui_mainwindow.h"
+
 #include "preferences.h"
+#include "mainwindow.h"
 
 #include <QtNetwork>
 #include <QObject>
 #include <gconf/gconf-client.h>
 #include <QtSql>
+#include <QStandardItemModel>
+#include <QMainWindow>
 
 namespace Notify {
     class Notification;
@@ -43,95 +45,93 @@ namespace Ui {
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+    Q_ENUMS(Source);
 
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    enum Source { LOCAL, REMOTE };
+
 private:
-    Ui::MainWindow *ui;             /**< TODO */
+    QMetaEnum sourceEnum;
+    Source source;
 
-    QTimer  *updateTimer;           /**< TODO */
+    Ui::MainWindow *ui;                     /**< TODO */
 
-    QAction *Start_action;          /**< TODO */
-    QAction *Stop_action;           /**< TODO */
-    QAction *Next_action;           /**< TODO */
-    QAction *Previous_action;       /**< TODO */
-    QAction *Show_action;           /**< TODO */
-    QAction *Settings_action;       /**< TODO */
-    QAction *About_action;          /**< TODO */
-    QAction *Quit_action;           /**< TODO */
+    QTimer  *updateTimer;                   /**< TODO */
 
-    about       *About;             /**< TODO */
-    Preferences *preferences;       /**< TODO */
+//    About       *about;                     /**< TODO */
+    Preferences *preferences;               /**< TODO */
 
-    QSqlTableModel *itemTableModel;
-    QSqlDatabase    sqliteDatabase;
+    QSqlTableModel *wallpaperTable;         /**< TODO */
+    QSqlDatabase    sqliteDatabase;         /**< TODO */
 
-    GConfClient* gconfClient;       /**< TODO */
+    GConfClient* gconfClient;               /**< TODO */
 
-    QUrl                  url;      /**< TODO */
-    QNetworkAccessManager qnam;     /**< TODO */
-    QNetworkReply         *reply;   /**< TODO */
+    QNetworkAccessManager *networkManager;            /**< TODO */
+    QNetworkReply         *reply;           /**< TODO */
 
-    int delaySeconds;               /**< TODO */
-    int timerSeconds;               /**< TODO */
+    int delaySeconds;                       /**< TODO */
+    int timerSeconds;                       /**< TODO */
 
-    QSettings settings;             /**< TODO */
-    bool desktopNotification;       /**< TODO */
-    bool soundNotification;         /**< TODO */
-    bool customSound;               /**< TODO */
-    bool running;                   /**< TODO */
+    QSettings settings;                     /**< TODO */
+    bool desktopNotification;               /**< TODO */
+    bool soundNotification;                 /**< TODO */
 
-    QList<int> badRows;             /**< TODO */
+    bool running;
 
     Notify::Notification *notification;
 
     void loadSettings();
+    void pruneList();
+    void removeDisk();
+    void openFolder();
     void addItems(QStringList imageList);
     void closeEvent(QCloseEvent*);
-    void randomImage();
     void desktopNotify(QString qimage);
     void soundNotify();
     void updateProgressBar();
     void changeBackground(QString picture);
+    void getRemoteWallpaper(QUrl url);
     void changeWallpaperToCurrent();
+    void changeModel(Source source);
 
     static bool isValidImage(const QString &image);
 
 private Q_SLOTS:
     void on_previousButton_clicked();
-    void on_addfolder_clicked();
+    void on_nextButton_clicked();
     void on_itemView_doubleClicked(QModelIndex index);
     void on_itemView_itemSelectionChanged();
     void on_itemView_customContextMenuRequested(QPoint position);
+
+    void on_addButton_clicked();
+    void on_addfolder_clicked();
     void on_removeallButton_clicked();
     void on_removeButton_clicked();
-    void on_addButton_clicked();
     void on_stopButton_clicked();
-    void on_nextButton_clicked();
     void on_startButton_clicked();
+    void on_refreshButton_clicked();
+
     void on_timerSlider_valueChanged(int value);
     void on_webSourceRadio_toggled(bool checked);
-    void on_randomButton_clicked();
 
     void timeUpdater();
 
     void dragEnterEvent(QDragEnterEvent *event);
     void dropEvent(QDropEvent *event);
 
-    void dbus_action(const QString &msg);
+    void dbusAction(const QString &msg);
 
     void on_actionAddAlbum_triggered();
+    void on_actionAbout_triggered();
+    void on_actionPreferences_triggered();
+    void on_actionSaveAlbum_triggered();
+    void on_actionSaveGnome_triggered();
 
-public Q_SLOTS:
-
-    void ShowPreferences();
-    void menushowabout();
-    void pruneList();
-    void removeDisk();
-    void openFolder();
-    void saveAlbum();
+    void downloadFinished(QNetworkReply*);
+    void randomImage();
 };
 
 #endif // MAINWINDOW_H
